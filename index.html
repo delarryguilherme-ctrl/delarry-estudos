@@ -749,7 +749,7 @@
       <button type="button" role="menuitem" data-imp="dir">Pasta do PC<small>Subpastas viram pastas, .md vira caderno</small></button>
       <button type="button" role="menuitem" data-imp="md">Arquivos .md<small>Cada arquivo vira um caderno</small></button>
       <hr class="imp-sep">
-      <button type="button" role="menuitem" data-imp="backup">Fazer backup (.json)<small>Baixa todas as pastas e cadernos</small></button>
+      <button type="button" role="menuitem" data-imp="backup">Fazer backup (.json)<small>Pastas, cadernos, fotos, vídeos e áudios</small></button>
       <button type="button" role="menuitem" data-imp="restore">Restaurar backup<small>Troca a biblioteca pela do arquivo (dá para desfazer)</small></button>
     </div>
     <input type="file" id="impJson" accept=".json,application/json" hidden>
@@ -4451,20 +4451,35 @@ async function importEntries(entries) {
   else if (firstNew) openNotebook(firstNew.id);
   else renderLib();
 }
-/* Backup: a biblioteca inteira num .json (as fotos continuam guardadas no navegador) */
-function downloadBackup() {
+/* Backup: a biblioteca inteira num .json, com fotos, GIFs, vídeos e áudios embutidos (base64) */
+const blobToDataUrl = b => new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(r.result); r.onerror = () => rej(r.error); r.readAsDataURL(b); });
+async function downloadBackup() {
   commitDoc();
-  const data = { app: 'delarry-estudos', version: 2, exportedAt: new Date().toISOString(),
-                 lib: { ...lib, notebooks: lib.notebooks.map(({ pages, ...n }) => n) } };
-  const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 1)], { type: 'application/json' }));
+  const libOut = { ...lib, notebooks: lib.notebooks.map(({ pages, ...n }) => n) };
+  const ids = new Set();
+  for (const n of lib.notebooks) for (const m of (n.html || '').matchAll(/data-media="([^"]+)"/g)) ids.add(m[1]);
+  if (ids.size) toast(`Preparando backup com ${plural(ids.size, 'arquivo de mídia', 'arquivos de mídia')}…`);
+  // montado em pedaços: arquivos grandes não viram uma string única gigante
+  const parts = [`{"app":"delarry-estudos","version":2,"exportedAt":${JSON.stringify(new Date().toISOString())},"lib":${JSON.stringify(libOut)},"media":{`];
+  let saved = 0, missing = 0;
+  for (const id of ids) {
+    const blob = memBlobs.get(id) || await Store.getMedia(id).catch(() => null);
+    if (!blob) { missing++; continue; }
+    const entry = { type: blob.type || '', name: blob.name || '', data: await blobToDataUrl(blob) };
+    parts.push(`${saved ? ',' : ''}${JSON.stringify(id)}:${JSON.stringify(entry)}`);
+    saved++;
+  }
+  parts.push('}}');
+  const url = URL.createObjectURL(new Blob(parts, { type: 'application/json' }));
   const a = h('a', { href: url, download: `delarry-estudos-backup-${new Date().toISOString().slice(0, 10)}.json` });
   document.body.append(a);
   a.click();
   a.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 2000);
-  toast(`Backup com ${plural(lib.notebooks.length, 'caderno', 'cadernos')} baixado.`);
+  setTimeout(() => URL.revokeObjectURL(url), 4000);
+  toast(`Backup com ${plural(lib.notebooks.length, 'caderno', 'cadernos')} e ${plural(saved, 'arquivo de mídia', 'arquivos de mídia')} baixado.` +
+        (missing ? ` ${plural(missing, 'arquivo não estava', 'arquivos não estavam')} neste navegador.` : ''));
 }
-function restoreBackup(text) {
+async function restoreBackup(text) {
   let data = null;
   try { data = JSON.parse(text); } catch {}
   const next = data?.lib;
@@ -4472,9 +4487,27 @@ function restoreBackup(text) {
     toast('Esse arquivo não é um backup do Delarry Estudos.');
     return;
   }
+  // primeiro devolve as mídias ao navegador; backups antigos não têm essa parte
+  const media = data.media && typeof data.media === 'object' ? Object.entries(data.media) : [];
+  let restored = 0;
+  if (media.length) toast(`Restaurando ${plural(media.length, 'arquivo de mídia', 'arquivos de mídia')}…`);
+  for (const [id, m] of media) {
+    if (!/^[\w-]+$/.test(id) || typeof m?.data !== 'string' || !m.data.startsWith('data:')) continue;
+    try {
+      let blob = await (await fetch(m.data)).blob();
+      if (m.type && blob.type !== m.type) blob = new Blob([blob], { type: m.type });
+      await Store.putMedia(id, blob);
+      memBlobs.set(id, blob);
+      if (mediaUrls.has(id)) { URL.revokeObjectURL(mediaUrls.get(id)); mediaUrls.delete(id); }
+      mediaTypes.delete(id);
+      animCache.delete(id);
+      restored++;
+    } catch (err) { console.warn('mídia do backup', id, err); }
+  }
   closeBook();
   closeFolderView();
-  withUndo(`Backup restaurado: ${plural(next.notebooks.length, 'caderno', 'cadernos')}`, () => {
+  withUndo(`Backup restaurado: ${plural(next.notebooks.length, 'caderno', 'cadernos')}` +
+           (restored ? ` e ${plural(restored, 'arquivo de mídia', 'arquivos de mídia')}` : ''), () => {
     lib = next;
     ensureCurrent();
     renderLib();
