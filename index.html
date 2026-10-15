@@ -178,6 +178,33 @@
   .doc li::marker { color: var(--text-2); }
   .doc hr { background: linear-gradient(var(--hover-2), var(--hover-2)) center / 100% 1px no-repeat; }
   .doc blockquote { box-shadow: inset 2px 0 0 var(--hover-2); }
+  /* ---------- áudio: player mínimo (tocar, barra, tempo) ---------- */
+  .flow figure.audio {
+    display: flex; align-items: center; gap: 12px; width: 100%; box-sizing: border-box; text-indent: 0;
+    white-space: normal; user-select: none; -webkit-text-fill-color: currentColor;
+    font: 13px/1.3 system-ui, -apple-system, "Segoe UI", sans-serif; letter-spacing: 0;
+  }
+  .doc figure.audio {
+    height: auto !important; margin-block: var(--paste-inset); padding: 8px 14px 8px 8px;
+    border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--text);
+  }
+  .sheet figure.audio { color: #2a4aa8; padding: 0 2px; }
+  .au-play {
+    all: unset; flex: none; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; cursor: pointer;
+    background: currentColor; transition: transform .12s ease-out;
+  }
+  .doc .au-play { background: var(--ink); }
+  .au-play svg.i { color: #fff; width: 14px; height: 14px; }
+  .au-play:active { transform: scale(.94); }
+  .au-play:focus-visible, .au-bar:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  .au-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+  .au-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; opacity: .8; }
+  .au-bar { position: relative; height: 4px; border-radius: 4px; background: color-mix(in srgb, currentColor 18%, transparent); cursor: pointer; touch-action: none; }
+  .au-bar::before { content: ""; position: absolute; inset: -8px 0; }   /* área de toque maior que a barra */
+  .au-fill { position: absolute; left: 0; top: 0; bottom: 0; width: 0; border-radius: inherit; background: currentColor; }
+  .doc .au-fill { background: var(--ink); }
+  .au-time { flex: none; font-variant-numeric: tabular-nums; font-size: 12px; opacity: .7; }
+
   /* no texto não há pauta: a foto tem a altura dela e o respiro fica fora, em cima e embaixo */
   .doc figure.media { height: auto !important; margin-block: var(--paste-inset); }
   .doc .media .src { position: static; display: block; width: 100%; height: auto; opacity: 1; border-radius: 3px; }
@@ -919,7 +946,8 @@
   </div>
 </div>
 <div class="toasts" id="toasts" aria-live="polite"></div>
-<input type="file" id="file" accept="image/*,video/*" multiple hidden>
+<input type="file" id="file" accept="image/*,video/*,audio/*" multiple hidden>
+<input type="file" id="fileAudio" accept="audio/*" multiple hidden>
 
 <script type="module">
 /* ------------------------------------------------------------------ *
@@ -1049,6 +1077,7 @@ const ICON = {
   speaker: '<path d="M2.5 6v4h2.5L8.5 13V3L5 6z"/><path d="M10.8 5.6a3.4 3.4 0 0 1 0 4.8M12.6 3.8a6 6 0 0 1 0 8.4"/>',
   demo: '<rect x="2" y="2.5" width="12" height="11" rx="1.5"/><path d="M2 5.5h12"/><path d="M6.5 8.5 5 10l1.5 1.5M9.5 8.5 11 10l-1.5 1.5"/>',
   table: '<rect x="2" y="3" width="12" height="10" rx="1.5"/><path d="M2 6.5h12M2 9.8h12M6.5 3v10"/>',
+  audio: '<path d="M2.5 9.5v-3M5 11.5v-7M7.5 13V3M10 11v-6M12.5 9.5v-3"/>',
 };
 const svg = (name, cls = 'i') => {
   const t = document.createElement('template');
@@ -1807,7 +1836,7 @@ function rasterizeInk(v) {
   const range = document.createRange();
   const decoCache = new Map();
   const walker = document.createTreeWalker(editor, NodeFilter.SHOW_TEXT, {
-    acceptNode: n => n.parentElement.closest('.media, .embed') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
+    acceptNode: n => n.parentElement.closest('.media, .embed, .audio') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
   });
   let idx = 0;
 
@@ -2142,7 +2171,7 @@ function ensureCurrent() {
 // salva só a "casca" das fotos/vídeos (o arquivo fica no IndexedDB)
 function serialize(root, keepCaret = false) {
   const c = root.cloneNode(true);
-  for (const f of c.querySelectorAll('.media, .embed')) { f.replaceChildren(); f.removeAttribute('style'); f.removeAttribute('contenteditable'); }
+  for (const f of c.querySelectorAll('.media, .embed, .audio')) { f.replaceChildren(); f.removeAttribute('style'); f.removeAttribute('contenteditable'); }
   for (const b of c.querySelectorAll('nav.crumbs')) { b.replaceChildren(); b.removeAttribute('contenteditable'); }   // o caminho é montado na hora
   for (const a of c.querySelectorAll('a[title]')) a.removeAttribute('title');
   for (const td of c.querySelectorAll('td.cur')) { td.classList.remove('cur'); if (!td.classList.length) td.removeAttribute('class'); }
@@ -2168,7 +2197,7 @@ function commitView(v) { if (v?.isDoc) commitDoc(); }
 function commitPage() { commitDoc(); }
 
 function pauseVideos(root = null) {
-  for (const r of root ? [root] : [docEl, ...PV.map(v => v.editor)]) for (const vd of r.querySelectorAll('video')) vd.pause();
+  for (const r of root ? [root] : [docEl, ...PV.map(v => v.editor)]) for (const vd of r.querySelectorAll('video, audio')) vd.pause();
 }
 
 function loadDoc({ keepScroll = false } = {}) {
@@ -2395,7 +2424,7 @@ function cutOverflow(root) {
   return frag;
 }
 
-const isEmptyBlock = el => !!el && el.tagName === 'P' && !el.textContent.trim() && !el.querySelector('.media, .embed, hr, [data-caret]');
+const isEmptyBlock = el => !!el && el.tagName === 'P' && !el.textContent.trim() && !el.querySelector('.media, .embed, .audio, hr, [data-caret]');
 
 // monta as páginas do livro a partir do texto, medindo numa folha invisível
 function paginate(html) {
@@ -2461,12 +2490,12 @@ function closeBook() {
    marca-texto (background-color) e alinhamento dos blocos. */
 const KEEP_INLINE = new Set(['background-color']);
 const hasStrayStyles = root => [...root.querySelectorAll('[style], font[size], font[face], span:not([class]):not([style]):not([data-caret])')]
-  .some(el => !el.closest('.media, .embed, nav.crumbs') &&
+  .some(el => !el.closest('.media, .embed, .audio, nav.crumbs') &&
     (el.matches('font, span:not([style])') || [...el.style].some(p => !KEEP_INLINE.has(p) && !(p === 'text-align' && (el.parentElement === root || el.matches('td, li'))))));
 function cleanInlineStyles(root) {
   let changed = false;
   for (const el of root.querySelectorAll('[style]')) {
-    if (el.closest('.media, .embed, nav.crumbs')) continue;
+    if (el.closest('.media, .embed, .audio, nav.crumbs')) continue;
     const block = el.parentElement === root || el.matches('td, li');
     for (const prop of [...el.style]) {
       if (KEEP_INLINE.has(prop) || (block && prop === 'text-align')) continue;
@@ -2526,6 +2555,8 @@ const linesFor = (w, aspect) => clamp(Math.round(((MM.x1 - MM.x0) * w / 100 / as
 
 function sizeFigures(root) {
   const lh = lhOf(root);
+  // player de áudio: duas linhas da pauta no livro (no texto, a altura vem do CSS)
+  for (const f of root.querySelectorAll('figure.audio')) f.style.height = 2 * lh + 'px';
   for (const f of root.querySelectorAll('.embed')) {
     f.style.width = (+f.dataset.w || 100) + '%';
     f.style.height = clamp(+f.dataset.lines || 8, 3, MM.lines - 2) * lh + 'px';
@@ -2573,6 +2604,7 @@ function hydrateFigures(root) {
   if (root === docEl || PV.some(v => v.editor === root)) for (const nav of root.querySelectorAll('nav.crumbs')) { delete nav.dataset.sig; fillCrumbs(nav); }
   sizeFigures(root);
   hydrateEmbeds(root);
+  hydrateAudio(root);
   for (const f of root.querySelectorAll('.media')) {
     f.contentEditable = 'false';
     if (f.querySelector('.src')) continue;
@@ -2635,6 +2667,7 @@ function blockOf(node) {
 
 // guarda o arquivo e devolve a "casca" da foto/vídeo (null se não for imagem nem vídeo)
 async function mediaFigure(file) {
+  if (file.type.startsWith('audio/')) return audioFigure(file);
   const kind = file.type.startsWith('video/') ? 'video' : file.type.startsWith('image/') ? 'image' : null;
   if (!kind) return null;
   const id = uid();
@@ -2646,6 +2679,69 @@ async function mediaFigure(file) {
                        'data-aspect': aspect.toFixed(4), 'data-lines': linesFor(w, aspect),
                        'data-anim': kind === 'image' && ANIMATED.test(file.type) ? '1' : null });
 }
+/* ------------------------------------------------------------------ *
+ *  Áudio: arquivo guardado no navegador, tocado por um player mínimo *
+ * ------------------------------------------------------------------ */
+async function audioFigure(file) {
+  const id = uid();
+  memBlobs.set(id, file);
+  await Store.putMedia(id, file).catch(console.error);
+  return h('figure', { class: 'audio', 'data-media': id, 'data-name': file.name.replace(/\.[^.]+$/, '') });
+}
+const fmtTime = s => (Number.isFinite(s) ? `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}` : '0:00');
+const AUDIO_ICON = {
+  play: '<path d="M5.5 3.5v9l7-4.5z" fill="currentColor" stroke="none"/>',
+  pause: '<path d="M5.5 3.5v9M10.5 3.5v9" stroke-width="2"/>',
+};
+function hydrateAudio(root) {
+  for (const f of root.querySelectorAll('figure.audio')) {
+    f.contentEditable = 'false';
+    if (f.querySelector('audio')) continue;
+    const audio = h('audio', { preload: 'metadata' });
+    const play = h('button', { type: 'button', class: 'au-play au-ctl', 'aria-label': 'Tocar' });
+    const icon = on => { play.innerHTML = `<svg class="i" viewBox="0 0 16 16" aria-hidden="true">${AUDIO_ICON[on ? 'pause' : 'play']}</svg>`; play.setAttribute('aria-label', on ? 'Pausar' : 'Tocar'); };
+    icon(false);
+    const fill = h('span', { class: 'au-fill' });
+    const bar = h('span', { class: 'au-bar au-ctl', role: 'slider', tabindex: '0', 'aria-label': 'Posição do áudio', 'aria-valuemin': '0', 'aria-valuenow': '0' }, fill);
+    const time = h('span', { class: 'au-time' }, '0:00');
+    const name = h('span', { class: 'au-name' }, f.dataset.name || 'Áudio');
+    const show = () => {
+      const d = audio.duration, t = audio.currentTime;
+      fill.style.width = (d ? (t / d) * 100 : 0) + '%';
+      time.textContent = audio.paused && !t ? fmtTime(d) : `${fmtTime(t)} / ${fmtTime(d)}`;
+      bar.setAttribute('aria-valuemax', String(Math.round(d || 0)));
+      bar.setAttribute('aria-valuenow', String(Math.round(t)));
+      bar.setAttribute('aria-valuetext', `${fmtTime(t)} de ${fmtTime(d)}`);
+    };
+    audio.addEventListener('loadedmetadata', show);
+    audio.addEventListener('timeupdate', show);
+    audio.addEventListener('play', () => { icon(true); f.classList.add('playing'); });
+    audio.addEventListener('pause', () => { icon(false); f.classList.remove('playing'); });
+    audio.addEventListener('ended', () => { audio.currentTime = 0; show(); });
+    play.addEventListener('click', e => {
+      e.stopPropagation();
+      if (audio.paused) {
+        for (const other of document.querySelectorAll('figure.audio audio')) if (other !== audio) other.pause();
+        audio.play().catch(() => toast('Não deu para tocar esse áudio.'));
+      } else audio.pause();
+    });
+    // arrastar ou clicar na barra muda a posição
+    const seek = e => {
+      const r = bar.getBoundingClientRect();
+      if (audio.duration) audio.currentTime = clamp((e.clientX - r.left) / r.width, 0, 1) * audio.duration;
+    };
+    bar.addEventListener('pointerdown', e => { e.preventDefault(); e.stopPropagation(); bar.setPointerCapture(e.pointerId); seek(e); });
+    bar.addEventListener('pointermove', e => { if (bar.hasPointerCapture(e.pointerId)) seek(e); });
+    bar.addEventListener('keydown', e => {
+      const d = { ArrowRight: 5, ArrowUp: 5, ArrowLeft: -5, ArrowDown: -5 }[e.key];
+      if (d && audio.duration) { e.preventDefault(); audio.currentTime = clamp(audio.currentTime + d, 0, audio.duration); }
+    });
+    for (const el of [play, bar]) el.addEventListener('mousedown', e => e.stopPropagation());
+    f.append(play, h('span', { class: 'au-main' }, name, bar), time, audio);
+    mediaUrl(f.dataset.media).then(u => { if (u) audio.src = u; else name.textContent += ' (arquivo não encontrado neste navegador)'; });
+  }
+}
+
 async function insertMedia(files, at = null) {
   const sel = getSelection();
   const range = at || (sel.rangeCount && editor.contains(sel.anchorNode) ? sel.getRangeAt(0) : null);
@@ -2906,12 +3002,13 @@ function setBlock(tag) {
 /* ------------------------------------------------------------------ *
  *  Componente selecionado: popover com mover, duplicar e excluir      *
  * ------------------------------------------------------------------ */
-const SELECTABLE = 'nav.crumbs, hr, figure.media, figure.embed';
+const SELECTABLE = 'nav.crumbs, hr, figure.media, figure.embed, figure.audio';
 const SELB = { el: null };
 function blockName(el) {
   if (el.matches('nav.crumbs')) return 'Breadcrumb';
   if (el.matches('hr')) return 'Divisor';
   if (el.matches('figure.embed')) return { demo: 'Exemplo interativo', code: 'Bloco de código', video: 'Vídeo' }[el.dataset.kind] || 'Componente';
+  if (el.matches('figure.audio')) return 'Áudio';
   if (el.dataset.kind === 'video') return 'Vídeo';
   return el.dataset.anim === '1' ? 'GIF' : 'Foto';
 }
@@ -2957,7 +3054,7 @@ function blockAction(act) {
   if (act === 'dup') {
     const c = el.cloneNode(true);
     c.classList.remove('is-selected');
-    if (c.matches('figure.media, figure.embed')) { c.replaceChildren(); c.removeAttribute('style'); }
+    if (c.matches('figure.media, figure.embed, figure.audio')) { c.replaceChildren(); c.removeAttribute('style'); }
     if (c.matches('figure.embed')) c.dataset.id = uid();
     if (c.matches('nav.crumbs')) { c.replaceChildren(); delete c.dataset.sig; }
     el.after(c);
@@ -3130,7 +3227,7 @@ function setupEditor() {
     ed.addEventListener('keydown', e => tableKeys(e));
     ed.addEventListener('paste', e => {
     e.preventDefault();
-    const files = [...e.clipboardData.files].filter(f => /^(image|video)\//.test(f.type));
+    const files = [...e.clipboardData.files].filter(f => /^(image|video|audio)\//.test(f.type));
     if (files.length) insertMedia(files);
     else {
       const txt = e.clipboardData.getData('text/plain');
@@ -3146,7 +3243,7 @@ function setupEditor() {
     ed.addEventListener('drop', e => {
       if (![...e.dataTransfer.types].includes('Files')) return;
       e.preventDefault();
-      const files = [...e.dataTransfer.files].filter(f => /^(image|video)\//.test(f.type));
+      const files = [...e.dataTransfer.files].filter(f => /^(image|video|audio)\//.test(f.type));
       if (!files.length || !nb().editing) return;
       activate(v);
       const at = document.caretRangeFromPoint?.(e.clientX, e.clientY) ?? null;
@@ -3162,7 +3259,7 @@ function setupEditor() {
     ed.addEventListener('click', e => { const li = boxOf(e); if (li) toggleCheck(li); });
     // componentes (breadcrumb, divisor, fotos, exemplos) são selecionados como bloco
     ed.addEventListener('mousedown', e => {
-      if (!nb()?.editing || e.target.closest('[data-act], .media-ui')) return;
+      if (!nb()?.editing || e.target.closest('[data-act], .media-ui, .au-ctl')) return;
       const blk = e.target.closest(SELECTABLE);
       if (blk && ed.contains(blk)) { e.preventDefault(); selectBlock(blk); }
     });
@@ -3180,7 +3277,7 @@ function setupEditor() {
   function mediaAction(e) {
     const b = e.target.closest('[data-act]');
     if (!b) return;
-    const f = b.closest('.media, .embed');
+    const f = b.closest('.media, .embed, .audio');
     const v = viewOf(f);
     activate(v);
     const act = b.dataset.act;
@@ -3229,6 +3326,11 @@ function setupEditor() {
     if (cmd === 'insertUnorderedList' || cmd === 'insertOrderedList') unwrapLists();
     syncToolbar();
     onEdited();
+  });
+  $('fileAudio').addEventListener('change', e => {
+    const files = [...e.target.files];
+    e.target.value = '';
+    if (files.length) insertMedia(files);
   });
   $('file').addEventListener('change', e => {
     const files = [...e.target.files];
@@ -4453,6 +4555,7 @@ const BLOCKS = [
   { id: 'crumbs', label: 'Breadcrumb', hint: 'Caminho: pasta › caderno › página', icon: 'crumbs', keys: 'breadcrumb caminho trilha navegacao migalhas' },
   { id: 'link', label: 'Link', hint: 'Endereço clicável no texto', icon: 'link', keys: 'link url endereco site hiperlink' },
   { id: 'media', label: 'Foto, GIF ou vídeo', hint: 'Arquivo do computador, colado na folha', icon: 'image', keys: 'foto imagem video midia gif arquivo' },
+  { id: 'audio', label: 'Áudio', hint: 'Arquivo de áudio com player (também dá para arrastar)', icon: 'audio', keys: 'audio som musica podcast mp3 gravacao voz player' },
   { id: 'mediaurl', label: 'Vídeo ou GIF por link', hint: 'YouTube, Vimeo ou endereço de .mp4 / .gif', icon: 'film', keys: 'video youtube vimeo gif link url endereco' },
   { id: 'demo', label: 'Exemplo interativo', hint: 'HTML, CSS e JS funcionando na folha', icon: 'demo', keys: 'exemplo interativo demo html css js codigo' },
   { id: 'code', label: 'Bloco de código', hint: 'Código colado, só para ler', icon: 'code', keys: 'codigo code trecho' },
@@ -4464,7 +4567,7 @@ function insertBlockEl(el, block = blockOf(getSelection().anchorNode)) {
   else if (isEmptyBlock(block)) block.before(el);
   else block.after(el);
   let next = el.nextElementSibling;
-  if (!next || (!isEmptyBlock(next) && next.matches('.media, .embed, hr, table'))) { next = h('p', {}, h('br')); el.after(next); }
+  if (!next || (!isEmptyBlock(next) && next.matches('.media, .embed, .audio, hr, table'))) { next = h('p', {}, h('br')); el.after(next); }
   const r = document.createRange(); r.setStart(next, 0); r.collapse(true);
   getSelection().removeAllRanges(); getSelection().addRange(r);
   return el;
@@ -4546,6 +4649,7 @@ function runBlock(id) {
     case 'crumbs': fillCrumbs(insertBlockEl(h('nav', { class: 'crumbs' }))); break;
     case 'link': openLinkPop(); return;
     case 'media': $('file').click(); return;
+    case 'audio': $('fileAudio').click(); return;
     case 'mediaurl': openMediaUrlPop(); return;
     case 'demo': openCodeModal({ kind: 'demo' }); return;
     case 'code': openCodeModal({ kind: 'code' }); return;
@@ -4682,7 +4786,7 @@ function revealMatch(q, nth = 0) {
   const fq = fold(q);
   const ed = docEl;
   const walker = document.createTreeWalker(ed, NodeFilter.SHOW_TEXT, {
-    acceptNode: n => n.parentElement.closest('.media, .embed') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
+    acceptNode: n => n.parentElement.closest('.media, .embed, .audio') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
   });
   let seen = 0;
   for (let n; (n = walker.nextNode());) {
@@ -4826,7 +4930,7 @@ function markSpoken(t) {
   if (!v) return;
   const probe = fold(t.slice(0, 48));
   const walker = document.createTreeWalker(v.editor, NodeFilter.SHOW_TEXT, {
-    acceptNode: n => n.parentElement.closest('.media, .embed') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
+    acceptNode: n => n.parentElement.closest('.media, .embed, .audio') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
   });
   for (let n; (n = walker.nextNode());) {
     const i = fold(n.data).indexOf(probe);
