@@ -3222,6 +3222,84 @@ function unwrapLists() {
   restoreCaret(mk);
 }
 
+/* Colar texto formatado: o HTML da área de transferência é limpo e vira blocos do caderno.
+   Fica só o que o caderno entende (títulos, parágrafos, listas, checklists, citações, tabelas,
+   divisores, negrito, itálico, riscado, código e links); estilos, classes e scripts vão embora. */
+function cleanPastedHtml(html) {
+  const src = new DOMParser().parseFromString(html, 'text/html').body;
+  const BLOCK = { H1: 'h1', H2: 'h2', H3: 'h3', H4: 'h4', H5: 'h4', H6: 'h4', P: 'p', BLOCKQUOTE: 'blockquote', UL: 'ul', OL: 'ol', LI: 'li', HR: 'hr',
+                  TABLE: 'table', THEAD: 'tbody', TBODY: 'tbody', TFOOT: 'tbody', TR: 'tr', TD: 'td', TH: 'td', PRE: 'p' };
+  const INLINE = { B: 'b', STRONG: 'b', I: 'i', EM: 'i', S: 'strike', STRIKE: 'strike', DEL: 'strike', U: 'u', CODE: 'code', BR: 'br' };
+  const walk = (node, inPre) => {
+    const out = [];
+    for (const n of node.childNodes) {
+      if (n.nodeType === 3) { out.push(document.createTextNode(inPre ? n.data : n.data.replace(/\s+/g, ' '))); continue; }
+      if (n.nodeType !== 1 || /^(SCRIPT|STYLE|META|LINK|TITLE|NOSCRIPT|TEMPLATE|SVG|BUTTON|INPUT|SELECT|TEXTAREA)$/.test(n.tagName)) {
+        if (n.tagName === 'INPUT' && n.type === 'checkbox') { const li = n.closest('li'); if (li) li.dataset.wasCheck = n.checked ? 'true' : 'false'; }
+        continue;
+      }
+      const tag = n.tagName;
+      if (tag === 'A') {
+        const url = safeUrl(n.getAttribute('href'));
+        const kids = walk(n, inPre);
+        if (url && !/^#/.test(n.getAttribute('href') || '')) { const a = h('a', { href: url }); a.append(...kids); out.push(a); } else out.push(...kids);
+        continue;
+      }
+      const t = BLOCK[tag] || INLINE[tag];
+      const kids = walk(n, inPre || tag === 'PRE');
+      if (!t) { out.push(...kids); continue; }           // div, span, section…: só o conteúdo
+      const el = document.createElement(t);
+      if (t === 'li' && n.dataset.wasCheck) el.dataset.checked = n.dataset.wasCheck;
+      if (tag === 'PRE' && !(kids.length === 1 && kids[0].tagName === 'CODE')) el.append(h('code', {}, ...kids)); else el.append(...kids);
+      if (t === 'table') { el.className = 'tbl'; el.dataset.head = n.querySelector('th') ? '1' : '0'; }
+      out.push(el);
+    }
+    return out;
+  };
+  const box = document.createElement('div');
+  box.append(...walk(src, false));
+  // citação, item, célula e título guardam só texto: parágrafos de dentro viram quebras de linha
+  for (const p of box.querySelectorAll('blockquote p, li p, td p, h1 p, h2 p, h3 p, h4 p')) {
+    if (p.previousSibling) p.before(document.createElement('br'));
+    p.replaceWith(...p.childNodes);
+  }
+  // tabela: um corpo só
+  for (const t of box.querySelectorAll('table')) {
+    const bodies = t.querySelectorAll('tbody');
+    for (const b of [...bodies].slice(1)) { bodies[0].append(...b.childNodes); b.remove(); }
+  }
+  // listas com caixinha viram checklist
+  for (const ul of box.querySelectorAll('ul')) if ([...ul.children].some(li => li.dataset.checked)) {
+    ul.className = 'checklist';
+    for (const li of ul.children) li.dataset.checked ||= 'false';
+  }
+  // texto solto entre blocos vira parágrafo
+  for (const n of [...box.childNodes]) {
+    if (n.nodeType === 3 && !n.data.trim()) { n.remove(); continue; }
+    if (n.nodeType === 3 || (n.nodeType === 1 && INLINE[n.tagName.toUpperCase()]) || n.tagName === 'A') {
+      const p = h('p'); n.before(p); p.append(n);
+      while (p.nextSibling && (p.nextSibling.nodeType === 3 || INLINE[p.nextSibling.tagName?.toUpperCase()] || p.nextSibling.tagName === 'A')) p.append(p.nextSibling);
+    }
+  }
+  for (const p of box.querySelectorAll('p, li, h1, h2, h3, h4, blockquote, td')) {
+    if (p.firstChild?.nodeType === 3) p.firstChild.data = p.firstChild.data.replace(/^\s+/, '');
+    if (p.lastChild?.nodeType === 3) p.lastChild.data = p.lastChild.data.replace(/\s+$/, '');
+  }
+  for (const p of box.querySelectorAll('p, h1, h2, h3, h4')) if (!p.textContent.trim() && !p.querySelector('br')) p.remove();
+  return box;
+}
+function richPaste(html) {
+  if (!html || cellAt()) return false;
+  const box = cleanPastedHtml(html);
+  // só vale a pena se trouxer formatação; texto simples segue o caminho normal
+  if (!box.querySelector('a, b, i, strike, u, code, h1, h2, h3, h4, ul, ol, blockquote, table, hr') && box.querySelectorAll('p').length < 2) return false;
+  const onlyInline = box.children.length === 1 && box.firstElementChild.tagName === 'P';
+  document.execCommand('insertHTML', false, onlyInline ? box.firstElementChild.innerHTML : box.innerHTML);
+  cleanInlineStyles(docEl);
+  onEdited(DV);
+  return true;
+}
+
 /* Colar Markdown: texto de várias linhas com títulos, listas, citações ou negrito vira blocos do caderno. */
 // só texto de várias linhas (uma linha solta continua sendo colada como texto, no meio do parágrafo)
 const looksLikeMarkdown = t => /\n/.test(t.trim()) &&
@@ -3314,6 +3392,7 @@ function setupEditor() {
       if (url && getSelection().isCollapsed && isEmptyBlock(here) && (VIDEO_HOST.test(url) || MEDIA_FILE.test(url))) insertMediaUrl(url, here);
       else if (url && !getSelection().isCollapsed) document.execCommand('createLink', false, url);   // colou um endereço sobre um trecho
       else if (looksLikeMarkdown(txt) && !cellAt()) pasteMarkdown(txt);   // colou Markdown: entra formatado
+      else if (richPaste(e.clipboardData.getData('text/html'))) {}        // colou texto formatado (Claude, sites, Docs): mantém títulos, listas e links
       else document.execCommand('insertText', false, txt);  // só texto: a folha decide a letra
     }
     });
