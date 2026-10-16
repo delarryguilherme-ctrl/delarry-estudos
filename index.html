@@ -47,14 +47,20 @@
   .logo-row { flex: 1 0 100%; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
   .logo { display: flex; align-items: baseline; gap: 7px; padding: 4px 0 8px; color: var(--text); user-select: none; }
   /* conta: "Entrar" sem login; inicial do nome + ponto de status com login */
+  /* avatar da conta: silhueta sem login; foto do Google ou inicial com login */
   .acct-btn {
-    all: unset; position: relative; flex: none; cursor: pointer; display: inline-grid; place-items: center; box-sizing: border-box;
-    height: 28px; padding: 0 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface);
-    font: 500 12.5px/1 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--text-2); margin-bottom: 4px;
+    all: unset; position: relative; flex: none; cursor: pointer; width: 32px; height: 32px; margin-bottom: 4px; border-radius: 50%;
   }
-  .acct-btn:hover { background: var(--hover); }
+  .acct-face {
+    width: 100%; height: 100%; border-radius: 50%; overflow: hidden; display: grid; place-items: center;
+    background: var(--seg); color: var(--icon); box-shadow: inset 0 0 0 1px var(--line);
+    font: 600 13px/1 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .acct-face svg { width: 26px; height: 26px; margin-top: 6px; }
+  .acct-face img { width: 100%; height: 100%; object-fit: cover; }
+  .acct-btn:hover .acct-face { box-shadow: inset 0 0 0 1px var(--line), 0 0 0 3px var(--hover-2); }
   .acct-btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
-  .acct-btn.in { width: 30px; height: 30px; padding: 0; background: var(--ink); color: var(--on-ink); border-color: transparent; font-weight: 600; }
+  .acct-btn.in .acct-face { background: var(--ink); color: var(--on-ink); box-shadow: none; }
   .acct-dot { display: none; position: absolute; right: -1px; bottom: -1px; width: 9px; height: 9px; border-radius: 50%; border: 2px solid var(--side-bg); background: #2e9e5b; }
   .acct-btn.in .acct-dot { display: block; }
   .acct-btn[data-state="syncing"] .acct-dot { background: var(--ink); animation: acct-pulse 1s ease-in-out infinite; }
@@ -88,11 +94,13 @@
   .am-legal { margin: 2px 0 0; font-size: 11.5px; color: var(--muted); }
   .am-legal a, .am-note a { color: inherit; }
   .am-who { display: flex; align-items: center; gap: 10px; }
-  .am-avatar { width: 36px; height: 36px; flex: none; border-radius: 50%; display: grid; place-items: center; background: var(--ink); color: var(--on-ink); font-weight: 600; }
+  .am-avatar { width: 36px; height: 36px; flex: none; border-radius: 50%; overflow: hidden; display: grid; place-items: center; background: var(--ink); color: var(--on-ink); font-weight: 600; }
+  .am-avatar img { width: 100%; height: 100%; object-fit: cover; }
   .am-name { font-weight: 600; }
   .am-email { color: var(--text-2); overflow-wrap: anywhere; }
   .am-status { margin: 0; color: var(--text-2); }
   .am-status[data-state="error"] { color: #c0313b; }
+  .am-err { display: block; margin-top: 4px; font-size: 11.5px; color: var(--muted); overflow-wrap: anywhere; }
   .am-usage { display: flex; flex-direction: column; gap: 6px; color: var(--text-2); font-size: 12px; }
   .am-bar { height: 5px; border-radius: 5px; background: var(--seg); overflow: hidden; }
   .am-bar span { display: block; height: 100%; width: 0; background: var(--ink); }
@@ -804,7 +812,7 @@
     <div class="lib-head">
       <div class="logo-row">
         <h1 class="logo" aria-label="Delarry Estudos" style="margin:0"><span class="logo-a" aria-hidden="true">Delarry</span><span class="logo-b" aria-hidden="true">estudos</span></h1>
-        <button class="acct-btn" id="acctBtn" type="button" aria-haspopup="dialog" aria-expanded="false" title="Conta e sincronização"><span class="acct-label">Entrar</span><span class="acct-dot" aria-hidden="true"></span></button>
+        <button class="acct-btn" id="acctBtn" type="button" aria-haspopup="dialog" aria-expanded="false" aria-label="Conta e sincronização" title="Conta e sincronização"><span class="acct-face" aria-hidden="true"></span><span class="acct-dot" aria-hidden="true"></span></button>
       </div>
       <button class="lib-add" id="newFolder" title="Nova pasta (dentro da pasta selecionada)"><svg class="i" viewBox="0 0 16 16"><path d="M2 4.5A1.5 1.5 0 0 1 3.5 3h2.6l1.4 1.5h5A1.5 1.5 0 0 1 14 6v5.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 11.5z"/></svg>Pasta</button>
       <button class="lib-add" id="newNotebook" title="Novo caderno (dentro da pasta selecionada)"><svg class="i" viewBox="0 0 16 16"><path d="M8 3v10M3 8h10"/></svg>Caderno</button>
@@ -5613,13 +5621,18 @@ const fmtMB = b => `${(b / 1048576).toLocaleString('pt-BR', { maximumFractionDig
 /* Menu da conta, no topo da biblioteca */
 function setupAccount() {
   const btn = $('acctBtn'), menu = $('acctMenu');
-  const label = btn.querySelector('.acct-label');
+  const face = btn.querySelector('.acct-face');
+  // sem foto: silhueta; com conta e sem foto: inicial do nome
+  const SILHOUETTE = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="4.2" fill="currentColor"/><path d="M3.5 21.5c1.4-4 4.7-6 8.5-6s7.1 2 8.5 6" fill="currentColor"/></svg>';
   const STATE_TEXT = { ok: 'Tudo sincronizado', syncing: 'Sincronizando…', offline: 'Sem internet: as mudanças sobem quando voltar', error: 'Não deu para sincronizar agora', off: '', unavailable: 'Conta indisponível agora' };
   const paint = () => {
     const u = Sync.user;
     btn.dataset.state = u ? Sync.state : 'off';
     const nameOf = x => x?.user_metadata?.full_name || x?.user_metadata?.name || x?.email || '';
-    label.textContent = u ? (nameOf(u).trim()[0] || '?').toUpperCase() : 'Entrar';
+    const photo = u?.user_metadata?.avatar_url || u?.user_metadata?.picture;
+    if (photo) face.replaceChildren(h('img', { src: photo, alt: '', referrerpolicy: 'no-referrer' }));
+    else if (u) face.textContent = (nameOf(u).trim()[0] || '?').toUpperCase();
+    else face.innerHTML = SILHOUETTE;
     btn.classList.toggle('in', !!u);
     btn.title = u ? `${nameOf(u)} · ${STATE_TEXT[Sync.state] || ''}` : 'Entrar para sincronizar seus cadernos';
     if (!menu.hidden) render();
@@ -5658,9 +5671,12 @@ function setupAccount() {
     const usage = h('div', { class: 'am-usage' }, h('div', { class: 'am-usage-text' }, 'Espaço de mídia: calculando…'), h('div', { class: 'am-bar' }, h('span')));
     const kids = [
       h('div', { class: 'am-who' },
-        h('span', { class: 'am-avatar', 'aria-hidden': 'true' }, (name || u.email || '?').trim()[0].toUpperCase()),
+        h('span', { class: 'am-avatar', 'aria-hidden': 'true' }, (u.user_metadata?.avatar_url || u.user_metadata?.picture)
+          ? h('img', { src: u.user_metadata.avatar_url || u.user_metadata.picture, alt: '', referrerpolicy: 'no-referrer' })
+          : (name || u.email || '?').trim()[0].toUpperCase()),
         h('div', {}, name ? h('div', { class: 'am-name' }, name) : '', h('div', { class: 'am-email' }, u.email || ''))),
-      h('p', { class: 'am-status', 'data-state': Sync.state }, STATE_TEXT[Sync.state] || ''),
+      h('p', { class: 'am-status', 'data-state': Sync.state }, STATE_TEXT[Sync.state] || '',
+        Sync.state === 'error' && Sync.lastError ? h('small', { class: 'am-err' }, Sync.lastError) : ''),
       usage,
       h('button', { type: 'button', class: 'am-item', onclick: () => Sync.now() }, 'Sincronizar agora'),
       h('button', { type: 'button', class: 'am-item', onclick: async () => { if (await Sync.signOut()) { open(false); toast('Você saiu da conta. Os cadernos continuam salvos nela.'); } } }, 'Sair'),
