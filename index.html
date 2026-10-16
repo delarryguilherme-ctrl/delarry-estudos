@@ -3294,10 +3294,40 @@ function richPaste(html) {
   // só vale a pena se trouxer formatação; texto simples segue o caminho normal
   if (!box.querySelector('a, b, i, strike, u, code, h1, h2, h3, h4, ul, ol, blockquote, table, hr') && box.querySelectorAll('p').length < 2) return false;
   const onlyInline = box.children.length === 1 && box.firstElementChild.tagName === 'P';
-  document.execCommand('insertHTML', false, onlyInline ? box.firstElementChild.innerHTML : box.innerHTML);
+  if (onlyInline) document.execCommand('insertHTML', false, box.firstElementChild.innerHTML);
+  else insertBlocks(box);
   cleanInlineStyles(docEl);
   onEdited(DV);
   return true;
+}
+/* Insere blocos prontos onde está o cursor, cada um com o próprio tipo.
+   (o insertHTML do navegador faz o conteúdo herdar o formato da linha atual,
+   e um título no cursor transformava tudo em título) */
+function insertBlocks(box) {
+  const sel = getSelection();
+  if (sel.rangeCount && !sel.isCollapsed) sel.deleteFromDocument();
+  const blocks = [...box.childNodes].filter(n => n.nodeType === 1);
+  if (!blocks.length) return;
+  const range = sel.rangeCount ? sel.getRangeAt(0) : null;
+  let cur = range && docEl.contains(range.startContainer) ? blockOf(range.startContainer) : null;
+  if (!cur) docEl.append(...blocks);
+  else if (isEmptyBlock(cur) || !cur.textContent.trim() && !cur.querySelector('.media, .embed, .audio')) cur.replaceWith(...blocks);
+  else if (TEXT_BLOCKS.test(cur.tagName)) {
+    // cursor no meio de um texto: divide a linha e encaixa os blocos entre as metades
+    const tail = document.createRange();
+    tail.setStart(range.startContainer, range.startOffset);
+    tail.setEnd(cur, cur.childNodes.length);
+    const rest = cur.cloneNode(false);
+    rest.append(tail.extractContents());
+    cur.after(...blocks, ...(rest.textContent.trim() ? [rest] : []));
+    if (!cur.textContent.trim()) cur.remove();
+  } else cur.after(...blocks);
+  hydrateFigures(docEl);
+  const last = blocks[blocks.length - 1];
+  const r = document.createRange();
+  r.selectNodeContents(last);
+  r.collapse(false);
+  sel.removeAllRanges(); sel.addRange(r);
 }
 
 /* Colar Markdown: texto de várias linhas com títulos, listas, citações ou negrito vira blocos do caderno. */
@@ -3307,7 +3337,9 @@ const looksLikeMarkdown = t => /\n/.test(t.trim()) &&
 async function pasteMarkdown(txt) {
   const html = await mdToHtml(txt, { dir: '', files: new Map() });
   docEl.focus({ preventScroll: true });
-  document.execCommand('insertHTML', false, html);
+  const box = document.createElement('div');
+  box.innerHTML = html;
+  insertBlocks(box);
   cleanInlineStyles(docEl);
   hydrateFigures(docEl);
   onEdited(DV);
