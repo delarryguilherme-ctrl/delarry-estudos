@@ -44,7 +44,69 @@
     z-index: 8;   /* a folha que vira passa por trás da biblioteca */
   }
   .lib-head { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; padding: 0 4px 0 8px; }
-  .logo { flex: 1 0 100%; display: flex; align-items: baseline; gap: 7px; padding: 4px 0 8px; color: var(--text); user-select: none; }
+  .logo-row { flex: 1 0 100%; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .logo { display: flex; align-items: baseline; gap: 7px; padding: 4px 0 8px; color: var(--text); user-select: none; }
+  /* conta: "Entrar" sem login; inicial do nome + ponto de status com login */
+  .acct-btn {
+    all: unset; position: relative; flex: none; cursor: pointer; display: inline-grid; place-items: center; box-sizing: border-box;
+    height: 28px; padding: 0 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface);
+    font: 500 12.5px/1 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--text-2); margin-bottom: 4px;
+  }
+  .acct-btn:hover { background: var(--hover); }
+  .acct-btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  .acct-btn.in { width: 30px; height: 30px; padding: 0; background: var(--ink); color: var(--on-ink); border-color: transparent; font-weight: 600; }
+  .acct-dot { display: none; position: absolute; right: -1px; bottom: -1px; width: 9px; height: 9px; border-radius: 50%; border: 2px solid var(--side-bg); background: #2e9e5b; }
+  .acct-btn.in .acct-dot { display: block; }
+  .acct-btn[data-state="syncing"] .acct-dot { background: var(--ink); animation: acct-pulse 1s ease-in-out infinite; }
+  .acct-btn[data-state="offline"] .acct-dot { background: #e08a1e; }
+  .acct-btn[data-state="error"] .acct-dot, .acct-btn[data-state="unavailable"] .acct-dot { background: #c0313b; }
+  @keyframes acct-pulse { 50% { opacity: .35; } }
+  @media (prefers-reduced-motion: reduce) { .acct-btn[data-state="syncing"] .acct-dot { animation: none; } }
+  .acct-menu {
+    position: fixed; z-index: 40; width: 300px; max-width: calc(100vw - 16px); box-sizing: border-box; padding: 16px;
+    display: flex; flex-direction: column; gap: 10px; background: var(--surface); color: var(--text);
+    border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 4px 10px rgba(0,0,0,.05), 0 18px 40px rgba(0,0,0,.16);
+    animation: vp-in .12s ease-out; font-size: 13px;
+  }
+  .acct-menu[hidden] { display: none; }
+  .am-title { margin: 0; font-size: 15px; font-weight: 600; }
+  .am-text, .am-note, .am-sent { margin: 0; color: var(--text-2); line-height: 1.45; }
+  .am-note { padding: 8px 10px; border-radius: 8px; background: var(--surface-2); border: 1px solid var(--line); }
+  .am-sent { padding: 10px; border-radius: 8px; background: var(--active); color: var(--active-text); }
+  .am-google { all: unset; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; height: 38px; border-radius: 9px; border: 1px solid var(--line); font-weight: 500; }
+  .am-google:hover { background: var(--hover); }
+  .am-google:focus-visible, .am-item:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+  .am-g { font: 700 15px/1 Georgia, serif; color: #4285f4; }
+  .am-or { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; }
+  .am-or::before, .am-or::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  .am-form { display: flex; flex-direction: column; gap: 8px; }
+  .am-label { display: flex; flex-direction: column; gap: 5px; font-size: 12px; color: var(--text-2); }
+  .am-label input { font: inherit; font-size: 13px; color: var(--text); background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; outline: none; }
+  .am-label input:focus { border-color: var(--ink); }
+  .am-label input[aria-invalid="true"] { border-color: #c0313b; }
+  .am-send { justify-content: center; }
+  .am-legal { margin: 2px 0 0; font-size: 11.5px; color: var(--muted); }
+  .am-legal a, .am-note a { color: inherit; }
+  .am-who { display: flex; align-items: center; gap: 10px; }
+  .am-avatar { width: 36px; height: 36px; flex: none; border-radius: 50%; display: grid; place-items: center; background: var(--ink); color: var(--on-ink); font-weight: 600; }
+  .am-name { font-weight: 600; }
+  .am-email { color: var(--text-2); overflow-wrap: anywhere; }
+  .am-status { margin: 0; color: var(--text-2); }
+  .am-status[data-state="error"] { color: #c0313b; }
+  .am-usage { display: flex; flex-direction: column; gap: 6px; color: var(--text-2); font-size: 12px; }
+  .am-bar { height: 5px; border-radius: 5px; background: var(--seg); overflow: hidden; }
+  .am-bar span { display: block; height: 100%; width: 0; background: var(--ink); }
+  .am-item { all: unset; cursor: pointer; padding: 8px 10px; margin: 0 -6px; border-radius: 8px; }
+  .am-item:hover { background: var(--hover); }
+  .am-danger { color: #c0313b; }
+  .am-delete { display: flex; flex-direction: column; gap: 8px; padding: 10px; border-radius: 10px; border: 1px solid rgba(192, 49, 59, .35); }
+  .am-delete p { margin: 0; line-height: 1.45; }
+  .am-row { display: flex; gap: 6px; justify-content: flex-end; }
+  .am-confirm { background: #c0313b; color: #fff; }
+  .am-confirm:hover { background: #a3262f; }
+  .am-backup { border: 1px solid var(--line); justify-content: center; }
+  /* trecho em conflito vindo da sincronização */
+  .flow aside.conflict { color: #a5620c; font-weight: 600; }
   .logo-a { font: italic 400 27px/1 'Instrument Serif', Georgia, 'Times New Roman', serif; letter-spacing: -0.01em; }
   .logo-b { font: 600 10.5px/1 system-ui, -apple-system, 'Segoe UI', sans-serif; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
   .lib-head .lib-add:first-of-type { margin-left: -8px; }
@@ -740,11 +802,15 @@
 <div class="app">
   <aside class="lib" id="lib" aria-label="Delarry Estudos: pastas e cadernos">
     <div class="lib-head">
-      <h1 class="logo" aria-label="Delarry Estudos" style="margin:0"><span class="logo-a" aria-hidden="true">Delarry</span><span class="logo-b" aria-hidden="true">estudos</span></h1>
+      <div class="logo-row">
+        <h1 class="logo" aria-label="Delarry Estudos" style="margin:0"><span class="logo-a" aria-hidden="true">Delarry</span><span class="logo-b" aria-hidden="true">estudos</span></h1>
+        <button class="acct-btn" id="acctBtn" type="button" aria-haspopup="dialog" aria-expanded="false" title="Conta e sincronização"><span class="acct-label">Entrar</span><span class="acct-dot" aria-hidden="true"></span></button>
+      </div>
       <button class="lib-add" id="newFolder" title="Nova pasta (dentro da pasta selecionada)"><svg class="i" viewBox="0 0 16 16"><path d="M2 4.5A1.5 1.5 0 0 1 3.5 3h2.6l1.4 1.5h5A1.5 1.5 0 0 1 14 6v5.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 11.5z"/></svg>Pasta</button>
       <button class="lib-add" id="newNotebook" title="Novo caderno (dentro da pasta selecionada)"><svg class="i" viewBox="0 0 16 16"><path d="M8 3v10M3 8h10"/></svg>Caderno</button>
       <button class="lib-add" id="importBtn" title="Importar pastas e arquivos .md do computador (também dá para arrastar para cá)" aria-haspopup="menu" aria-expanded="false"><svg class="i" viewBox="0 0 16 16"><path d="M8 2.5v8M4.5 7 8 10.5 11.5 7M3 13.5h10"/></svg>Importar</button>
     </div>
+    <div class="acct-menu" id="acctMenu" role="dialog" aria-label="Conta e sincronização" hidden></div>
     <div class="imp-menu" id="impMenu" role="menu" hidden>
       <button type="button" role="menuitem" data-imp="dir">Pasta do PC<small>Subpastas viram pastas, .md vira caderno</small></button>
       <button type="button" role="menuitem" data-imp="md">Arquivos .md<small>Cada arquivo vira um caderno</small></button>
@@ -2101,6 +2167,9 @@ const Store = (() => {
     putMedia: (id, blob) => op('media', 'readwrite', s => s.put(blob, id)),
     delMedia: id => op('media', 'readwrite', s => s.delete(id)),
     mediaKeys: () => op('media', 'readonly', s => s.getAllKeys()),
+    delKV: key => op('kv', 'readwrite', s => s.delete(key)),
+    // sair da conta: o aparelho volta a ficar limpo
+    wipe: async () => { await op('kv', 'readwrite', s => s.clear()); await op('media', 'readwrite', s => s.clear()); },
   };
 })();
 
@@ -2141,7 +2210,8 @@ function animFrame(id) {
 }
 async function mediaUrl(id) {
   if (mediaUrls.has(id)) return mediaUrls.get(id);
-  const blob = memBlobs.get(id) || await Store.getMedia(id).catch(() => null);
+  let blob = memBlobs.get(id) || await Store.getMedia(id).catch(() => null);
+  if (!blob) blob = await Sync.fetchMedia(id);     // logado: busca na conta
   if (!blob) return null;
   mediaTypes.set(id, blob.type);
   const u = URL.createObjectURL(blob);
@@ -2152,7 +2222,7 @@ async function mediaUrl(id) {
 let lib, saveT;
 const nb = () => lib.notebooks.find(n => n.id === lib.current);
 const folder = id => lib.folders.find(f => f.id === id);
-const saveSoon = () => { clearTimeout(saveT); saveT = setTimeout(() => Store.putLib(lib).catch(console.error), 400); };
+const saveSoon = () => { clearTimeout(saveT); saveT = setTimeout(() => Store.putLib(lib).catch(console.error), 400); Sync.schedule(); };
 
 function defaultLibrary() {
   const f = { id: uid(), name: 'Pessoal', parentId: null, open: true };
@@ -5235,6 +5305,412 @@ function setupView() {
 }
 
 /* ------------------------------------------------------------------ *
+ *  Conta e sincronização (Supabase)                                   *
+ *  O app continua salvando no navegador; com login, as pastas, os     *
+ *  cadernos e as mídias também vão para a conta e voltam nos outros   *
+ *  aparelhos. Edições do mesmo caderno em dois aparelhos são          *
+ *  mescladas por bloco (parágrafo, título, lista, foto…).             *
+ * ------------------------------------------------------------------ */
+const SUPABASE_URL = 'https://zdpozkmkuhmnfonuuqiz.supabase.co';
+// chave pública ("anon"): feita para ficar no site; o acesso aos dados é protegido pelas regras do banco
+const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpkcG96a21rdWhtbmZvbnV1cWl6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIxMDg2NzQsImV4cCI6MjEwNzY4NDY3NH0.uk2wsfwHQt3SlgeBa3_AwmZIogjSmPo-8DT3L9Lv0mc';
+const SITE_URL = 'https://delarryguilherme-ctrl.github.io/delarry-estudos/';
+const MEDIA_QUOTA = 100 * 1024 * 1024, MEDIA_MAX = 20 * 1024 * 1024;
+
+/* Mescla de três versões por bloco (diff3): o que só um lado mudou entra direto;
+   o mesmo trecho mudado nos dois lados fica duplicado, com um aviso entre as versões. */
+function htmlBlocks(html) {
+  const d = document.createElement('div');
+  d.innerHTML = html || '';
+  return [...d.childNodes].filter(n => n.nodeType === 1 || n.textContent.trim()).map(n => (n.nodeType === 1 ? n.outerHTML : n.textContent));
+}
+function lcsMap(a, b) {   // para cada item de a, o índice casado em b (ou -1)
+  const n = a.length, m = b.length;
+  const L = Array.from({ length: n + 1 }, () => new Uint16Array(m + 1));
+  for (let i = n - 1; i >= 0; i--) for (let j = m - 1; j >= 0; j--) L[i][j] = a[i] === b[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+  const map = new Array(n).fill(-1);
+  for (let i = 0, j = 0; i < n && j < m;) {
+    if (a[i] === b[j]) { map[i] = j; i++; j++; } else if (L[i + 1][j] >= L[i][j + 1]) i++; else j++;
+  }
+  return map;
+}
+const CONFLICT_NOTE = '<aside class="conflict">Versão de outro aparelho (o mesmo trecho mudou nos dois). Fique com uma e apague a outra:</aside>';
+function merge3(baseHtml, localHtml, remoteHtml) {
+  if (localHtml === remoteHtml) return { html: localHtml, conflict: false };
+  const o = htmlBlocks(baseHtml), a = htmlBlocks(localHtml), b = htmlBlocks(remoteHtml);
+  const ma = lcsMap(o, a), mb = lcsMap(o, b);
+  const out = [];
+  let conflict = false, io = 0, ia = 0, ib = 0;
+  const chunk = (oc, ac, bc) => {
+    const os = oc.join(''), as = ac.join(''), bs = bc.join('');
+    if (as === os) out.push(...bc);
+    else if (bs === os || as === bs) out.push(...ac);
+    else { out.push(...ac, CONFLICT_NOTE, ...bc); conflict = true; }
+  };
+  for (let k = 0; k <= o.length; k++) {
+    const anchor = k === o.length || (ma[k] >= ia && mb[k] >= ib);
+    if (!anchor) continue;
+    const ea = k === o.length ? a.length : ma[k], eb = k === o.length ? b.length : mb[k];
+    chunk(o.slice(io, k), a.slice(ia, ea), b.slice(ib, eb));
+    if (k < o.length) out.push(o[k]);
+    io = k + 1; ia = ea + 1; ib = eb + 1;
+  }
+  return { html: out.join('') || EMPTY_PAGE, conflict };
+}
+
+const Sync = (() => {
+  let sb = null, user = null, timer = 0, running = null, again = false, state = 'off', lastError = '';
+  const listeners = new Set();
+  const setState = s => { state = s; listeners.forEach(f => f()); };
+  const baseKey = () => `syncBase:${user.id}`, mediaKey = () => `syncMedia:${user.id}`;
+
+  // o que conta como "conteúdo" de cada item (o resto é estado da tela)
+  const pickNb = n => ({ name: n.name, folderId: n.folderId ?? null, order: n.order ?? null, html: n.html || '', editing: !!n.editing, source: n.source ?? null });
+  const pickFd = f => ({ name: f.name, parentId: f.parentId ?? null, order: f.order ?? null, open: !!f.open });
+  const fromNbRow = r => ({ name: r.name, folderId: r.folder_id, order: r.order, html: r.html, editing: r.editing, source: r.source });
+  const fromFdRow = r => ({ name: r.name, parentId: r.parent_id, order: r.order, open: r.open });
+  const toNbRow = (id, d, stamp, deleted = false) => ({ user_id: user.id, id, name: d?.name ?? '', folder_id: d?.folderId ?? null, order: d?.order ?? null,
+    html: d?.html ?? '', editing: !!d?.editing, source: d?.source ?? null, updated: stamp, deleted });
+  const toFdRow = (id, d, stamp, deleted = false) => ({ user_id: user.id, id, name: d?.name ?? '', parent_id: d?.parentId ?? null, order: d?.order ?? null,
+    open: !!d?.open, updated: stamp, deleted });
+  const same = (x, y) => JSON.stringify(x ?? null) === JSON.stringify(y ?? null);
+  // o caderno de exemplo, do jeito que veio (compara só o texto, que não muda ao salvar)
+  const plain = html => { const d = document.createElement('div'); d.innerHTML = html || ''; return d.textContent.replace(/\s+/g, ' ').trim(); };
+  const EXAMPLE_TEXT = plain(DEFAULT_HTML);
+  const isUntouchedExample = n => plain(n.html) === EXAMPLE_TEXT;
+
+  async function load() {
+    if (sb) return sb;
+    const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.2/+esm');
+    sb = createClient(SUPABASE_URL, SUPABASE_ANON, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, flowType: 'pkce' } });
+    return sb;
+  }
+
+  async function syncOnce() {
+    if (!user || !navigator.onLine) { setState(user ? 'offline' : 'off'); return; }
+    setState('syncing');
+    commitDoc();
+    const [fRes, nRes] = await Promise.all([
+      sb.from('folders').select('*').eq('user_id', user.id),
+      sb.from('notebooks').select('*').eq('user_id', user.id),
+    ]);
+    if (fRes.error || nRes.error) throw fRes.error || nRes.error;
+    const base = (await Store.getKV(baseKey()).catch(() => null)) || { folders: {}, notebooks: {} };
+    const remoteHasNotes = nRes.data.some(r => !r.deleted);
+    const firstSync = !Object.keys(base.notebooks).length && !Object.keys(base.folders).length;
+
+    // aparelho novo entrando numa conta com cadernos: o exemplo intocado sai do caminho
+    if (firstSync && remoteHasNotes) {
+      const ex = lib.notebooks.filter(isUntouchedExample);
+      lib.notebooks = lib.notebooks.filter(n => !isUntouchedExample(n));
+      for (const n of ex) {
+        const f = folder(n.folderId);
+        if (f && !lib.notebooks.some(x => x.folderId === f.id) && !lib.folders.some(x => x.parentId === f.id)) lib.folders = lib.folders.filter(x => x !== f);
+      }
+    }
+
+    let changedLocal = false, conflicts = 0;
+    const touchedCurrent = { v: false };
+    const push = { folders: [], notebooks: [] };
+    const syncType = (type, remoteRows) => {
+      const isNb = type === 'notebooks';
+      const list = isNb ? lib.notebooks : lib.folders;
+      const pick = isNb ? pickNb : pickFd, fromRow = isNb ? fromNbRow : fromFdRow, toRow = isNb ? toNbRow : toFdRow;
+      const B = base[type];
+      const local = new Map(list.map(x => [x.id, x]));
+      const remote = new Map(remoteRows.map(r => [r.id, r]));
+      const ids = new Set([...local.keys(), ...remote.keys(), ...Object.keys(B)]);
+      for (const id of ids) {
+        const L = local.get(id), R = remote.get(id), b = B[id];
+        // o exemplo e a pasta dele só sobem se a pessoa mexeu
+        if (isNb && L && !b && !R && isUntouchedExample(L)) continue;
+        if (!isNb && L && !b && !R && L.name === 'Pessoal' && lib.notebooks.filter(n => n.folderId === id).every(isUntouchedExample) && !lib.folders.some(f => f.parentId === id)) continue;
+        const Ld = L ? pick(L) : null;
+        const Rd = R && !R.deleted ? fromRow(R) : null;
+        const lc = !same(Ld, b?.data ?? null);
+        const rc = R ? R.updated !== b?.stamp : false;
+        if (!lc && !rc) continue;
+        let final, pushIt = false;
+        if (lc && !rc) { final = Ld; pushIt = true; }
+        else if (!lc && rc) { final = Rd; }
+        else if (Ld && Rd) {
+          if (isNb && Ld.html !== Rd.html) {
+            const m = merge3(b?.data?.html ?? '', Ld.html, Rd.html);
+            if (m.conflict) conflicts++;
+            final = { ...Rd, html: m.html };
+          } else final = { ...Rd };
+          // nome, pasta e ordem: vale a mudança mais recente (a local é a de agora)
+          for (const k of Object.keys(Ld)) if (k !== 'html' && !same(Ld[k], b?.data?.[k])) final[k] = Ld[k];
+          pushIt = true;
+        } else { final = Ld || Rd; pushIt = !!Ld; }   // um lado apagou e o outro editou: fica o editado
+        // aplica no aparelho
+        if (!same(final, Ld)) {
+          changedLocal = true;
+          if (id === lib.current) touchedCurrent.v = true;
+          if (!final) list.splice(list.indexOf(L), 1);
+          else if (L) Object.assign(L, final);
+          else list.push({ id, ...final, ...(isNb ? { updated: R?.updated || Date.now() } : {}) });
+        }
+        const stamp = pushIt ? Date.now() : R?.updated ?? b?.stamp ?? 0;
+        if (pushIt) push[type].push(toRow(id, final, stamp, !final));
+        if (final || R) B[id] = { stamp, data: final }; else delete B[id];
+      }
+    };
+    syncType('folders', fRes.data);
+    syncType('notebooks', nRes.data);
+
+    for (const [table, rows] of Object.entries(push)) {
+      for (let i = 0; i < rows.length; i += 200) {
+        const { error } = await sb.from(table).upsert(rows.slice(i, i + 200), { onConflict: 'user_id,id' });
+        if (error) throw error;
+      }
+    }
+    await Store.putKV(baseKey(), base);
+
+    if (changedLocal) {
+      ensureCurrent();
+      Store.putLib(lib).catch(console.error);
+      renderLib();
+      if (touchedCurrent.v && !BOOK.open) loadDoc({ keepScroll: true });
+    }
+    if (conflicts) toast(`${plural(conflicts, 'caderno foi editado', 'cadernos foram editados')} em dois aparelhos: as duas versões ficaram no texto, marcadas.`);
+    await uploadMedia();
+    setState('ok');
+  }
+
+  // sobe as mídias usadas nos cadernos que ainda não estão na conta
+  let quotaWarned = false;
+  async function uploadMedia() {
+    const done = new Set((await Store.getKV(mediaKey()).catch(() => null)) || []);
+    const ids = new Set();
+    for (const n of lib.notebooks) for (const m of (n.html || '').matchAll(/data-media="([^"]+)"/g)) ids.add(m[1]);
+    let used = null;
+    for (const id of ids) {
+      if (done.has(id)) continue;
+      const blob = memBlobs.get(id) || await Store.getMedia(id).catch(() => null);
+      if (!blob) continue;
+      if (blob.size > MEDIA_MAX) { done.add(id); toast(`Um arquivo passou de 20 MB e ficou só neste aparelho.`); continue; }
+      if (used === null) used = await mediaUsed();
+      if (used + blob.size > MEDIA_QUOTA) {
+        if (!quotaWarned) toast(`Seu espaço de mídia está cheio (${fmtMB(used)} de ${fmtMB(MEDIA_QUOTA)}). Os arquivos novos ficam só neste aparelho.`);
+        quotaWarned = true;
+        break;
+      }
+      const { error } = await sb.storage.from('media').upload(`${user.id}/${id}`, blob, { contentType: blob.type || 'application/octet-stream', upsert: false });
+      if (error && !/exist|duplicate/i.test(error.message || '')) { console.warn('mídia', id, error); continue; }
+      done.add(id);
+      used += blob.size;
+    }
+    await Store.putKV(mediaKey(), [...done]);
+  }
+  async function mediaUsed() {
+    const { data, error } = await sb.rpc('media_used');
+    return error ? 0 : Number(data) || 0;
+  }
+
+  const api = {
+    get user() { return user; },
+    get state() { return state; },
+    get lastError() { return lastError; },
+    onChange: f => listeners.add(f),
+    async init() {
+      try {
+        await load();
+        const { data } = await sb.auth.getSession();
+        user = data.session?.user || null;
+        sb.auth.onAuthStateChange((event, session) => {
+          const was = user?.id;
+          user = session?.user || null;
+          if (user && user.id !== was) { setState('syncing'); api.now(); }
+          if (!user) setState('off');
+          listeners.forEach(f => f());
+        });
+        setState(user ? 'syncing' : 'off');
+        if (user) api.now();
+      } catch (err) { console.warn('conta indisponível', err); setState('unavailable'); }
+    },
+    schedule(ms = 4000) {
+      if (!user) return;
+      clearTimeout(timer);
+      timer = setTimeout(() => api.now(), ms);
+    },
+    async now() {
+      if (!user) return false;
+      if (running) { again = true; return running; }
+      running = (async () => {
+        try { await syncOnce(); lastError = ''; return true; }
+        catch (err) { console.warn('sincronização', err); lastError = err?.message || String(err); setState(navigator.onLine ? 'error' : 'offline'); return false; }
+        finally { running = null; if (again) { again = false; api.schedule(500); } }
+      })();
+      return running;
+    },
+    async fetchMedia(id) {
+      if (!user || !sb) return null;
+      const { data, error } = await sb.storage.from('media').download(`${user.id}/${id}`);
+      if (error || !data) return null;
+      memBlobs.set(id, data);
+      Store.putMedia(id, data).catch(() => {});
+      const done = new Set((await Store.getKV(mediaKey()).catch(() => null)) || []);
+      done.add(id);
+      Store.putKV(mediaKey(), [...done]).catch(() => {});
+      return data;
+    },
+    mediaUsed: () => (user ? mediaUsed() : Promise.resolve(0)),
+    async signInGoogle() {
+      await load();
+      const { error } = await sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: redirectUrl() } });
+      if (error) toast(`Não deu para entrar com o Google: ${error.message}`);
+    },
+    async signInEmail(email) {
+      await load();
+      const { error } = await sb.auth.signInWithOtp({ email, options: { emailRedirectTo: redirectUrl() } });
+      if (error) { toast(`Não deu para enviar o link: ${error.message}`); return false; }
+      return true;
+    },
+    async signOut() {
+      if (user && !(await api.now())) {
+        toast('Sem conexão: suas últimas mudanças ainda não foram para a conta. Conecte-se e tente sair de novo.');
+        return false;
+      }
+      await sb.auth.signOut();
+      await wipeDevice();
+      return true;
+    },
+    async deleteAccount() {
+      if (!user) return false;
+      // apaga as mídias da conta, depois a conta (pastas e cadernos vão junto)
+      for (;;) {
+        const { data, error } = await sb.storage.from('media').list(user.id, { limit: 1000 });
+        if (error || !data?.length) break;
+        const { error: e2 } = await sb.storage.from('media').remove(data.map(f => `${user.id}/${f.name}`));
+        if (e2) break;
+      }
+      const { error } = await sb.rpc('delete_my_account');
+      if (error) { toast(`Não deu para excluir a conta: ${error.message}`); return false; }
+      await sb.auth.signOut().catch(() => {});
+      await wipeDevice();
+      return true;
+    },
+  };
+  // aberto direto do arquivo (file://) não recebe o retorno do login: volta para o site
+  const redirectUrl = () => (location.protocol.startsWith('http') ? location.origin + location.pathname : SITE_URL);
+  async function wipeDevice() {
+    closeBook();
+    closeFolderView();
+    await Store.wipe().catch(console.error);
+    memBlobs.clear();
+    for (const u of mediaUrls.values()) URL.revokeObjectURL(u);
+    mediaUrls.clear();
+    lib = defaultLibrary();
+    await Store.putLib(lib).catch(() => {});
+    renderLib();
+    loadDoc();
+  }
+  return api;
+})();
+const fmtMB = b => `${(b / 1048576).toLocaleString('pt-BR', { maximumFractionDigits: b < 10485760 ? 1 : 0 })} MB`;
+
+/* Menu da conta, no topo da biblioteca */
+function setupAccount() {
+  const btn = $('acctBtn'), menu = $('acctMenu');
+  const label = btn.querySelector('.acct-label');
+  const STATE_TEXT = { ok: 'Tudo sincronizado', syncing: 'Sincronizando…', offline: 'Sem internet: as mudanças sobem quando voltar', error: 'Não deu para sincronizar agora', off: '', unavailable: 'Conta indisponível agora' };
+  const paint = () => {
+    const u = Sync.user;
+    btn.dataset.state = u ? Sync.state : 'off';
+    const nameOf = x => x?.user_metadata?.full_name || x?.user_metadata?.name || x?.email || '';
+    label.textContent = u ? (nameOf(u).trim()[0] || '?').toUpperCase() : 'Entrar';
+    btn.classList.toggle('in', !!u);
+    btn.title = u ? `${nameOf(u)} · ${STATE_TEXT[Sync.state] || ''}` : 'Entrar para sincronizar seus cadernos';
+    if (!menu.hidden) render();
+  };
+  Sync.onChange(paint);
+  paint();
+
+  let confirmDelete = false;
+  const render = async () => {
+    const u = Sync.user;
+    if (!u) {
+      const sent = menu.dataset.sent;
+      menu.replaceChildren(
+        h('h2', { class: 'am-title' }, 'Seus cadernos em qualquer aparelho'),
+        h('p', { class: 'am-text' }, 'Entre para ver e editar seus cadernos no computador e no celular. Sem conta, tudo continua salvo só neste navegador.'),
+        location.protocol === 'file:' ? h('p', { class: 'am-note' }, 'Aberto direto do arquivo, o login volta para o site. Para usar sua conta, abra ', h('a', { href: SITE_URL, target: '_blank', rel: 'noopener' }, 'o site do Delarry Estudos'), '.') : '',
+        h('button', { type: 'button', class: 'am-google', onclick: () => Sync.signInGoogle() },
+          h('span', { class: 'am-g', 'aria-hidden': 'true' }, 'G'), 'Entrar com Google'),
+        h('div', { class: 'am-or' }, h('span', {}, 'ou')),
+        sent
+          ? h('p', { class: 'am-sent' }, `Enviamos um link de acesso para ${sent}. Abra o e-mail neste aparelho e clique no link.`)
+          : h('form', { class: 'am-form', onsubmit: async e => {
+              e.preventDefault();
+              const email = e.target.email.value.trim();
+              if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { e.target.email.setAttribute('aria-invalid', 'true'); e.target.email.focus(); return; }
+              e.target.querySelector('button').disabled = true;
+              if (await Sync.signInEmail(email)) { menu.dataset.sent = email; render(); }
+              else e.target.querySelector('button').disabled = false;
+            } },
+            h('label', { class: 'am-label' }, 'Seu e-mail', h('input', { name: 'email', type: 'email', autocomplete: 'email', placeholder: 'voce@exemplo.com', required: true })),
+            h('button', { type: 'submit', class: 'btn primary am-send' }, 'Enviar link de acesso')),
+        h('p', { class: 'am-legal' }, 'Ao entrar, você concorda com a ', h('a', { href: 'privacidade.html', target: '_blank', rel: 'noopener' }, 'política de privacidade'), '.'));
+      return;
+    }
+    const name = u.user_metadata?.full_name || u.user_metadata?.name || '';
+    const usage = h('div', { class: 'am-usage' }, h('div', { class: 'am-usage-text' }, 'Espaço de mídia: calculando…'), h('div', { class: 'am-bar' }, h('span')));
+    const kids = [
+      h('div', { class: 'am-who' },
+        h('span', { class: 'am-avatar', 'aria-hidden': 'true' }, (name || u.email || '?').trim()[0].toUpperCase()),
+        h('div', {}, name ? h('div', { class: 'am-name' }, name) : '', h('div', { class: 'am-email' }, u.email || ''))),
+      h('p', { class: 'am-status', 'data-state': Sync.state }, STATE_TEXT[Sync.state] || ''),
+      usage,
+      h('button', { type: 'button', class: 'am-item', onclick: () => Sync.now() }, 'Sincronizar agora'),
+      h('button', { type: 'button', class: 'am-item', onclick: async () => { if (await Sync.signOut()) { open(false); toast('Você saiu da conta. Os cadernos continuam salvos nela.'); } } }, 'Sair'),
+    ];
+    if (!confirmDelete) {
+      kids.push(h('button', { type: 'button', class: 'am-item am-danger', onclick: () => { confirmDelete = true; render(); } }, 'Excluir minha conta'));
+    } else {
+      // a única exclusão sem desfazer do app: pede para digitar "excluir"
+      const input = h('input', { type: 'text', autocomplete: 'off', 'aria-label': 'Digite excluir para confirmar' });
+      kids.push(h('div', { class: 'am-delete' },
+        h('p', {}, 'Isso apaga a conta, todos os cadernos e as mídias guardadas nela. Não dá para desfazer.'),
+        h('button', { type: 'button', class: 'btn am-backup', onclick: () => downloadBackup() }, 'Baixar backup antes'),
+        h('label', { class: 'am-label' }, 'Para confirmar, digite excluir', input),
+        h('div', { class: 'am-row' },
+          h('button', { type: 'button', class: 'btn', onclick: () => { confirmDelete = false; render(); } }, 'Cancelar'),
+          h('button', { type: 'button', class: 'btn am-confirm', onclick: async e => {
+            if (input.value.trim().toLowerCase() !== 'excluir') { input.setAttribute('aria-invalid', 'true'); input.focus(); return; }
+            e.target.disabled = true;
+            if (await Sync.deleteAccount()) { confirmDelete = false; open(false); toast('Sua conta e seus dados foram excluídos.'); }
+            else e.target.disabled = false;
+          } }, 'Excluir conta'))));
+    }
+    kids.push(h('p', { class: 'am-legal' }, h('a', { href: 'privacidade.html', target: '_blank', rel: 'noopener' }, 'Política de privacidade')));
+    menu.replaceChildren(...kids);
+    const used = await Sync.mediaUsed();
+    usage.firstChild.textContent = `Espaço de mídia: ${fmtMB(used)} de ${fmtMB(MEDIA_QUOTA)}`;
+    usage.querySelector('span').style.width = Math.min(100, used / MEDIA_QUOTA * 100) + '%';
+  };
+  const open = on => {
+    menu.hidden = !on;
+    btn.setAttribute('aria-expanded', String(on));
+    if (!on) { confirmDelete = false; delete menu.dataset.sent; return; }
+    render();
+    const r = btn.getBoundingClientRect();
+    menu.style.top = r.bottom + 8 + 'px';
+    menu.style.left = clamp(r.right - menu.offsetWidth, 8, innerWidth - menu.offsetWidth - 8) + 'px';
+  };
+  btn.addEventListener('click', () => open(menu.hidden));
+  addEventListener('pointerdown', e => { if (!menu.hidden && !menu.contains(e.target) && !btn.contains(e.target)) open(false); });
+  menu.addEventListener('keydown', e => { if (e.key === 'Escape') { e.stopPropagation(); open(false); btn.focus(); } });
+
+  // quando sincronizar: ao voltar para a aba, ao voltar a internet e a cada minuto
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') Sync.schedule(300); });
+  addEventListener('online', () => Sync.schedule(300));
+  addEventListener('offline', () => Sync.user && paint());
+  setInterval(() => { if (document.visibilityState === 'visible') Sync.schedule(0); }, 60000);
+  Sync.init();
+}
+
+/* ------------------------------------------------------------------ *
  *  Início                                                             *
  * ------------------------------------------------------------------ */
 async function start() {
@@ -5278,6 +5754,7 @@ async function start() {
   setupBlockSel();
   setupTables();
   setupImport();
+  setupAccount();
   renderLib();
   loadDoc();
   Store.putLib(lib).catch(console.error);
