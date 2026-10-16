@@ -68,24 +68,25 @@ Escolha dois apps que fazem a mesma coisa, como iFood e Rappi, ou Nubank e o app
 
 ## Referências
 
-- Peter Morville — artigo “User Experience Design” (semanticstudios.com, 2004).
-- Jesse James Garrett — *The Elements of User Experience*.
-- ISO 9241-11 — definição de usabilidade.
-- NN/g — “Usability 101: Introduction to Usability” (5 componentes de Nielsen).
-- NN/g — “10 Usability Heuristics for User Interface Design”.
-- Steve Krug — *Não Me Faça Pensar* (edição revista, 2014).
-- Aarron Walter — *Designing for Emotion* (pirâmide de necessidades do usuário).
-- Don Norman — *O Design do Dia a Dia* e *Design Emocional*.
-- Dieter Rams — 10 princípios do bom design (Vitsœ, “Dieter Rams: ten principles for good design”).
-- Ben Shneiderman — 8 regras de ouro (*Designing the User Interface*).
-- Jon Yablonski — *Laws of UX* (lawsofux.com).
-- W3C — WCAG 2.2 e os princípios POUR.
-- The Center for Universal Design (NC State) — 7 princípios do Design Universal.
-- Microsoft — Inclusive Design Toolkit.
-- Google — certificado de UX Design (útil, usável, equitativo, agradável).
-- Apple — Human Interface Guidelines.
-- Material Design (m3.material.io).
-- GOV.UK — Government Design Principles.
+- Peter Morville — [User Experience Design](https://semanticstudios.com/user_experience_design/) (o favo de mel, 2004).
+- Jesse James Garrett — [The Elements of User Experience](http://www.jjg.net/elements/) (os 5 planos; o [diagrama original em PDF](http://www.jjg.net/elements/pdf/elements.pdf)).
+- ISO — [ISO 9241-11: definição de usabilidade](https://www.iso.org/standard/63500.html).
+- NN/g — [Usability 101: Introduction to Usability](https://www.nngroup.com/articles/usability-101-introduction-to-usability/) (5 componentes de Nielsen).
+- NN/g — [10 Usability Heuristics for User Interface Design](https://www.nngroup.com/articles/ten-usability-heuristics/).
+- NN/g — [The Definition of User Experience (UX)](https://www.nngroup.com/articles/definition-user-experience/).
+- Steve Krug — [Don't Make Me Think / Não Me Faça Pensar](https://sensible.com/dont-make-me-think/) (edição revista, 2014).
+- Aarron Walter — [Designing for Emotion](https://abookapart.com/products/designing-for-emotion) (pirâmide de necessidades do usuário).
+- Don Norman — [livros: O Design do Dia a Dia e Design Emocional](https://jnd.org/books/).
+- Dieter Rams — [Ten principles for good design (Vitsœ)](https://www.vitsoe.com/us/about/good-design).
+- Ben Shneiderman — [The Eight Golden Rules of Interface Design](https://www.cs.umd.edu/users/ben/goldenrules.html).
+- Jon Yablonski — [Laws of UX](https://lawsofux.com/).
+- W3C — [WCAG 2.2](https://www.w3.org/TR/WCAG22/) (princípios POUR).
+- NC State — [Center for Universal Design](https://design.ncsu.edu/research/center-for-universal-design/) (7 princípios do Design Universal).
+- Microsoft — [Inclusive Design](https://inclusive.microsoft.design/).
+- Google — [Certificado de UX Design](https://grow.google/certificates/ux-design/) (útil, usável, equitativo, agradável).
+- Apple — [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/).
+- Google — [Material Design](https://m3.material.io/).
+- GOV.UK — [Government Design Principles](https://www.gov.uk/guidance/government-design-principles).
 
 ## Dúvidas
 
