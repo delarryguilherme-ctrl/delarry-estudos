@@ -1,0 +1,15 @@
+{
+ "topic": "Inteligência artificial e UX",
+ "module": "Design de produtos com IA",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Modelo mental de sistemas probabilísticos",
+  "Confiança e explicabilidade",
+  "Erro e incerteza",
+  "Controle e human-in-the-loop"
+ ],
+ "draft": "Módulo 45 — Design de produtos com IA\nTópico 13 — Inteligência artificial e UX\nConteúdos\n- Modelo mental de sistemas probabilísticos\n- Confiança e explicabilidade\n- Erro e incerteza\n- Controle e human-in-the-loop\nLeituras\n- People + AI Guidebook — Google PAIR\n- Guidelines for Human-AI Interaction — Microsoft HAX Toolkit",
+ "out": "cadernos/User Experience Design/Inteligência artificial e UX/Design de produtos com IA/Visão geral do módulo.md"
+}

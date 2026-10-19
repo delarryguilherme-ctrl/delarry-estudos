@@ -1,0 +1,16 @@
+{
+ "topic": "Processos e início de projeto",
+ "module": "Processos de design",
+ "name": "Discovery vs delivery e dual-track",
+ "overview": false,
+ "siblings": [
+  "Double Diamond",
+  "Design Thinking e suas críticas",
+  "Lean UX",
+  "Jobs to be Done",
+  "Discovery vs delivery e dual-track",
+  "Qual processo usar"
+ ],
+ "draft": "Discovery vs delivery e dual-track\nTópico 2 — Processos e início de projeto › Módulo 06 — Processos de design\nResumo\nDiscovery decide o que construir; delivery constrói. Dual-track roda os dois em paralelo no mesmo time.\nAnotações\nVocê sabia?\n- A expressão “dual-track” foi popularizada por Jeff Patton e Marty Cagan a partir de um artigo de Desirée Sy (2007) sobre UX em times ágeis.\nExplicando o conceito\n- Discovery: decidir o que construir. Delivery: construir bem.\n- Como os dois trilhos rodam juntos no mesmo time.\n- Riscos que o discovery reduz: valor, usabilidade, viabilidade técnica e de negócio.\nReferências\n- Marty Cagan — Inspired.\n- Teresa Torres — Continuous Discovery Habits.\n- Jeff Patton — User Story Mapping.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Processos e início de projeto/Processos de design/Discovery vs delivery e dual-track.md"
+}

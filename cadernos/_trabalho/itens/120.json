@@ -1,0 +1,14 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Direção visual",
+ "name": "Conceito visual e style tiles",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Moodboard",
+  "Conceito visual e style tiles",
+  "Da pesquisa à direção visual"
+ ],
+ "draft": "Conceito visual e style tiles\nTópico 8 — Interface (UI) › Módulo 28 — Direção visual\nResumo\nStyle tiles mostram tipografia, cor e elementos de interface sem montar telas inteiras. Mais rápidos de aprovar que mockups.\nAnotações\nVocê sabia?\n- Os style tiles foram propostos por Samantha Warren em 2012 como meio-termo entre moodboard e layout completo.\nExplicando o conceito\n- O que entra num style tile: tipografia, cores, botões, ícones, texturas.\n- Apresentar duas ou três direções para escolha.\n- Vantagem: aprovar estilo sem discutir layout.\nReferências\n- Samantha Warren — styletil.es.\n- A List Apart — artigos sobre style tiles.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Interface (UI)/Direção visual/Conceito visual e style tiles.md"
+}

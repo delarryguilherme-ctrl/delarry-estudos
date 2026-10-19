@@ -1,0 +1,16 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Plataformas e responsividade",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Responsivo vs adaptativo vs fluido",
+  "Breakpoints e mobile-first",
+  "Material Design e HIG",
+  "App nativo vs web",
+  "Densidade de informação"
+ ],
+ "draft": "Módulo 31 — Plataformas e responsividade\nTópico 8 — Interface (UI)\nConteúdos\n- Responsivo vs adaptativo vs fluido\n- Breakpoints e mobile-first\n- Material Design e HIG\n- App nativo vs web\n- Densidade de informação\nLeituras\n- Responsive Web Design — Ethan Marcotte (A List Apart)\n- Learn Responsive Design — web.dev\n- Human Interface Guidelines — Apple\n- Material Design 3",
+ "out": "cadernos/User Experience Design/Interface (UI)/Plataformas e responsividade/Visão geral do módulo.md"
+}

@@ -1,0 +1,15 @@
+{
+ "topic": "Portfólio, carreira e projetos práticos",
+ "module": "Projetos práticos end-to-end",
+ "name": "Projeto 1 app mobile",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Projeto 1 app mobile",
+  "Projeto 2 site responsivo",
+  "Projeto 3 impacto social",
+  "Revisão final do portfólio"
+ ],
+ "draft": "Projeto 1: app mobile\nTópico 14 — Portfólio, carreira e projetos práticos › Módulo 49 — Projetos práticos end-to-end\nResumo\nProcesso completo de pesquisa a protótipo de alta fidelidade testado, para um app.\nAnotações\nVocê sabia?\n- O Instagram começou como um app chamado Burbn, cheio de funções; os fundadores cortaram quase tudo e ficaram só com fotos e filtros.\nExplicando o conceito\n- Escolher o problema e o público.\n- Etapas: pesquisa, síntese, fluxos, wireframes, UI, teste.\n- Como documentar para o portfólio.\nReferências\n- Caso Burbn → Instagram.\n- Apple HIG e Material Design.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Portfólio, carreira e projetos práticos/Projetos práticos end-to-end/Projeto 1 app mobile.md"
+}

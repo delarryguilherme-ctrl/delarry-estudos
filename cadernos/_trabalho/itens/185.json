@@ -1,0 +1,16 @@
+{
+ "topic": "Design systems e entrega para desenvolvimento",
+ "module": "Do styleguide ao design system",
+ "name": "Governança, contribuição e versionamento",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Styleguide",
+  "Por que ter um design system",
+  "Design tokens",
+  "Biblioteca e documentação",
+  "Governança, contribuição e versionamento"
+ ],
+ "draft": "Governança, contribuição e versionamento\nTópico 11 — Design systems e entrega para desenvolvimento › Módulo 39 — Do styleguide ao design system\nResumo\nQuem decide mudanças, como propor componentes novos e como comunicar versões. Sem governança, o sistema apodrece.\nAnotações\nVocê sabia?\n- Nathan Curtis (EightShapes) descreveu modelos de time de design system: solitário, centralizado e federado.\nExplicando o conceito\n- Quem decide mudanças e como propor componentes novos.\n- Versionamento e comunicação de mudanças (changelog).\n- Medir adoção do sistema.\nReferências\n- Nathan Curtis — artigos sobre governança (Medium/EightShapes).\n- Brad Frost — “Design system governance process”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Design systems e entrega para desenvolvimento/Do styleguide ao design system/Governança, contribuição e versionamento.md"
+}

@@ -1,0 +1,15 @@
+{
+ "topic": "Design systems e entrega para desenvolvimento",
+ "module": "Handoff",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "O que os desenvolvedores precisam",
+  "Designer precisa saber código",
+  "Ferramentas de entrega",
+  "QA de design"
+ ],
+ "draft": "Módulo 40 — Handoff\nTópico 11 — Design systems e entrega para desenvolvimento\nConteúdos\n- O que os desenvolvedores precisam\n- Designer precisa saber código\n- Ferramentas de entrega\n- QA de design\nLeituras\n- Dev Mode — Figma\n- Learn HTML — web.dev\n- Learn CSS — web.dev\n- Storybook",
+ "out": "cadernos/User Experience Design/Design systems e entrega para desenvolvimento/Handoff/Visão geral do módulo.md"
+}

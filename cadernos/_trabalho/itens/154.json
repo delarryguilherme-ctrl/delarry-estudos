@@ -1,0 +1,15 @@
+{
+ "topic": "Acessibilidade",
+ "module": "Auditoria e handoff acessível",
+ "name": "Ferramentas automáticas",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Ferramentas automáticas",
+  "Testes com NVDA e VoiceOver",
+  "Anotações para dev",
+  "Testes com pessoas com deficiência"
+ ],
+ "draft": "Ferramentas automáticas\nTópico 9 — Acessibilidade › Módulo 34 — Auditoria e handoff acessível\nResumo\naxe, WAVE, Stark e Lighthouse acham problemas de código e contraste. Pegam só uma parte dos problemas; o resto exige teste manual.\nAnotações\nVocê sabia?\n- O relatório WebAIM Million mostra todo ano que mais de 90% das páginas iniciais dos sites mais acessados têm falhas detectáveis automaticamente.\nExplicando o conceito\n- axe, WAVE, Lighthouse, Stark.\n- O que elas pegam e o que não pegam.\n- Como incluir no fluxo do time.\nReferências\n- WebAIM — The WebAIM Million.\n- Deque — axe DevTools.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Acessibilidade/Auditoria e handoff acessível/Ferramentas automáticas.md"
+}

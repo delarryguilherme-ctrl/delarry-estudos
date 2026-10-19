@@ -1,0 +1,15 @@
+{
+ "topic": "Testes e validação",
+ "module": "Pós-lançamento",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Instrumentação de eventos",
+  "Leitura de métricas após a entrega",
+  "Ciclos de iteração",
+  "Canais de feedback contínuo"
+ ],
+ "draft": "Módulo 38 — Pós-lançamento\nTópico 10 — Testes e validação\nConteúdos\n- Instrumentação de eventos\n- Leitura de métricas após a entrega\n- Ciclos de iteração\n- Canais de feedback contínuo\nLeituras\n- Eventos no Google Analytics 4 — documentação\n- Continuous Discovery — Product Talk",
+ "out": "cadernos/User Experience Design/Testes e validação/Pós-lançamento/Visão geral do módulo.md"
+}

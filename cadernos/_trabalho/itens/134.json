@@ -1,0 +1,16 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Componentes e padrões",
+ "name": "Visualização de dados básica",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Design patterns",
+  "Atomic design",
+  "Anatomia e estados de componentes",
+  "Padrões recorrentes",
+  "Visualização de dados básica"
+ ],
+ "draft": "Visualização de dados básica\nTópico 8 — Interface (UI) › Módulo 30 — Componentes e padrões\nResumo\nEscolher o gráfico pela pergunta (comparação, tendência, composição). Gráfico de pizza raramente é a melhor escolha.\nAnotações\nVocê sabia?\n- Florence Nightingale usou um gráfico de “rosa” em 1858 para mostrar que mais soldados morriam de doenças evitáveis do que em combate.\n- O mapa de Minard sobre a campanha de Napoleão na Rússia é considerado um dos melhores gráficos já feitos.\nExplicando o conceito\n- Escolher o gráfico pela pergunta: comparar, tendência, composição, distribuição.\n- Por que o gráfico de pizza costuma falhar.\n- Cor e rótulos em gráficos.\nReferências\n- Edward Tufte — The Visual Display of Quantitative Information.\n- Cole Nussbaumer Knaflic — Storytelling com Dados.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Interface (UI)/Componentes e padrões/Visualização de dados básica.md"
+}

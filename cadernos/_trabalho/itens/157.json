@@ -1,0 +1,15 @@
+{
+ "topic": "Acessibilidade",
+ "module": "Auditoria e handoff acessível",
+ "name": "Testes com pessoas com deficiência",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Ferramentas automáticas",
+  "Testes com NVDA e VoiceOver",
+  "Anotações para dev",
+  "Testes com pessoas com deficiência"
+ ],
+ "draft": "Testes com pessoas com deficiência\nTópico 9 — Acessibilidade › Módulo 34 — Auditoria e handoff acessível\nResumo\nFerramenta e checklist não substituem quem usa tecnologia assistiva todo dia.\nAnotações\nVocê sabia?\n- O lema “Nada sobre nós sem nós” vem do movimento das pessoas com deficiência e resume por que elas precisam participar do processo.\nExplicando o conceito\n- Como recrutar e remunerar.\n- Adaptar o teste (tempo, ferramentas, local).\n- Respeito e linguagem.\nReferências\n- NN/g — artigos sobre pesquisa com usuários com deficiência.\n- Fable e outras plataformas de teste com PcD.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Acessibilidade/Auditoria e handoff acessível/Testes com pessoas com deficiência.md"
+}

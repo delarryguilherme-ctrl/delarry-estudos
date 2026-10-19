@@ -1,0 +1,14 @@
+{
+ "topic": "Inteligência artificial e UX",
+ "module": "IA no processo de design",
+ "name": "Privacidade de dados",
+ "overview": false,
+ "siblings": [
+  "Onde a IA ajuda",
+  "Personas e pesquisa sintética",
+  "Validar o que a IA produz",
+  "Privacidade de dados"
+ ],
+ "draft": "Privacidade de dados\nTópico 13 — Inteligência artificial e UX › Módulo 44 — IA no processo de design\nResumo\nNão colar dados pessoais de usuários ou informação confidencial em ferramentas sem acordo de uso aprovado pela empresa.\nAnotações\nVocê sabia?\n- Em 2023, funcionários da Samsung colaram código confidencial no ChatGPT, e a empresa restringiu o uso da ferramenta.\nExplicando o conceito\n- Que dados nunca colar (pessoais, confidenciais, de clientes).\n- Política de uso de IA da empresa.\n- Anonimizar antes de usar.\nReferências\n- Caso Samsung e ChatGPT (2023).\n- LGPD e guias da ANPD.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Inteligência artificial e UX/IA no processo de design/Privacidade de dados.md"
+}

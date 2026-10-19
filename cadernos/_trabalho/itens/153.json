@@ -1,0 +1,15 @@
+{
+ "topic": "Acessibilidade",
+ "module": "Auditoria e handoff acessível",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Ferramentas automáticas",
+  "Testes com NVDA e VoiceOver",
+  "Anotações para dev",
+  "Testes com pessoas com deficiência"
+ ],
+ "draft": "Módulo 34 — Auditoria e handoff acessível\nTópico 9 — Acessibilidade\nConteúdos\n- Ferramentas automáticas\n- Testes com NVDA e VoiceOver\n- Anotações para dev\n- Testes com pessoas com deficiência\nLeituras\n- Easy Checks — W3C WAI\n- Testing with Screen Readers — WebAIM\n- axe — Deque\n- WAVE — WebAIM",
+ "out": "cadernos/User Experience Design/Acessibilidade/Auditoria e handoff acessível/Visão geral do módulo.md"
+}

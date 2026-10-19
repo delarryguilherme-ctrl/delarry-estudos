@@ -1,0 +1,14 @@
+{
+ "topic": "Inteligência artificial e UX",
+ "module": "IA no processo de design",
+ "name": "Onde a IA ajuda",
+ "overview": false,
+ "siblings": [
+  "Onde a IA ajuda",
+  "Personas e pesquisa sintética",
+  "Validar o que a IA produz",
+  "Privacidade de dados"
+ ],
+ "draft": "Onde a IA ajuda\nTópico 13 — Inteligência artificial e UX › Módulo 44 — IA no processo de design\nResumo\nRascunhar roteiros, resumir transcrições, gerar variações de layout e de copy, preparar comunicação com stakeholders. Acelera tarefas; não substitui julgamento.\nAnotações\nVocê sabia?\n- Ferramentas como o Figma e o Miro já trazem recursos de IA para resumir notas e gerar variações dentro do próprio arquivo.\nExplicando o conceito\n- Usos práticos: roteiros, resumo de transcrições, variações de copy e de layout.\n- O que continua sendo trabalho do designer (julgamento, contexto).\n- Como montar bons prompts.\nReferências\n- NN/g — artigos sobre IA para UX.\n- Documentação de recursos de IA do Figma.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Inteligência artificial e UX/IA no processo de design/Onde a IA ajuda.md"
+}

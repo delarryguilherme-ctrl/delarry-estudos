@@ -1,0 +1,14 @@
+{
+ "topic": "Colaboração, comunicação e ética",
+ "module": "Ética e responsabilidade",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Dark patterns",
+  "Privacy by design",
+  "Design para impacto social"
+ ],
+ "draft": "Módulo 43 — Ética e responsabilidade\nTópico 12 — Colaboração, comunicação e ética\nConteúdos\n- Dark patterns\n- Privacy by design\n- Design para impacto social\nLeituras\n- Deceptive Design (antigo darkpatterns.org)\n- Autoridade Nacional de Proteção de Dados — ANPD\n- Design Kit — IDEO.org",
+ "out": "cadernos/User Experience Design/Colaboração, comunicação e ética/Ética e responsabilidade/Visão geral do módulo.md"
+}

@@ -1,0 +1,16 @@
+{
+ "topic": "UX Research",
+ "module": "Planejamento de pesquisa",
+ "name": "Plano de pesquisa",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Plano de pesquisa",
+  "Metas do usuário vs metas do negócio",
+  "Tipos de pesquisa",
+  "Recrutamento e amostra",
+  "Ética, consentimento e LGPD"
+ ],
+ "draft": "Plano de pesquisa\nTópico 3 — UX Research › Módulo 09 — Planejamento de pesquisa\nResumo\nDocumento com objetivo, perguntas, método, perfil de participantes e cronograma. Força a decidir o que se quer aprender antes de sair conversando.\nAnotações\nVocê sabia?\n- Sherlock Holmes: “É um erro capital teorizar antes de ter dados.” (Um Escândalo na Boêmia).\nExplicando o conceito\n- Estrutura do plano: objetivo, perguntas, método, participantes, cronograma, entregável.\n- Diferença entre pergunta de pesquisa e pergunta da entrevista.\n- Exemplo de plano de uma página.\nReferências\n- NN/g — “UX Research Plan”.\n- Erika Hall — Just Enough Research.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Planejamento de pesquisa/Plano de pesquisa.md"
+}

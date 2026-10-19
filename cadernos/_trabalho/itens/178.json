@@ -1,0 +1,15 @@
+{
+ "topic": "Testes e validação",
+ "module": "Pós-lançamento",
+ "name": "Ciclos de iteração",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Instrumentação de eventos",
+  "Leitura de métricas após a entrega",
+  "Ciclos de iteração",
+  "Canais de feedback contínuo"
+ ],
+ "draft": "Ciclos de iteração\nTópico 10 — Testes e validação › Módulo 38 — Pós-lançamento\nResumo\nLançar, medir, aprender e ajustar. O trabalho de design não termina no deploy.\nAnotações\nVocê sabia?\n- No Man’s Sky foi muito criticado no lançamento em 2016 e, com anos de atualizações gratuitas, virou exemplo de recuperação.\nExplicando o conceito\n- Lançar, medir, aprender, ajustar.\n- Roadmap de melhorias pós-lançamento.\n- Comunicar mudanças para os usuários.\nReferências\n- Caso No Man’s Sky.\n- Eric Ries — A Startup Enxuta.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Testes e validação/Pós-lançamento/Ciclos de iteração.md"
+}

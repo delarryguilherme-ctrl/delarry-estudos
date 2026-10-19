@@ -1,0 +1,15 @@
+{
+ "topic": "Design systems e entrega para desenvolvimento",
+ "module": "Handoff",
+ "name": "Ferramentas de entrega",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "O que os desenvolvedores precisam",
+  "Designer precisa saber código",
+  "Ferramentas de entrega",
+  "QA de design"
+ ],
+ "draft": "Ferramentas de entrega\nTópico 11 — Design systems e entrega para desenvolvimento › Módulo 40 — Handoff\nResumo\nDev Mode do Figma, specs, anotações e Storybook. A ferramenta importa menos que a conversa contínua com o dev.\nAnotações\nVocê sabia?\n- O Zeplin foi uma das primeiras ferramentas só para handoff; hoje boa parte disso está no Dev Mode do Figma, lançado em 2023.\nExplicando o conceito\n- Dev Mode, anotações, specs, Storybook.\n- Exportação de assets e ícones.\n- Ferramenta vs conversa contínua.\nReferências\n- Documentação do Figma — Dev Mode.\n- Zeplin e Storybook.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Design systems e entrega para desenvolvimento/Handoff/Ferramentas de entrega.md"
+}

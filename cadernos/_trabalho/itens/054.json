@@ -1,0 +1,14 @@
+{
+ "topic": "Síntese e definição do problema",
+ "module": "Definição do problema",
+ "name": "Problem statement",
+ "overview": false,
+ "siblings": [
+  "Problem statement",
+  "How Might We",
+  "Hipóteses testáveis",
+  "Proposta de valor e goal statement"
+ ],
+ "draft": "Problem statement\nTópico 4 — Síntese e definição do problema › Módulo 16 — Definição do problema\nResumo\nFrase que descreve quem tem o problema, qual é e por que importa. Problema mal definido gera solução certa para a pergunta errada.\nAnotações\nVocê sabia?\n- Em Apollo 13, os engenheiros recebem um problema muito bem definido: encaixar um filtro quadrado num buraco redondo usando só o que existe na nave.\nExplicando o conceito\n- Estrutura: quem, qual problema, em que contexto, por que importa.\n- Problema vs solução disfarçada de problema.\n- Como validar o problem statement com o time.\nReferências\n- NN/g — “Problem Statements in UX Discovery”.\n- IDEO — Field Guide to Human-Centered Design.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Síntese e definição do problema/Definição do problema/Problem statement.md"
+}

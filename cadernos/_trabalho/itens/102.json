@@ -1,0 +1,15 @@
+{
+ "topic": "Wireframes, prototipação e ferramentas",
+ "module": "Wireframes",
+ "name": "Para que serve",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Para que serve",
+  "Wireframes em papel",
+  "Wireframes digitais",
+  "Layouts comuns de páginas web"
+ ],
+ "draft": "Para que serve\nTópico 7 — Wireframes, prototipação e ferramentas › Módulo 25 — Wireframes\nResumo\nDefinir estrutura, hierarquia e conteúdo sem distração visual. A discussão fica no \"o quê\" e \"onde\", não na cor.\nAnotações\nVocê sabia?\n- Arquitetos fazem planta baixa antes de escolher piso e cor de parede; o wireframe é a planta baixa da tela.\nExplicando o conceito\n- Objetivo: estrutura, hierarquia, conteúdo e fluxo.\n- O que não entra (cor, imagem final, tipografia definitiva).\n- Como apresentar wireframes sem que o cliente estranhe o visual.\nReferências\n- NN/g — “Wireframing for UX”.\n- Dan Brown — Communicating Design.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Wireframes, prototipação e ferramentas/Wireframes/Para que serve.md"
+}

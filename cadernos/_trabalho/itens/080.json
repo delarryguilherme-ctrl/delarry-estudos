@@ -1,0 +1,17 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "Arquitetura de informação",
+ "name": "Rotulagem",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Organização e taxonomia",
+  "Sistemas de navegação",
+  "Rotulagem",
+  "Busca e filtros",
+  "Sitemap",
+  "Card sorting e tree testing aplicados"
+ ],
+ "draft": "Rotulagem\nTópico 6 — Arquitetura de informação e interação › Módulo 21 — Arquitetura de informação\nResumo\nNomes de menus, botões e seções. Rótulo com jargão interno é a falha de AI mais comum.\nAnotações\nVocê sabia?\n- Muitos sites de órgãos públicos usam nomes de secretarias nos menus, e o cidadão não sabe onde está o que procura; o gov.br reorganizou tudo por serviço.\nExplicando o conceito\n- Rótulos claros, curtos e na língua do usuário.\n- Jargão interno e siglas.\n- Como testar rótulos (card sorting, tree testing, first click).\nReferências\n- NN/g — “Better Link Labels: 4Ss for Encouraging Clicks”.\n- Caso gov.br.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/Arquitetura de informação/Rotulagem.md"
+}

@@ -1,0 +1,16 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "UX Writing",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Voz e tom",
+  "Microcopy",
+  "Mensagens de erro",
+  "Nomenclatura e consistência",
+  "Content-first design"
+ ],
+ "draft": "Módulo 24 — UX Writing\nTópico 6 — Arquitetura de informação e interação\nConteúdos\n- Voz e tom\n- Microcopy\n- Mensagens de erro\n- Nomenclatura e consistência\n- Content-first design\nLeituras\n- Error-Message Guidelines — NN/g\n- The Four Dimensions of Tone of Voice — NN/g\n- Mailchimp Content Style Guide: Voice and Tone",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/UX Writing/Visão geral do módulo.md"
+}

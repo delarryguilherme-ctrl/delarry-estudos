@@ -1,0 +1,16 @@
+{
+ "topic": "UX Research",
+ "module": "Métodos qualitativos",
+ "name": "Card sorting",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Entrevistas em profundidade",
+  "Field study e contextual inquiry",
+  "Diary studies",
+  "Focus group",
+  "Card sorting"
+ ],
+ "draft": "Card sorting\nTópico 3 — UX Research › Módulo 11 — Métodos qualitativos\nResumo\nParticipantes agrupam e nomeiam cartões de conteúdo. Mostra como as pessoas organizam a informação na cabeça.\nAnotações\nVocê sabia?\n- O Chapéu Seletor de Harry Potter faz um card sorting às avessas: ele decide a casa; no card sorting, quem escolhe os grupos é a pessoa.\nExplicando o conceito\n- Aberto, fechado e híbrido.\n- Como preparar os cartões e quantos participantes chamar.\n- Ler os resultados: matriz de similaridade e dendrograma.\nReferências\n- Donna Spencer — Card Sorting.\n- NN/g — “Card Sorting: Uncover Users’ Mental Models”.\n- Optimal Workshop — OptimalSort.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Métodos qualitativos/Card sorting.md"
+}

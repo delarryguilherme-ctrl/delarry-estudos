@@ -1,0 +1,14 @@
+{
+ "topic": "Colaboração, comunicação e ética",
+ "module": "Ética e responsabilidade",
+ "name": "Dark patterns",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Dark patterns",
+  "Privacy by design",
+  "Design para impacto social"
+ ],
+ "draft": "Dark patterns\nTópico 12 — Colaboração, comunicação e ética › Módulo 43 — Ética e responsabilidade\nResumo\nInterfaces que enganam o usuário a agir contra o próprio interesse (cancelamento escondido, opção pré-marcada). Geram ganho de curto prazo e risco jurídico.\nAnotações\nVocê sabia?\n- O termo “dark patterns” foi criado por Harry Brignull em 2010; hoje o site dele se chama deceptive.design.\n- Em 2023 a FTC processou a Amazon por dificultar o cancelamento do Prime; o fluxo interno se chamava “Iliad”, em referência à Ilíada.\nExplicando o conceito\n- Tipos: confirmshaming, roach motel, opção pré-marcada, custos escondidos.\n- Impacto na confiança e risco jurídico.\n- Como argumentar contra no time.\nReferências\n- Harry Brignull — Deceptive Patterns (livro e site).\n- Caso FTC vs Amazon (2023).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Colaboração, comunicação e ética/Ética e responsabilidade/Dark patterns.md"
+}

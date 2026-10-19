@@ -1,0 +1,17 @@
+{
+ "topic": "Wireframes, prototipação e ferramentas",
+ "module": "Prototipação",
+ "name": "Protótipo em papel",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Baixa, média e alta fidelidade",
+  "Protótipo em papel",
+  "Baixa fidelidade no Figma",
+  "Mockups e alta fidelidade",
+  "Interações, transições e gestos",
+  "Protótipo em código ou Framer"
+ ],
+ "draft": "Protótipo em papel\nTópico 7 — Wireframes, prototipação e ferramentas › Módulo 26 — Prototipação\nResumo\nTelas desenhadas que o facilitador troca conforme o participante \"clica\". Testa fluxo em minutos.\nAnotações\nVocê sabia?\n- Em testes de “Mágico de Oz”, uma pessoa escondida faz o papel do sistema, como o homem atrás da cortina no filme.\nExplicando o conceito\n- Como preparar: telas, peças soltas, estados.\n- Papéis no teste: facilitador, “computador”, observador.\n- Vantagens: rápido, barato, as pessoas criticam sem medo.\nReferências\n- Carolyn Snyder — Paper Prototyping.\n- NN/g — “Paper Prototyping: Getting User Data Before You Code”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Wireframes, prototipação e ferramentas/Prototipação/Protótipo em papel.md"
+}

@@ -1,0 +1,17 @@
+{
+ "topic": "Testes e validação",
+ "module": "Testes de usabilidade",
+ "name": "Roteiro e tarefas",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Ferramentas de teste",
+  "Ferramentas na prática",
+  "Roteiro e tarefas",
+  "Teste moderado",
+  "Teste não moderado",
+  "Métricas e severidade"
+ ],
+ "draft": "Roteiro e tarefas\nTópico 10 — Testes e validação › Módulo 35 — Testes de usabilidade\nResumo\nTarefas realistas, sem dar a resposta no enunciado (\"encontre o boleto de março\", não \"clique em Financeiro\").\nAnotações\nVocê sabia?\n- Steve Krug defende testar um pouco todo mês, com poucos participantes, em vez de um teste enorme por ano.\nExplicando o conceito\n- Estrutura do roteiro: boas-vindas, aquecimento, tarefas, perguntas finais.\n- Tarefas realistas, com cenário e sem dar a resposta.\n- Pensar em voz alta e como incentivar.\nReferências\n- Steve Krug — Rocket Surgery Made Easy.\n- NN/g — “Write Better Qualitative Usability Tasks”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Testes e validação/Testes de usabilidade/Roteiro e tarefas.md"
+}

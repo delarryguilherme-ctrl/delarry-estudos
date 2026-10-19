@@ -1,0 +1,15 @@
+{
+ "topic": "Testes e validação",
+ "module": "Testes rápidos e complementares",
+ "name": "Teste de preferência",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "First click test",
+  "5-second test",
+  "Teste de preferência",
+  "Tree testing"
+ ],
+ "draft": "Teste de preferência\nTópico 10 — Testes e validação › Módulo 36 — Testes rápidos e complementares\nResumo\nPergunta qual de duas versões a pessoa prefere. Mede gosto declarado; não prova que a versão funciona melhor.\nAnotações\nVocê sabia?\n- No “Desafio Pepsi”, as pessoas preferiam a Pepsi num gole só, mas isso não queria dizer que preferiam beber uma lata inteira.\nExplicando o conceito\n- Como montar: duas versões e uma pergunta clara.\n- Sempre perguntar o porquê.\n- Limites: preferência declarada não é desempenho.\nReferências\n- Caso do Desafio Pepsi (Malcolm Gladwell — Blink).\n- Lyssna — preference tests.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Testes e validação/Testes rápidos e complementares/Teste de preferência.md"
+}

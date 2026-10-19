@@ -1,0 +1,16 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "Design de interação",
+ "name": "Feedback e microinterações",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Feedback e microinterações",
+  "Padrões de formulário",
+  "Motion com propósito",
+  "Navegação mobile vs desktop",
+  "Gestos e input"
+ ],
+ "draft": "Feedback e microinterações\nTópico 6 — Arquitetura de informação e interação › Módulo 23 — Design de interação\nResumo\nRespostas pequenas a ações do usuário (botão pressionado, item salvo). Confirmam que o sistema entendeu.\nAnotações\nVocê sabia?\n- O som da moeda do Mario é uma microinteração perfeita: confirma a ação na hora e dá vontade de repetir.\nExplicando o conceito\n- Estrutura de Dan Saffer: gatilho, regras, feedback, loops e modos.\n- Feedback visual, sonoro e tátil.\n- Exemplos: curtir, puxar para atualizar, salvar.\nReferências\n- Dan Saffer — Microinteractions.\n- NN/g — “Microinteractions in User Experience”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/Design de interação/Feedback e microinterações.md"
+}

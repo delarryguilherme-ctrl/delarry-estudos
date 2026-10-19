@@ -1,0 +1,15 @@
+{
+ "topic": "Wireframes, prototipação e ferramentas",
+ "module": "Figma",
+ "name": "Básico",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Básico",
+  "Avançado",
+  "Prototipação no Figma",
+  "Plugins e colaboração"
+ ],
+ "draft": "Básico\nTópico 7 — Wireframes, prototipação e ferramentas › Módulo 27 — Figma\nResumo\nFrames, camadas, estilos, auto layout e constraints. Auto layout é o recurso que separa arquivo amador de arquivo profissional.\nAnotações\nVocê sabia?\n- O Figma foi fundado em 2012 por Dylan Field e Evan Wallace e lançado ao público em 2016, rodando direto no navegador.\nExplicando o conceito\n- Frames, camadas, grupos, estilos.\n- Auto layout: direção, espaçamento, padding, redimensionamento.\n- Constraints e responsividade simples.\nReferências\n- Canal oficial do Figma no YouTube.\n- Documentação do Figma — Auto layout.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Wireframes, prototipação e ferramentas/Figma/Básico.md"
+}

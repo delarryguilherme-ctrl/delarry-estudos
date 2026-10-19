@@ -1,0 +1,13 @@
+{
+ "topic": "Síntese e definição do problema",
+ "module": "Jornadas e contexto",
+ "name": "Service blueprint",
+ "overview": false,
+ "siblings": [
+  "Customer journey map",
+  "Service blueprint",
+  "Storyboards"
+ ],
+ "draft": "Service blueprint\nTópico 4 — Síntese e definição do problema › Módulo 15 — Jornadas e contexto\nResumo\nEstende a jornada com bastidores: pessoas, sistemas e processos que sustentam cada etapa. Essencial quando o problema não está na tela.\nAnotações\nVocê sabia?\n- O service blueprint foi proposto por G. Lynn Shostack num artigo da Harvard Business Review em 1984.\n- Em Ratatouille, o salão do restaurante é o “palco” e a cozinha é o “bastidor”: o blueprint mostra os dois.\nExplicando o conceito\n- Camadas: ações do cliente, linha de interação, frontstage, linha de visibilidade, backstage, processos de suporte.\n- Quando usar (problema não está só na tela).\n- Exemplo: pedido em delivery de comida.\nReferências\n- G. Lynn Shostack — “Designing Services That Deliver” (HBR, 1984).\n- NN/g — “Service Blueprints: Definition”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Síntese e definição do problema/Jornadas e contexto/Service blueprint.md"
+}

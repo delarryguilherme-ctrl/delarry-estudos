@@ -1,0 +1,17 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "Arquitetura de informação",
+ "name": "Sitemap",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Organização e taxonomia",
+  "Sistemas de navegação",
+  "Rotulagem",
+  "Busca e filtros",
+  "Sitemap",
+  "Card sorting e tree testing aplicados"
+ ],
+ "draft": "Sitemap\nTópico 6 — Arquitetura de informação e interação › Módulo 21 — Arquitetura de informação\nResumo\nMapa hierárquico de páginas e seções. Base para navegação e para discutir escopo.\nAnotações\nVocê sabia?\n- O mapa do metrô de Londres de Harry Beck (1931) ignora distâncias reais e mostra só a estrutura das conexões, assim como um bom sitemap.\nExplicando o conceito\n- Sitemap visual vs XML (de SEO).\n- Níveis de profundidade vs largura.\n- Sitemap como ferramenta de escopo e de conversa.\nReferências\n- NN/g — “Sitemaps: Definition”.\n- Caso do mapa do metrô de Harry Beck.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/Arquitetura de informação/Sitemap.md"
+}

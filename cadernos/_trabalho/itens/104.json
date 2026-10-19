@@ -1,0 +1,15 @@
+{
+ "topic": "Wireframes, prototipação e ferramentas",
+ "module": "Wireframes",
+ "name": "Wireframes digitais",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Para que serve",
+  "Wireframes em papel",
+  "Wireframes digitais",
+  "Layouts comuns de páginas web"
+ ],
+ "draft": "Wireframes digitais\nTópico 7 — Wireframes, prototipação e ferramentas › Módulo 25 — Wireframes\nResumo\nMais precisos, compartilháveis e reaproveitáveis. Entram quando a direção já está mais clara.\nAnotações\nVocê sabia?\n- O Balsamiq ficou famoso por fazer wireframes digitais com aparência de rascunho de propósito, para ninguém confundir com o visual final.\nExplicando o conceito\n- Ferramentas: Figma, Balsamiq, Whimsical.\n- Kits de wireframe e componentes cinza.\n- Nível de detalhe adequado.\nReferências\n- Documentação do Balsamiq sobre fidelidade.\n- Kits de wireframe da comunidade do Figma.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Wireframes, prototipação e ferramentas/Wireframes/Wireframes digitais.md"
+}

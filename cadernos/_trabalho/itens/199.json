@@ -1,0 +1,15 @@
+{
+ "topic": "Colaboração, comunicação e ética",
+ "module": "Apresentação e defesa de decisões",
+ "name": "Registro de decisões",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Apresentar para stakeholders",
+  "Comportamento profissional",
+  "Negociação de trade-offs",
+  "Registro de decisões"
+ ],
+ "draft": "Registro de decisões\nTópico 12 — Colaboração, comunicação e ética › Módulo 42 — Apresentação e defesa de decisões\nResumo\nAnotar decisão, alternativas consideradas e motivo. Evita rediscutir o mesmo assunto a cada sprint.\nAnotações\nVocê sabia?\n- Times de software usam ADRs (registros de decisão) para não rediscutir o mesmo assunto a cada nova pessoa no time.\nExplicando o conceito\n- O que registrar: decisão, contexto, alternativas, motivo, data.\n- Onde guardar.\n- Revisar decisões quando o contexto muda.\nReferências\n- Michael Nygard — “Documenting Architecture Decisions”.\n- Modelos de decision log.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Colaboração, comunicação e ética/Apresentação e defesa de decisões/Registro de decisões.md"
+}

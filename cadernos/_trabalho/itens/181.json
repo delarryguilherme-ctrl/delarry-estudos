@@ -1,0 +1,16 @@
+{
+ "topic": "Design systems e entrega para desenvolvimento",
+ "module": "Do styleguide ao design system",
+ "name": "Styleguide",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Styleguide",
+  "Por que ter um design system",
+  "Design tokens",
+  "Biblioteca e documentação",
+  "Governança, contribuição e versionamento"
+ ],
+ "draft": "Styleguide\nTópico 11 — Design systems e entrega para desenvolvimento › Módulo 39 — Do styleguide ao design system\nResumo\nDocumento com cores, tipografia, logos e regras visuais. É estático e descreve aparência.\nAnotações\nVocê sabia?\n- O manual de identidade da NASA de 1975 (o logo “worm”) foi relançado como livro em 2015 e virou objeto de coleção.\nExplicando o conceito\n- O que entra num styleguide: logo, cores, tipografia, imagens, tom.\n- Styleguide vs design system.\n- Exemplos públicos.\nReferências\n- NASA Graphics Standards Manual (reedição de 2015).\n- Alina Wheeler — Design de Identidade da Marca.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Design systems e entrega para desenvolvimento/Do styleguide ao design system/Styleguide.md"
+}

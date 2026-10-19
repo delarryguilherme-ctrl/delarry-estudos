@@ -1,0 +1,15 @@
+{
+ "topic": "Testes e validação",
+ "module": "Crítica, iteração e documentação",
+ "name": "Iterar com base em evidência",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Critique session",
+  "Dar e receber feedback",
+  "Iterar com base em evidência",
+  "Documentar testes e decisões"
+ ],
+ "draft": "Iterar com base em evidência\nTópico 10 — Testes e validação › Módulo 37 — Crítica, iteração e documentação\nResumo\nCada mudança deve responder a um achado. Iterar por opinião vira ciclo infinito.\nAnotações\nVocê sabia?\n- James Dyson fez 5.127 protótipos até chegar ao aspirador sem saco que o deixou famoso.\nExplicando o conceito\n- Ciclo: testar → aprender → ajustar → testar de novo.\n- Registrar o que mudou e por quê.\n- Saber quando parar de iterar.\nReferências\n- Caso James Dyson e os 5.127 protótipos.\n- NN/g — “Iterative Design of User Interfaces”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Testes e validação/Crítica, iteração e documentação/Iterar com base em evidência.md"
+}

@@ -1,0 +1,15 @@
+{
+ "topic": "Testes e validação",
+ "module": "Testes rápidos e complementares",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "First click test",
+  "5-second test",
+  "Teste de preferência",
+  "Tree testing"
+ ],
+ "draft": "Módulo 36 — Testes rápidos e complementares\nTópico 10 — Testes e validação\nConteúdos\n- First click test\n- 5-second test\n- Teste de preferência\n- Tree testing\nLeituras\n- First-Click Testing — NN/g\n- Lyssna — first click, 5-second e preference tests\n- Tree Testing — NN/g",
+ "out": "cadernos/User Experience Design/Testes e validação/Testes rápidos e complementares/Visão geral do módulo.md"
+}

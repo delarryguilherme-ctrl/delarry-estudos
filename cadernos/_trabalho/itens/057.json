@@ -1,0 +1,14 @@
+{
+ "topic": "Síntese e definição do problema",
+ "module": "Definição do problema",
+ "name": "Proposta de valor e goal statement",
+ "overview": false,
+ "siblings": [
+  "Problem statement",
+  "How Might We",
+  "Hipóteses testáveis",
+  "Proposta de valor e goal statement"
+ ],
+ "draft": "Proposta de valor e goal statement\nTópico 4 — Síntese e definição do problema › Módulo 16 — Definição do problema\nResumo\nA proposta diz por que alguém escolheria a solução; o goal statement diz o que o design deve alcançar e como será medido.\nAnotações\nVocê sabia?\n- O slogan do primeiro iPod (“1.000 músicas no seu bolso”, 2001) é uma proposta de valor em poucas palavras.\nExplicando o conceito\n- Proposta de valor: para quem, qual problema, por que esta solução.\n- Goal statement: o que o design precisa alcançar e como medir.\n- Ligação com o Value Proposition Canvas.\nReferências\n- Osterwalder — Value Proposition Design.\n- Exemplos de propostas de valor de produtos conhecidos.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Síntese e definição do problema/Definição do problema/Proposta de valor e goal statement.md"
+}

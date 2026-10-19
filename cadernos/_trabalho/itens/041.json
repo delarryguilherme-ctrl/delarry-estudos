@@ -1,0 +1,15 @@
+{
+ "topic": "UX Research",
+ "module": "Operação de pesquisa",
+ "name": "Ferramentas de pesquisa",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Ferramentas de pesquisa",
+  "Ferramentas na prática",
+  "Como anotar durante sessões",
+  "Repositório e ResearchOps"
+ ],
+ "draft": "Ferramentas de pesquisa\nTópico 3 — UX Research › Módulo 13 — Operação de pesquisa\nResumo\nGravação, transcrição, testes remotos, surveys, repositório. Escolha pela pergunta de pesquisa, não pela ferramenta da moda.\nAnotações\nVocê sabia?\n- Antes das ferramentas online, testes de usabilidade eram feitos em laboratórios com espelho falso, onde o time observava escondido.\nExplicando o conceito\n- Categorias: recrutamento, agenda, gravação, transcrição, testes remotos, surveys, repositório.\n- Critérios de escolha: pergunta, orçamento, privacidade (LGPD).\n- Opções gratuitas para quem está começando.\nReferências\n- Comparativos de ferramentas de UX Research (UX Tools).\n- Sites: Maze, Lookback, Dovetail, Google Forms.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Operação de pesquisa/Ferramentas de pesquisa.md"
+}

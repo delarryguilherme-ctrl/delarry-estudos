@@ -1,0 +1,15 @@
+{
+ "topic": "Design systems e entrega para desenvolvimento",
+ "module": "Handoff",
+ "name": "Designer precisa saber código",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "O que os desenvolvedores precisam",
+  "Designer precisa saber código",
+  "Ferramentas de entrega",
+  "QA de design"
+ ],
+ "draft": "Designer precisa saber código?\nTópico 11 — Design systems e entrega para desenvolvimento › Módulo 40 — Handoff\nResumo\nNão precisa programar, mas precisa ler HTML e CSS e entender componentes. Isso melhora conversas e evita propor o inviável.\nAnotações\nVocê sabia?\n- Muitos designers famosos de interface começaram programando sites nos anos 1990, quando não existia separação entre as funções.\nExplicando o conceito\n- O básico de HTML, CSS e componentes.\n- Como saber código melhora a conversa e as propostas.\n- Onde aprender sem virar desenvolvedor.\nReferências\n- MDN Web Docs — HTML e CSS básico.\n- Josh Comeau — artigos e cursos de CSS.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Design systems e entrega para desenvolvimento/Handoff/Designer precisa saber código.md"
+}

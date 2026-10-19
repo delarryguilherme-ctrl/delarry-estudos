@@ -1,0 +1,16 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Componentes e padrões",
+ "name": "Atomic design",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Design patterns",
+  "Atomic design",
+  "Anatomia e estados de componentes",
+  "Padrões recorrentes",
+  "Visualização de dados básica"
+ ],
+ "draft": "Atomic design\nTópico 8 — Interface (UI) › Módulo 30 — Componentes e padrões\nResumo\nÁtomos, moléculas, organismos, templates e páginas. Modelo mental para montar interfaces a partir de partes reutilizáveis.\nAnotações\nVocê sabia?\n- Brad Frost publicou o Atomic Design em 2013, inspirado na química: átomos formam moléculas, que formam organismos.\nExplicando o conceito\n- Os 5 níveis: átomos, moléculas, organismos, templates, páginas.\n- Como usar como modelo mental (não como regra rígida).\n- Relação com bibliotecas de componentes.\nReferências\n- Brad Frost — Atomic Design (livro grátis online).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Interface (UI)/Componentes e padrões/Atomic design.md"
+}

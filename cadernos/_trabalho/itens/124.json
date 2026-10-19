@@ -1,0 +1,17 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Fundamentos visuais",
+ "name": "Grids e layout",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Hierarquia visual",
+  "Grids e layout",
+  "Espaçamento e sistema de 8pt",
+  "Tipografia",
+  "Cor",
+  "Iconografia e imagens"
+ ],
+ "draft": "Grids e layout\nTópico 8 — Interface (UI) › Módulo 29 — Fundamentos visuais\nResumo\nColunas, margens e gutters dão alinhamento e ritmo. Grid é ferramenta de consistência, não prisão.\nAnotações\nVocê sabia?\n- O livro Grid Systems in Graphic Design, de Josef Müller-Brockmann (1981), é a base do design suíço que influencia interfaces até hoje.\nExplicando o conceito\n- Colunas, gutters, margens e grade de linha de base.\n- Grid de 12 colunas e por que ele é tão usado.\n- Quando quebrar o grid de propósito.\nReferências\n- Josef Müller-Brockmann — Grid Systems in Graphic Design.\n- Material Design — Layout grid.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Interface (UI)/Fundamentos visuais/Grids e layout.md"
+}

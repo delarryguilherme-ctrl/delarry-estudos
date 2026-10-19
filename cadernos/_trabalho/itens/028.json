@@ -1,0 +1,16 @@
+{
+ "topic": "UX Research",
+ "module": "Métodos qualitativos",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Entrevistas em profundidade",
+  "Field study e contextual inquiry",
+  "Diary studies",
+  "Focus group",
+  "Card sorting"
+ ],
+ "draft": "Módulo 11 — Métodos qualitativos\nTópico 3 — UX Research\nConteúdos\n- Entrevistas em profundidade\n- Field study e contextual inquiry\n- Diary studies\n- Focus group\n- Card sorting\nLeituras\n- Interviewing Users — NN/g\n- Field Studies — NN/g\n- Diary Studies — NN/g\n- The Use and Misuse of Focus Groups — NN/g\n- Card Sorting: Uncover Users' Mental Models — NN/g",
+ "out": "cadernos/User Experience Design/UX Research/Métodos qualitativos/Visão geral do módulo.md"
+}

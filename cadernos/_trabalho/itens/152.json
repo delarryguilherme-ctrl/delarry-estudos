@@ -1,0 +1,17 @@
+{
+ "topic": "Acessibilidade",
+ "module": "Acessibilidade na prática",
+ "name": "Movimento reduzido",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Contraste",
+  "Teclado e ordem de foco",
+  "Leitores de tela e HTML semântico",
+  "Alvos de toque",
+  "Formulários acessíveis",
+  "Movimento reduzido"
+ ],
+ "draft": "Movimento reduzido\nTópico 9 — Acessibilidade › Módulo 33 — Acessibilidade na prática\nResumo\nRespeitar a preferência de sistema \"reduzir movimento\". Animação forte pode causar enjoo e desorientação.\nAnotações\nVocê sabia?\n- Quando o iOS 7 (2013) trouxe o efeito de paralaxe, muitas pessoas relataram enjoo, e a Apple adicionou a opção “Reduzir movimento”.\nExplicando o conceito\n- Distúrbios vestibulares e sensibilidade a movimento.\n- A preferência prefers-reduced-motion.\n- Alternativas: transições suaves, sem zoom e sem paralaxe.\nReferências\n- W3C — critério 2.3.3 (Animation from Interactions).\n- web.dev — prefers-reduced-motion.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Acessibilidade/Acessibilidade na prática/Movimento reduzido.md"
+}

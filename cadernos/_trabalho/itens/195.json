@@ -1,0 +1,15 @@
+{
+ "topic": "Colaboração, comunicação e ética",
+ "module": "Apresentação e defesa de decisões",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Apresentar para stakeholders",
+  "Comportamento profissional",
+  "Negociação de trade-offs",
+  "Registro de decisões"
+ ],
+ "draft": "Módulo 42 — Apresentação e defesa de decisões\nTópico 12 — Colaboração, comunicação e ética\nConteúdos\n- Apresentar para stakeholders\n- Comportamento profissional\n- Negociação de trade-offs\n- Registro de decisões\nLeituras\n- Architectural Decision Records (modelo adaptável para decisões de design)\n- Storytelling with Data",
+ "out": "cadernos/User Experience Design/Colaboração, comunicação e ética/Apresentação e defesa de decisões/Visão geral do módulo.md"
+}

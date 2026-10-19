@@ -1,0 +1,15 @@
+{
+ "topic": "Wireframes, prototipação e ferramentas",
+ "module": "Figma",
+ "name": "Avançado",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Básico",
+  "Avançado",
+  "Prototipação no Figma",
+  "Plugins e colaboração"
+ ],
+ "draft": "Avançado\nTópico 7 — Wireframes, prototipação e ferramentas › Módulo 27 — Figma\nResumo\nComponentes, variants, variables e modes. Permitem temas, estados e sistemas escaláveis.\nAnotações\nVocê sabia?\n- Variables e modes foram anunciados no Config 2023 e permitiram fazer temas claro/escuro e dados dinâmicos dentro do Figma.\nExplicando o conceito\n- Componentes, instâncias, propriedades e variants.\n- Variables e modes para temas e estados.\n- Organização de arquivos e bibliotecas.\nReferências\n- Documentação do Figma — Variables e Components.\n- Palestras do Config.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Wireframes, prototipação e ferramentas/Figma/Avançado.md"
+}

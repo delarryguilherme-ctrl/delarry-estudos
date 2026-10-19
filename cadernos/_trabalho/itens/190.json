@@ -1,0 +1,15 @@
+{
+ "topic": "Design systems e entrega para desenvolvimento",
+ "module": "Handoff",
+ "name": "QA de design",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "O que os desenvolvedores precisam",
+  "Designer precisa saber código",
+  "Ferramentas de entrega",
+  "QA de design"
+ ],
+ "draft": "QA de design\nTópico 11 — Design systems e entrega para desenvolvimento › Módulo 40 — Handoff\nResumo\nRevisar o que foi implementado contra o design antes do lançamento. Pequenos desvios acumulados viram produto inconsistente.\nAnotações\nVocê sabia?\n- Em séries de TV existem pessoas responsáveis só por continuidade, para que um copo não mude de lugar entre uma cena e outra; QA de design é parecido.\nExplicando o conceito\n- Quando fazer (antes de lançar).\n- Checklist: espaçamento, tipografia, estados, responsivo, acessibilidade.\n- Como reportar diferenças sem atrito.\nReferências\n- Artigos sobre design QA (Smashing Magazine).\n- Modelos de checklist de design QA.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Design systems e entrega para desenvolvimento/Handoff/QA de design.md"
+}

@@ -1,0 +1,16 @@
+{
+ "topic": "UX Research",
+ "module": "Métodos qualitativos",
+ "name": "Diary studies",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Entrevistas em profundidade",
+  "Field study e contextual inquiry",
+  "Diary studies",
+  "Focus group",
+  "Card sorting"
+ ],
+ "draft": "Diary studies\nTópico 3 — UX Research › Módulo 11 — Métodos qualitativos\nResumo\nParticipantes registram experiências ao longo de dias ou semanas. Captura comportamento que se desenrola no tempo.\nAnotações\nVocê sabia?\n- O Diário de Anne Frank é um registro de dentro, no momento em que as coisas acontecem, algo que nenhuma entrevista feita depois consegue captar.\nExplicando o conceito\n- Quando usar: comportamento que acontece ao longo do tempo.\n- Como montar: duração, lembretes, perguntas, formato (foto, texto, áudio).\n- Como manter participantes engajados até o fim.\nReferências\n- NN/g — “Diary Studies: Understanding Long-Term User Behavior”.\n- Ferramentas: dscout, WhatsApp, formulários.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Métodos qualitativos/Diary studies.md"
+}

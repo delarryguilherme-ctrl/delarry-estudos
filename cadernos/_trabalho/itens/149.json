@@ -1,0 +1,17 @@
+{
+ "topic": "Acessibilidade",
+ "module": "Acessibilidade na prática",
+ "name": "Leitores de tela e HTML semântico",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Contraste",
+  "Teclado e ordem de foco",
+  "Leitores de tela e HTML semântico",
+  "Alvos de toque",
+  "Formulários acessíveis",
+  "Movimento reduzido"
+ ],
+ "draft": "Leitores de tela e HTML semântico\nTópico 9 — Acessibilidade › Módulo 33 — Acessibilidade na prática\nResumo\nLeitores de tela leem a estrutura do código (títulos, listas, botões, rótulos). O designer define essa estrutura nas anotações.\nAnotações\nVocê sabia?\n- O NVDA é um leitor de tela gratuito e de código aberto, criado em 2006 por dois desenvolvedores cegos da Austrália.\nExplicando o conceito\n- Como o leitor de tela lê: títulos, listas, regiões, botões, links.\n- HTML semântico vs “div para tudo”.\n- O que o designer anota: títulos, rótulos, ordem.\nReferências\n- WebAIM — Screen Reader User Survey.\n- MDN — HTML semântico e ARIA.\n- NV Access — NVDA.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Acessibilidade/Acessibilidade na prática/Leitores de tela e HTML semântico.md"
+}

@@ -1,0 +1,15 @@
+{
+ "topic": "UX Research",
+ "module": "Operação de pesquisa",
+ "name": "Repositório e ResearchOps",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Ferramentas de pesquisa",
+  "Ferramentas na prática",
+  "Como anotar durante sessões",
+  "Repositório e ResearchOps"
+ ],
+ "draft": "Repositório e ResearchOps\nTópico 3 — UX Research › Módulo 13 — Operação de pesquisa\nResumo\nGuardar achados de forma pesquisável para não repetir estudos. ResearchOps é a operação que sustenta pesquisa em escala.\nAnotações\nVocê sabia?\n- Tomer Sharon criou no WeWork o “Polaris”, um repositório de “pepitas” de pesquisa, e a ideia virou o conceito de atomic research.\nExplicando o conceito\n- O que guardar: achados, evidências, estudos, participantes.\n- Atomic research: experimento → fato → insight → recomendação.\n- ResearchOps: processos, ferramentas, governança e recrutamento contínuo.\nReferências\n- ResearchOps Community — “The Eight Pillars of User Research”.\n- Daniel Pidcock — Atomic Research.\n- Dovetail e Condens (ferramentas de repositório).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Operação de pesquisa/Repositório e ResearchOps.md"
+}

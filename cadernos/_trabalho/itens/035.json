@@ -1,0 +1,16 @@
+{
+ "topic": "UX Research",
+ "module": "Métodos quantitativos",
+ "name": "Surveys",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Surveys",
+  "Product analytics",
+  "Heatmaps e gravação de sessões",
+  "Questionários padronizados",
+  "AB testing e significância"
+ ],
+ "draft": "Surveys\nTópico 3 — UX Research › Módulo 12 — Métodos quantitativos\nResumo\nQuestionários escaláveis para medir atitudes e frequências. Pergunta enviesada gera dado enviesado em escala.\nAnotações\nVocê sabia?\n- O programa americano Family Feud é todo baseado em pesquisas do tipo “perguntamos a 100 pessoas…”.\nExplicando o conceito\n- Quando usar survey e quando não usar.\n- Como escrever perguntas sem viés (uma ideia por pergunta, escalas equilibradas).\n- Tamanho de amostra e taxa de resposta.\nReferências\n- Caroline Jarrett — Surveys That Work.\n- NN/g — “28 Tips for Creating Great Qualitative Surveys”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Métodos quantitativos/Surveys.md"
+}

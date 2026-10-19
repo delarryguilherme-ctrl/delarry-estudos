@@ -1,0 +1,16 @@
+{
+ "topic": "UX Research",
+ "module": "Planejamento de pesquisa",
+ "name": "Tipos de pesquisa",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Plano de pesquisa",
+  "Metas do usuário vs metas do negócio",
+  "Tipos de pesquisa",
+  "Recrutamento e amostra",
+  "Ética, consentimento e LGPD"
+ ],
+ "draft": "Tipos de pesquisa\nTópico 3 — UX Research › Módulo 09 — Planejamento de pesquisa\nResumo\nGenerativa descobre problemas; avaliativa testa soluções. Quali explica o porquê; quanti mede o quanto. Atitude é o que as pessoas dizem; comportamento é o que fazem.\nAnotações\nVocê sabia?\n- O mapa de métodos de Christian Rohrer (NN/g) organiza mais de 20 métodos em dois eixos: atitude vs comportamento e quali vs quanti.\nExplicando o conceito\n- Generativa vs avaliativa.\n- Qualitativa vs quantitativa; atitude vs comportamento.\n- Como escolher o método pela pergunta.\nReferências\n- NN/g — “When to Use Which User-Experience Research Methods” (Rohrer).\n- Erika Hall — Just Enough Research.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Planejamento de pesquisa/Tipos de pesquisa.md"
+}

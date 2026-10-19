@@ -1,0 +1,15 @@
+{
+ "topic": "UX Research",
+ "module": "Desk research e análise competitiva",
+ "name": "Desk research",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Desk research",
+  "Competidores diretos e indiretos",
+  "Benchmarking",
+  "Análise competitiva na prática"
+ ],
+ "draft": "Desk research\nTópico 3 — UX Research › Módulo 10 — Desk research e análise competitiva\nResumo\nLevantar o que já existe: dados internos, estudos de mercado, artigos, pesquisas anteriores. Evita gastar entrevistas para descobrir o óbvio.\nAnotações\nVocê sabia?\n- Bibliotecários de referência fazem “desk research” há séculos: antes de criar algo novo, procurar o que já se sabe.\nExplicando o conceito\n- Fontes: dados internos, suporte, pesquisas anteriores, relatórios de mercado, artigos.\n- Como registrar fontes e separar fato de opinião.\n- O que perguntar depois na pesquisa com usuários.\nReferências\n- NN/g — “Secondary Research in UX”.\n- Fontes de dados públicos (IBGE, Cetic.br, relatórios de mercado).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Desk research e análise competitiva/Desk research.md"
+}

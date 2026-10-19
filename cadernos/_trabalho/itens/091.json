@@ -1,0 +1,16 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "Design de interação",
+ "name": "Padrões de formulário",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Feedback e microinterações",
+  "Padrões de formulário",
+  "Motion com propósito",
+  "Navegação mobile vs desktop",
+  "Gestos e input"
+ ],
+ "draft": "Padrões de formulário\nTópico 6 — Arquitetura de informação e interação › Módulo 23 — Design de interação\nResumo\nRótulos visíveis, validação no momento certo, agrupamento lógico e mensagens claras. Formulário é onde se perde mais conversão.\nAnotações\nVocê sabia?\n- O “botão de 300 milhões de dólares” de Jared Spool é um caso de formulário: tirar o cadastro obrigatório do checkout aumentou muito as vendas.\nExplicando o conceito\n- Rótulo acima do campo, uma coluna, campos agrupados.\n- Validação inline no momento certo.\n- Reduzir campos e usar valores padrão.\nReferências\n- Luke Wroblewski — Web Form Design.\n- Adam Silver — Form Design Patterns.\n- Baymard Institute — pesquisas sobre checkout.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/Design de interação/Padrões de formulário.md"
+}

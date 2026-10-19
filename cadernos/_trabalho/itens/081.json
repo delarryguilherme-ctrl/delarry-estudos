@@ -1,0 +1,17 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "Arquitetura de informação",
+ "name": "Busca e filtros",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Organização e taxonomia",
+  "Sistemas de navegação",
+  "Rotulagem",
+  "Busca e filtros",
+  "Sitemap",
+  "Card sorting e tree testing aplicados"
+ ],
+ "draft": "Busca e filtros\nTópico 6 — Arquitetura de informação e interação › Módulo 21 — Arquitetura de informação\nResumo\nBusca serve a quem sabe o que procura; filtros servem a quem explora. Os dois precisam lidar com zero resultados.\nAnotações\nVocê sabia?\n- A página inicial do Google tinha poucos elementos desde o início, e, segundo uma história contada por Marissa Mayer, em parte porque Sergey Brin não sabia HTML o suficiente para algo mais elaborado.\nExplicando o conceito\n- Busca para quem sabe o que quer; filtros para quem explora.\n- Autocompletar, correção de erros, sinônimos.\n- Estado de zero resultados e filtros facetados.\nReferências\n- NN/g — artigos sobre busca e filtros facetados.\n- Peter Morville — Search Patterns.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/Arquitetura de informação/Busca e filtros.md"
+}

@@ -1,0 +1,14 @@
+{
+ "topic": "Síntese e definição do problema",
+ "module": "Definição do problema",
+ "name": "Hipóteses testáveis",
+ "overview": false,
+ "siblings": [
+  "Problem statement",
+  "How Might We",
+  "Hipóteses testáveis",
+  "Proposta de valor e goal statement"
+ ],
+ "draft": "Hipóteses testáveis\nTópico 4 — Síntese e definição do problema › Módulo 16 — Definição do problema\nResumo\n\"Acreditamos que [mudança] vai gerar [resultado] para [usuário]; saberemos quando [métrica]\". Sem métrica, não é hipótese.\nAnotações\nVocê sabia?\n- MythBusters testava mitos com hipótese clara e terminava em “detonado”, “plausível” ou “confirmado”.\nExplicando o conceito\n- Formato: acreditamos que…, para…, saberemos quando….\n- Hipótese de problema vs hipótese de solução.\n- Escolher a métrica e o critério de sucesso antes de testar.\nReferências\n- Jeff Gothelf e Josh Seiden — Lean UX (hypothesis statement).\n- Teresa Torres — Continuous Discovery Habits.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Síntese e definição do problema/Definição do problema/Hipóteses testáveis.md"
+}

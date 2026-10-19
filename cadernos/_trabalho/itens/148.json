@@ -1,0 +1,17 @@
+{
+ "topic": "Acessibilidade",
+ "module": "Acessibilidade na prática",
+ "name": "Teclado e ordem de foco",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Contraste",
+  "Teclado e ordem de foco",
+  "Leitores de tela e HTML semântico",
+  "Alvos de toque",
+  "Formulários acessíveis",
+  "Movimento reduzido"
+ ],
+ "draft": "Teclado e ordem de foco\nTópico 9 — Acessibilidade › Módulo 33 — Acessibilidade na prática\nResumo\nTudo que funciona com mouse precisa funcionar com teclado, com foco visível e ordem lógica.\nAnotações\nVocê sabia?\n- Muitos jogadores reclamam de jogos de PC que não permitem remapear teclas, uma barreira para quem usa teclados adaptados.\nExplicando o conceito\n- Tab, Shift+Tab, Enter, Espaço, setas e Esc.\n- Foco visível e ordem lógica.\n- Armadilhas de foco e link “pular para o conteúdo”.\nReferências\n- W3C — critérios 2.1.1, 2.4.3 e 2.4.7.\n- WebAIM — Keyboard Accessibility.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Acessibilidade/Acessibilidade na prática/Teclado e ordem de foco.md"
+}

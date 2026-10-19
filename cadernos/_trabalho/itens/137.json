@@ -1,0 +1,16 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Plataformas e responsividade",
+ "name": "Breakpoints e mobile-first",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Responsivo vs adaptativo vs fluido",
+  "Breakpoints e mobile-first",
+  "Material Design e HIG",
+  "App nativo vs web",
+  "Densidade de informação"
+ ],
+ "draft": "Breakpoints e mobile-first\nTópico 8 — Interface (UI) › Módulo 31 — Plataformas e responsividade\nResumo\nComeçar pela menor tela força priorizar conteúdo. Breakpoints devem nascer do conteúdo, não de modelos de aparelho.\nAnotações\nVocê sabia?\n- Luke Wroblewski propôs o “mobile first” por volta de 2009, quando o celular ainda era visto como versão reduzida do site.\nExplicando o conceito\n- Por que começar pela menor tela.\n- Breakpoints pelo conteúdo, não por modelo de aparelho.\n- Container queries e layouts intrínsecos.\nReferências\n- Luke Wroblewski — Mobile First.\n- Documentação MDN — Media queries e container queries.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Interface (UI)/Plataformas e responsividade/Breakpoints e mobile-first.md"
+}

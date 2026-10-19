@@ -1,0 +1,16 @@
+{
+ "topic": "Design systems e entrega para desenvolvimento",
+ "module": "Do styleguide ao design system",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Styleguide",
+  "Por que ter um design system",
+  "Design tokens",
+  "Biblioteca e documentação",
+  "Governança, contribuição e versionamento"
+ ],
+ "draft": "Módulo 39 — Do styleguide ao design system\nTópico 11 — Design systems e entrega para desenvolvimento\nConteúdos\n- Styleguide\n- Por que ter um design system\n- Design tokens\n- Biblioteca e documentação\n- Governança, contribuição e versionamento\nLeituras\n- Design Systems 101 — NN/g\n- Design Tokens Community Group — W3C\n- Padrão Digital de Governo (design system gov.br)\n- U.S. Web Design System",
+ "out": "cadernos/User Experience Design/Design systems e entrega para desenvolvimento/Do styleguide ao design system/Visão geral do módulo.md"
+}

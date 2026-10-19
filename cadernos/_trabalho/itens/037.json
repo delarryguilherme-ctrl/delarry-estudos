@@ -1,0 +1,16 @@
+{
+ "topic": "UX Research",
+ "module": "Métodos quantitativos",
+ "name": "Heatmaps e gravação de sessões",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Surveys",
+  "Product analytics",
+  "Heatmaps e gravação de sessões",
+  "Questionários padronizados",
+  "AB testing e significância"
+ ],
+ "draft": "Heatmaps e gravação de sessões\nTópico 3 — UX Research › Módulo 12 — Métodos quantitativos\nResumo\nMostram cliques, rolagem e movimentos reais. Bons para gerar hipóteses, ruins para concluir sozinhos.\nAnotações\nVocê sabia?\n- Estudos de eye tracking da NN/g popularizaram o “padrão F” de leitura em 2006.\nExplicando o conceito\n- Mapas de clique, de rolagem e de movimento.\n- Gravações de sessão: o que procurar (cliques de raiva, hesitação).\n- Limites: gerar hipóteses, não concluir sozinho; cuidado com privacidade.\nReferências\n- Documentação do Hotjar e do Microsoft Clarity.\n- NN/g — “F-Shaped Pattern of Reading on the Web”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Métodos quantitativos/Heatmaps e gravação de sessões.md"
+}

@@ -1,0 +1,15 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "Fluxos",
+ "name": "Estados de tela",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "User flows e task flows",
+  "Wireflows",
+  "Estados de tela",
+  "Edge cases"
+ ],
+ "draft": "Estados de tela\nTópico 6 — Arquitetura de informação e interação › Módulo 22 — Fluxos\nResumo\nVazio, carregando, erro, sucesso e parcial. Projetar só o estado feliz garante problema no desenvolvimento.\nAnotações\nVocê sabia?\n- O dinossauro do Chrome, que aparece sem internet, transformou um estado de erro num jogo jogado por milhões de pessoas por mês.\nExplicando o conceito\n- Estados: vazio, carregando, parcial, erro, sucesso.\n- Estado vazio como oportunidade (orientar e ensinar).\n- Esqueleto de carregamento vs spinner.\nReferências\n- Scott Hurff — “How to fix a bad user interface” (UI stack).\n- NN/g — “Designing Empty States”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/Fluxos/Estados de tela.md"
+}

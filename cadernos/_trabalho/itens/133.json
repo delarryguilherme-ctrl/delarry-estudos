@@ -1,0 +1,16 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Componentes e padrões",
+ "name": "Padrões recorrentes",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Design patterns",
+  "Atomic design",
+  "Anatomia e estados de componentes",
+  "Padrões recorrentes",
+  "Visualização de dados básica"
+ ],
+ "draft": "Padrões recorrentes\nTópico 8 — Interface (UI) › Módulo 30 — Componentes e padrões\nResumo\nTabelas, cards, modais e toasts têm regras de uso. Modal para tudo e toast para erro crítico são erros comuns.\nAnotações\nVocê sabia?\n- O “toast” tem esse nome porque surge como uma torrada saindo da torradeira.\nExplicando o conceito\n- Tabelas, cards, modais, toasts, abas, acordeões: quando usar cada um.\n- Erros comuns: modal para tudo, toast para erro crítico.\n- Consistência entre telas.\nReferências\n- NN/g — “Modal & Nonmodal Dialogs”.\n- Design systems públicos (Carbon, Atlassian, Polaris).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Interface (UI)/Componentes e padrões/Padrões recorrentes.md"
+}

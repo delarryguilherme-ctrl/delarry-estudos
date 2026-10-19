@@ -1,0 +1,17 @@
+{
+ "topic": "Acessibilidade",
+ "module": "Acessibilidade na prática",
+ "name": "Formulários acessíveis",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Contraste",
+  "Teclado e ordem de foco",
+  "Leitores de tela e HTML semântico",
+  "Alvos de toque",
+  "Formulários acessíveis",
+  "Movimento reduzido"
+ ],
+ "draft": "Formulários acessíveis\nTópico 9 — Acessibilidade › Módulo 33 — Acessibilidade na prática\nResumo\nRótulo visível e associado ao campo, instruções antes do campo, erro descrito em texto e ligado ao campo.\nAnotações\nVocê sabia?\n- O placeholder usado no lugar do rótulo é um dos erros de acessibilidade mais comuns: o texto some assim que a pessoa começa a digitar.\nExplicando o conceito\n- Rótulo visível e associado ao campo.\n- Instruções e formato esperado antes do campo.\n- Erros em texto, ligados ao campo e anunciados pelo leitor de tela.\nReferências\n- W3C WAI — Forms Tutorial.\n- Adam Silver — Form Design Patterns.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Acessibilidade/Acessibilidade na prática/Formulários acessíveis.md"
+}

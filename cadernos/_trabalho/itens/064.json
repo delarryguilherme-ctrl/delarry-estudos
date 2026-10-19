@@ -1,0 +1,15 @@
+{
+ "topic": "Estratégia, priorização e ideação",
+ "module": "Produto e negócio para designers",
+ "name": "Modelos de negócio",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Modelos de negócio",
+  "Métricas de produto",
+  "OKRs",
+  "Unit economics"
+ ],
+ "draft": "Modelos de negócio\nTópico 5 — Estratégia, priorização e ideação › Módulo 18 — Produto e negócio para designers\nResumo\nB2B vende para empresas (comprador e usuário costumam ser pessoas diferentes); B2C vende para pessoas; SaaS cobra recorrência; marketplace conecta dois lados.\nAnotações\nVocê sabia?\n- O Spotify popularizou o freemium na música: a versão grátis com anúncios serve de porta de entrada para a assinatura.\nExplicando o conceito\n- B2B, B2C, B2B2C, SaaS, marketplace, freemium, anúncios.\n- Como o modelo muda o design (quem compra vs quem usa).\n- Exemplos brasileiros (iFood, Nubank, Mercado Livre).\nReferências\n- Osterwalder e Pigneur — Business Model Generation.\n- Artigos sobre modelos de negócio digitais (a16z, Lenny’s Newsletter).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Estratégia, priorização e ideação/Produto e negócio para designers/Modelos de negócio.md"
+}

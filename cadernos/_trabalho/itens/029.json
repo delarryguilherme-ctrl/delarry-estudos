@@ -1,0 +1,16 @@
+{
+ "topic": "UX Research",
+ "module": "Métodos qualitativos",
+ "name": "Entrevistas em profundidade",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Entrevistas em profundidade",
+  "Field study e contextual inquiry",
+  "Diary studies",
+  "Focus group",
+  "Card sorting"
+ ],
+ "draft": "Entrevistas em profundidade\nTópico 3 — UX Research › Módulo 11 — Métodos qualitativos\nResumo\nConversa guiada por roteiro para entender comportamento, contexto e motivação. Pergunte sobre o que a pessoa fez, não sobre o que ela faria.\nAnotações\nVocê sabia?\n- O Dr. House repete “todo mundo mente”. Em entrevista, as pessoas não mentem por mal, mas lembram e preveem mal o próprio comportamento.\nExplicando o conceito\n- Roteiro semiestruturado: abertura, aquecimento, núcleo, fechamento.\n- Perguntar sobre o passado concreto, não sobre o futuro hipotético.\n- Perguntas abertas, silêncio, pedir exemplos, evitar perguntas indutoras.\nReferências\n- Rob Fitzpatrick — The Mom Test.\n- Steve Portigal — Interviewing Users.\n- NN/g — “User Interviews 101”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Métodos qualitativos/Entrevistas em profundidade.md"
+}

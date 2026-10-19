@@ -1,0 +1,15 @@
+{
+ "topic": "Testes e validação",
+ "module": "Crítica, iteração e documentação",
+ "name": "Documentar testes e decisões",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Critique session",
+  "Dar e receber feedback",
+  "Iterar com base em evidência",
+  "Documentar testes e decisões"
+ ],
+ "draft": "Documentar testes e decisões\nTópico 10 — Testes e validação › Módulo 37 — Crítica, iteração e documentação\nResumo\nRegistrar o que foi testado, o que se achou e o que mudou. Evita repetir testes e responde \"por que fizemos assim?\" meses depois.\nAnotações\nVocê sabia?\n- Times de software usam “ADRs” (Architecture Decision Records), propostos por Michael Nygard em 2011, para lembrar por que cada decisão foi tomada.\nExplicando o conceito\n- O que registrar: objetivo do teste, método, achados, decisão.\n- Modelo de registro de decisão de design.\n- Onde guardar para o time encontrar.\nReferências\n- Michael Nygard — “Documenting Architecture Decisions”.\n- Modelos de decision log.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Testes e validação/Crítica, iteração e documentação/Documentar testes e decisões.md"
+}

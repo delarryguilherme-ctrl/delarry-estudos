@@ -1,0 +1,14 @@
+{
+ "topic": "Estratégia, priorização e ideação",
+ "module": "Priorização e MVP",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Frameworks de priorização",
+  "Escopo e trade-offs",
+  "MVP e variações"
+ ],
+ "draft": "Módulo 19 — Priorização e MVP\nTópico 5 — Estratégia, priorização e ideação\nConteúdos\n- Frameworks de priorização\n- Escopo e trade-offs\n- MVP e variações\nLeituras\n- RICE: Simple prioritization for product managers — Intercom\n- Kano Model — Folding Burritos",
+ "out": "cadernos/User Experience Design/Estratégia, priorização e ideação/Priorização e MVP/Visão geral do módulo.md"
+}

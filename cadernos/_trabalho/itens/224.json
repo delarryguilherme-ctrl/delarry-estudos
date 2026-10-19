@@ -1,0 +1,16 @@
+{
+ "topic": "Portfólio, carreira e projetos práticos",
+ "module": "Entrevistas",
+ "name": "Apresentação de portfólio",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Etapas comuns",
+  "Perguntas comportamentais (STAR)",
+  "Design exercise, whiteboard e take-home",
+  "Apresentação de portfólio",
+  "Negociação de proposta"
+ ],
+ "draft": "Apresentação de portfólio\nTópico 14 — Portfólio, carreira e projetos práticos › Módulo 48 — Entrevistas\nResumo\nEscolha dois ou três casos e conte cada um em 10 a 15 minutos, focando decisões e trade-offs.\nAnotações\nVocê sabia?\n- Uma regra comum é escolher dois ou três casos e contar cada um como uma história, em vez de mostrar tudo.\nExplicando o conceito\n- Escolher casos pela vaga.\n- Roteiro: contexto, problema, decisões, resultado.\n- Ensaiar e cronometrar.\nReferências\n- Artigos sobre apresentação de portfólio em entrevistas.\n- Tom Greever — Articulating Design Decisions.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Portfólio, carreira e projetos práticos/Entrevistas/Apresentação de portfólio.md"
+}

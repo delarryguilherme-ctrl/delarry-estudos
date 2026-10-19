@@ -1,0 +1,15 @@
+{
+ "topic": "Inteligência artificial e UX",
+ "module": "Design de produtos com IA",
+ "name": "Confiança e explicabilidade",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Modelo mental de sistemas probabilísticos",
+  "Confiança e explicabilidade",
+  "Erro e incerteza",
+  "Controle e human-in-the-loop"
+ ],
+ "draft": "Confiança e explicabilidade\nTópico 13 — Inteligência artificial e UX › Módulo 45 — Design de produtos com IA\nResumo\nMostrar de onde veio a resposta e quão segura ela é. Confiança alta demais é tão problemática quanto confiança baixa.\nAnotações\nVocê sabia?\n- Pesquisas mostram que as pessoas tendem a confiar demais em sistemas automáticos, o chamado “viés de automação”.\nExplicando o conceito\n- Mostrar fontes, motivo e grau de certeza.\n- Calibrar a confiança (nem demais, nem de menos).\n- Exemplos de explicações boas e ruins.\nReferências\n- Google PAIR — capítulo “Explainability + Trust”.\n- Microsoft — Guidelines for Human-AI Interaction.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Inteligência artificial e UX/Design de produtos com IA/Confiança e explicabilidade.md"
+}

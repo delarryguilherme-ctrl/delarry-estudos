@@ -1,0 +1,15 @@
+{
+ "topic": "Testes e validação",
+ "module": "Crítica, iteração e documentação",
+ "name": "Critique session",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Critique session",
+  "Dar e receber feedback",
+  "Iterar com base em evidência",
+  "Documentar testes e decisões"
+ ],
+ "draft": "Critique session\nTópico 10 — Testes e validação › Módulo 37 — Crítica, iteração e documentação\nResumo\nRevisão estruturada do trabalho contra objetivos definidos. Crítica boa avalia se o design cumpre o objetivo, não se o crítico gostou.\nAnotações\nVocê sabia?\n- A Pixar tem o “Braintrust”, um grupo que critica os filmes em produção sem poder mandar mudar nada; quem decide é o diretor (Ed Catmull, Criatividade S.A.).\nExplicando o conceito\n- Estrutura: objetivo, contexto, apresentação, crítica, próximos passos.\n- Crítica vs feedback vs opinião.\n- Papéis: apresentador, facilitador, críticos.\nReferências\n- Adam Connor e Aaron Irizarry — Discussing Design.\n- Ed Catmull — Criatividade S.A.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Testes e validação/Crítica, iteração e documentação/Critique session.md"
+}

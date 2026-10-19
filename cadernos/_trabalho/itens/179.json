@@ -1,0 +1,15 @@
+{
+ "topic": "Testes e validação",
+ "module": "Pós-lançamento",
+ "name": "Canais de feedback contínuo",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Instrumentação de eventos",
+  "Leitura de métricas após a entrega",
+  "Ciclos de iteração",
+  "Canais de feedback contínuo"
+ ],
+ "draft": "Canais de feedback contínuo\nTópico 10 — Testes e validação › Módulo 38 — Pós-lançamento\nResumo\nSuporte, NPS, avaliações de loja e entrevistas recorrentes. Fontes baratas de problemas reais.\nAnotações\nVocê sabia?\n- O NPS foi criado por Fred Reichheld em 2003, num artigo da Harvard Business Review chamado “The One Number You Need to Grow”.\nExplicando o conceito\n- Canais: suporte, NPS, avaliações de loja, redes sociais, entrevistas recorrentes.\n- Como organizar e classificar o feedback.\n- Limites do NPS.\nReferências\n- Fred Reichheld — “The One Number You Need to Grow” (HBR, 2003).\n- Teresa Torres — Continuous Discovery Habits.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Testes e validação/Pós-lançamento/Canais de feedback contínuo.md"
+}

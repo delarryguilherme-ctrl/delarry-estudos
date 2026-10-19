@@ -1,0 +1,16 @@
+{
+ "topic": "Síntese e definição do problema",
+ "module": "Síntese",
+ "name": "Empathy map",
+ "overview": false,
+ "siblings": [
+  "O que é um insight",
+  "Affinity mapping",
+  "Empathy map",
+  "Personas e proto-personas",
+  "User stories",
+  "Quantificar achados qualitativos"
+ ],
+ "draft": "Empathy map\nTópico 4 — Síntese e definição do problema › Módulo 14 — Síntese\nResumo\nOrganiza o que o usuário diz, pensa, faz e sente. Útil para alinhar o time; fraco se preenchido sem pesquisa.\nAnotações\nVocê sabia?\n- O mapa de empatia foi criado por Dave Gray, da consultoria XPLANE, e depois atualizado para começar pelo objetivo do usuário.\nExplicando o conceito\n- Quadrantes: diz, pensa, faz, sente (e versões com dores e ganhos).\n- Mapa de empatia como ferramenta de alinhamento, não de pesquisa.\n- Quando ele vira “ficção” (sem dados por trás).\nReferências\n- Dave Gray — “Updated Empathy Map Canvas”.\n- NN/g — “Empathy Mapping: The First Step in Design Thinking”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Síntese e definição do problema/Síntese/Empathy map.md"
+}

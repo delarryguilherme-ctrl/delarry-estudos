@@ -1,0 +1,15 @@
+{
+ "topic": "UX Research",
+ "module": "Desk research e análise competitiva",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Desk research",
+  "Competidores diretos e indiretos",
+  "Benchmarking",
+  "Análise competitiva na prática"
+ ],
+ "draft": "Módulo 10 — Desk research e análise competitiva\nTópico 3 — UX Research\nConteúdos\n- Desk research\n- Competidores diretos e indiretos\n- Benchmarking\n- Análise competitiva na prática\nLeituras\n- Competitive Usability Evaluations — NN/g\n- Baymard Institute — pesquisa e benchmarks de UX em e-commerce",
+ "out": "cadernos/User Experience Design/UX Research/Desk research e análise competitiva/Visão geral do módulo.md"
+}

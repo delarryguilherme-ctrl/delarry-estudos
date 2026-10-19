@@ -1,0 +1,16 @@
+{
+ "topic": "Síntese e definição do problema",
+ "module": "Síntese",
+ "name": "O que é um insight",
+ "overview": false,
+ "siblings": [
+  "O que é um insight",
+  "Affinity mapping",
+  "Empathy map",
+  "Personas e proto-personas",
+  "User stories",
+  "Quantificar achados qualitativos"
+ ],
+ "draft": "O que é um insight\nTópico 4 — Síntese e definição do problema › Módulo 14 — Síntese\nResumo\nUma descoberta não óbvia, apoiada em evidência, que muda uma decisão. \"Usuários acham o app confuso\" é observação vaga, não insight.\nAnotações\nVocê sabia?\n- Em Sherlock (BBC), o detetive junta detalhes que todos viram e chega a uma conclusão que ninguém tirou: isso é um insight, não só uma observação.\nExplicando o conceito\n- Observação → padrão → insight → recomendação.\n- Como escrever um insight: o que acontece, por quê, e o que isso muda.\n- Exemplos ruins (vagos) e bons (específicos e acionáveis).\nReferências\n- NN/g — “What Is a Research Insight?”.\n- Tomer Sharon — Validating Product Ideas.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Síntese e definição do problema/Síntese/O que é um insight.md"
+}

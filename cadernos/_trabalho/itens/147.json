@@ -1,0 +1,17 @@
+{
+ "topic": "Acessibilidade",
+ "module": "Acessibilidade na prática",
+ "name": "Contraste",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Contraste",
+  "Teclado e ordem de foco",
+  "Leitores de tela e HTML semântico",
+  "Alvos de toque",
+  "Formulários acessíveis",
+  "Movimento reduzido"
+ ],
+ "draft": "Contraste\nTópico 9 — Acessibilidade › Módulo 33 — Acessibilidade na prática\nResumo\nWCAG AA exige 4,5:1 para texto normal e 3:1 para texto grande e componentes de interface. Cor nunca deve ser o único meio de comunicar informação.\nAnotações\nVocê sabia?\n- O episódio “A Longa Noite” de Game of Thrones (2019) foi tão escuro que muita gente não conseguiu ver a batalha em casa.\nExplicando o conceito\n- Razões de contraste: 4,5:1, 3:1 e 7:1 (AAA).\n- Contraste de componentes, ícones e estados.\n- Não depender só da cor.\nReferências\n- WebAIM — Contrast Checker.\n- W3C — critérios 1.4.3 e 1.4.11.\n- Plugin Stark.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Acessibilidade/Acessibilidade na prática/Contraste.md"
+}

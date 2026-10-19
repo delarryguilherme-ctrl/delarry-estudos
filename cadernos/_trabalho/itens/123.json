@@ -1,0 +1,17 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Fundamentos visuais",
+ "name": "Hierarquia visual",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Hierarquia visual",
+  "Grids e layout",
+  "Espaçamento e sistema de 8pt",
+  "Tipografia",
+  "Cor",
+  "Iconografia e imagens"
+ ],
+ "draft": "Hierarquia visual\nTópico 8 — Interface (UI) › Módulo 29 — Fundamentos visuais\nResumo\nTamanho, peso, cor, contraste e posição definem a ordem de leitura. A ação principal deve ser a coisa mais óbvia da tela.\nAnotações\nVocê sabia?\n- Onde Está Wally? é o oposto de hierarquia visual: tudo tem o mesmo peso, então achar o principal vira desafio.\nExplicando o conceito\n- Ferramentas: tamanho, peso, cor, contraste, espaço, posição.\n- Teste do “olho semicerrado” para checar a hierarquia.\n- Uma ação principal por tela.\nReferências\n- NN/g — “Visual Hierarchy in UX”.\n- Refactoring UI (Wathan e Schoger).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Interface (UI)/Fundamentos visuais/Hierarquia visual.md"
+}

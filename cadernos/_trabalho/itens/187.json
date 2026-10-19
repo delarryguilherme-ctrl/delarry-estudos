@@ -1,0 +1,15 @@
+{
+ "topic": "Design systems e entrega para desenvolvimento",
+ "module": "Handoff",
+ "name": "O que os desenvolvedores precisam",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "O que os desenvolvedores precisam",
+  "Designer precisa saber código",
+  "Ferramentas de entrega",
+  "QA de design"
+ ],
+ "draft": "O que os desenvolvedores precisam\nTópico 11 — Design systems e entrega para desenvolvimento › Módulo 40 — Handoff\nResumo\nMedidas, estados, comportamento responsivo, regras de negócio, edge cases e assets. Tela bonita sem comportamento definido gera retrabalho.\nAnotações\nVocê sabia?\n- Na Fórmula 1, o carro só vai para a pista com especificações completas de cada peça; tela sem comportamento definido é como peça sem medida.\nExplicando o conceito\n- Medidas, tokens, estados, responsividade, regras de negócio, edge cases, assets.\n- Fluxos e protótipo como apoio.\n- Combinar o formato de entrega com o time de dev.\nReferências\n- Documentação do Figma — Dev Mode.\n- Artigos sobre handoff (Smashing Magazine).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Design systems e entrega para desenvolvimento/Handoff/O que os desenvolvedores precisam.md"
+}

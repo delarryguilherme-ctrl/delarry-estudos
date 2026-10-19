@@ -1,0 +1,16 @@
+{
+ "topic": "UX Research",
+ "module": "Planejamento de pesquisa",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Plano de pesquisa",
+  "Metas do usuário vs metas do negócio",
+  "Tipos de pesquisa",
+  "Recrutamento e amostra",
+  "Ética, consentimento e LGPD"
+ ],
+ "draft": "Módulo 09 — Planejamento de pesquisa\nTópico 3 — UX Research\nConteúdos\n- Plano de pesquisa\n- Metas do usuário vs metas do negócio\n- Tipos de pesquisa\n- Recrutamento e amostra\n- Ética, consentimento e LGPD\nLeituras\n- When to Use Which User-Experience Research Methods — NN/g\n- Quantitative vs. Qualitative Usability Testing — NN/g\n- UX Research Cheat Sheet — NN/g\n- Lei Geral de Proteção de Dados (Lei 13.709/2018)",
+ "out": "cadernos/User Experience Design/UX Research/Planejamento de pesquisa/Visão geral do módulo.md"
+}

@@ -1,0 +1,16 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Plataformas e responsividade",
+ "name": "Densidade de informação",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Responsivo vs adaptativo vs fluido",
+  "Breakpoints e mobile-first",
+  "Material Design e HIG",
+  "App nativo vs web",
+  "Densidade de informação"
+ ],
+ "draft": "Densidade de informação\nTópico 8 — Interface (UI) › Módulo 31 — Plataformas e responsividade\nResumo\nProdutos B2B costumam exigir telas densas para usuários experientes; B2C prioriza simplicidade. Densidade certa depende de frequência de uso.\nAnotações\nVocê sabia?\n- O terminal Bloomberg é famoso pelas telas extremamente densas, e seus usuários preferem assim porque ganham tempo.\nExplicando o conceito\n- Densidade alta (B2B, especialistas) vs baixa (B2C, iniciantes).\n- Modos de densidade (compacto, confortável).\n- Como reduzir esforço sem tirar informação.\nReferências\n- NN/g — artigos sobre densidade de informação em interfaces.\n- Bloomberg — “How Bloomberg Terminal UX designers conceal complexity”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Interface (UI)/Plataformas e responsividade/Densidade de informação.md"
+}

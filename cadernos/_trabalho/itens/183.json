@@ -1,0 +1,16 @@
+{
+ "topic": "Design systems e entrega para desenvolvimento",
+ "module": "Do styleguide ao design system",
+ "name": "Design tokens",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Styleguide",
+  "Por que ter um design system",
+  "Design tokens",
+  "Biblioteca e documentação",
+  "Governança, contribuição e versionamento"
+ ],
+ "draft": "Design tokens\nTópico 11 — Design systems e entrega para desenvolvimento › Módulo 39 — Do styleguide ao design system\nResumo\nValores nomeados (cor, espaçamento, tipografia) usados igualmente no Figma e no código. Mudar o token muda o produto inteiro.\nAnotações\nVocê sabia?\n- O termo “design tokens” nasceu na Salesforce, por volta de 2014, com o trabalho de Jina Anne e Jon Levine no Lightning Design System.\nExplicando o conceito\n- Tipos: cor, espaçamento, tipografia, sombra, raio.\n- Tokens primitivos vs semânticos.\n- Do Figma (variables) ao código.\nReferências\n- W3C Design Tokens Community Group.\n- Salesforce Lightning Design System — Design Tokens.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Design systems e entrega para desenvolvimento/Do styleguide ao design system/Design tokens.md"
+}

@@ -1,0 +1,16 @@
+{
+ "topic": "UX Research",
+ "module": "Métodos quantitativos",
+ "name": "Questionários padronizados",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Surveys",
+  "Product analytics",
+  "Heatmaps e gravação de sessões",
+  "Questionários padronizados",
+  "AB testing e significância"
+ ],
+ "draft": "Questionários padronizados\nTópico 3 — UX Research › Módulo 12 — Métodos quantitativos\nResumo\nSUS, SEQ e UMUX-Lite são escalas validadas de usabilidade percebida. Permitem comparar versões e produtos.\nAnotações\nVocê sabia?\n- A escala SUS foi criada por John Brooke em 1986 como uma solução “rápida e suja”, e até hoje é uma das mais usadas.\nExplicando o conceito\n- SUS (10 perguntas), SEQ (1 pergunta), UMUX-Lite (2 perguntas).\n- Como calcular e interpretar a nota do SUS (média por volta de 68).\n- Quando aplicar: após tarefa vs ao final do teste.\nReferências\n- Jeff Sauro — MeasuringU (artigos sobre SUS e SEQ).\n- Sauro e Lewis — Quantifying the User Experience.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Métodos quantitativos/Questionários padronizados.md"
+}

@@ -1,0 +1,15 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "Fluxos",
+ "name": "Wireflows",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "User flows e task flows",
+  "Wireflows",
+  "Estados de tela",
+  "Edge cases"
+ ],
+ "draft": "Wireflows\nTópico 6 — Arquitetura de informação e interação › Módulo 22 — Fluxos\nResumo\nCombinação de wireframes com setas de fluxo. Úteis para interações que mudam o estado dentro da mesma tela.\nAnotações\nVocê sabia?\n- O termo “wireflow” foi popularizado pela NN/g para unir wireframes e fluxos em um único artefato.\nExplicando o conceito\n- Quando usar (interações dentro da mesma tela, apps).\n- Como montar: telas pequenas com setas e gatilhos.\n- Diferença para protótipo clicável.\nReferências\n- NN/g — “Wireflows: A UX Deliverable for Workflows and Apps”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/Fluxos/Wireflows.md"
+}

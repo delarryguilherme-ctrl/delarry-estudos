@@ -1,0 +1,17 @@
+{
+ "topic": "Wireframes, prototipação e ferramentas",
+ "module": "Prototipação",
+ "name": "Interações, transições e gestos",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Baixa, média e alta fidelidade",
+  "Protótipo em papel",
+  "Baixa fidelidade no Figma",
+  "Mockups e alta fidelidade",
+  "Interações, transições e gestos",
+  "Protótipo em código ou Framer"
+ ],
+ "draft": "Interações, transições e gestos\nTópico 7 — Wireframes, prototipação e ferramentas › Módulo 26 — Prototipação\nResumo\nSmart animate, overlays e estados de componente. Dão realismo ao teste sem precisar de código.\nAnotações\nVocê sabia?\n- O Smart Animate do Figma anima a diferença entre dois frames sozinho, desde que as camadas tenham o mesmo nome.\nExplicando o conceito\n- Smart Animate, overlays, componentes interativos.\n- Transições que ajudam a entender a navegação.\n- Gestos no protótipo (arrastar, rolar).\nReferências\n- Documentação do Figma — Smart Animate e interactive components.\n- Material Design — Motion.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Wireframes, prototipação e ferramentas/Prototipação/Interações, transições e gestos.md"
+}

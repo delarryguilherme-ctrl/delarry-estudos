@@ -1,0 +1,15 @@
+{
+ "topic": "Acessibilidade",
+ "module": "Fundamentos de acessibilidade",
+ "name": "Legislação brasileira",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Deficiência permanente, temporária e situacional",
+  "WCAG 2.2 e POUR",
+  "Níveis A, AA e AAA",
+  "Legislação brasileira"
+ ],
+ "draft": "Legislação brasileira\nTópico 9 — Acessibilidade › Módulo 32 — Fundamentos de acessibilidade\nResumo\nA Lei Brasileira de Inclusão (Lei 13.146/2015) obriga acessibilidade em sites de empresas com sede ou representação no país. O eMAG é o modelo de acessibilidade do governo federal.\nAnotações\nVocê sabia?\n- A Lei Brasileira de Inclusão (Lei 13.146/2015) também é chamada de Estatuto da Pessoa com Deficiência.\nExplicando o conceito\n- LBI, artigo 63 (sites acessíveis).\n- eMAG: modelo de acessibilidade do governo.\n- Normas da ABNT e decisões judiciais recentes.\nReferências\n- Lei 13.146/2015 (LBI).\n- eMAG — Modelo de Acessibilidade em Governo Eletrônico.\n- Movimento Web para Todos.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Acessibilidade/Fundamentos de acessibilidade/Legislação brasileira.md"
+}

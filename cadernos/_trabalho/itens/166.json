@@ -1,0 +1,15 @@
+{
+ "topic": "Testes e validação",
+ "module": "Testes rápidos e complementares",
+ "name": "First click test",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "First click test",
+  "5-second test",
+  "Teste de preferência",
+  "Tree testing"
+ ],
+ "draft": "First click test\nTópico 10 — Testes e validação › Módulo 36 — Testes rápidos e complementares\nResumo\nMede onde as pessoas clicam primeiro para uma tarefa. Quem acerta o primeiro clique tem muito mais chance de concluir a tarefa.\nAnotações\nVocê sabia?\n- Um estudo de Bob Bailey mostrou que quem acerta o primeiro clique conclui a tarefa em cerca de 87% das vezes; quem erra, em cerca de 46%.\nExplicando o conceito\n- Como montar: tarefa + tela estática.\n- Ler o mapa de cliques e a taxa de acerto.\n- Quando usar (navegação, rótulos, layout).\nReferências\n- Bob Bailey — estudos sobre first click.\n- Optimal Workshop — Chalkmark.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Testes e validação/Testes rápidos e complementares/First click test.md"
+}

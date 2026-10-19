@@ -1,0 +1,15 @@
+{
+ "topic": "Inteligência artificial e UX",
+ "module": "Design de produtos com IA",
+ "name": "Erro e incerteza",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Modelo mental de sistemas probabilísticos",
+  "Confiança e explicabilidade",
+  "Erro e incerteza",
+  "Controle e human-in-the-loop"
+ ],
+ "draft": "Erro e incerteza\nTópico 13 — Inteligência artificial e UX › Módulo 45 — Design de produtos com IA\nResumo\nProjetar o que acontece quando a IA erra: como o usuário percebe, corrige e reporta.\nAnotações\nVocê sabia?\n- Carros com piloto automático exigem que o motorista mantenha as mãos no volante justamente porque o sistema pode errar.\nExplicando o conceito\n- Como o usuário percebe que a IA errou.\n- Corrigir, desfazer e reportar.\n- Mensagens de incerteza e alternativas.\nReferências\n- Google PAIR — capítulo “Errors + Graceful Failure”.\n- NN/g — artigos sobre interfaces de IA.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Inteligência artificial e UX/Design de produtos com IA/Erro e incerteza.md"
+}

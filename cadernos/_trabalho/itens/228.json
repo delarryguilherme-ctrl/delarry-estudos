@@ -1,0 +1,15 @@
+{
+ "topic": "Portfólio, carreira e projetos práticos",
+ "module": "Projetos práticos end-to-end",
+ "name": "Projeto 2 site responsivo",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Projeto 1 app mobile",
+  "Projeto 2 site responsivo",
+  "Projeto 3 impacto social",
+  "Revisão final do portfólio"
+ ],
+ "draft": "Projeto 2: site responsivo\nTópico 14 — Portfólio, carreira e projetos práticos › Módulo 49 — Projetos práticos end-to-end\nResumo\nO mesmo processo aplicado a um site com breakpoints, sitemap e layouts para várias telas.\nAnotações\nVocê sabia?\n- O site do Boston Globe (2011) foi um dos primeiros grandes sites responsivos, com participação de Ethan Marcotte.\nExplicando o conceito\n- Sitemap, wireframes por breakpoint, layout responsivo.\n- Conteúdo real e hierarquia.\n- Testar em vários tamanhos de tela.\nReferências\n- Ethan Marcotte — Responsive Web Design.\n- Caso do redesign do Boston Globe (2011).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Portfólio, carreira e projetos práticos/Projetos práticos end-to-end/Projeto 2 site responsivo.md"
+}

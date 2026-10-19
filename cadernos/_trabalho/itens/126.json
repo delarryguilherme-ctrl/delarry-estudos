@@ -1,0 +1,17 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Fundamentos visuais",
+ "name": "Tipografia",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Hierarquia visual",
+  "Grids e layout",
+  "Espaçamento e sistema de 8pt",
+  "Tipografia",
+  "Cor",
+  "Iconografia e imagens"
+ ],
+ "draft": "Tipografia\nTópico 8 — Interface (UI) › Módulo 29 — Fundamentos visuais\nResumo\nEscala tipográfica, altura de linha, comprimento de linha e pareamento de fontes. Texto legível vale mais que fonte original.\nAnotações\nVocê sabia?\n- Robert Bringhurst considera ideal uma linha de 45 a 75 caracteres, com 66 como referência: o mesmo número que este app usa por padrão.\n- A Comic Sans foi criada por Vincent Connare em 1994 para o Microsoft Bob, um assistente com balões de quadrinhos.\nExplicando o conceito\n- Escala tipográfica, altura de linha, comprimento de linha.\n- Serifa, sem serifa, pareamento de fontes.\n- Legibilidade em telas pequenas.\nReferências\n- Robert Bringhurst — Elementos do Estilo Tipográfico.\n- Butterick’s Practical Typography (site).\n- Material Design — Type scale.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Interface (UI)/Fundamentos visuais/Tipografia.md"
+}

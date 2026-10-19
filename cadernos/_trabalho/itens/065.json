@@ -1,0 +1,15 @@
+{
+ "topic": "Estratégia, priorização e ideação",
+ "module": "Produto e negócio para designers",
+ "name": "Métricas de produto",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Modelos de negócio",
+  "Métricas de produto",
+  "OKRs",
+  "Unit economics"
+ ],
+ "draft": "Métricas de produto\nTópico 5 — Estratégia, priorização e ideação › Módulo 18 — Produto e negócio para designers\nResumo\nNorth Star é a métrica que melhor representa valor entregue. AARRR mede o funil de aquisição a receita; HEART (Google) mede felicidade, engajamento, adoção, retenção e sucesso na tarefa.\nAnotações\nVocê sabia?\n- O framework HEART foi criado por Kerry Rodden e colegas no Google em 2010; o funil AARRR (“métricas pirata”) é de Dave McClure (2007).\nExplicando o conceito\n- North Star Metric e métricas de apoio.\n- AARRR: aquisição, ativação, retenção, receita, indicação.\n- HEART e o modelo objetivos → sinais → métricas.\nReferências\n- Kerry Rodden et al. — artigo sobre HEART (Google).\n- Dave McClure — Startup Metrics for Pirates.\n- Amplitude — North Star Playbook.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Estratégia, priorização e ideação/Produto e negócio para designers/Métricas de produto.md"
+}

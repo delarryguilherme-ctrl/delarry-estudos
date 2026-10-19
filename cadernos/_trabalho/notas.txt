@@ -1,0 +1,35 @@
+Retrospectivas: fonte Sailboat trocada (site com spam); não afirmou origem Star Trek da Diretriz Principal.
+Depois da reunião: tree swing -> Wikipédia; NN/g não respondeu.
+Plano de pesquisa: 5 links NN/g não abertos (ECONNREFUSED) — conferir na passada final.
+Você precisa de UX Research: NN/g e SEC conferidos via Wayback; cena de filme cortada.
+Visão geral Planejamento de pesquisa: 4 NN/g não verificados.
+Agile, Scrum e Kanban: 2 NN/g não verificados; Patton via resenha UXmatters; Kanban ligado a supermercados (fonte Atlassian).
+BMC/VPC: número 470 profissionais/45 países (fonte Strategyzer).
+Produto existente: 5 NN/g não verificados; número petição Snapchat 1 milhão (CNBC).
+Design Thinking: Nightline só 1999; 4 dias (IDEO); Chronicle 403 mantido.
+Recrutamento e amostra: NN/g via Wayback.
+Kickoff: 3 NN/g não verificados; Kim Goodwin trocado.
+Tipos de pesquisa: NN/g via Wayback; '20 métodos'.
+Discovery vs delivery: removeu links Patton/Sy/NN/g.
+Design sprint: NN/g não reconfirmado; variante 4 dias genérica.
+JTBD: 40% milkshake (HBS); removeu 'não por fome' e banana.
+Qual processo usar: NN/g mantido (200 no 1º teste).
+Lean UX: sem NN/g.
+Field study: 2 NN/g não verificados; pinguins Dynasties confirmado.
+Métodos qualitativos visão geral: 6 NN/g só via busca.
+Product analytics: 1 NN/g; cena de filme removida.
+Card sorting: 2 NN/g; ~15 participantes vem de NN/g não verificado.
+Análise competitiva na prática: 2 NN/g (competitive-usability-evaluations slug incerto).
+Surveys: 1 NN/g; Rosenfeld 403.
+Ferramentas de pesquisa: 3 NN/g.
+Desk research: 1 NN/g; IBGE 403.
+AB testing: Obama 2008 números exatos da fonte; 1 NN/g.
+Desk research visão geral: 1 NN/g.
+Questionários padronizados: 1 NN/g.
+Ética/LGPD: 2 NN/g, UXPA e HHS não abertos.
+Operação de pesquisa visão geral: 1 NN/g.
+Metas usuário vs negócio: 5 NN/g + O'Reilly só via busca; taxonomia de Cooper sem fonte direta.
+Competidores diretos e indiretos: 2 NN/g + CNBC 403; removida alegação Blockbuster.
+Focus group: 2 NN/g; Mad Men sem episódio.
+Heatmaps: 2 NN/g.
+Benchmarking: 3 NN/g + BMJ 403 não lido; corrigido Ferrari (não McLaren) com Great Ormond Street.

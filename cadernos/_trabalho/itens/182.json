@@ -1,0 +1,16 @@
+{
+ "topic": "Design systems e entrega para desenvolvimento",
+ "module": "Do styleguide ao design system",
+ "name": "Por que ter um design system",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Styleguide",
+  "Por que ter um design system",
+  "Design tokens",
+  "Biblioteca e documentação",
+  "Governança, contribuição e versionamento"
+ ],
+ "draft": "Por que ter um design system\nTópico 11 — Design systems e entrega para desenvolvimento › Módulo 39 — Do styleguide ao design system\nResumo\nComponentes, tokens, código e documentação compartilhados entre design e dev. Reduz inconsistência e acelera entrega; custa manutenção contínua.\nAnotações\nVocê sabia?\n- Design systems públicos famosos: Material (Google), Carbon (IBM), Polaris (Shopify), Lightning (Salesforce).\nExplicando o conceito\n- O que compõe um design system: tokens, componentes, padrões, código, documentação.\n- Benefícios e custos.\n- Quando uma empresa realmente precisa de um.\nReferências\n- Alla Kholmatova — Design Systems.\n- Brad Frost — Atomic Design.\n- Site designsystemsrepo.com.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Design systems e entrega para desenvolvimento/Do styleguide ao design system/Por que ter um design system.md"
+}

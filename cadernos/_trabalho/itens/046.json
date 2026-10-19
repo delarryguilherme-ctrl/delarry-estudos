@@ -1,0 +1,16 @@
+{
+ "topic": "Síntese e definição do problema",
+ "module": "Síntese",
+ "name": "Affinity mapping",
+ "overview": false,
+ "siblings": [
+  "O que é um insight",
+  "Affinity mapping",
+  "Empathy map",
+  "Personas e proto-personas",
+  "User stories",
+  "Quantificar achados qualitativos"
+ ],
+ "draft": "Affinity mapping\nTópico 4 — Síntese e definição do problema › Módulo 14 — Síntese\nResumo\nAgrupar notas de pesquisa por padrões emergentes. É a ponte entre dados soltos e temas.\nAnotações\nVocê sabia?\n- O método vem do “método KJ”, criado pelo antropólogo japonês Jiro Kawakita nos anos 1960 para organizar dados de campo.\nExplicando o conceito\n- Passo a passo: uma ideia por nota, agrupar sem categorias prontas, nomear os grupos.\n- Fazer sozinho vs em grupo; presencial vs digital (Miro, FigJam).\n- Como sair dos grupos para os temas e insights.\nReferências\n- NN/g — “Affinity Diagramming”.\n- Jiro Kawakita — método KJ.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Síntese e definição do problema/Síntese/Affinity mapping.md"
+}

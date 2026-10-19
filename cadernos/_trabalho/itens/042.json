@@ -1,0 +1,15 @@
+{
+ "topic": "UX Research",
+ "module": "Operação de pesquisa",
+ "name": "Ferramentas na prática",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Ferramentas de pesquisa",
+  "Ferramentas na prática",
+  "Como anotar durante sessões",
+  "Repositório e ResearchOps"
+ ],
+ "draft": "Ferramentas na prática\nTópico 3 — UX Research › Módulo 13 — Operação de pesquisa\nResumo\nMontar um teste remoto ponta a ponta: roteiro, recrutamento, execução e exportação dos resultados.\nAnotações\nVocê sabia?\n- Em Apollo 13, a equipe resolve o problema do filtro com apenas o material disponível na nave; pesquisa com poucas ferramentas também funciona.\nExplicando o conceito\n- Passo a passo de um teste remoto: roteiro, recrutamento, execução, exportação.\n- Checklist técnico antes da sessão.\n- Erros comuns na primeira vez.\nReferências\n- Tutoriais do Maze e do Lookback.\n- NN/g — “Remote Usability Tests: Moderated and Unmoderated”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Operação de pesquisa/Ferramentas na prática.md"
+}

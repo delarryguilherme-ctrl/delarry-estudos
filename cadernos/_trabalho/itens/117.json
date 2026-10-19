@@ -1,0 +1,15 @@
+{
+ "topic": "Wireframes, prototipação e ferramentas",
+ "module": "Figma",
+ "name": "Plugins e colaboração",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Básico",
+  "Avançado",
+  "Prototipação no Figma",
+  "Plugins e colaboração"
+ ],
+ "draft": "Plugins e colaboração\nTópico 7 — Wireframes, prototipação e ferramentas › Módulo 27 — Figma\nResumo\nComentários, branches, bibliotecas compartilhadas e plugins de produtividade e acessibilidade.\nAnotações\nVocê sabia?\n- O FigJam, quadro branco do Figma, foi lançado em 2021 e substituiu o Miro em muitos times.\nExplicando o conceito\n- Comentários, branches, bibliotecas compartilhadas.\n- Plugins úteis: acessibilidade (Stark), conteúdo, ícones.\n- Boas práticas de arquivo compartilhado.\nReferências\n- Figma Community — plugins.\n- Documentação do Figma — Branching.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Wireframes, prototipação e ferramentas/Figma/Plugins e colaboração.md"
+}

@@ -1,0 +1,15 @@
+{
+ "topic": "Testes e validação",
+ "module": "Crítica, iteração e documentação",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Critique session",
+  "Dar e receber feedback",
+  "Iterar com base em evidência",
+  "Documentar testes e decisões"
+ ],
+ "draft": "Módulo 37 — Crítica, iteração e documentação\nTópico 10 — Testes e validação\nConteúdos\n- Critique session\n- Dar e receber feedback\n- Iterar com base em evidência\n- Documentar testes e decisões\nLeituras\n- Design Critiques: Encourage a Positive Culture to Improve Products — NN/g",
+ "out": "cadernos/User Experience Design/Testes e validação/Crítica, iteração e documentação/Visão geral do módulo.md"
+}

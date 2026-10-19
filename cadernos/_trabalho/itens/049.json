@@ -1,0 +1,16 @@
+{
+ "topic": "Síntese e definição do problema",
+ "module": "Síntese",
+ "name": "User stories",
+ "overview": false,
+ "siblings": [
+  "O que é um insight",
+  "Affinity mapping",
+  "Empathy map",
+  "Personas e proto-personas",
+  "User stories",
+  "Quantificar achados qualitativos"
+ ],
+ "draft": "User stories\nTópico 4 — Síntese e definição do problema › Módulo 14 — Síntese\nResumo\n\"Como [usuário], quero [ação] para [benefício]\". Conecta necessidade do usuário ao backlog do time.\nAnotações\nVocê sabia?\n- Em RPGs, toda missão tem quem pede, o que precisa ser feito e a recompensa; uma user story tem a mesma estrutura.\nExplicando o conceito\n- Formato “Como…, quero…, para…”.\n- Critérios de aceite e o modelo INVEST.\n- User story vs job story; story mapping.\nReferências\n- Mike Cohn — User Stories Applied.\n- Jeff Patton — User Story Mapping.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Síntese e definição do problema/Síntese/User stories.md"
+}

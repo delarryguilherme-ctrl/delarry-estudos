@@ -1,0 +1,15 @@
+{
+ "topic": "Acessibilidade",
+ "module": "Fundamentos de acessibilidade",
+ "name": "WCAG 2.2 e POUR",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Deficiência permanente, temporária e situacional",
+  "WCAG 2.2 e POUR",
+  "Níveis A, AA e AAA",
+  "Legislação brasileira"
+ ],
+ "draft": "WCAG 2.2 e POUR\nTópico 9 — Acessibilidade › Módulo 32 — Fundamentos de acessibilidade\nResumo\nDiretrizes do W3C organizadas em quatro princípios: perceptível, operável, compreensível e robusto. É a referência técnica global.\nAnotações\nVocê sabia?\n- A WCAG 2.2 foi publicada pelo W3C em outubro de 2023 e trouxe critérios novos, como tamanho mínimo de alvo e foco não escondido.\nExplicando o conceito\n- Os 4 princípios: perceptível, operável, compreensível, robusto.\n- Diretrizes e critérios de sucesso.\n- O que mudou da 2.1 para a 2.2.\nReferências\n- W3C — WCAG 2.2 e “What’s New in WCAG 2.2”.\n- W3C WAI — WCAG 2 at a Glance.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Acessibilidade/Fundamentos de acessibilidade/WCAG 2.2 e POUR.md"
+}

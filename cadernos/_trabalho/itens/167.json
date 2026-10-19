@@ -1,0 +1,15 @@
+{
+ "topic": "Testes e validação",
+ "module": "Testes rápidos e complementares",
+ "name": "5-second test",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "First click test",
+  "5-second test",
+  "Teste de preferência",
+  "Tree testing"
+ ],
+ "draft": "5-second test\nTópico 10 — Testes e validação › Módulo 36 — Testes rápidos e complementares\nResumo\nMostra a tela por cinco segundos e pergunta o que a pessoa lembra. Mede clareza da mensagem principal, não usabilidade.\nAnotações\nVocê sabia?\n- Pesquisas da NN/g mostram que muitas pessoas decidem em poucos segundos se ficam ou saem de uma página.\nExplicando o conceito\n- Como montar e quais perguntas fazer.\n- O que ele mede (clareza, primeira impressão) e o que não mede.\n- Exemplo com landing page.\nReferências\n- Lyndon Cerejo — artigo sobre 5-second test (Smashing Magazine).\n- Lyssna (antigo UsabilityHub).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Testes e validação/Testes rápidos e complementares/5-second test.md"
+}

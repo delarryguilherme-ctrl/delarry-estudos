@@ -1,0 +1,15 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "Fluxos",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "User flows e task flows",
+  "Wireflows",
+  "Estados de tela",
+  "Edge cases"
+ ],
+ "draft": "Módulo 22 — Fluxos\nTópico 6 — Arquitetura de informação e interação\nConteúdos\n- User flows e task flows\n- Wireflows\n- Estados de tela\n- Edge cases\nLeituras\n- User Journeys vs. User Flows — NN/g\n- Wireflows — NN/g\n- Designing Empty States in Complex Applications — NN/g",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/Fluxos/Visão geral do módulo.md"
+}

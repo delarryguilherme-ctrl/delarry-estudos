@@ -1,0 +1,15 @@
+{
+ "topic": "Acessibilidade",
+ "module": "Fundamentos de acessibilidade",
+ "name": "Deficiência permanente, temporária e situacional",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Deficiência permanente, temporária e situacional",
+  "WCAG 2.2 e POUR",
+  "Níveis A, AA e AAA",
+  "Legislação brasileira"
+ ],
+ "draft": "Deficiência permanente, temporária e situacional\nTópico 9 — Acessibilidade › Módulo 32 — Fundamentos de acessibilidade\nResumo\nUm braço amputado, um braço quebrado e um bebê no colo geram a mesma limitação de uso. Acessibilidade beneficia muito mais gente do que o público com deficiência permanente.\nAnotações\nVocê sabia?\n- O Inclusive Design Toolkit da Microsoft usa o exemplo: uma pessoa com um braço, outra com o braço quebrado e um pai segurando o bebê têm a mesma limitação.\nExplicando o conceito\n- Modelo social da deficiência.\n- Espectro de personas: permanente, temporária, situacional.\n- Quantas pessoas são afetadas (dados do IBGE e da OMS).\nReferências\n- Microsoft — Inclusive Design Toolkit.\n- IBGE — dados sobre pessoas com deficiência.\n- OMS — relatório mundial sobre deficiência.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Acessibilidade/Fundamentos de acessibilidade/Deficiência permanente, temporária e situacional.md"
+}

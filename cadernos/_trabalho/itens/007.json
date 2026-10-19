@@ -1,0 +1,14 @@
+{
+ "topic": "Processos e início de projeto",
+ "module": "Metodologias de produto e rotina de time",
+ "name": "Agile, Scrum e Kanban",
+ "overview": false,
+ "siblings": [
+  "Ciclo de vida de produto",
+  "Agile, Scrum e Kanban",
+  "Design sprint",
+  "Retrospectivas"
+ ],
+ "draft": "Agile, Scrum e Kanban\nTópico 2 — Processos e início de projeto › Módulo 07 — Metodologias de produto e rotina de time\nResumo\nScrum trabalha em sprints com cerimônias fixas; Kanban trabalha em fluxo contínuo. O designer precisa entregar dentro desse ritmo sem virar fábrica de tela.\nAnotações\nVocê sabia?\n- O Manifesto Ágil foi escrito em 2001, em uma estação de esqui em Snowbird (EUA), por 17 desenvolvedores.\n- O Kanban nasceu nas fábricas da Toyota, com cartões que sinalizavam a necessidade de mais peças.\nExplicando o conceito\n- Valores do Manifesto Ágil.\n- Scrum: papéis, sprints e cerimônias. Kanban: fluxo e limite de trabalho em andamento.\n- Onde o designer entra: trabalhar uma ou duas sprints à frente.\nReferências\n- Manifesto Ágil (agilemanifesto.org).\n- Guia do Scrum (Schwaber e Sutherland).\n- Jeff Patton — User Story Mapping.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Processos e início de projeto/Metodologias de produto e rotina de time/Agile, Scrum e Kanban.md"
+}

@@ -1,0 +1,17 @@
+{
+ "topic": "Testes e validação",
+ "module": "Testes de usabilidade",
+ "name": "Ferramentas na prática",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Ferramentas de teste",
+  "Ferramentas na prática",
+  "Roteiro e tarefas",
+  "Teste moderado",
+  "Teste não moderado",
+  "Métricas e severidade"
+ ],
+ "draft": "Ferramentas na prática\nTópico 10 — Testes e validação › Módulo 35 — Testes de usabilidade\nResumo\nMontar um teste completo numa ferramenta: protótipo, tarefas, perguntas e leitura dos resultados.\nAnotações\nVocê sabia?\n- Em programas de culinária como MasterChef, o “mise en place” (deixar tudo pronto antes) é o que evita desastre; com teste é a mesma coisa.\nExplicando o conceito\n- Montar o teste: protótipo, tarefas, perguntas, telas de boas-vindas e final.\n- Piloto antes do teste real.\n- Ler e exportar resultados (mapas de clique, taxa de sucesso).\nReferências\n- Tutoriais do Maze.\n- NN/g — “Pilot Testing: Getting It Right (Before) the First Time”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Testes e validação/Testes de usabilidade/Ferramentas na prática.md"
+}

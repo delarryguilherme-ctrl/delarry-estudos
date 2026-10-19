@@ -1,0 +1,16 @@
+{
+ "topic": "UX Research",
+ "module": "Métodos quantitativos",
+ "name": "AB testing e significância",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Surveys",
+  "Product analytics",
+  "Heatmaps e gravação de sessões",
+  "Questionários padronizados",
+  "AB testing e significância"
+ ],
+ "draft": "A/B testing e significância\nTópico 3 — UX Research › Módulo 12 — Métodos quantitativos\nResumo\nCompara duas versões com tráfego real. Sem amostra suficiente, o \"vencedor\" pode ser ruído.\nAnotações\nVocê sabia?\n- Na campanha de Obama em 2008, um teste A/B da página inicial aumentou os cadastros em cerca de 40%.\n- O Google testou 41 tons de azul para links; a história virou símbolo de decisão por dado (e de exagero).\nExplicando o conceito\n- Hipótese, variante, métrica principal e tamanho de amostra.\n- Significância estatística sem matemática pesada.\n- Armadilhas: parar o teste cedo, olhar muitas métricas, efeito novidade.\nReferências\n- Ron Kohavi — Trustworthy Online Controlled Experiments.\n- Calculadoras de amostra (Evan Miller).\n- Caso Obama 2008 (Dan Siroker).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Métodos quantitativos/AB testing e significância.md"
+}

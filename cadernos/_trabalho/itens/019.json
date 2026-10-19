@@ -1,0 +1,16 @@
+{
+ "topic": "UX Research",
+ "module": "Planejamento de pesquisa",
+ "name": "Metas do usuário vs metas do negócio",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Plano de pesquisa",
+  "Metas do usuário vs metas do negócio",
+  "Tipos de pesquisa",
+  "Recrutamento e amostra",
+  "Ética, consentimento e LGPD"
+ ],
+ "draft": "Metas do usuário vs metas do negócio\nTópico 3 — UX Research › Módulo 09 — Planejamento de pesquisa\nResumo\nPesquisa boa investiga as duas e mostra onde coincidem ou conflitam. É nesse cruzamento que o design gera valor defensável.\nAnotações\nVocê sabia?\n- Na série Black Mirror (“Nosedive”), a meta do negócio (engajamento por notas) devora a vida das pessoas: metas desalinhadas levadas ao extremo.\nExplicando o conceito\n- Como levantar as metas de cada lado.\n- Onde elas coincidem e onde conflitam.\n- Como apresentar um conflito para os stakeholders.\nReferências\n- NN/g — artigos sobre alinhamento de objetivos.\n- Alan Cooper — About Face (metas dos usuários).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Planejamento de pesquisa/Metas do usuário vs metas do negócio.md"
+}

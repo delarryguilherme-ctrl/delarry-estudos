@@ -1,0 +1,17 @@
+{
+ "topic": "Wireframes, prototipação e ferramentas",
+ "module": "Prototipação",
+ "name": "Baixa, média e alta fidelidade",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Baixa, média e alta fidelidade",
+  "Protótipo em papel",
+  "Baixa fidelidade no Figma",
+  "Mockups e alta fidelidade",
+  "Interações, transições e gestos",
+  "Protótipo em código ou Framer"
+ ],
+ "draft": "Baixa, média e alta fidelidade\nTópico 7 — Wireframes, prototipação e ferramentas › Módulo 26 — Prototipação\nResumo\nQuanto mais cedo e incerto, menor a fidelidade. Alta fidelidade cedo faz as pessoas comentarem estética em vez de estrutura.\nAnotações\nVocê sabia?\n- Estúdios de animação testam o filme inteiro com “animatics” (storyboards com som) antes de animar de verdade, porque mudar no fim custa muito mais.\nExplicando o conceito\n- O que muda em cada fidelidade: visual, interação, conteúdo.\n- Escolher a fidelidade pela pergunta que você quer responder.\n- Riscos da alta fidelidade cedo demais.\nReferências\n- NN/g — “UX Prototypes: Low Fidelity vs. High Fidelity”.\n- Todd Zaki Warfel — Prototyping.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Wireframes, prototipação e ferramentas/Prototipação/Baixa, média e alta fidelidade.md"
+}

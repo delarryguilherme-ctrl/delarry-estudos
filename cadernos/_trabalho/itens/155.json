@@ -1,0 +1,15 @@
+{
+ "topic": "Acessibilidade",
+ "module": "Auditoria e handoff acessível",
+ "name": "Testes com NVDA e VoiceOver",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Ferramentas automáticas",
+  "Testes com NVDA e VoiceOver",
+  "Anotações para dev",
+  "Testes com pessoas com deficiência"
+ ],
+ "draft": "Testes com NVDA e VoiceOver\nTópico 9 — Acessibilidade › Módulo 34 — Auditoria e handoff acessível\nResumo\nNavegar a interface com leitor de tela revela problemas de ordem, rótulo e anúncio que nenhuma ferramenta vê.\nAnotações\nVocê sabia?\n- O VoiceOver vem embutido em iPhones e Macs, e o iPhone se tornou um dos aparelhos preferidos por pessoas cegas.\nExplicando o conceito\n- Comandos básicos do NVDA e do VoiceOver.\n- Roteiro de teste: navegação por títulos, formulários, modais.\n- Registrar problemas com passos para reproduzir.\nReferências\n- WebAIM — Using NVDA / Using VoiceOver.\n- Deque — Screen reader keyboard shortcuts.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Acessibilidade/Auditoria e handoff acessível/Testes com NVDA e VoiceOver.md"
+}

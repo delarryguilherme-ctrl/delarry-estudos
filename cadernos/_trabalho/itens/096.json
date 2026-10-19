@@ -1,0 +1,16 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "UX Writing",
+ "name": "Voz e tom",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Voz e tom",
+  "Microcopy",
+  "Mensagens de erro",
+  "Nomenclatura e consistência",
+  "Content-first design"
+ ],
+ "draft": "Voz e tom\nTópico 6 — Arquitetura de informação e interação › Módulo 24 — UX Writing\nResumo\nVoz é a personalidade constante da marca; tom muda conforme o contexto (erro, sucesso, cobrança).\nAnotações\nVocê sabia?\n- A coruja do Duolingo virou personagem com voz própria, que vai do fofo ao passivo-agressivo nos lembretes, e isso virou meme.\nExplicando o conceito\n- Voz (constante) vs tom (muda com o contexto).\n- Como definir a voz: atributos “somos… mas não…”.\n- Exemplos de tom em erro, sucesso e cobrança.\nReferências\n- Mailchimp — Content Style Guide.\n- NN/g — “The Four Dimensions of Tone of Voice”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/UX Writing/Voz e tom.md"
+}

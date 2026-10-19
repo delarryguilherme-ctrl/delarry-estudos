@@ -1,0 +1,16 @@
+{
+ "topic": "Processos e início de projeto",
+ "module": "Processos de design",
+ "name": "Lean UX",
+ "overview": false,
+ "siblings": [
+  "Double Diamond",
+  "Design Thinking e suas críticas",
+  "Lean UX",
+  "Jobs to be Done",
+  "Discovery vs delivery e dual-track",
+  "Qual processo usar"
+ ],
+ "draft": "Lean UX\nTópico 2 — Processos e início de projeto › Módulo 06 — Processos de design\nResumo\nTrabalhar com hipóteses e experimentos curtos em vez de entregáveis pesados. O resultado medido vale mais que o documento.\nAnotações\nVocê sabia?\n- O Lean UX bebe do Lean Startup (Eric Ries, 2011), que por sua vez se inspirou no sistema de produção da Toyota.\nExplicando o conceito\n- Ciclo construir → medir → aprender aplicado ao design.\n- Hipóteses no lugar de requisitos; resultado no lugar de entregáveis.\n- Como ficam a documentação e o papel do designer no time.\nReferências\n- Jeff Gothelf e Josh Seiden — Lean UX.\n- Eric Ries — A Startup Enxuta.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Processos e início de projeto/Processos de design/Lean UX.md"
+}

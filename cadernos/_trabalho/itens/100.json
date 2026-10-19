@@ -1,0 +1,16 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "UX Writing",
+ "name": "Content-first design",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Voz e tom",
+  "Microcopy",
+  "Mensagens de erro",
+  "Nomenclatura e consistência",
+  "Content-first design"
+ ],
+ "draft": "Content-first design\nTópico 6 — Arquitetura de informação e interação › Módulo 24 — UX Writing\nResumo\nProjetar a partir do conteúdo real, não de lorem ipsum. Conteúdo real expõe problemas de layout cedo.\nAnotações\nVocê sabia?\n- O “lorem ipsum” vem de um texto de Cícero escrito em 45 a.C. e foi embaralhado por tipógrafos séculos depois.\nExplicando o conceito\n- Começar pelo conteúdo real (ou o mais próximo dele).\n- Problemas que o texto falso esconde: títulos longos, tradução, dados reais.\n- Trabalhar junto com quem escreve o conteúdo.\nReferências\n- Karen McGrane — Content Strategy for Mobile.\n- Kristina Halvorson — Content Strategy for the Web.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/UX Writing/Content-first design.md"
+}

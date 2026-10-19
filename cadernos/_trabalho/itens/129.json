@@ -1,0 +1,16 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Componentes e padrões",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Design patterns",
+  "Atomic design",
+  "Anatomia e estados de componentes",
+  "Padrões recorrentes",
+  "Visualização de dados básica"
+ ],
+ "draft": "Módulo 30 — Componentes e padrões\nTópico 8 — Interface (UI)\nConteúdos\n- Design patterns\n- Atomic design\n- Anatomia e estados de componentes\n- Padrões recorrentes\n- Visualização de dados básica\nLeituras\n- Atomic Design — Brad Frost\n- Material Design 3 — componentes\n- Storytelling with Data",
+ "out": "cadernos/User Experience Design/Interface (UI)/Componentes e padrões/Visão geral do módulo.md"
+}

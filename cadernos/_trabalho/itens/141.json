@@ -1,0 +1,15 @@
+{
+ "topic": "Acessibilidade",
+ "module": "Fundamentos de acessibilidade",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Deficiência permanente, temporária e situacional",
+  "WCAG 2.2 e POUR",
+  "Níveis A, AA e AAA",
+  "Legislação brasileira"
+ ],
+ "draft": "Módulo 32 — Fundamentos de acessibilidade\nTópico 9 — Acessibilidade\nConteúdos\n- Deficiência permanente, temporária e situacional\n- WCAG 2.2 e POUR\n- Níveis A, AA e AAA\n- Legislação brasileira\nLeituras\n- Introdução à acessibilidade na web — W3C WAI (PT-BR)\n- WCAG 2.2 — W3C\n- How to Meet WCAG (Quick Reference) — W3C\n- Lei Brasileira de Inclusão (Lei 13.146/2015)\n- eMAG — Modelo de Acessibilidade em Governo Eletrônico",
+ "out": "cadernos/User Experience Design/Acessibilidade/Fundamentos de acessibilidade/Visão geral do módulo.md"
+}

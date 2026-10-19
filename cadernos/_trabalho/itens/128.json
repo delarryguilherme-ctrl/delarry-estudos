@@ -1,0 +1,17 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Fundamentos visuais",
+ "name": "Iconografia e imagens",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Hierarquia visual",
+  "Grids e layout",
+  "Espaçamento e sistema de 8pt",
+  "Tipografia",
+  "Cor",
+  "Iconografia e imagens"
+ ],
+ "draft": "Iconografia e imagens\nTópico 8 — Interface (UI) › Módulo 29 — Fundamentos visuais\nResumo\nÍcones precisam de rótulo quando o significado não é universal. Imagem deve informar, não só decorar.\nAnotações\nVocê sabia?\n- Susan Kare desenhou os ícones do primeiro Macintosh (1984), como a lixeira e o “Happy Mac”, em grades de poucos pixels.\n- O disquete continua sendo o ícone de “salvar”, mesmo para quem nunca viu um disquete.\nExplicando o conceito\n- Quando o ícone precisa de rótulo.\n- Consistência de estilo (traço, preenchimento, tamanho).\n- Imagens que informam vs imagens decorativas.\nReferências\n- NN/g — “Icon Usability”.\n- Bibliotecas: Material Symbols, Phosphor, Lucide.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Interface (UI)/Fundamentos visuais/Iconografia e imagens.md"
+}

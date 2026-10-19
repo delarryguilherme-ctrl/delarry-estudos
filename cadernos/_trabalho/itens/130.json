@@ -1,0 +1,16 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Componentes e padrões",
+ "name": "Design patterns",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Design patterns",
+  "Atomic design",
+  "Anatomia e estados de componentes",
+  "Padrões recorrentes",
+  "Visualização de dados básica"
+ ],
+ "draft": "Design patterns\nTópico 8 — Interface (UI) › Módulo 30 — Componentes e padrões\nResumo\nSoluções recorrentes para problemas recorrentes (paginação, busca, onboarding). Reinventar padrão custa aprendizado ao usuário.\nAnotações\nVocê sabia?\n- O livro A Pattern Language (1977), do arquiteto Christopher Alexander, inspirou os padrões de software e de interface.\nExplicando o conceito\n- O que é um padrão: problema, contexto, solução.\n- Exemplos: paginação, carrossel, busca, onboarding.\n- Quando reinventar e quando seguir o padrão.\nReferências\n- Christopher Alexander — A Pattern Language.\n- Jenifer Tidwell — Designing Interfaces.\n- ui-patterns.com.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Interface (UI)/Componentes e padrões/Design patterns.md"
+}

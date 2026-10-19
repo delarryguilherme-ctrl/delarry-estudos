@@ -1,0 +1,16 @@
+{
+ "topic": "Síntese e definição do problema",
+ "module": "Síntese",
+ "name": "Personas e proto-personas",
+ "overview": false,
+ "siblings": [
+  "O que é um insight",
+  "Affinity mapping",
+  "Empathy map",
+  "Personas e proto-personas",
+  "User stories",
+  "Quantificar achados qualitativos"
+ ],
+ "draft": "Personas e proto-personas\nTópico 4 — Síntese e definição do problema › Módulo 14 — Síntese\nResumo\nArquétipos baseados em padrões de comportamento. Proto-persona é hipótese explícita; persona sem dado por trás é ficção.\nAnotações\nVocê sabia?\n- Alan Cooper popularizou personas no livro The Inmates Are Running the Asylum (1999), a partir de personagens que ele imaginava conversando enquanto programava.\n- Divertida Mente funciona quase como um jogo de personas: cada emoção tem objetivo, medo e comportamento claros.\nExplicando o conceito\n- Persona baseada em pesquisa vs proto-persona (hipótese).\n- O que uma persona útil contém (objetivos, comportamentos, frustrações) e o que é enfeite (signo, hobby).\n- Críticas às personas e alternativas (JTBD, arquétipos).\nReferências\n- Alan Cooper — The Inmates Are Running the Asylum e About Face.\n- NN/g — “Personas Make Users Memorable”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Síntese e definição do problema/Síntese/Personas e proto-personas.md"
+}

@@ -1,0 +1,14 @@
+{
+ "topic": "Processos e início de projeto",
+ "module": "Metodologias de produto e rotina de time",
+ "name": "Ciclo de vida de produto",
+ "overview": false,
+ "siblings": [
+  "Ciclo de vida de produto",
+  "Agile, Scrum e Kanban",
+  "Design sprint",
+  "Retrospectivas"
+ ],
+ "draft": "Ciclo de vida de produto\nTópico 2 — Processos e início de projeto › Módulo 07 — Metodologias de produto e rotina de time\nResumo\nIntrodução, crescimento, maturidade e declínio. A fase define se o design foca em aquisição, retenção ou eficiência.\nAnotações\nVocê sabia?\n- O Orkut foi a rede social mais usada no Brasil e foi encerrado pelo Google em 2014, um exemplo claro da fase de declínio.\nExplicando o conceito\n- As 4 fases: introdução, crescimento, maturidade, declínio.\n- O foco do design em cada fase (aquisição, retenção, eficiência).\n- Como reconhecer em que fase está o produto em que você trabalha.\nReferências\n- Artigos sobre product life cycle (Harvard Business Review).\n- Casos: Orkut, MSN, Nokia.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Processos e início de projeto/Metodologias de produto e rotina de time/Ciclo de vida de produto.md"
+}

@@ -1,0 +1,17 @@
+{
+ "topic": "Acessibilidade",
+ "module": "Acessibilidade na prática",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Contraste",
+  "Teclado e ordem de foco",
+  "Leitores de tela e HTML semântico",
+  "Alvos de toque",
+  "Formulários acessíveis",
+  "Movimento reduzido"
+ ],
+ "draft": "Módulo 33 — Acessibilidade na prática\nTópico 9 — Acessibilidade\nConteúdos\n- Contraste\n- Teclado e ordem de foco\n- Leitores de tela e HTML semântico\n- Alvos de toque\n- Formulários acessíveis\n- Movimento reduzido\nLeituras\n- Contrast Checker — WebAIM\n- Keyboard Accessibility — WebAIM\n- Acessibilidade — MDN (PT-BR)\n- Movimento Web para Todos",
+ "out": "cadernos/User Experience Design/Acessibilidade/Acessibilidade na prática/Visão geral do módulo.md"
+}

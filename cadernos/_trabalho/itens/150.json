@@ -1,0 +1,17 @@
+{
+ "topic": "Acessibilidade",
+ "module": "Acessibilidade na prática",
+ "name": "Alvos de toque",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Contraste",
+  "Teclado e ordem de foco",
+  "Leitores de tela e HTML semântico",
+  "Alvos de toque",
+  "Formulários acessíveis",
+  "Movimento reduzido"
+ ],
+ "draft": "Alvos de toque\nTópico 9 — Acessibilidade › Módulo 33 — Acessibilidade na prática\nResumo\nA WCAG 2.2 exige no mínimo 24×24 px (nível AA); guias de plataforma recomendam por volta de 44 a 48 px.\nAnotações\nVocê sabia?\n- A Apple recomenda alvos de pelo menos 44×44 pontos e o Material Design, 48×48 dp.\nExplicando o conceito\n- Critério 2.5.8 da WCAG 2.2 (24×24 px no mínimo).\n- Espaço entre alvos e erros de toque.\n- Lei de Fitts aplicada ao toque.\nReferências\n- W3C — Understanding Target Size (Minimum).\n- Apple HIG e Material Design — tamanhos de toque.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Acessibilidade/Acessibilidade na prática/Alvos de toque.md"
+}

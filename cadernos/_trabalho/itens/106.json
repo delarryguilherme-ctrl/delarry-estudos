@@ -1,0 +1,17 @@
+{
+ "topic": "Wireframes, prototipação e ferramentas",
+ "module": "Prototipação",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Baixa, média e alta fidelidade",
+  "Protótipo em papel",
+  "Baixa fidelidade no Figma",
+  "Mockups e alta fidelidade",
+  "Interações, transições e gestos",
+  "Protótipo em código ou Framer"
+ ],
+ "draft": "Módulo 26 — Prototipação\nTópico 7 — Wireframes, prototipação e ferramentas\nConteúdos\n- Baixa, média e alta fidelidade\n- Protótipo em papel\n- Baixa fidelidade no Figma\n- Mockups e alta fidelidade\n- Interações, transições e gestos\n- Protótipo em código ou Framer\nLeituras\n- UX Prototypes: Low Fidelity vs. High Fidelity — NN/g\n- Prototyping — Interaction Design Foundation\n- Framer Academy",
+ "out": "cadernos/User Experience Design/Wireframes, prototipação e ferramentas/Prototipação/Visão geral do módulo.md"
+}

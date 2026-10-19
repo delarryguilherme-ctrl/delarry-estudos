@@ -1,0 +1,15 @@
+{
+ "topic": "Testes e validação",
+ "module": "Testes rápidos e complementares",
+ "name": "Tree testing",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "First click test",
+  "5-second test",
+  "Teste de preferência",
+  "Tree testing"
+ ],
+ "draft": "Tree testing\nTópico 10 — Testes e validação › Módulo 36 — Testes rápidos e complementares\nResumo\nValida a arquitetura de informação sem interface visual. Isola problemas de estrutura e rótulo.\nAnotações\nVocê sabia?\n- O tree testing também é chamado de “card sorting reverso”: em vez de criar grupos, a pessoa procura itens dentro de uma estrutura pronta.\nExplicando o conceito\n- Montar a árvore e as tarefas.\n- Métricas: sucesso, diretividade, primeiro clique, tempo.\n- Comparar duas árvores.\nReferências\n- NN/g — “Tree Testing: Fast, Iterative Evaluation of Menu Labels and Categories”.\n- Optimal Workshop — Treejack.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Testes e validação/Testes rápidos e complementares/Tree testing.md"
+}

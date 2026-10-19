@@ -1,0 +1,14 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Direção visual",
+ "name": "Moodboard",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Moodboard",
+  "Conceito visual e style tiles",
+  "Da pesquisa à direção visual"
+ ],
+ "draft": "Moodboard\nTópico 8 — Interface (UI) › Módulo 28 — Direção visual\nResumo\nColeção de referências visuais que define clima e estilo. Serve para alinhar expectativa antes de desenhar telas.\nAnotações\nVocê sabia?\n- Diretores como Wes Anderson são reconhecidos pelas paletas de cor tão marcantes que existem perfis inteiros catalogando as cores de cada filme.\nExplicando o conceito\n- Para que serve: alinhar clima e estilo antes das telas.\n- Como montar: referências, palavras-chave, curadoria.\n- Ferramentas: Pinterest, Milanote, Figma.\nReferências\n- NN/g — artigos sobre moodboards.\n- Perfis de paletas de filmes (ex.: Cinema Palettes).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Interface (UI)/Direção visual/Moodboard.md"
+}

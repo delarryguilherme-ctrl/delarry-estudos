@@ -1,0 +1,15 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "Fluxos",
+ "name": "User flows e task flows",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "User flows e task flows",
+  "Wireflows",
+  "Estados de tela",
+  "Edge cases"
+ ],
+ "draft": "User flows e task flows\nTópico 6 — Arquitetura de informação e interação › Módulo 22 — Fluxos\nResumo\nTask flow é o caminho linear de uma tarefa; user flow inclui decisões e ramificações por tipo de usuário.\nAnotações\nVocê sabia?\n- Os livros “Escolha sua aventura” e o episódio Bandersnatch, de Black Mirror, são user flows com ramificações e finais diferentes.\nExplicando o conceito\n- Task flow (linear) vs user flow (com decisões).\n- Símbolos: início, tela, decisão, ação, fim.\n- Como usar fluxos para achar telas e estados que faltam.\nReferências\n- NN/g — “User Journeys vs. User Flows”.\n- Ferramentas: FigJam, Whimsical, Miro.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/Fluxos/User flows e task flows.md"
+}

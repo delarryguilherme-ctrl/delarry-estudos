@@ -1,0 +1,17 @@
+{
+ "topic": "Testes e validação",
+ "module": "Testes de usabilidade",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Ferramentas de teste",
+  "Ferramentas na prática",
+  "Roteiro e tarefas",
+  "Teste moderado",
+  "Teste não moderado",
+  "Métricas e severidade"
+ ],
+ "draft": "Módulo 35 — Testes de usabilidade\nTópico 10 — Testes e validação\nConteúdos\n- Ferramentas de teste\n- Ferramentas na prática\n- Roteiro e tarefas\n- Teste moderado\n- Teste não moderado\n- Métricas e severidade\nLeituras\n- Usability Testing 101 — NN/g\n- Why You Only Need to Test with 5 Users — NN/g\n- Remote Usability Tests: Moderated and Unmoderated — NN/g\n- Severity Ratings for Usability Problems — NN/g\n- Success Rate: The Simplest Usability Metric — NN/g",
+ "out": "cadernos/User Experience Design/Testes e validação/Testes de usabilidade/Visão geral do módulo.md"
+}

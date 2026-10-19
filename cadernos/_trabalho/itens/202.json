@@ -1,0 +1,14 @@
+{
+ "topic": "Colaboração, comunicação e ética",
+ "module": "Ética e responsabilidade",
+ "name": "Privacy by design",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Dark patterns",
+  "Privacy by design",
+  "Design para impacto social"
+ ],
+ "draft": "Privacy by design\nTópico 12 — Colaboração, comunicação e ética › Módulo 43 — Ética e responsabilidade\nResumo\nColetar só o necessário, explicar o uso e dar controle. No Brasil, a LGPD e a ANPD tornam isso obrigação legal.\nAnotações\nVocê sabia?\n- O conceito de Privacy by Design foi criado por Ann Cavoukian, comissária de privacidade de Ontário, nos anos 1990.\nExplicando o conceito\n- Os 7 princípios.\n- Coletar o mínimo, explicar o uso, dar controle.\n- LGPD na prática do design (consentimento, termos, exclusão de conta).\nReferências\n- Ann Cavoukian — “Privacy by Design: The 7 Foundational Principles”.\n- Guias da ANPD.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Colaboração, comunicação e ética/Ética e responsabilidade/Privacy by design.md"
+}

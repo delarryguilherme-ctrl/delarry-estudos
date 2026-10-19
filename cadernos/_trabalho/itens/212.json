@@ -1,0 +1,15 @@
+{
+ "topic": "Inteligência artificial e UX",
+ "module": "Design de produtos com IA",
+ "name": "Controle e human-in-the-loop",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Modelo mental de sistemas probabilísticos",
+  "Confiança e explicabilidade",
+  "Erro e incerteza",
+  "Controle e human-in-the-loop"
+ ],
+ "draft": "Controle e human-in-the-loop\nTópico 13 — Inteligência artificial e UX › Módulo 45 — Design de produtos com IA\nResumo\nO usuário revisa, edita e aprova antes de ações importantes. Automação sem controle em decisões críticas gera dano.\nAnotações\nVocê sabia?\n- Em WALL-E, os humanos deixaram as máquinas decidirem tudo e não conseguem mais nem andar.\nExplicando o conceito\n- Níveis de automação: sugerir, confirmar, executar.\n- Revisar e aprovar antes de ações importantes.\n- Desfazer e histórico.\nReferências\n- Google PAIR — People + AI Guidebook.\n- Ben Shneiderman — Human-Centered AI.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Inteligência artificial e UX/Design de produtos com IA/Controle e human-in-the-loop.md"
+}

@@ -1,0 +1,14 @@
+{
+ "topic": "Processos e início de projeto",
+ "module": "Metodologias de produto e rotina de time",
+ "name": "Design sprint",
+ "overview": false,
+ "siblings": [
+  "Ciclo de vida de produto",
+  "Agile, Scrum e Kanban",
+  "Design sprint",
+  "Retrospectivas"
+ ],
+ "draft": "Design sprint\nTópico 2 — Processos e início de projeto › Módulo 07 — Metodologias de produto e rotina de time\nResumo\nCinco dias para mapear, esboçar, decidir, prototipar e testar uma ideia. Útil para decisões grandes; caro demais para problemas pequenos.\nAnotações\nVocê sabia?\n- A Design Sprint foi criada por Jake Knapp no Google Ventures e virou o livro “Sprint” (2016).\nExplicando o conceito\n- Os 5 dias: mapear, esboçar, decidir, prototipar, testar.\n- Quando vale (decisão grande e incerta) e quando não vale.\n- Versões curtas (sprint de 4 dias, remota).\nReferências\n- Jake Knapp — Sprint.\n- Site thesprintbook.com.\n- Google — Design Sprint Kit.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Processos e início de projeto/Metodologias de produto e rotina de time/Design sprint.md"
+}

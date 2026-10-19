@@ -1,0 +1,15 @@
+{
+ "topic": "Acessibilidade",
+ "module": "Auditoria e handoff acessível",
+ "name": "Anotações para dev",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Ferramentas automáticas",
+  "Testes com NVDA e VoiceOver",
+  "Anotações para dev",
+  "Testes com pessoas com deficiência"
+ ],
+ "draft": "Anotações para dev\nTópico 9 — Acessibilidade › Módulo 34 — Auditoria e handoff acessível\nResumo\nOrdem de foco, papéis, rótulos acessíveis, textos alternativos e comportamento de foco em modais. Sem anotação, o dev adivinha.\nAnotações\nVocê sabia?\n- Sem anotação, o dev costuma seguir a ordem do código para o foco, que nem sempre é a ordem visual da tela.\nExplicando o conceito\n- O que anotar: ordem de foco, títulos, rótulos, textos alternativos, regiões.\n- Comportamento de foco em modais e menus.\n- Como organizar as anotações no arquivo.\nReferências\n- Figma Community — Accessibility annotation kits.\n- W3C WAI — Designing for Web Accessibility.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Acessibilidade/Auditoria e handoff acessível/Anotações para dev.md"
+}

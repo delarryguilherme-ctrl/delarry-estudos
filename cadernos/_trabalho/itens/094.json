@@ -1,0 +1,16 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "Design de interação",
+ "name": "Gestos e input",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Feedback e microinterações",
+  "Padrões de formulário",
+  "Motion com propósito",
+  "Navegação mobile vs desktop",
+  "Gestos e input"
+ ],
+ "draft": "Gestos e input\nTópico 6 — Arquitetura de informação e interação › Módulo 23 — Design de interação\nResumo\nToque, arraste, teclado, voz. Gesto escondido sem alternativa visível é problema de descoberta e de acessibilidade.\nAnotações\nVocê sabia?\n- A interface de Minority Report (2002), com gestos no ar, teve consultoria de John Underkoffler, que depois tentou levar a ideia para produtos reais.\nExplicando o conceito\n- Toque, arraste, pinça, toque longo, teclado, voz.\n- Problema da descoberta: gesto escondido precisa de alternativa visível.\n- Acessibilidade de gestos complexos.\nReferências\n- Luke Wroblewski — Touch Gesture Reference Guide.\n- Apple HIG — Gestures.\n- Palestra TED de John Underkoffler (2010).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/Design de interação/Gestos e input.md"
+}

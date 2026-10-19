@@ -1,0 +1,17 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "Arquitetura de informação",
+ "name": "Sistemas de navegação",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Organização e taxonomia",
+  "Sistemas de navegação",
+  "Rotulagem",
+  "Busca e filtros",
+  "Sitemap",
+  "Card sorting e tree testing aplicados"
+ ],
+ "draft": "Sistemas de navegação\nTópico 6 — Arquitetura de informação e interação › Módulo 21 — Arquitetura de informação\nResumo\nGlobal, local, contextual e utilitária. Cada um responde \"onde estou, para onde posso ir\".\nAnotações\nVocê sabia?\n- O termo “breadcrumb” vem de João e Maria, que deixavam migalhas de pão para achar o caminho de volta.\nExplicando o conceito\n- Navegação global, local, contextual e utilitária.\n- As três perguntas: onde estou, onde posso ir, como volto.\n- Breadcrumbs, menus, abas e links relacionados.\nReferências\n- Rosenfeld e Morville — Information Architecture.\n- NN/g — artigos sobre navegação e breadcrumbs.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/Arquitetura de informação/Sistemas de navegação.md"
+}

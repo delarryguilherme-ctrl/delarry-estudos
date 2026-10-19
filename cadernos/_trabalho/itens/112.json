@@ -1,0 +1,17 @@
+{
+ "topic": "Wireframes, prototipação e ferramentas",
+ "module": "Prototipação",
+ "name": "Protótipo em código ou Framer",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Baixa, média e alta fidelidade",
+  "Protótipo em papel",
+  "Baixa fidelidade no Figma",
+  "Mockups e alta fidelidade",
+  "Interações, transições e gestos",
+  "Protótipo em código ou Framer"
+ ],
+ "draft": "Protótipo em código ou Framer\nTópico 7 — Wireframes, prototipação e ferramentas › Módulo 26 — Prototipação\nResumo\nNecessário quando dados reais, inputs livres ou performance importam no teste.\nAnotações\nVocê sabia?\n- O Framer começou como uma biblioteca de JavaScript para prototipar e depois virou uma ferramenta de criar sites.\nExplicando o conceito\n- Quando o protótipo em código vale: dados reais, campos de texto livres, performance.\n- Framer, ProtoPie, código simples com HTML/CSS.\n- Custo e tempo comparados ao Figma.\nReferências\n- Documentação do Framer e do ProtoPie.\n- Artigos sobre prototipação com código.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Wireframes, prototipação e ferramentas/Prototipação/Protótipo em código ou Framer.md"
+}

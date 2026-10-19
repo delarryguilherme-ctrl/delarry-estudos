@@ -1,0 +1,15 @@
+{
+ "topic": "Acessibilidade",
+ "module": "Fundamentos de acessibilidade",
+ "name": "Níveis A, AA e AAA",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Deficiência permanente, temporária e situacional",
+  "WCAG 2.2 e POUR",
+  "Níveis A, AA e AAA",
+  "Legislação brasileira"
+ ],
+ "draft": "Níveis A, AA e AAA\nTópico 9 — Acessibilidade › Módulo 32 — Fundamentos de acessibilidade\nResumo\nA é o mínimo; AA é o padrão exigido pela maioria das leis e contratos; AAA é desejável, mas nem sempre viável em todo conteúdo.\nAnotações\nVocê sabia?\n- O próprio W3C não recomenda exigir AAA para sites inteiros, porque nem todo conteúdo consegue cumprir todos os critérios.\nExplicando o conceito\n- O que cada nível exige, com exemplos.\n- Por que AA é o padrão de leis e contratos.\n- Como planejar a conformidade aos poucos.\nReferências\n- W3C — Understanding Conformance.\n- WebAIM — WCAG 2 Checklist.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Acessibilidade/Fundamentos de acessibilidade/Níveis A, AA e AAA.md"
+}

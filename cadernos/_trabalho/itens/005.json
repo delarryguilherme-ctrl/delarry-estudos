@@ -1,0 +1,16 @@
+{
+ "topic": "Processos e início de projeto",
+ "module": "Processos de design",
+ "name": "Qual processo usar",
+ "overview": false,
+ "siblings": [
+  "Double Diamond",
+  "Design Thinking e suas críticas",
+  "Lean UX",
+  "Jobs to be Done",
+  "Discovery vs delivery e dual-track",
+  "Qual processo usar"
+ ],
+ "draft": "Qual processo usar\nTópico 2 — Processos e início de projeto › Módulo 06 — Processos de design\nResumo\nO processo se adapta a prazo, risco e maturidade da empresa. Risco alto pede mais discovery; mudança pequena e reversível pede menos.\nAnotações\nVocê sabia?\n- Em Os Vingadores, cada herói luta de um jeito, mas o plano muda conforme a ameaça; com processo de design é igual.\nExplicando o conceito\n- Critérios: risco, incerteza, prazo, tamanho da mudança, maturidade da empresa.\n- Exemplos: correção pequena vs produto novo.\n- Montar um processo próprio a partir dos conhecidos.\nReferências\n- NN/g — artigos sobre escolher métodos por fase.\n- Comparativos entre Double Diamond, Lean UX e Design Sprint.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Processos e início de projeto/Processos de design/Qual processo usar.md"
+}

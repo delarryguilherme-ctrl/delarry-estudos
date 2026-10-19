@@ -1,0 +1,16 @@
+{
+ "topic": "UX Research",
+ "module": "Métodos quantitativos",
+ "name": "Product analytics",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Surveys",
+  "Product analytics",
+  "Heatmaps e gravação de sessões",
+  "Questionários padronizados",
+  "AB testing e significância"
+ ],
+ "draft": "Product analytics\nTópico 3 — UX Research › Módulo 12 — Métodos quantitativos\nResumo\nFunis mostram onde as pessoas desistem; coortes mostram retenção ao longo do tempo. Analytics diz o quê, raramente o porquê.\nAnotações\nVocê sabia?\n- O filme O Homem que Mudou o Jogo (Moneyball) conta como o Oakland Athletics montou um time de beisebol usando dados que os outros ignoravam.\nExplicando o conceito\n- Eventos, funis, coortes e retenção.\n- Analytics diz o quê; pesquisa qualitativa diz o porquê.\n- Ferramentas comuns: Google Analytics, Amplitude, Mixpanel.\nReferências\n- Alistair Croll e Benjamin Yoskovitz — Lean Analytics.\n- Documentação e blogs da Amplitude e da Mixpanel.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Métodos quantitativos/Product analytics.md"
+}

@@ -1,0 +1,15 @@
+{
+ "topic": "Wireframes, prototipação e ferramentas",
+ "module": "Figma",
+ "name": "Prototipação no Figma",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Básico",
+  "Avançado",
+  "Prototipação no Figma",
+  "Plugins e colaboração"
+ ],
+ "draft": "Prototipação no Figma\nTópico 7 — Wireframes, prototipação e ferramentas › Módulo 27 — Figma\nResumo\nConexões, overlays, smart animate e variáveis para lógica simples.\nAnotações\nVocê sabia?\n- Antes do Figma, era comum desenhar no Sketch e prototipar no InVision; o Figma juntou as duas coisas.\nExplicando o conceito\n- Conexões, gatilhos, overlays, scroll.\n- Variáveis e condicionais para lógica simples.\n- Apresentar e testar o protótipo.\nReferências\n- Documentação do Figma — Prototyping.\n- Tutoriais da Figma Community.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Wireframes, prototipação e ferramentas/Figma/Prototipação no Figma.md"
+}

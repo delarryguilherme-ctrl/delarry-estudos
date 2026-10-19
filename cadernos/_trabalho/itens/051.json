@@ -1,0 +1,13 @@
+{
+ "topic": "Síntese e definição do problema",
+ "module": "Jornadas e contexto",
+ "name": "Customer journey map",
+ "overview": false,
+ "siblings": [
+  "Customer journey map",
+  "Service blueprint",
+  "Storyboards"
+ ],
+ "draft": "Customer journey map\nTópico 4 — Síntese e definição do problema › Módulo 15 — Jornadas e contexto\nResumo\nLinha do tempo das etapas, ações, emoções e pontos de contato do usuário. Mostra onde a experiência quebra.\nAnotações\nVocê sabia?\n- A “Jornada do Herói”, de Joseph Campbell, inspirou roteiros como Star Wars, e também ajuda a pensar a jornada do usuário em etapas e momentos de crise.\nExplicando o conceito\n- Elementos: persona, etapas, ações, pensamentos, emoções, pontos de contato, oportunidades.\n- Jornada atual (as-is) vs futura (to-be).\n- Como construir a partir de pesquisa, não de suposição.\nReferências\n- NN/g — “Journey Mapping 101”.\n- Jim Kalbach — Mapping Experiences.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Síntese e definição do problema/Jornadas e contexto/Customer journey map.md"
+}

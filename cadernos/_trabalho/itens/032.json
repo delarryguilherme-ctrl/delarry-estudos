@@ -1,0 +1,16 @@
+{
+ "topic": "UX Research",
+ "module": "Métodos qualitativos",
+ "name": "Focus group",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Entrevistas em profundidade",
+  "Field study e contextual inquiry",
+  "Diary studies",
+  "Focus group",
+  "Card sorting"
+ ],
+ "draft": "Focus group\nTópico 3 — UX Research › Módulo 11 — Métodos qualitativos\nResumo\nDiscussão em grupo sobre um tema. Mede opinião coletiva e sofre com efeito manada; não serve para avaliar usabilidade.\nAnotações\nVocê sabia?\n- A New Coke (1985) foi aprovada em testes de sabor e depois rejeitada pelo público; as pessoas eram apegadas à marca, não só ao sabor.\n- Em Mad Men (1ª temporada), as secretárias são reunidas num grupo para opinar sobre batons.\nExplicando o conceito\n- Para que serve (atitudes e linguagem) e para que não serve (usabilidade).\n- Efeito manada e a pessoa dominante.\n- Como moderar para dar voz a todos.\nReferências\n- NN/g — “Focus Groups Are Poor at Usability”.\n- Caso New Coke.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Métodos qualitativos/Focus group.md"
+}

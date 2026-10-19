@@ -1,0 +1,17 @@
+{
+ "topic": "Testes e validação",
+ "module": "Testes de usabilidade",
+ "name": "Ferramentas de teste",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Ferramentas de teste",
+  "Ferramentas na prática",
+  "Roteiro e tarefas",
+  "Teste moderado",
+  "Teste não moderado",
+  "Métricas e severidade"
+ ],
+ "draft": "Ferramentas de teste\nTópico 10 — Testes e validação › Módulo 35 — Testes de usabilidade\nResumo\nPlataformas de teste remoto, gravação e recrutamento. A escolha depende de ser moderado ou não, e do orçamento.\nAnotações\nVocê sabia?\n- Antes das ferramentas remotas, testes eram feitos em salas com espelho falso, e o time observava do outro lado sem ser visto.\nExplicando o conceito\n- Categorias: moderado remoto, não moderado, gravação, recrutamento.\n- Opções: Maze, Lookback, UserTesting, Useberry, Google Meet.\n- Critérios: orçamento, tipo de teste, idioma, privacidade.\nReferências\n- Comparativos de ferramentas (UX Tools).\n- Documentação do Maze e do Lookback.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Testes e validação/Testes de usabilidade/Ferramentas de teste.md"
+}

@@ -1,0 +1,17 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Fundamentos visuais",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Hierarquia visual",
+  "Grids e layout",
+  "Espaçamento e sistema de 8pt",
+  "Tipografia",
+  "Cor",
+  "Iconografia e imagens"
+ ],
+ "draft": "Módulo 29 — Fundamentos visuais\nTópico 8 — Interface (UI)\nConteúdos\n- Hierarquia visual\n- Grids e layout\n- Espaçamento e sistema de 8pt\n- Tipografia\n- Cor\n- Iconografia e imagens\nLeituras\n- Visual Hierarchy in UX: Definition — NN/g\n- Refactoring UI\n- The 8-Point Grid — Spec.fm\n- Butterick's Practical Typography\n- Color system — Material Design 3",
+ "out": "cadernos/User Experience Design/Interface (UI)/Fundamentos visuais/Visão geral do módulo.md"
+}

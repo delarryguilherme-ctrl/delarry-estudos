@@ -1,0 +1,15 @@
+{
+ "topic": "Estratégia, priorização e ideação",
+ "module": "Produto e negócio para designers",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Modelos de negócio",
+  "Métricas de produto",
+  "OKRs",
+  "Unit economics"
+ ],
+ "draft": "Módulo 18 — Produto e negócio para designers\nTópico 5 — Estratégia, priorização e ideação\nConteúdos\n- Modelos de negócio\n- Métricas de produto\n- OKRs\n- Unit economics\nLeituras\n- Measuring the User Experience on a Large Scale (HEART) — Google Research\n- Product discovery e estratégia — SVPG",
+ "out": "cadernos/User Experience Design/Estratégia, priorização e ideação/Produto e negócio para designers/Visão geral do módulo.md"
+}

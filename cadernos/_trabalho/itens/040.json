@@ -1,0 +1,15 @@
+{
+ "topic": "UX Research",
+ "module": "Operação de pesquisa",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Ferramentas de pesquisa",
+  "Ferramentas na prática",
+  "Como anotar durante sessões",
+  "Repositório e ResearchOps"
+ ],
+ "draft": "Módulo 13 — Operação de pesquisa\nTópico 3 — UX Research\nConteúdos\n- Ferramentas de pesquisa\n- Ferramentas na prática\n- Como anotar durante sessões\n- Repositório e ResearchOps\nLeituras\n- ResearchOps Community\n- Maze — guias de pesquisa e testes\n- Dovetail — repositório e análise de pesquisa",
+ "out": "cadernos/User Experience Design/UX Research/Operação de pesquisa/Visão geral do módulo.md"
+}

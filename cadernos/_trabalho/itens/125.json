@@ -1,0 +1,17 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Fundamentos visuais",
+ "name": "Espaçamento e sistema de 8pt",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Hierarquia visual",
+  "Grids e layout",
+  "Espaçamento e sistema de 8pt",
+  "Tipografia",
+  "Cor",
+  "Iconografia e imagens"
+ ],
+ "draft": "Espaçamento e sistema de 8pt\nTópico 8 — Interface (UI) › Módulo 29 — Fundamentos visuais\nResumo\nEspaços em múltiplos de 8 (ou 4) criam ritmo e facilitam handoff. Espaço também comunica agrupamento.\nAnotações\nVocê sabia?\n- O Material Design usa uma grade de 8dp, o que ajudou a popularizar o sistema de 8 pontos.\nExplicando o conceito\n- Por que 8 (divide bem em várias telas e densidades).\n- Espaçamento interno vs externo; proximidade e agrupamento.\n- Tokens de espaçamento.\nReferências\n- Elliot Dahl — “Intro to The 8-Point Grid System”.\n- Material Design — Spacing.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Interface (UI)/Fundamentos visuais/Espaçamento e sistema de 8pt.md"
+}

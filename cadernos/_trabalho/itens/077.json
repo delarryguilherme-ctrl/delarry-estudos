@@ -1,0 +1,17 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "Arquitetura de informação",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "Organização e taxonomia",
+  "Sistemas de navegação",
+  "Rotulagem",
+  "Busca e filtros",
+  "Sitemap",
+  "Card sorting e tree testing aplicados"
+ ],
+ "draft": "Módulo 21 — Arquitetura de informação\nTópico 6 — Arquitetura de informação e interação\nConteúdos\n- Organização e taxonomia\n- Sistemas de navegação\n- Rotulagem\n- Busca e filtros\n- Sitemap\n- Card sorting e tree testing aplicados\nLeituras\n- The Difference Between Information Architecture and Navigation — NN/g\n- Tree Testing — NN/g\n- How to Make Sense of Any Mess — Abby Covert",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/Arquitetura de informação/Visão geral do módulo.md"
+}

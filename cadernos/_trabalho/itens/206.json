@@ -1,0 +1,14 @@
+{
+ "topic": "Inteligência artificial e UX",
+ "module": "IA no processo de design",
+ "name": "Validar o que a IA produz",
+ "overview": false,
+ "siblings": [
+  "Onde a IA ajuda",
+  "Personas e pesquisa sintética",
+  "Validar o que a IA produz",
+  "Privacidade de dados"
+ ],
+ "draft": "Validar o que a IA produz\nTópico 13 — Inteligência artificial e UX › Módulo 44 — IA no processo de design\nResumo\nConferir fatos, citações e números contra a fonte. Erro da IA apresentado por você é erro seu.\nAnotações\nVocê sabia?\n- Em 2023, um advogado nos EUA usou o ChatGPT num processo contra a Avianca e citou casos que não existiam; ele foi multado.\nExplicando o conceito\n- Conferir fatos, números e citações na fonte.\n- Alucinação: o que é e por que acontece.\n- Checklist de revisão antes de usar no trabalho.\nReferências\n- Caso Mata v. Avianca (2023).\n- NN/g — artigos sobre limites da IA.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Inteligência artificial e UX/IA no processo de design/Validar o que a IA produz.md"
+}

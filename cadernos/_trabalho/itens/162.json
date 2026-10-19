@@ -1,0 +1,17 @@
+{
+ "topic": "Testes e validação",
+ "module": "Testes de usabilidade",
+ "name": "Teste moderado",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Ferramentas de teste",
+  "Ferramentas na prática",
+  "Roteiro e tarefas",
+  "Teste moderado",
+  "Teste não moderado",
+  "Métricas e severidade"
+ ],
+ "draft": "Teste moderado\nTópico 10 — Testes e validação › Módulo 35 — Testes de usabilidade\nResumo\nFacilitador acompanha ao vivo e pode aprofundar. Rende mais porquês; custa mais tempo.\nAnotações\nVocê sabia?\n- O “efeito Hawthorne” diz que as pessoas mudam o comportamento quando sabem que estão sendo observadas, um cuidado em qualquer teste moderado.\nExplicando o conceito\n- Papel do facilitador: neutro, curioso, sem ajudar.\n- Perguntas de aprofundamento (“o que você esperava?”).\n- Lidar com silêncio, travadas e participantes que pedem ajuda.\nReferências\n- NN/g — “Talking with Participants During a Usability Test”.\n- Steve Krug — Rocket Surgery Made Easy.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Testes e validação/Testes de usabilidade/Teste moderado.md"
+}

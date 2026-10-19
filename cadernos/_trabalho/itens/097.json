@@ -1,0 +1,16 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "UX Writing",
+ "name": "Microcopy",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Voz e tom",
+  "Microcopy",
+  "Mensagens de erro",
+  "Nomenclatura e consistência",
+  "Content-first design"
+ ],
+ "draft": "Microcopy\nTópico 6 — Arquitetura de informação e interação › Módulo 24 — UX Writing\nResumo\nTextos curtos de botões, rótulos e dicas. Decidem se a pessoa entende o próximo passo.\nAnotações\nVocê sabia?\n- O termo “microcopy” foi popularizado por Joshua Porter em 2009; Kinneret Yifrah depois escreveu um livro inteiro sobre o assunto.\nExplicando o conceito\n- Botões com verbo, rótulos claros, dicas e placeholders.\n- Textos de confirmação e de estado vazio.\n- Testar microcopy com usuários.\nReferências\n- Kinneret Yifrah — Microcopy: The Complete Guide.\n- Torrey Podmajersky — Strategic Writing for UX.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/UX Writing/Microcopy.md"
+}

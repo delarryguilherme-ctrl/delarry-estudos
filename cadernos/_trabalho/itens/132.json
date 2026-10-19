@@ -1,0 +1,16 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Componentes e padrões",
+ "name": "Anatomia e estados de componentes",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Design patterns",
+  "Atomic design",
+  "Anatomia e estados de componentes",
+  "Padrões recorrentes",
+  "Visualização de dados básica"
+ ],
+ "draft": "Anatomia e estados de componentes\nTópico 8 — Interface (UI) › Módulo 30 — Componentes e padrões\nResumo\nCada componente tem partes nomeadas e estados (default, hover, focus, disabled, error). Estado faltando vira improviso do dev.\nAnotações\nVocê sabia?\n- Em jogos, um botão de menu costuma ter estados bem claros (normal, selecionado, bloqueado), porque o jogador navega só com o controle.\nExplicando o conceito\n- Anatomia: partes nomeadas de um componente.\n- Estados: default, hover, focus, pressed, disabled, error, loading.\n- Documentar tudo para o dev não improvisar.\nReferências\n- Material Design — States.\n- Documentações de design systems (Carbon, Polaris).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Interface (UI)/Componentes e padrões/Anatomia e estados de componentes.md"
+}

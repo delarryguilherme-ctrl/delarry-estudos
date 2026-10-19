@@ -1,0 +1,16 @@
+{
+ "topic": "Processos e início de projeto",
+ "module": "Processos de design",
+ "name": "Double Diamond",
+ "overview": false,
+ "siblings": [
+  "Double Diamond",
+  "Design Thinking e suas críticas",
+  "Lean UX",
+  "Jobs to be Done",
+  "Discovery vs delivery e dual-track",
+  "Qual processo usar"
+ ],
+ "draft": "Double Diamond\nTópico 2 — Processos e início de projeto › Módulo 06 — Processos de design\nResumo\nDois ciclos de divergir e convergir: um para entender o problema, outro para criar a solução. O ponto central é não pular direto para a solução.\nAnotações\nVocê sabia?\n- O Double Diamond foi publicado pelo British Design Council em 2005, a partir de como grandes empresas realmente trabalhavam.\nExplicando o conceito\n- As 4 fases: descobrir, definir, desenvolver, entregar.\n- Divergir e convergir em cada diamante.\n- Por que a vida real é menos linear que o diagrama (voltar etapas).\nReferências\n- Design Council — “The Double Diamond” e o Framework for Innovation.\n- NN/g — “The Double Diamond Process”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Processos e início de projeto/Processos de design/Double Diamond.md"
+}

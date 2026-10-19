@@ -1,0 +1,15 @@
+{
+ "topic": "Inteligência artificial e UX",
+ "module": "Design de produtos com IA",
+ "name": "Modelo mental de sistemas probabilísticos",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Modelo mental de sistemas probabilísticos",
+  "Confiança e explicabilidade",
+  "Erro e incerteza",
+  "Controle e human-in-the-loop"
+ ],
+ "draft": "Modelo mental de sistemas probabilísticos\nTópico 13 — Inteligência artificial e UX › Módulo 45 — Design de produtos com IA\nResumo\nA mesma pergunta pode gerar respostas diferentes. A interface precisa preparar o usuário para isso.\nAnotações\nVocê sabia?\n- Em 2001: Uma Odisseia no Espaço, o HAL 9000 fala com total confiança mesmo quando está errado, um exemplo de máquina que não comunica incerteza.\nExplicando o conceito\n- Determinístico vs probabilístico.\n- Como a interface prepara o usuário para respostas variadas.\n- Exemplos: assistentes, recomendação, corretor automático.\nReferências\n- Google PAIR — People + AI Guidebook.\n- Microsoft — Guidelines for Human-AI Interaction.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Inteligência artificial e UX/Design de produtos com IA/Modelo mental de sistemas probabilísticos.md"
+}

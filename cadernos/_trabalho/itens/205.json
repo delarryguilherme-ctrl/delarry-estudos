@@ -1,0 +1,14 @@
+{
+ "topic": "Inteligência artificial e UX",
+ "module": "IA no processo de design",
+ "name": "Personas e pesquisa sintética",
+ "overview": false,
+ "siblings": [
+  "Onde a IA ajuda",
+  "Personas e pesquisa sintética",
+  "Validar o que a IA produz",
+  "Privacidade de dados"
+ ],
+ "draft": "Personas e pesquisa sintética\nTópico 13 — Inteligência artificial e UX › Módulo 44 — IA no processo de design\nResumo\nRespostas geradas por IA imitam o que é plausível, não o que usuários reais fazem. Servem para preparar pesquisa, nunca para substituí-la.\nAnotações\nVocê sabia?\n- Um modelo de linguagem responde o que é plausível com base no que leu; ele nunca usou o seu produto.\nExplicando o conceito\n- O que são “usuários sintéticos”.\n- Usos aceitáveis: preparar roteiro, testar perguntas.\n- Riscos: confirmar suas próprias ideias, perder o inesperado.\nReferências\n- NN/g — “Synthetic Users: If, When, and How to Use AI-Generated Research”.\n- Artigos sobre pesquisa sintética (Erika Hall, Indi Young).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Inteligência artificial e UX/IA no processo de design/Personas e pesquisa sintética.md"
+}

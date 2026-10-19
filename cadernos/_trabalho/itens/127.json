@@ -1,0 +1,17 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Fundamentos visuais",
+ "name": "Cor",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Hierarquia visual",
+  "Grids e layout",
+  "Espaçamento e sistema de 8pt",
+  "Tipografia",
+  "Cor",
+  "Iconografia e imagens"
+ ],
+ "draft": "Cor\nTópico 8 — Interface (UI) › Módulo 29 — Fundamentos visuais\nResumo\nTeoria (harmonia, contraste) e uso funcional (ação, estado, alerta). Cor semântica significa a mesma coisa em todo o produto.\nAnotações\nVocê sabia?\n- Em Matrix, as cenas dentro da simulação têm tom esverdeado e o mundo real é azulado, para o público saber onde está sem ninguém dizer.\nExplicando o conceito\n- Harmonia e contraste; cores primárias, neutras e semânticas.\n- Cor funcional: ação, estado, alerta, sucesso.\n- Contraste e daltonismo (cor nunca sozinha).\nReferências\n- Josef Albers — A Interação da Cor.\n- Refactoring UI — capítulo sobre cor.\n- Ferramentas: Coolors, Contrast checker do WebAIM.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Interface (UI)/Fundamentos visuais/Cor.md"
+}

@@ -1,0 +1,15 @@
+{
+ "topic": "Testes e validação",
+ "module": "Crítica, iteração e documentação",
+ "name": "Dar e receber feedback",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Critique session",
+  "Dar e receber feedback",
+  "Iterar com base em evidência",
+  "Documentar testes e decisões"
+ ],
+ "draft": "Dar e receber feedback\nTópico 10 — Testes e validação › Módulo 37 — Crítica, iteração e documentação\nResumo\nDar: ser específico e ligar ao objetivo. Receber: separar a pessoa do trabalho e perguntar antes de defender.\nAnotações\nVocê sabia?\n- No “Rose, Bud, Thorn” (rosa, botão, espinho), cada pessoa diz o que está bom, o que tem potencial e o que incomoda.\nExplicando o conceito\n- Dar: ser específico, ligar ao objetivo, sugerir sem impor.\n- Receber: ouvir, perguntar, não se defender de cara.\n- Separar a pessoa do trabalho.\nReferências\n- Adam Connor e Aaron Irizarry — Discussing Design.\n- Kim Scott — Empatia Assertiva (Radical Candor).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Testes e validação/Crítica, iteração e documentação/Dar e receber feedback.md"
+}

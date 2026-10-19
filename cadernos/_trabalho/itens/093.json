@@ -1,0 +1,16 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "Design de interação",
+ "name": "Navegação mobile vs desktop",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Feedback e microinterações",
+  "Padrões de formulário",
+  "Motion com propósito",
+  "Navegação mobile vs desktop",
+  "Gestos e input"
+ ],
+ "draft": "Navegação mobile vs desktop\nTópico 6 — Arquitetura de informação e interação › Módulo 23 — Design de interação\nResumo\nTab bar, drawer e gestos no mobile; menus e sidebars no desktop. A escolha depende de quantidade de seções e frequência de uso.\nAnotações\nVocê sabia?\n- O ícone de menu “hambúrguer” foi criado por Norm Cox para o Xerox Star em 1981, muito antes dos celulares.\nExplicando o conceito\n- Tab bar, drawer, navegação por gestos; menus e sidebars no desktop.\n- Por que esconder a navegação reduz o uso.\n- Como escolher pelo número de seções e frequência de uso.\nReferências\n- NN/g — “Hamburger Menus and Hidden Navigation Hurt UX Metrics”.\n- Apple HIG e Material Design — navegação.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/Design de interação/Navegação mobile vs desktop.md"
+}

@@ -1,0 +1,17 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "Arquitetura de informação",
+ "name": "Organização e taxonomia",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Organização e taxonomia",
+  "Sistemas de navegação",
+  "Rotulagem",
+  "Busca e filtros",
+  "Sitemap",
+  "Card sorting e tree testing aplicados"
+ ],
+ "draft": "Organização e taxonomia\nTópico 6 — Arquitetura de informação e interação › Módulo 21 — Arquitetura de informação\nResumo\nComo o conteúdo é classificado (por tarefa, público, tema, ordem alfabética). A organização deve seguir o modelo mental do usuário, não o organograma da empresa.\nAnotações\nVocê sabia?\n- Richard Saul Wurman, que cunhou “arquiteto da informação” nos anos 1970, resumiu as formas de organizar em LATCH: local, alfabeto, tempo, categoria e hierarquia.\nExplicando o conceito\n- Esquemas exatos (alfabético, cronológico) vs ambíguos (tema, tarefa, público).\n- Taxonomia, metadados e tags.\n- Organizar pelo modelo mental do usuário, não pelo organograma.\nReferências\n- Rosenfeld, Morville e Arango — Information Architecture (o “livro do urso polar”).\n- Abby Covert — How to Make Sense of Any Mess.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/Arquitetura de informação/Organização e taxonomia.md"
+}

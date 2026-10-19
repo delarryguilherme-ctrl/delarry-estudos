@@ -1,0 +1,16 @@
+{
+ "topic": "UX Research",
+ "module": "Planejamento de pesquisa",
+ "name": "Ética, consentimento e LGPD",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Plano de pesquisa",
+  "Metas do usuário vs metas do negócio",
+  "Tipos de pesquisa",
+  "Recrutamento e amostra",
+  "Ética, consentimento e LGPD"
+ ],
+ "draft": "Ética, consentimento e LGPD\nTópico 3 — UX Research › Módulo 09 — Planejamento de pesquisa\nResumo\nParticipante precisa saber o que será gravado, como os dados serão usados e que pode desistir. Dado pessoal de pesquisa também está sob a LGPD.\nAnotações\nVocê sabia?\n- A LGPD (Lei 13.709) foi aprovada em 2018 e as multas começaram a valer em 2021, aplicadas pela ANPD.\nExplicando o conceito\n- O que o termo de consentimento precisa conter.\n- Gravação, armazenamento, anonimização e prazo para apagar dados.\n- Cuidados com público vulnerável (crianças, saúde).\nReferências\n- Lei 13.709/2018 (LGPD) e guias da ANPD.\n- Modelos de termo de consentimento para pesquisa com usuários.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Planejamento de pesquisa/Ética, consentimento e LGPD.md"
+}

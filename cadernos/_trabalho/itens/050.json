@@ -1,0 +1,16 @@
+{
+ "topic": "Síntese e definição do problema",
+ "module": "Síntese",
+ "name": "Quantificar achados qualitativos",
+ "overview": false,
+ "siblings": [
+  "O que é um insight",
+  "Affinity mapping",
+  "Empathy map",
+  "Personas e proto-personas",
+  "User stories",
+  "Quantificar achados qualitativos"
+ ],
+ "draft": "Quantificar achados qualitativos\nTópico 4 — Síntese e definição do problema › Módulo 14 — Síntese\nResumo\nContar quantos participantes mostraram um padrão ajuda a comunicar. Com amostra pequena, não vire percentual com cara de estatística.\nAnotações\nVocê sabia?\n- Comerciais do tipo “4 em cada 5 dentistas recomendam” mostram como um número pequeno pode parecer estatística sem ser.\nExplicando o conceito\n- Contar participantes por padrão (“7 de 8”) em vez de porcentagem.\n- Quando faz sentido validar com pesquisa quantitativa.\n- Como mostrar frequência e impacto juntos.\nReferências\n- NN/g — “Quantitative vs. Qualitative Usability Testing”.\n- Jeff Sauro — MeasuringU.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Síntese e definição do problema/Síntese/Quantificar achados qualitativos.md"
+}

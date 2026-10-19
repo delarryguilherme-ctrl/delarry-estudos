@@ -1,0 +1,16 @@
+{
+ "topic": "UX Research",
+ "module": "Planejamento de pesquisa",
+ "name": "Recrutamento e amostra",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Plano de pesquisa",
+  "Metas do usuário vs metas do negócio",
+  "Tipos de pesquisa",
+  "Recrutamento e amostra",
+  "Ética, consentimento e LGPD"
+ ],
+ "draft": "Recrutamento e amostra\nTópico 3 — UX Research › Módulo 09 — Planejamento de pesquisa\nResumo\nRecrute pelo comportamento relevante, não só por demografia. Cinco participantes bastam para achar problemas de usabilidade, não para medir frequência.\nAnotações\nVocê sabia?\n- O artigo “Why You Only Need to Test with 5 Users” (Nielsen, 2000) é um dos mais citados de UX e também um dos mais mal interpretados.\nExplicando o conceito\n- Recrutar por comportamento, não só por perfil demográfico.\n- Screener: perguntas que filtram sem entregar a resposta.\n- Tamanho de amostra para quali vs quanti; incentivos.\nReferências\n- NN/g — “Why You Only Need to Test with 5 Users”.\n- NN/g — “Recruiting Test Participants”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/UX Research/Planejamento de pesquisa/Recrutamento e amostra.md"
+}

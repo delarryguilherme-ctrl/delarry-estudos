@@ -1,0 +1,14 @@
+{
+ "topic": "Estratégia, priorização e ideação",
+ "module": "Priorização e MVP",
+ "name": "MVP e variações",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Frameworks de priorização",
+  "Escopo e trade-offs",
+  "MVP e variações"
+ ],
+ "draft": "MVP e variações\nTópico 5 — Estratégia, priorização e ideação › Módulo 19 — Priorização e MVP\nResumo\nMenor versão que testa a hipótese principal com usuários reais. MVP não é produto ruim; é produto focado em aprender.\nAnotações\nVocê sabia?\n- O MVP do Dropbox foi um vídeo de demonstração: a lista de espera explodiu antes de o produto estar pronto.\n- A Zappos começou fotografando sapatos em lojas e comprando o par só quando alguém pedia.\nExplicando o conceito\n- MVP, MLP (lovable), concierge, Mágico de Oz, fake door.\n- O “skate → bicicleta → carro” de Henrik Kniberg.\n- MVP é para aprender, não para lançar produto ruim.\nReferências\n- Eric Ries — A Startup Enxuta.\n- Henrik Kniberg — “Making sense of MVP”.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Estratégia, priorização e ideação/Priorização e MVP/MVP e variações.md"
+}

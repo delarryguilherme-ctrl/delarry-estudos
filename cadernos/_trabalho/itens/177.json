@@ -1,0 +1,15 @@
+{
+ "topic": "Testes e validação",
+ "module": "Pós-lançamento",
+ "name": "Leitura de métricas após a entrega",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Instrumentação de eventos",
+  "Leitura de métricas após a entrega",
+  "Ciclos de iteração",
+  "Canais de feedback contínuo"
+ ],
+ "draft": "Leitura de métricas após a entrega\nTópico 10 — Testes e validação › Módulo 38 — Pós-lançamento\nResumo\nComparar com a linha de base e com a meta da hipótese. Atenção a sazonalidade e outras mudanças simultâneas.\nAnotações\nVocê sabia?\n- A Lei de Goodhart: “quando uma medida vira meta, ela deixa de ser uma boa medida”.\nExplicando o conceito\n- Comparar com a linha de base e com a meta da hipótese.\n- Sazonalidade, outras mudanças e efeito novidade.\n- Métricas de guarda (o que não pode piorar).\nReferências\n- Alistair Croll e Benjamin Yoskovitz — Lean Analytics.\n- Artigos sobre a Lei de Goodhart.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Testes e validação/Pós-lançamento/Leitura de métricas após a entrega.md"
+}

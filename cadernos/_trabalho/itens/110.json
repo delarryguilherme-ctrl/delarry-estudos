@@ -1,0 +1,17 @@
+{
+ "topic": "Wireframes, prototipação e ferramentas",
+ "module": "Prototipação",
+ "name": "Mockups e alta fidelidade",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Baixa, média e alta fidelidade",
+  "Protótipo em papel",
+  "Baixa fidelidade no Figma",
+  "Mockups e alta fidelidade",
+  "Interações, transições e gestos",
+  "Protótipo em código ou Framer"
+ ],
+ "draft": "Mockups e alta fidelidade\nTópico 7 — Wireframes, prototipação e ferramentas › Módulo 26 — Prototipação\nResumo\nVisual final com interações realistas. Testa detalhes de interação, conteúdo e percepção.\nAnotações\nVocê sabia?\n- Montadoras apresentam “carros-conceito” em salões de automóvel para medir a reação do público antes de produzir o modelo final.\nExplicando o conceito\n- Mockup estático vs protótipo de alta fidelidade.\n- Conteúdo real e estados completos.\n- O que testar só em alta fidelidade (percepção, detalhes de interação).\nReferências\n- NN/g — “High-Fidelity Prototypes”.\n- Exemplos na Figma Community.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Wireframes, prototipação e ferramentas/Prototipação/Mockups e alta fidelidade.md"
+}

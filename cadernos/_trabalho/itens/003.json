@@ -1,0 +1,16 @@
+{
+ "topic": "Processos e início de projeto",
+ "module": "Processos de design",
+ "name": "Jobs to be Done",
+ "overview": false,
+ "siblings": [
+  "Double Diamond",
+  "Design Thinking e suas críticas",
+  "Lean UX",
+  "Jobs to be Done",
+  "Discovery vs delivery e dual-track",
+  "Qual processo usar"
+ ],
+ "draft": "Jobs to be Done\nTópico 2 — Processos e início de projeto › Módulo 06 — Processos de design\nResumo\nAs pessoas \"contratam\" um produto para realizar um progresso na vida. Foca na motivação, não no perfil demográfico.\nAnotações\nVocê sabia?\n- A história do milkshake de Clayton Christensen: as pessoas compravam milkshake de manhã para ter algo que durasse no trajeto até o trabalho, não por fome.\nExplicando o conceito\n- O que é um “job” (progresso que a pessoa quer fazer).\n- Dimensões funcional, emocional e social.\n- Job stories (“Quando…, quero…, para…”) vs user stories.\nReferências\n- Clayton Christensen — Muito Além da Sorte (Competing Against Luck).\n- Bob Moesta — Demand-Side Sales 101.\n- Alan Klement — When Coffee and Kale Compete.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Processos e início de projeto/Processos de design/Jobs to be Done.md"
+}

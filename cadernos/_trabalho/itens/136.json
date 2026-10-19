@@ -1,0 +1,16 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Plataformas e responsividade",
+ "name": "Responsivo vs adaptativo vs fluido",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Responsivo vs adaptativo vs fluido",
+  "Breakpoints e mobile-first",
+  "Material Design e HIG",
+  "App nativo vs web",
+  "Densidade de informação"
+ ],
+ "draft": "Responsivo vs adaptativo vs fluido\nTópico 8 — Interface (UI) › Módulo 31 — Plataformas e responsividade\nResumo\nFluido estica proporcionalmente; adaptativo troca layouts fixos por faixa de tela; responsivo combina grade fluida e breakpoints.\nAnotações\nVocê sabia?\n- O termo “responsive web design” foi criado por Ethan Marcotte num artigo da A List Apart em 2010.\nExplicando o conceito\n- Diferenças entre fluido, adaptativo e responsivo.\n- Grids fluidos, imagens flexíveis e media queries.\n- Quando o adaptativo ainda faz sentido.\nReferências\n- Ethan Marcotte — “Responsive Web Design” (A List Apart, 2010).\n- Ethan Marcotte — Responsive Web Design (livro).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Interface (UI)/Plataformas e responsividade/Responsivo vs adaptativo vs fluido.md"
+}

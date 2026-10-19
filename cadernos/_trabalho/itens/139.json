@@ -1,0 +1,16 @@
+{
+ "topic": "Interface (UI)",
+ "module": "Plataformas e responsividade",
+ "name": "App nativo vs web",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Responsivo vs adaptativo vs fluido",
+  "Breakpoints e mobile-first",
+  "Material Design e HIG",
+  "App nativo vs web",
+  "Densidade de informação"
+ ],
+ "draft": "App nativo vs web\nTópico 8 — Interface (UI) › Módulo 31 — Plataformas e responsividade\nResumo\nNativo acessa recursos do aparelho e é mais fluido; web é mais barato de distribuir e atualizar.\nAnotações\nVocê sabia?\n- No lançamento do iPhone em 2007, Steve Jobs defendia apps web; a App Store só chegou em 2008.\nExplicando o conceito\n- Nativo, web, PWA e híbrido (React Native, Flutter).\n- Prós e contras: acesso a recursos, performance, custo, distribuição.\n- Como a escolha afeta o design.\nReferências\n- Artigos sobre PWA (web.dev).\n- Caso do lançamento do iPhone e da App Store.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Interface (UI)/Plataformas e responsividade/App nativo vs web.md"
+}

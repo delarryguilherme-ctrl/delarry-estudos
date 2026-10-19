@@ -1,0 +1,14 @@
+{
+ "topic": "Estratégia, priorização e ideação",
+ "module": "Priorização e MVP",
+ "name": "Frameworks de priorização",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Frameworks de priorização",
+  "Escopo e trade-offs",
+  "MVP e variações"
+ ],
+ "draft": "Frameworks de priorização\nTópico 5 — Estratégia, priorização e ideação › Módulo 19 — Priorização e MVP\nResumo\nRICE (alcance, impacto, confiança, esforço), ICE, MoSCoW, Kano e matriz impacto vs esforço. Todos são ferramentas de conversa, não fórmulas que decidem sozinhas.\nAnotações\nVocê sabia?\n- A triagem de pronto-socorro (como o Protocolo de Manchester) é priorização na prática: não é quem chegou primeiro, é quem precisa mais.\n- O RICE foi criado pelo time de produto da Intercom; o modelo Kano é de Noriaki Kano (1984).\nExplicando o conceito\n- RICE, ICE, MoSCoW, Kano, matriz impacto × esforço.\n- Quando usar cada um.\n- Framework como ferramenta de conversa, não de decisão automática.\nReferências\n- Intercom — “RICE: Simple prioritization for product managers”.\n- Artigos sobre o modelo Kano (Folding Burritos).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Estratégia, priorização e ideação/Priorização e MVP/Frameworks de priorização.md"
+}

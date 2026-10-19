@@ -1,0 +1,15 @@
+{
+ "topic": "Arquitetura de informação e interação",
+ "module": "Fluxos",
+ "name": "Edge cases",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "User flows e task flows",
+  "Wireflows",
+  "Estados de tela",
+  "Edge cases"
+ ],
+ "draft": "Edge cases\nTópico 6 — Arquitetura de informação e interação › Módulo 22 — Fluxos\nResumo\nNome muito longo, conexão caindo, permissão negada, dado ausente. É onde o produto real quebra.\nAnotações\nVocê sabia?\n- O quadrinho “Exploits of a Mom” (xkcd 327), do “Little Bobby Tables”, mostra um nome de aluno que apaga o banco de dados da escola.\nExplicando o conceito\n- Exemplos: nome longo, sem foto, sem internet, permissão negada, dado faltando, muitos itens.\n- Como listar edge cases com o time de dev.\n- Priorizar quais tratar agora.\nReferências\n- xkcd 327 — “Exploits of a Mom”.\n- Lista “Falsehoods Programmers Believe About Names” (Patrick McKenzie).\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Arquitetura de informação e interação/Fluxos/Edge cases.md"
+}

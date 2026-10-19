@@ -1,0 +1,14 @@
+{
+ "topic": "Colaboração, comunicação e ética",
+ "module": "Ética e responsabilidade",
+ "name": "Design para impacto social",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Dark patterns",
+  "Privacy by design",
+  "Design para impacto social"
+ ],
+ "draft": "Design para impacto social\nTópico 12 — Colaboração, comunicação e ética › Módulo 43 — Ética e responsabilidade\nResumo\nAplicar o processo de UX a problemas de comunidades e serviços públicos. Exige ainda mais cuidado com quem é ouvido.\nAnotações\nVocê sabia?\n- O GOV.UK, do governo britânico, virou referência mundial de serviço público digital e inspirou iniciativas como o gov.br.\nExplicando o conceito\n- Exemplos: serviços públicos, saúde, educação, ONGs.\n- Cuidado com quem é ouvido e quem fica de fora.\n- Medir impacto além de métricas de produto.\nReferências\n- GOV.UK — Government Design Principles.\n- IDEO.org — Field Guide to Human-Centered Design.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Colaboração, comunicação e ética/Ética e responsabilidade/Design para impacto social.md"
+}

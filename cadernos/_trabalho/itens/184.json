@@ -1,0 +1,16 @@
+{
+ "topic": "Design systems e entrega para desenvolvimento",
+ "module": "Do styleguide ao design system",
+ "name": "Biblioteca e documentação",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Styleguide",
+  "Por que ter um design system",
+  "Design tokens",
+  "Biblioteca e documentação",
+  "Governança, contribuição e versionamento"
+ ],
+ "draft": "Biblioteca e documentação\nTópico 11 — Design systems e entrega para desenvolvimento › Módulo 39 — Do styleguide ao design system\nResumo\nComponente sem documentação de uso é usado errado. A doc diz quando usar, quando não usar e como se comporta.\nAnotações\nVocê sabia?\n- O Storybook começou como ferramenta para desenvolvedores React e virou padrão para documentar componentes em código.\nExplicando o conceito\n- O que documentar: quando usar, quando não usar, anatomia, estados, acessibilidade.\n- Exemplos de “faça / não faça”.\n- Ferramentas: Figma, Storybook, Zeroheight.\nReferências\n- Documentações do Polaris e do Carbon.\n- Storybook — documentação oficial.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Design systems e entrega para desenvolvimento/Do styleguide ao design system/Biblioteca e documentação.md"
+}

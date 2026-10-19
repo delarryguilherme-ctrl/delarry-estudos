@@ -1,0 +1,17 @@
+{
+ "topic": "Processos e início de projeto",
+ "module": "Começando um projeto",
+ "name": "Primeiro projeto do zero",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "Primeiro projeto do zero",
+  "Produto existente",
+  "Você precisa de UX Research",
+  "Business Model Canvas e Value Proposition Canvas",
+  "Primeira reunião ou kickoff",
+  "Depois da reunião"
+ ],
+ "draft": "Primeiro projeto do zero\nTópico 2 — Processos e início de projeto › Módulo 08 — Começando um projeto\nResumo\nComece entendendo objetivo de negócio, usuário e restrições antes de qualquer tela. Sem isso, o design não tem critério de sucesso.\nAnotações\nVocê sabia?\n- Em Star Wars, a Estrela da Morte foi destruída por um detalhe de projeto: um duto de exaustão desprotegido. Começar sem entender requisitos e riscos cobra caro depois.\nExplicando o conceito\n- Perguntas iniciais: qual objetivo, para quem, quais restrições, como saber se deu certo.\n- Ordem prática: entender → pesquisar → definir → desenhar → testar.\n- O erro de começar pelas telas.\nReferências\n- NN/g — “UX Project Checklist”.\n- Erika Hall — Just Enough Research.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Processos e início de projeto/Começando um projeto/Primeiro projeto do zero.md"
+}
