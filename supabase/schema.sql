@@ -12,6 +12,7 @@ create table if not exists public.folders (
   parent_id  text,
   "order"    integer,
   open       boolean not null default false,
+  color      text,                                 -- cor escolhida no menu lateral (red, blue…); vazio = padrão
   updated    bigint  not null default 0,          -- horário da última mudança (ms, relógio do aparelho)
   deleted    boolean not null default false,       -- excluído: fica marcado para os outros aparelhos saberem
   primary key (user_id, id)
@@ -30,6 +31,9 @@ create table if not exists public.notebooks (
   deleted    boolean not null default false,
   primary key (user_id, id)
 );
+
+-- bancos criados antes da cor das pastas
+alter table public.folders add column if not exists color text;
 
 create index if not exists folders_user_updated   on public.folders   (user_id, updated);
 create index if not exists notebooks_user_updated on public.notebooks (user_id, updated);
