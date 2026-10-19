@@ -3726,6 +3726,7 @@ const FOLDER_COLORS = [
   { id: 'purple', label: 'Roxo', hex: '#8e4ec6' },
   { id: 'pink', label: 'Rosa', hex: '#d6409f' },
   { id: 'brown', label: 'Marrom', hex: '#a07553' },
+  { id: 'black', label: 'Preto', hex: 'var(--ink)' },   // segue o tema: preto no claro, claro no escuro
 ];
 const folderColor = f => FOLDER_COLORS.find(c => c.id === f?.color)?.hex || '';
 function openColorMenu(f, anchor) {
