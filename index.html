@@ -5021,7 +5021,7 @@ function runSearch() {
   const box = $('results');
   const searching = !!fq;
   box.hidden = !searching;
-  tree.hidden = $('libHint').hidden = searching;
+  tree.hidden = searching;
   if (!searching) { box.replaceChildren(); return; }
   commitPage();
   const out = [];
@@ -5756,8 +5756,8 @@ const Sync = (() => {
         toast('Sem conexão: suas últimas mudanças ainda não foram para a conta. Conecte-se e tente sair de novo.');
         return false;
       }
+      // sair só desconecta: pastas e cadernos continuam neste aparelho
       await sb.auth.signOut();
-      await wipeDevice();
       return true;
     },
     async deleteAccount() {
@@ -5855,7 +5855,7 @@ function setupAccount() {
         Sync.state === 'error' && Sync.lastError ? h('small', { class: 'am-err' }, Sync.lastError) : ''),
       usage,
       h('button', { type: 'button', class: 'am-item', onclick: () => Sync.now() }, 'Sincronizar agora'),
-      h('button', { type: 'button', class: 'am-item', onclick: async () => { if (await Sync.signOut()) { open(false); toast('Você saiu da conta. Os cadernos continuam salvos nela.'); } } }, 'Sair'),
+      h('button', { type: 'button', class: 'am-item', onclick: async () => { if (await Sync.signOut()) { open(false); toast('Você saiu da conta. Os cadernos continuam aqui e na conta.'); } } }, 'Sair'),
     ];
     if (!confirmDelete) {
       kids.push(h('button', { type: 'button', class: 'am-item am-danger', onclick: () => { confirmDelete = true; render(); } }, 'Excluir minha conta'));
