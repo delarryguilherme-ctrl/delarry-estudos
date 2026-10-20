@@ -3569,5 +3569,437 @@
   ],
   "draft": "Revisão final do portfólio\nTópico 14 — Portfólio, carreira e projetos práticos › Módulo 49 — Projetos práticos end-to-end\nResumo\nEscolher os melhores casos, revisar narrativa e pedir feedback de designers experientes.\nAnotações\nVocê sabia?\n- Pedir feedback de três ou quatro designers diferentes costuma revelar padrões: se todos apontam o mesmo problema, ele é real.\nExplicando o conceito\n- Escolher os melhores casos e cortar o resto.\n- Revisar narrativa, copy e visual.\n- Checklist final antes de enviar.\nReferências\n- Comunidades para revisão de portfólio (ADPList, mentorias).\n- Bestfolios.\nDúvidas\nLeituras e sumário do módulo: Visão geral do módulo",
   "out": "cadernos/User Experience Design/Portfólio, carreira e projetos práticos/Projetos práticos end-to-end/Revisão final do portfólio.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Psicologia e cognição",
+  "name": "Modelos mentais",
+  "overview": false,
+  "siblings": [
+   "Modelos mentais",
+   "Carga cognitiva",
+   "Atenção e percepção visual",
+   "Reconhecimento vs recordação",
+   "Princípios da Gestalt",
+   "Vieses cognitivos"
+  ],
+  "draft": "Modelos mentais\nTópico 1 — Fundamentos e mercado › Módulo 03 — Psicologia e cogniçãoResumo\nO usuário age com base no que acredita sobre o sistema, não em como ele funciona. Interface que contraria o modelo mental gera erro.\nAnotações\nVocê sabia?\nEm Toy Story, o Buzz Lightyear tem um modelo mental errado sobre si mesmo: acha que é um patrulheiro espacial de verdade, não um brinquedo.\nEm muitos elevadores, o botão de fechar porta não faz nada, mas apertar dá às pessoas a sensação de controle.\nExplicando o conceito\nO que é modelo mental e de onde ele vem (experiências anteriores).\nModelo do designer vs modelo do usuário: o que acontece quando não batem.\nComo descobrir modelos mentais (entrevista, card sorting, observação).\nReferências\nNN/g — “Mental Models and User Experience Design”.\nIndi Young — Mental Models.\nDon Norman — O Design do Dia a Dia (modelo conceitual).\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Psicologia e cognição/Modelos mentais.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Psicologia e cognição",
+  "name": "Carga cognitiva",
+  "overview": false,
+  "siblings": [
+   "Modelos mentais",
+   "Carga cognitiva",
+   "Atenção e percepção visual",
+   "Reconhecimento vs recordação",
+   "Princípios da Gestalt",
+   "Vieses cognitivos"
+  ],
+  "draft": "Carga cognitiva\nTópico 1 — Fundamentos e mercado › Módulo 03 — Psicologia e cogniçãoResumo\nTodo elemento na tela custa atenção. Reduzir carga é remover o que não ajuda a tarefa, não esconder o que ajuda.\nAnotações\nVocê sabia?\nDead Space mostra a vida do personagem como uma barra na espinha do traje, em vez de um HUD por cima da tela, e isso reduz a carga visual.\nO famoso “7 ± 2” de George Miller (1956) é muito citado de forma errada para limitar itens de menu.\nExplicando o conceito\nCarga intrínseca, extrínseca e pertinente.\nTécnicas para reduzir: agrupar, revelar aos poucos, valores padrão, remover o desnecessário.\nDiferença entre simplificar e esconder.\nReferências\nNN/g — “Minimize Cognitive Load to Maximize Usability”.\nJohn Sweller — teoria da carga cognitiva.\nLaws of UX — Miller’s Law.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Psicologia e cognição/Carga cognitiva.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Psicologia e cognição",
+  "name": "Atenção e percepção visual",
+  "overview": false,
+  "siblings": [
+   "Modelos mentais",
+   "Carga cognitiva",
+   "Atenção e percepção visual",
+   "Reconhecimento vs recordação",
+   "Princípios da Gestalt",
+   "Vieses cognitivos"
+  ],
+  "draft": "Atenção e percepção visual\nTópico 1 — Fundamentos e mercado › Módulo 03 — Psicologia e cogniçãoResumo\nAs pessoas escaneiam, não leem. Contraste, posição e tamanho decidem o que é visto primeiro.\nAnotações\nVocê sabia?\nNo experimento do “gorila invisível” (Simons e Chabris, 1999), cerca de metade das pessoas contando passes de basquete não viu um gorila atravessando a cena.\n“Banner blindness”: as pessoas ignoram tudo que parece anúncio, mesmo quando é conteúdo útil.\nExplicando o conceito\nAtenção seletiva e cegueira por desatenção.\nComo contraste, tamanho, movimento e posição guiam o olhar.\nPadrões de leitura (F e Z) e escaneamento.\nReferências\nNN/g — “F-Shaped Pattern of Reading on the Web”.\nVídeo do experimento “The Monkey Business Illusion”.\nColin Ware — Visual Thinking for Design.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Psicologia e cognição/Atenção e percepção visual.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Psicologia e cognição",
+  "name": "Reconhecimento vs recordação",
+  "overview": false,
+  "siblings": [
+   "Modelos mentais",
+   "Carga cognitiva",
+   "Atenção e percepção visual",
+   "Reconhecimento vs recordação",
+   "Princípios da Gestalt",
+   "Vieses cognitivos"
+  ],
+  "draft": "Reconhecimento vs recordação\nTópico 1 — Fundamentos e mercado › Módulo 03 — Psicologia e cogniçãoResumo\nReconhecer uma opção é mais fácil do que lembrar dela. Por isso menus visíveis vencem comandos que precisam ser memorizados.\nAnotações\nVocê sabia?\nProgramas como Photoshop mostram o atalho ao lado de cada item do menu: você reconhece a opção e, com o tempo, decora o atalho.\nEm jogos de luta, a lista de golpes no pause existe porque decorar todos os combos é recordação pura.\nExplicando o conceito\nPor que reconhecer é mais fácil que lembrar (pistas na memória).\nExemplos: menus visíveis, histórico de busca, itens recentes, autocompletar.\nRelação com a heurística 6 de Nielsen.\nReferências\nNN/g — “Memory Recognition and Recall in User Interfaces”.\nNielsen — heurística “Reconhecer em vez de lembrar”.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Psicologia e cognição/Reconhecimento vs recordação.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Psicologia e cognição",
+  "name": "Princípios da Gestalt",
+  "overview": false,
+  "siblings": [
+   "Modelos mentais",
+   "Carga cognitiva",
+   "Atenção e percepção visual",
+   "Reconhecimento vs recordação",
+   "Princípios da Gestalt",
+   "Vieses cognitivos"
+  ],
+  "draft": "Princípios da Gestalt\nTópico 1 — Fundamentos e mercado › Módulo 03 — Psicologia e cogniçãoResumo\nProximidade, similaridade, continuidade, fechamento e figura-fundo. Explicam por que elementos parecem agrupados ou separados.\nAnotações\nVocê sabia?\nO logo do WWF usa fechamento: o panda não está desenhado inteiro, o cérebro completa.\nO logo da FedEx esconde uma seta entre o E e o x (figura-fundo).\nExplicando o conceito\nCada princípio com um exemplo de interface: proximidade, similaridade, continuidade, fechamento, figura-fundo, região comum.\nComo usar espaço para agrupar sem precisar de linhas e caixas.\nErros comuns que quebram a percepção de grupo.\nReferências\nNN/g — série sobre princípios da Gestalt.\nLaws of UX — Law of Proximity, Law of Similarity, Law of Common Region.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Psicologia e cognição/Princípios da Gestalt.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Psicologia e cognição",
+  "name": "Vieses cognitivos",
+  "overview": false,
+  "siblings": [
+   "Modelos mentais",
+   "Carga cognitiva",
+   "Atenção e percepção visual",
+   "Reconhecimento vs recordação",
+   "Princípios da Gestalt",
+   "Vieses cognitivos"
+  ],
+  "draft": "Vieses cognitivos\nTópico 1 — Fundamentos e mercado › Módulo 03 — Psicologia e cogniçãoResumo\nAncoragem, efeito padrão, aversão à perda e outros afetam escolhas. Conhecer vieses serve para projetar com ética, não para manipular.\nAnotações\nVocê sabia?\nO episódio “Queda Livre” (Nosedive) de Black Mirror mostra uma sociedade movida por notas e aprovação social.\nEm vários estudos sobre doação de órgãos, países com “sim” como opção padrão tiveram adesão muito maior (efeito padrão).\nExplicando o conceito\nVieses principais: ancoragem, efeito padrão, aversão à perda, prova social, enquadramento, escassez.\nUso ético vs manipulação (e a ligação com dark patterns).\nVieses do próprio designer e do pesquisador.\nReferências\nDaniel Kahneman — Rápido e Devagar.\nRichard Thaler e Cass Sunstein — Nudge.\nSite The Decision Lab — lista de vieses.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Psicologia e cognição/Vieses cognitivos.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Mercado e carreira",
+  "name": "Cargos e diferenças",
+  "overview": false,
+  "siblings": [
+   "Cargos e diferenças",
+   "Dia a dia real",
+   "Maturidade das empresas em UX",
+   "Freelancer, agência, consultoria, startup ou produto",
+   "Salários, CLT e PJ, senioridade",
+   "Habilidades técnicas e comportamentais",
+   "Ferramentas e softwares",
+   "Lista de leitura"
+  ],
+  "draft": "Cargos e diferenças\nTópico 1 — Fundamentos e mercado › Módulo 02 — Mercado e carreiraResumo\nUX, UI, Product, Research, Interaction, Visual e UX Writer têm focos diferentes. Em empresas pequenas uma pessoa acumula vários; em grandes, cada um é especialidade.\nAnotações\nVocê sabia?\nEm The Office, a Dunder Mifflin tem um “departamento” de uma pessoa só para tudo; startups pequenas fazem o mesmo com o designer, que vira UX, UI, pesquisa e motion ao mesmo tempo.\nExplicando o conceito\nFoco de cada cargo: UX Designer, UI Designer, Product Designer, UX Researcher, Interaction Designer, UX Writer, Content Designer.\nGeneralista vs especialista: vantagens em cada momento da carreira.\nComo ler uma vaga para descobrir o cargo de verdade por trás do título.\nReferências\nNN/g — “UX Careers” e relatórios sobre cargos.\nProgression.fyi — frameworks de carreira de empresas de tecnologia.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Mercado e carreira/Cargos e diferenças.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Mercado e carreira",
+  "name": "Dia a dia real",
+  "overview": false,
+  "siblings": [
+   "Cargos e diferenças",
+   "Dia a dia real",
+   "Maturidade das empresas em UX",
+   "Freelancer, agência, consultoria, startup ou produto",
+   "Salários, CLT e PJ, senioridade",
+   "Habilidades técnicas e comportamentais",
+   "Ferramentas e softwares",
+   "Lista de leitura"
+  ],
+  "draft": "Dia a dia real\nTópico 1 — Fundamentos e mercado › Módulo 02 — Mercado e carreiraResumo\nMais reunião, alinhamento e revisão do que tela no Figma. Entender isso evita frustração no primeiro emprego.\nAnotações\nVocê sabia?\nEm Mad Men, boa parte do trabalho criativo acontece em reuniões e apresentações para clientes, não na prancheta, e no design de produto é parecido.\nExplicando o conceito\nUma semana típica: dailies, alinhamentos, revisão com dev, pesquisa, e só uma parte do tempo no Figma.\nQuem são as pessoas com quem o designer mais conversa (PM, dev, dados, suporte).\nExpectativa vs realidade do primeiro emprego.\nReferências\nRelatos de designers no UX Collective e Medium.\nPodcasts brasileiros de UX (ex.: Movimento UX, Design Team).\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Mercado e carreira/Dia a dia real.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Mercado e carreira",
+  "name": "Maturidade das empresas em UX",
+  "overview": false,
+  "siblings": [
+   "Cargos e diferenças",
+   "Dia a dia real",
+   "Maturidade das empresas em UX",
+   "Freelancer, agência, consultoria, startup ou produto",
+   "Salários, CLT e PJ, senioridade",
+   "Habilidades técnicas e comportamentais",
+   "Ferramentas e softwares",
+   "Lista de leitura"
+  ],
+  "draft": "Maturidade das empresas em UX\nTópico 1 — Fundamentos e mercado › Módulo 02 — Mercado e carreiraResumo\nEmpresas vão de \"design ausente\" a \"design orientado ao usuário em toda a organização\". O nível define o que você consegue fazer e como precisa argumentar.\nAnotações\nVocê sabia?\nA NN/g tem um modelo de maturidade em 6 níveis, de “ausente” até “orientada ao usuário”, e muitas empresas estão nos níveis iniciais.\nExplicando o conceito\nOs níveis de maturidade e sinais de cada um numa entrevista de emprego.\nComo o nível muda o trabalho do designer (evangelizar vs executar).\nComo ajudar a empresa a subir de nível aos poucos.\nReferências\nNN/g — “The 6 Levels of UX Maturity”.\nInVision — relatório “The New Design Frontier”.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Mercado e carreira/Maturidade das empresas em UX.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Mercado e carreira",
+  "name": "Freelancer, agência, consultoria, startup ou produto",
+  "overview": false,
+  "siblings": [
+   "Cargos e diferenças",
+   "Dia a dia real",
+   "Maturidade das empresas em UX",
+   "Freelancer, agência, consultoria, startup ou produto",
+   "Salários, CLT e PJ, senioridade",
+   "Habilidades técnicas e comportamentais",
+   "Ferramentas e softwares",
+   "Lista de leitura"
+  ],
+  "draft": "Freelancer, agência, consultoria, startup ou produto\nTópico 1 — Fundamentos e mercado › Módulo 02 — Mercado e carreiraResumo\nCada contexto muda ritmo, profundidade e tipo de aprendizado. Agência dá variedade; produto dá profundidade e métricas.\nAnotações\nVocê sabia?\nEm Os Incríveis, a Edna Moda trabalha como “freela de luxo”: cada herói é um projeto novo, com briefing, prazo e entrega.\nExplicando o conceito\nPrós e contras de cada contexto: ritmo, variedade, profundidade, estabilidade.\nQue tipo de portfólio cada contexto gera.\nQual escolher no começo da carreira e por quê.\nReferências\nRelatos de designers que passaram por agência e produto.\nLivro “Design é Negócio” e conteúdos sobre carreira freelance.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Mercado e carreira/Freelancer, agência, consultoria, startup ou produto.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Mercado e carreira",
+  "name": "Salários, CLT e PJ, senioridade",
+  "overview": false,
+  "siblings": [
+   "Cargos e diferenças",
+   "Dia a dia real",
+   "Maturidade das empresas em UX",
+   "Freelancer, agência, consultoria, startup ou produto",
+   "Salários, CLT e PJ, senioridade",
+   "Habilidades técnicas e comportamentais",
+   "Ferramentas e softwares",
+   "Lista de leitura"
+  ],
+  "draft": "Salários, CLT e PJ, senioridade\nTópico 1 — Fundamentos e mercado › Módulo 02 — Mercado e carreiraResumo\nFaixas variam por senioridade, cidade e regime. Comparar CLT e PJ exige somar benefícios, férias e impostos, não só o valor bruto.\nAnotações\nVocê sabia?\nUma regra de bolso comum no Brasil é que o valor PJ precisa ser bem maior que o CLT para empatar, por causa de 13º, férias, FGTS e benefícios.\nExplicando o conceito\nFaixas por senioridade (júnior, pleno, sênior, especialista) e o que muda em responsabilidade.\nConta comparando CLT e PJ: benefícios, impostos, férias, reserva.\nOnde pesquisar salário de forma confiável.\nReferências\nPesquisas salariais de UX no Brasil (ex.: UXcel, Glassdoor, levantamentos de comunidades).\nCalculadoras de CLT vs PJ.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Mercado e carreira/Salários, CLT e PJ, senioridade.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Mercado e carreira",
+  "name": "Habilidades técnicas e comportamentais",
+  "overview": false,
+  "siblings": [
+   "Cargos e diferenças",
+   "Dia a dia real",
+   "Maturidade das empresas em UX",
+   "Freelancer, agência, consultoria, startup ou produto",
+   "Salários, CLT e PJ, senioridade",
+   "Habilidades técnicas e comportamentais",
+   "Ferramentas e softwares",
+   "Lista de leitura"
+  ],
+  "draft": "Habilidades técnicas e comportamentais\nTópico 1 — Fundamentos e mercado › Módulo 02 — Mercado e carreiraResumo\nPesquisa, interação, UI e ferramentas, somados a comunicação, negociação e pensamento crítico. As comportamentais pesam mais a partir do pleno.\nAnotações\nVocê sabia?\nNo modelo “T-shaped” (popularizado pela IDEO), o profissional é profundo em uma área e conhece um pouco de várias.\nExplicando o conceito\nHard skills: pesquisa, arquitetura, interação, UI, prototipação, ferramentas.\nSoft skills: comunicação, negociação, facilitação, pensamento crítico, receber crítica.\nPor que as comportamentais pesam mais a partir do pleno.\nReferências\nIDEO — conceito de T-shaped people.\nMatrizes de competência de design abertas (Progression.fyi).\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Mercado e carreira/Habilidades técnicas e comportamentais.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Mercado e carreira",
+  "name": "Ferramentas e softwares",
+  "overview": false,
+  "siblings": [
+   "Cargos e diferenças",
+   "Dia a dia real",
+   "Maturidade das empresas em UX",
+   "Freelancer, agência, consultoria, startup ou produto",
+   "Salários, CLT e PJ, senioridade",
+   "Habilidades técnicas e comportamentais",
+   "Ferramentas e softwares",
+   "Lista de leitura"
+  ],
+  "draft": "Ferramentas e softwares\nTópico 1 — Fundamentos e mercado › Módulo 02 — Mercado e carreiraResumo\nFigma domina o mercado; o resto (pesquisa, quadro branco, prototipação) varia por empresa. Ferramenta se aprende rápido; critério de design, não.\nAnotações\nVocê sabia?\nA Adobe tentou comprar o Figma por 20 bilhões de dólares em 2022, mas o negócio foi cancelado em 2023 por pressão de reguladores.\nExplicando o conceito\nMapa de ferramentas por etapa: pesquisa, quadro branco, design, protótipo, handoff, testes.\nPor que o Figma virou padrão (colaboração no navegador).\nFerramenta se aprende rápido; critério não.\nReferências\nDocumentação e canal do Figma no YouTube.\nRelatório anual de ferramentas de design (UX Tools).\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Mercado e carreira/Ferramentas e softwares.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Mercado e carreira",
+  "name": "Lista de leitura",
+  "overview": false,
+  "siblings": [
+   "Cargos e diferenças",
+   "Dia a dia real",
+   "Maturidade das empresas em UX",
+   "Freelancer, agência, consultoria, startup ou produto",
+   "Salários, CLT e PJ, senioridade",
+   "Habilidades técnicas e comportamentais",
+   "Ferramentas e softwares",
+   "Lista de leitura"
+  ],
+  "draft": "Lista de leitura\nTópico 1 — Fundamentos e mercado › Módulo 02 — Mercado e carreiraResumo\nLivros base: The Design of Everyday Things (Norman), Don't Make Me Think (Krug), Just Enough Research (Erika Hall), Refactoring UI.\nAnotações\nVocê sabia?\nO Design do Dia a Dia foi lançado em 1988 com o título “The Psychology of Everyday Things” e mudou de nome depois.\nExplicando o conceito\nPor que cada livro da lista importa e em que ordem ler.\nComo fazer anotações de leitura que viram repertório.\nLivros em português disponíveis.\nReferências\nDon Norman — O Design do Dia a Dia.\nSteve Krug — Não Me Faça Pensar.\nErika Hall — Just Enough Research.\nAdam Wathan e Steve Schoger — Refactoring UI.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Mercado e carreira/Lista de leitura.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Usabilidade, princípios e heurísticas",
+  "name": "Visão geral do módulo",
+  "overview": true,
+  "siblings": [
+   "Visão geral do módulo",
+   "O que é usabilidade",
+   "As 10 heurísticas de Nielsen",
+   "Princípios de Norman",
+   "Leis de UX",
+   "Avaliação heurística na prática"
+  ],
+  "draft": "Módulo 04 — Usabilidade, princípios e heurísticas\nTópico 1 — Fundamentos e mercadoConteúdos\nO que é usabilidade\nAs 10 heurísticas de Nielsen\nPrincípios de Norman\nLeis de UX\nAvaliação heurística na prática\nLeituras\nUsability 101 — NN/g\n10 Usability Heuristics for User Interface Design — NN/g\nHow to Conduct a Heuristic Evaluation — NN/g\nLaws of UX\nISO 9241-11:2018",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Usabilidade, princípios e heurísticas/Visão geral do módulo.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Usabilidade, princípios e heurísticas",
+  "name": "O que é usabilidade",
+  "overview": false,
+  "siblings": [
+   "Visão geral do módulo",
+   "O que é usabilidade",
+   "As 10 heurísticas de Nielsen",
+   "Princípios de Norman",
+   "Leis de UX",
+   "Avaliação heurística na prática"
+  ],
+  "draft": "O que é usabilidade\nTópico 1 — Fundamentos e mercado › Módulo 04 — Usabilidade, princípios e heurísticasResumo\nA ISO 9241-11 define usabilidade como eficácia, eficiência e satisfação num contexto de uso. É mensurável, não opinião.\nAnotações\nVocê sabia?\nAs “portas de Norman” são portas com puxador que pedem para puxar quando é preciso empurrar; o vídeo da Vox “It’s not you. Bad doors are everywhere” explica o termo.\nExplicando o conceito\nDefinição da ISO 9241-11: eficácia, eficiência e satisfação num contexto de uso.\nOs 5 componentes de Nielsen: aprendizado, eficiência, memorização, erros e satisfação.\nPor que usabilidade se mede, não se opina.\nReferências\nISO 9241-11.\nNN/g — “Usability 101: Introduction to Usability”.\nVox — “It’s not you. Bad doors are everywhere”.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Usabilidade, princípios e heurísticas/O que é usabilidade.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Usabilidade, princípios e heurísticas",
+  "name": "As 10 heurísticas de Nielsen",
+  "overview": false,
+  "siblings": [
+   "Visão geral do módulo",
+   "O que é usabilidade",
+   "As 10 heurísticas de Nielsen",
+   "Princípios de Norman",
+   "Leis de UX",
+   "Avaliação heurística na prática"
+  ],
+  "draft": "As 10 heurísticas de Nielsen\nTópico 1 — Fundamentos e mercado › Módulo 04 — Usabilidade, princípios e heurísticasResumo\nRegras gerais como visibilidade do status, prevenção de erros e consistência. Servem para inspecionar interfaces sem usuários.\nAnotações\nVocê sabia?\nAs heurísticas foram publicadas por Jakob Nielsen em 1994, a partir de trabalho com Rolf Molich em 1990, e quase não mudaram desde então.\nA barra de vida e o mapa dos jogos são exemplos clássicos da heurística “visibilidade do status do sistema”.\nExplicando o conceito\nAs 10 heurísticas, cada uma com um exemplo bom e um ruim.\nQuando as heurísticas ajudam e quando não bastam.\nComo usá-las para argumentar com o time.\nReferências\nNN/g — “10 Usability Heuristics for User Interface Design”.\nPôsteres das heurísticas da NN/g.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Usabilidade, princípios e heurísticas/As 10 heurísticas de Nielsen.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Usabilidade, princípios e heurísticas",
+  "name": "Princípios de Norman",
+  "overview": false,
+  "siblings": [
+   "Visão geral do módulo",
+   "O que é usabilidade",
+   "As 10 heurísticas de Nielsen",
+   "Princípios de Norman",
+   "Leis de UX",
+   "Avaliação heurística na prática"
+  ],
+  "draft": "Princípios de Norman\nTópico 1 — Fundamentos e mercado › Módulo 04 — Usabilidade, princípios e heurísticasResumo\nAffordance, signifiers, feedback, mapping e constraints. Explicam por que as pessoas sabem (ou não) como usar algo.\nAnotações\nVocê sabia?\nPortal ensina a jogar quase sem tutorial: o próprio cenário mostra o que dá para fazer (affordances e signifiers bem desenhados).\nExplicando o conceito\nAffordance vs signifier (Norman revisou o conceito na edição de 2013).\nFeedback, mapping (ex.: botões do fogão) e constraints.\nModelo conceitual e os “golfos” de execução e avaliação.\nReferências\nDon Norman — O Design do Dia a Dia (edição revista).\nNN/g — “The Two UX Gulfs: Evaluation and Execution”.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Usabilidade, princípios e heurísticas/Princípios de Norman.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Usabilidade, princípios e heurísticas",
+  "name": "Leis de UX",
+  "overview": false,
+  "siblings": [
+   "Visão geral do módulo",
+   "O que é usabilidade",
+   "As 10 heurísticas de Nielsen",
+   "Princípios de Norman",
+   "Leis de UX",
+   "Avaliação heurística na prática"
+  ],
+  "draft": "Leis de UX\nTópico 1 — Fundamentos e mercado › Módulo 04 — Usabilidade, princípios e heurísticasResumo\nFitts (tamanho e distância do alvo), Hick (tempo de decisão por opção), Jakob (usuários esperam o que já conhecem) e Tesler (complexidade não some, muda de lugar). Miller é frequentemente mal aplicada.\nAnotações\nVocê sabia?\nOs cantos e bordas da tela são “alvos infinitos” pela Lei de Fitts: o cursor para ali sozinho, por isso menus de sistema ficam nas bordas.\nExplicando o conceito\nLei de Fitts, Lei de Hick, Lei de Jakob e Lei de Tesler, com um exemplo de cada.\nOutras leis úteis: Miller, Doherty, Peak-End, Von Restorff.\nCuidado com usar as leis como regra absoluta.\nReferências\nJon Yablonski — Laws of UX (site e livro).\nPaul Fitts (1954) e Hick-Hyman (1952), artigos originais.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Usabilidade, princípios e heurísticas/Leis de UX.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Usabilidade, princípios e heurísticas",
+  "name": "Avaliação heurística na prática",
+  "overview": false,
+  "siblings": [
+   "Visão geral do módulo",
+   "O que é usabilidade",
+   "As 10 heurísticas de Nielsen",
+   "Princípios de Norman",
+   "Leis de UX",
+   "Avaliação heurística na prática"
+  ],
+  "draft": "Avaliação heurística na prática\nTópico 1 — Fundamentos e mercado › Módulo 04 — Usabilidade, princípios e heurísticasResumo\nTrês a cinco avaliadores inspecionam a interface separadamente e depois consolidam problemas com severidade. É barata, mas não substitui teste com usuário.\nAnotações\nVocê sabia?\nNielsen mostrou que cerca de cinco avaliadores encontram por volta de 75% dos problemas de usabilidade numa avaliação heurística.\nExplicando o conceito\nPasso a passo: escopo, avaliadores, inspeção individual, consolidação.\nEscala de severidade de 0 a 4.\nModelo de planilha e como apresentar os achados.\nReferências\nNN/g — “How to Conduct a Heuristic Evaluation”.\nNN/g — “Severity Ratings for Usability Problems”.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Usabilidade, princípios e heurísticas/Avaliação heurística na prática.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Design centrado no usuário e design inclusivo",
+  "name": "Visão geral do módulo",
+  "overview": true,
+  "siblings": [
+   "Visão geral do módulo",
+   "User-centered design",
+   "Design inclusivo e voltado à equidade",
+   "Tecnologias assistivas",
+   "Viés do designer",
+   "Múltiplas plataformas e contextos"
+  ],
+  "draft": "Módulo 05 — Design centrado no usuário e design inclusivo\nTópico 1 — Fundamentos e mercadoConteúdos\nUser-centered design\nDesign inclusivo e voltado à equidade\nTecnologias assistivas\nViés do designer\nMúltiplas plataformas e contextos\nLeituras\nInclusive Design — Microsoft\nDesign Kit — IDEO.org\nIntrodução à acessibilidade na web — W3C WAI",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Design centrado no usuário e design inclusivo/Visão geral do módulo.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Design centrado no usuário e design inclusivo",
+  "name": "User-centered design",
+  "overview": false,
+  "siblings": [
+   "Visão geral do módulo",
+   "User-centered design",
+   "Design inclusivo e voltado à equidade",
+   "Tecnologias assistivas",
+   "Viés do designer",
+   "Múltiplas plataformas e contextos"
+  ],
+  "draft": "User-centered design\nTópico 1 — Fundamentos e mercado › Módulo 05 — Design centrado no usuário e design inclusivoResumo\nProcesso em que decisões partem de evidências sobre usuários reais, em ciclos de pesquisa, design e teste.\nAnotações\nVocê sabia?\nO termo ganhou força com o livro “User Centered System Design” (1986), de Don Norman e Stephen Draper.\nNos Simpsons, “The Homer” é o oposto: um carro feito só com as opiniões de uma pessoa, sem pesquisa nem teste.\nExplicando o conceito\nOs princípios do UCD e o ciclo da ISO 9241-210.\nDiferença entre envolver usuários e só “pedir opinião”.\nUCD em empresas com pouco tempo e orçamento.\nReferências\nISO 9241-210.\nNorman e Draper — User Centered System Design.\nUsability.gov — User-Centered Design Basics.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Design centrado no usuário e design inclusivo/User-centered design.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Design centrado no usuário e design inclusivo",
+  "name": "Design inclusivo e voltado à equidade",
+  "overview": false,
+  "siblings": [
+   "Visão geral do módulo",
+   "User-centered design",
+   "Design inclusivo e voltado à equidade",
+   "Tecnologias assistivas",
+   "Viés do designer",
+   "Múltiplas plataformas e contextos"
+  ],
+  "draft": "Design inclusivo e voltado à equidade\nTópico 1 — Fundamentos e mercado › Módulo 05 — Design centrado no usuário e design inclusivoResumo\nProjetar considerando quem costuma ser excluído. Resolver para um grupo excluído costuma melhorar a experiência de todos.\nAnotações\nVocê sabia?\nThe Last of Us Part II saiu com mais de 60 opções de acessibilidade e virou referência em games.\nO “efeito rampa”: rampas de calçada feitas para cadeirantes ajudam quem empurra carrinho, mala ou bicicleta.\nExplicando o conceito\nDiferença entre acessibilidade, inclusão e equidade.\nEspectro de personas (permanente, temporária, situacional).\nComo identificar quem o produto está excluindo hoje.\nReferências\nMicrosoft — Inclusive Design Toolkit.\nKat Holmes — Mismatch.\nArtigos sobre o “curb-cut effect”.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Design centrado no usuário e design inclusivo/Design inclusivo e voltado à equidade.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Design centrado no usuário e design inclusivo",
+  "name": "Tecnologias assistivas",
+  "overview": false,
+  "siblings": [
+   "Visão geral do módulo",
+   "User-centered design",
+   "Design inclusivo e voltado à equidade",
+   "Tecnologias assistivas",
+   "Viés do designer",
+   "Múltiplas plataformas e contextos"
+  ],
+  "draft": "Tecnologias assistivas\nTópico 1 — Fundamentos e mercado › Módulo 05 — Design centrado no usuário e design inclusivoResumo\nLeitores de tela, ampliadores, controle por voz, switches. O designer precisa saber que existem e como afetam a interface.\nAnotações\nVocê sabia?\nO Xbox Adaptive Controller (2018) foi criado com jogadores com deficiência e permite ligar botões e acessórios externos.\nStephen Hawking se comunicava com um sistema que lia o movimento de um músculo da bochecha.\nExplicando o conceito\nTipos: leitores de tela, ampliadores, controle por voz, switches, teclados alternativos, legendas.\nComo cada uma “enxerga” a interface.\nDemonstração: navegar um site só com leitor de tela.\nReferências\nWebAIM — artigos sobre tecnologias assistivas.\nDocumentação do NVDA e do VoiceOver.\nVídeos de usuários de leitor de tela no YouTube.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Design centrado no usuário e design inclusivo/Tecnologias assistivas.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Design centrado no usuário e design inclusivo",
+  "name": "Viés do designer",
+  "overview": false,
+  "siblings": [
+   "Visão geral do módulo",
+   "User-centered design",
+   "Design inclusivo e voltado à equidade",
+   "Tecnologias assistivas",
+   "Viés do designer",
+   "Múltiplas plataformas e contextos"
+  ],
+  "draft": "Viés do designer\nTópico 1 — Fundamentos e mercado › Módulo 05 — Design centrado no usuário e design inclusivoResumo\nVocê não é o usuário. Seu contexto, repertório e habilidade digital distorcem o que parece óbvio.\nAnotações\nVocê sabia?\nEm 2017 viralizou o vídeo de um dispensador de sabonete automático que não detectava pele escura, porque não foi testado com pessoas diversas.\nExplicando o conceito\n“Você não é o usuário”: repertório, renda, idade, habilidade digital.\nVieses que afetam decisões de design (falso consenso, confirmação).\nPráticas para reduzir: pesquisa, diversidade no time, testes.\nReferências\nNN/g — “The Distribution of Users’ Computer Skills: Worse Than You Think”.\nCaroline Criado Perez — Mulheres Invisíveis.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Design centrado no usuário e design inclusivo/Viés do designer.md"
+ },
+ {
+  "topic": "Fundamentos e mercado",
+  "module": "Design centrado no usuário e design inclusivo",
+  "name": "Múltiplas plataformas e contextos",
+  "overview": false,
+  "siblings": [
+   "Visão geral do módulo",
+   "User-centered design",
+   "Design inclusivo e voltado à equidade",
+   "Tecnologias assistivas",
+   "Viés do designer",
+   "Múltiplas plataformas e contextos"
+  ],
+  "draft": "Múltiplas plataformas e contextos\nTópico 1 — Fundamentos e mercado › Módulo 05 — Design centrado no usuário e design inclusivoResumo\nO mesmo produto é usado no celular, no desktop, com pressa, com uma mão. O contexto muda a solução.\nAnotações\nVocê sabia?\nO Nintendo Switch mudou o design de jogos: a mesma partida precisa funcionar na TV e na tela pequena do modo portátil.\nExplicando o conceito\nContexto de uso: dispositivo, ambiente, pressa, uma mão, conexão ruim.\nExperiência contínua entre dispositivos (começar no celular e terminar no computador).\nExemplos de produtos que mudam por contexto.\nReferências\nNN/g — artigos sobre “omnichannel” e contexto de uso.\nLuke Wroblewski — Mobile First.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+  "out": "cadernos/User Experience Design/Fundamentos e mercado/Design centrado no usuário e design inclusivo/Múltiplas plataformas e contextos.md"
  }
 ]

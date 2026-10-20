@@ -1,0 +1,16 @@
+{
+ "topic": "Fundamentos e mercado",
+ "module": "Psicologia e cognição",
+ "name": "Princípios da Gestalt",
+ "overview": false,
+ "siblings": [
+  "Modelos mentais",
+  "Carga cognitiva",
+  "Atenção e percepção visual",
+  "Reconhecimento vs recordação",
+  "Princípios da Gestalt",
+  "Vieses cognitivos"
+ ],
+ "draft": "Princípios da Gestalt\nTópico 1 — Fundamentos e mercado › Módulo 03 — Psicologia e cogniçãoResumo\nProximidade, similaridade, continuidade, fechamento e figura-fundo. Explicam por que elementos parecem agrupados ou separados.\nAnotações\nVocê sabia?\nO logo do WWF usa fechamento: o panda não está desenhado inteiro, o cérebro completa.\nO logo da FedEx esconde uma seta entre o E e o x (figura-fundo).\nExplicando o conceito\nCada princípio com um exemplo de interface: proximidade, similaridade, continuidade, fechamento, figura-fundo, região comum.\nComo usar espaço para agrupar sem precisar de linhas e caixas.\nErros comuns que quebram a percepção de grupo.\nReferências\nNN/g — série sobre princípios da Gestalt.\nLaws of UX — Law of Proximity, Law of Similarity, Law of Common Region.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Fundamentos e mercado/Psicologia e cognição/Princípios da Gestalt.md"
+}

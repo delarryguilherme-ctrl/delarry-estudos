@@ -1,0 +1,16 @@
+{
+ "topic": "Fundamentos e mercado",
+ "module": "Psicologia e cognição",
+ "name": "Reconhecimento vs recordação",
+ "overview": false,
+ "siblings": [
+  "Modelos mentais",
+  "Carga cognitiva",
+  "Atenção e percepção visual",
+  "Reconhecimento vs recordação",
+  "Princípios da Gestalt",
+  "Vieses cognitivos"
+ ],
+ "draft": "Reconhecimento vs recordação\nTópico 1 — Fundamentos e mercado › Módulo 03 — Psicologia e cogniçãoResumo\nReconhecer uma opção é mais fácil do que lembrar dela. Por isso menus visíveis vencem comandos que precisam ser memorizados.\nAnotações\nVocê sabia?\nProgramas como Photoshop mostram o atalho ao lado de cada item do menu: você reconhece a opção e, com o tempo, decora o atalho.\nEm jogos de luta, a lista de golpes no pause existe porque decorar todos os combos é recordação pura.\nExplicando o conceito\nPor que reconhecer é mais fácil que lembrar (pistas na memória).\nExemplos: menus visíveis, histórico de busca, itens recentes, autocompletar.\nRelação com a heurística 6 de Nielsen.\nReferências\nNN/g — “Memory Recognition and Recall in User Interfaces”.\nNielsen — heurística “Reconhecer em vez de lembrar”.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Fundamentos e mercado/Psicologia e cognição/Reconhecimento vs recordação.md"
+}

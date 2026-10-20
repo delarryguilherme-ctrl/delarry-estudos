@@ -1,0 +1,16 @@
+{
+ "topic": "Fundamentos e mercado",
+ "module": "Design centrado no usuário e design inclusivo",
+ "name": "Tecnologias assistivas",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "User-centered design",
+  "Design inclusivo e voltado à equidade",
+  "Tecnologias assistivas",
+  "Viés do designer",
+  "Múltiplas plataformas e contextos"
+ ],
+ "draft": "Tecnologias assistivas\nTópico 1 — Fundamentos e mercado › Módulo 05 — Design centrado no usuário e design inclusivoResumo\nLeitores de tela, ampliadores, controle por voz, switches. O designer precisa saber que existem e como afetam a interface.\nAnotações\nVocê sabia?\nO Xbox Adaptive Controller (2018) foi criado com jogadores com deficiência e permite ligar botões e acessórios externos.\nStephen Hawking se comunicava com um sistema que lia o movimento de um músculo da bochecha.\nExplicando o conceito\nTipos: leitores de tela, ampliadores, controle por voz, switches, teclados alternativos, legendas.\nComo cada uma “enxerga” a interface.\nDemonstração: navegar um site só com leitor de tela.\nReferências\nWebAIM — artigos sobre tecnologias assistivas.\nDocumentação do NVDA e do VoiceOver.\nVídeos de usuários de leitor de tela no YouTube.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Fundamentos e mercado/Design centrado no usuário e design inclusivo/Tecnologias assistivas.md"
+}

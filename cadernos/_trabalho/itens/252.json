@@ -1,0 +1,16 @@
+{
+ "topic": "Fundamentos e mercado",
+ "module": "Design centrado no usuário e design inclusivo",
+ "name": "User-centered design",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "User-centered design",
+  "Design inclusivo e voltado à equidade",
+  "Tecnologias assistivas",
+  "Viés do designer",
+  "Múltiplas plataformas e contextos"
+ ],
+ "draft": "User-centered design\nTópico 1 — Fundamentos e mercado › Módulo 05 — Design centrado no usuário e design inclusivoResumo\nProcesso em que decisões partem de evidências sobre usuários reais, em ciclos de pesquisa, design e teste.\nAnotações\nVocê sabia?\nO termo ganhou força com o livro “User Centered System Design” (1986), de Don Norman e Stephen Draper.\nNos Simpsons, “The Homer” é o oposto: um carro feito só com as opiniões de uma pessoa, sem pesquisa nem teste.\nExplicando o conceito\nOs princípios do UCD e o ciclo da ISO 9241-210.\nDiferença entre envolver usuários e só “pedir opinião”.\nUCD em empresas com pouco tempo e orçamento.\nReferências\nISO 9241-210.\nNorman e Draper — User Centered System Design.\nUsability.gov — User-Centered Design Basics.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Fundamentos e mercado/Design centrado no usuário e design inclusivo/User-centered design.md"
+}

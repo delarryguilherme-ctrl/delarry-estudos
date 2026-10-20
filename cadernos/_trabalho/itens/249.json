@@ -1,0 +1,16 @@
+{
+ "topic": "Fundamentos e mercado",
+ "module": "Usabilidade, princípios e heurísticas",
+ "name": "Leis de UX",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "O que é usabilidade",
+  "As 10 heurísticas de Nielsen",
+  "Princípios de Norman",
+  "Leis de UX",
+  "Avaliação heurística na prática"
+ ],
+ "draft": "Leis de UX\nTópico 1 — Fundamentos e mercado › Módulo 04 — Usabilidade, princípios e heurísticasResumo\nFitts (tamanho e distância do alvo), Hick (tempo de decisão por opção), Jakob (usuários esperam o que já conhecem) e Tesler (complexidade não some, muda de lugar). Miller é frequentemente mal aplicada.\nAnotações\nVocê sabia?\nOs cantos e bordas da tela são “alvos infinitos” pela Lei de Fitts: o cursor para ali sozinho, por isso menus de sistema ficam nas bordas.\nExplicando o conceito\nLei de Fitts, Lei de Hick, Lei de Jakob e Lei de Tesler, com um exemplo de cada.\nOutras leis úteis: Miller, Doherty, Peak-End, Von Restorff.\nCuidado com usar as leis como regra absoluta.\nReferências\nJon Yablonski — Laws of UX (site e livro).\nPaul Fitts (1954) e Hick-Hyman (1952), artigos originais.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Fundamentos e mercado/Usabilidade, princípios e heurísticas/Leis de UX.md"
+}

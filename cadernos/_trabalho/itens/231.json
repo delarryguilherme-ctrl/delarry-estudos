@@ -1,0 +1,16 @@
+{
+ "topic": "Fundamentos e mercado",
+ "module": "Psicologia e cognição",
+ "name": "Modelos mentais",
+ "overview": false,
+ "siblings": [
+  "Modelos mentais",
+  "Carga cognitiva",
+  "Atenção e percepção visual",
+  "Reconhecimento vs recordação",
+  "Princípios da Gestalt",
+  "Vieses cognitivos"
+ ],
+ "draft": "Modelos mentais\nTópico 1 — Fundamentos e mercado › Módulo 03 — Psicologia e cogniçãoResumo\nO usuário age com base no que acredita sobre o sistema, não em como ele funciona. Interface que contraria o modelo mental gera erro.\nAnotações\nVocê sabia?\nEm Toy Story, o Buzz Lightyear tem um modelo mental errado sobre si mesmo: acha que é um patrulheiro espacial de verdade, não um brinquedo.\nEm muitos elevadores, o botão de fechar porta não faz nada, mas apertar dá às pessoas a sensação de controle.\nExplicando o conceito\nO que é modelo mental e de onde ele vem (experiências anteriores).\nModelo do designer vs modelo do usuário: o que acontece quando não batem.\nComo descobrir modelos mentais (entrevista, card sorting, observação).\nReferências\nNN/g — “Mental Models and User Experience Design”.\nIndi Young — Mental Models.\nDon Norman — O Design do Dia a Dia (modelo conceitual).\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Fundamentos e mercado/Psicologia e cognição/Modelos mentais.md"
+}

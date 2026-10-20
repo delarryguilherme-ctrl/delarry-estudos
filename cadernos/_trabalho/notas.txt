@@ -90,3 +90,7 @@ Benchmarking: 3 NN/g + BMJ 403 não lido; corrigido Ferrari (não McLaren) com G
 #152 Movimento reduzido: trecho Apple HIG parafraseado de memória.
 #150 Alvos de toque: barra de menus Mac 1984/Tognazzini sem fonte.
 #223 Design exercise: 3 NN/g não verificados (slug which-ux-research-methods conferir); Apollo 13 de memória.
+#232 Carga cognitiva: 2 NN/g não verificados; fato 'munição projetada no ar' sem fonte.
+#243 Ferramentas e softwares: valor US$ 20 bi (Adobe/Figma) não conferido.
+#236 Vieses cognitivos: 2 DOIs Science 403.
+#237 Cargos e diferenças: 1 NN/g não verificado.

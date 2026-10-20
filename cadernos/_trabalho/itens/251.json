@@ -1,0 +1,16 @@
+{
+ "topic": "Fundamentos e mercado",
+ "module": "Design centrado no usuário e design inclusivo",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "User-centered design",
+  "Design inclusivo e voltado à equidade",
+  "Tecnologias assistivas",
+  "Viés do designer",
+  "Múltiplas plataformas e contextos"
+ ],
+ "draft": "Módulo 05 — Design centrado no usuário e design inclusivo\nTópico 1 — Fundamentos e mercadoConteúdos\nUser-centered design\nDesign inclusivo e voltado à equidade\nTecnologias assistivas\nViés do designer\nMúltiplas plataformas e contextos\nLeituras\nInclusive Design — Microsoft\nDesign Kit — IDEO.org\nIntrodução à acessibilidade na web — W3C WAI",
+ "out": "cadernos/User Experience Design/Fundamentos e mercado/Design centrado no usuário e design inclusivo/Visão geral do módulo.md"
+}

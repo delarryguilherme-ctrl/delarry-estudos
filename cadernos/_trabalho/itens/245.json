@@ -1,0 +1,16 @@
+{
+ "topic": "Fundamentos e mercado",
+ "module": "Usabilidade, princípios e heurísticas",
+ "name": "Visão geral do módulo",
+ "overview": true,
+ "siblings": [
+  "Visão geral do módulo",
+  "O que é usabilidade",
+  "As 10 heurísticas de Nielsen",
+  "Princípios de Norman",
+  "Leis de UX",
+  "Avaliação heurística na prática"
+ ],
+ "draft": "Módulo 04 — Usabilidade, princípios e heurísticas\nTópico 1 — Fundamentos e mercadoConteúdos\nO que é usabilidade\nAs 10 heurísticas de Nielsen\nPrincípios de Norman\nLeis de UX\nAvaliação heurística na prática\nLeituras\nUsability 101 — NN/g\n10 Usability Heuristics for User Interface Design — NN/g\nHow to Conduct a Heuristic Evaluation — NN/g\nLaws of UX\nISO 9241-11:2018",
+ "out": "cadernos/User Experience Design/Fundamentos e mercado/Usabilidade, princípios e heurísticas/Visão geral do módulo.md"
+}

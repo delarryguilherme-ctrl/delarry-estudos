@@ -1,0 +1,16 @@
+{
+ "topic": "Fundamentos e mercado",
+ "module": "Design centrado no usuário e design inclusivo",
+ "name": "Viés do designer",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "User-centered design",
+  "Design inclusivo e voltado à equidade",
+  "Tecnologias assistivas",
+  "Viés do designer",
+  "Múltiplas plataformas e contextos"
+ ],
+ "draft": "Viés do designer\nTópico 1 — Fundamentos e mercado › Módulo 05 — Design centrado no usuário e design inclusivoResumo\nVocê não é o usuário. Seu contexto, repertório e habilidade digital distorcem o que parece óbvio.\nAnotações\nVocê sabia?\nEm 2017 viralizou o vídeo de um dispensador de sabonete automático que não detectava pele escura, porque não foi testado com pessoas diversas.\nExplicando o conceito\n“Você não é o usuário”: repertório, renda, idade, habilidade digital.\nVieses que afetam decisões de design (falso consenso, confirmação).\nPráticas para reduzir: pesquisa, diversidade no time, testes.\nReferências\nNN/g — “The Distribution of Users’ Computer Skills: Worse Than You Think”.\nCaroline Criado Perez — Mulheres Invisíveis.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Fundamentos e mercado/Design centrado no usuário e design inclusivo/Viés do designer.md"
+}

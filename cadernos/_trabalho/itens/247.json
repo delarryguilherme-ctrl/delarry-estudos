@@ -1,0 +1,16 @@
+{
+ "topic": "Fundamentos e mercado",
+ "module": "Usabilidade, princípios e heurísticas",
+ "name": "As 10 heurísticas de Nielsen",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "O que é usabilidade",
+  "As 10 heurísticas de Nielsen",
+  "Princípios de Norman",
+  "Leis de UX",
+  "Avaliação heurística na prática"
+ ],
+ "draft": "As 10 heurísticas de Nielsen\nTópico 1 — Fundamentos e mercado › Módulo 04 — Usabilidade, princípios e heurísticasResumo\nRegras gerais como visibilidade do status, prevenção de erros e consistência. Servem para inspecionar interfaces sem usuários.\nAnotações\nVocê sabia?\nAs heurísticas foram publicadas por Jakob Nielsen em 1994, a partir de trabalho com Rolf Molich em 1990, e quase não mudaram desde então.\nA barra de vida e o mapa dos jogos são exemplos clássicos da heurística “visibilidade do status do sistema”.\nExplicando o conceito\nAs 10 heurísticas, cada uma com um exemplo bom e um ruim.\nQuando as heurísticas ajudam e quando não bastam.\nComo usá-las para argumentar com o time.\nReferências\nNN/g — “10 Usability Heuristics for User Interface Design”.\nPôsteres das heurísticas da NN/g.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Fundamentos e mercado/Usabilidade, princípios e heurísticas/As 10 heurísticas de Nielsen.md"
+}

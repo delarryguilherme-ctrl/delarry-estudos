@@ -1,0 +1,16 @@
+{
+ "topic": "Fundamentos e mercado",
+ "module": "Usabilidade, princípios e heurísticas",
+ "name": "Princípios de Norman",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "O que é usabilidade",
+  "As 10 heurísticas de Nielsen",
+  "Princípios de Norman",
+  "Leis de UX",
+  "Avaliação heurística na prática"
+ ],
+ "draft": "Princípios de Norman\nTópico 1 — Fundamentos e mercado › Módulo 04 — Usabilidade, princípios e heurísticasResumo\nAffordance, signifiers, feedback, mapping e constraints. Explicam por que as pessoas sabem (ou não) como usar algo.\nAnotações\nVocê sabia?\nPortal ensina a jogar quase sem tutorial: o próprio cenário mostra o que dá para fazer (affordances e signifiers bem desenhados).\nExplicando o conceito\nAffordance vs signifier (Norman revisou o conceito na edição de 2013).\nFeedback, mapping (ex.: botões do fogão) e constraints.\nModelo conceitual e os “golfos” de execução e avaliação.\nReferências\nDon Norman — O Design do Dia a Dia (edição revista).\nNN/g — “The Two UX Gulfs: Evaluation and Execution”.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Fundamentos e mercado/Usabilidade, princípios e heurísticas/Princípios de Norman.md"
+}

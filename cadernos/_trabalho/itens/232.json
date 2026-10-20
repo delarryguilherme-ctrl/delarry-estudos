@@ -1,0 +1,16 @@
+{
+ "topic": "Fundamentos e mercado",
+ "module": "Psicologia e cognição",
+ "name": "Carga cognitiva",
+ "overview": false,
+ "siblings": [
+  "Modelos mentais",
+  "Carga cognitiva",
+  "Atenção e percepção visual",
+  "Reconhecimento vs recordação",
+  "Princípios da Gestalt",
+  "Vieses cognitivos"
+ ],
+ "draft": "Carga cognitiva\nTópico 1 — Fundamentos e mercado › Módulo 03 — Psicologia e cogniçãoResumo\nTodo elemento na tela custa atenção. Reduzir carga é remover o que não ajuda a tarefa, não esconder o que ajuda.\nAnotações\nVocê sabia?\nDead Space mostra a vida do personagem como uma barra na espinha do traje, em vez de um HUD por cima da tela, e isso reduz a carga visual.\nO famoso “7 ± 2” de George Miller (1956) é muito citado de forma errada para limitar itens de menu.\nExplicando o conceito\nCarga intrínseca, extrínseca e pertinente.\nTécnicas para reduzir: agrupar, revelar aos poucos, valores padrão, remover o desnecessário.\nDiferença entre simplificar e esconder.\nReferências\nNN/g — “Minimize Cognitive Load to Maximize Usability”.\nJohn Sweller — teoria da carga cognitiva.\nLaws of UX — Miller’s Law.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Fundamentos e mercado/Psicologia e cognição/Carga cognitiva.md"
+}

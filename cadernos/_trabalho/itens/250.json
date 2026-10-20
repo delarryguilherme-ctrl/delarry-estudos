@@ -1,0 +1,16 @@
+{
+ "topic": "Fundamentos e mercado",
+ "module": "Usabilidade, princípios e heurísticas",
+ "name": "Avaliação heurística na prática",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "O que é usabilidade",
+  "As 10 heurísticas de Nielsen",
+  "Princípios de Norman",
+  "Leis de UX",
+  "Avaliação heurística na prática"
+ ],
+ "draft": "Avaliação heurística na prática\nTópico 1 — Fundamentos e mercado › Módulo 04 — Usabilidade, princípios e heurísticasResumo\nTrês a cinco avaliadores inspecionam a interface separadamente e depois consolidam problemas com severidade. É barata, mas não substitui teste com usuário.\nAnotações\nVocê sabia?\nNielsen mostrou que cerca de cinco avaliadores encontram por volta de 75% dos problemas de usabilidade numa avaliação heurística.\nExplicando o conceito\nPasso a passo: escopo, avaliadores, inspeção individual, consolidação.\nEscala de severidade de 0 a 4.\nModelo de planilha e como apresentar os achados.\nReferências\nNN/g — “How to Conduct a Heuristic Evaluation”.\nNN/g — “Severity Ratings for Usability Problems”.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Fundamentos e mercado/Usabilidade, princípios e heurísticas/Avaliação heurística na prática.md"
+}

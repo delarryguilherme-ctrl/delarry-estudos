@@ -1,0 +1,16 @@
+{
+ "topic": "Fundamentos e mercado",
+ "module": "Usabilidade, princípios e heurísticas",
+ "name": "O que é usabilidade",
+ "overview": false,
+ "siblings": [
+  "Visão geral do módulo",
+  "O que é usabilidade",
+  "As 10 heurísticas de Nielsen",
+  "Princípios de Norman",
+  "Leis de UX",
+  "Avaliação heurística na prática"
+ ],
+ "draft": "O que é usabilidade\nTópico 1 — Fundamentos e mercado › Módulo 04 — Usabilidade, princípios e heurísticasResumo\nA ISO 9241-11 define usabilidade como eficácia, eficiência e satisfação num contexto de uso. É mensurável, não opinião.\nAnotações\nVocê sabia?\nAs “portas de Norman” são portas com puxador que pedem para puxar quando é preciso empurrar; o vídeo da Vox “It’s not you. Bad doors are everywhere” explica o termo.\nExplicando o conceito\nDefinição da ISO 9241-11: eficácia, eficiência e satisfação num contexto de uso.\nOs 5 componentes de Nielsen: aprendizado, eficiência, memorização, erros e satisfação.\nPor que usabilidade se mede, não se opina.\nReferências\nISO 9241-11.\nNN/g — “Usability 101: Introduction to Usability”.\nVox — “It’s not you. Bad doors are everywhere”.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
+ "out": "cadernos/User Experience Design/Fundamentos e mercado/Usabilidade, princípios e heurísticas/O que é usabilidade.md"
+}
