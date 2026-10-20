@@ -33,3 +33,60 @@ Competidores diretos e indiretos: 2 NN/g + CNBC 403; removida alegação Blockbu
 Focus group: 2 NN/g; Mad Men sem episódio.
 Heatmaps: 2 NN/g.
 Benchmarking: 3 NN/g + BMJ 403 não lido; corrigido Ferrari (não McLaren) com Great Ormond Street.
+#053 Storyboards: 2 NN/g não verificados; link IxDF original inexistente, trocado.
+#052 Service blueprint: 3 NN/g sem verificação de conteúdo.
+#046 Affinity mapping: 1 NN/g não verificado; data exata do KJ removida.
+#057 Proposta de valor e goal statement: 2 NN/g não verificados.
+#044 Repositório e ResearchOps: atribuição corrigida (Polaris/nuggets = Tomer Sharon; 4 camadas = Daniel Pidcock).
+#056 Hipóteses testáveis: 1 NN/g não verificado.
+#045 O que é um insight: 2 NN/g não verificados; Rosenfeld 403 mantido; removido 'What Is a Research Insight?' (não confirmado).
+#051 Customer journey map: 2 NN/g não verificados.
+#049 User stories: 'Você sabia?' (quadro de contratos de The Witcher 3) genérico, conferir.
+#054 Problem statement: 1 NN/g sem verificar; citação de Einstein tratada como atribuição sem fonte.
+#064 Modelos de negócio: frase sobre 'How to win your first 10 B2B customers' baseada só no título; conferir.
+#059 Estrutura de um readout: O'Reilly cap.14 403 (URL de busca).
+#066 OKRs: afirmação sobre as 'duas perguntas' de Grove em High Output Management escrita de memória; conferir.
+#060 Storytelling com evidências: caminho Story Spine→Pixar removido.
+#031 Diary studies: 1 NN/g não verificado.
+#050 Quantificar achados qualitativos: 4 NN/g não verificados; abertura trocada para caso Colgate/ASA 2007; intervalo '50% a quase 100%' calculado pelo agente (Adjusted Wald), conferir.
+#072 Ideação (visão geral): conteúdo do Google Sprint Kit (Crazy Eights) não confirmado, só URL 200.
+#043 Como anotar durante sessões: 3 NN/g não verificados (group-notetaking, observer-guidelines, tips-user-research-field); Rosenfeld 403 mantido.
+#048 Personas e proto-personas: 2 NN/g não verificados; anedota de Cooper removida.
+#069 Frameworks de priorização: Sean Ellis/ICE de memória; Kano 1984 só título confirmado.
+#047 Empathy map: 1 NN/g não verificado; menção ao canvas atualizado de Dave Gray sem fonte verificada.
+#061 Recomendações acionáveis: 1 NN/g não verificado; 'box, box' da F1 sem fonte.
+#062 Adaptar para cada público: O'Reilly (Greever) 403, URL de busca.
+#070 Escopo e trade-offs: fatos do Cyberpunk 2077 cortados; no-gos do Shape Up apoiados em 'Declare out of bounds'.
+#055 How Might We: 1 NN/g não verificado; origem Basadur/P&G como 'conta-se'.
+#065 Métricas de produto: 1 NN/g não verificado.
+#089 Design de interação (visão geral): 1 NN/g não verificado; O'Reilly (Saffer) 403 mantido.
+#084 Fluxos (visão geral): 3 NN/g não verificados.
+#078 Organização e taxonomia: 2 NN/g não verificados.
+#073 Crazy 8s: texto do Google Sprint Kit não confirmado; parábola da cerâmica (Art & Fear) com ressalva.
+#082 Sitemap: 2 NN/g não verificados; 'NN/g favorece estruturas rasas' é leitura do agente, conferir.
+#079 Sistemas de navegação: 3 NN/g não verificados; O'Reilly (IA) 403.
+#076 Critérios de escolha: 1 NN/g não verificado; carta de Franklin (1772) sem link.
+#095 UX Writing (visão geral): 2 NN/g não verificados.
+#092 Motion com propósito: Rosenfeld (Val Head) 403 mantido.
+#094 Gestos e input: frase sobre swipe de borda reservado ao sistema não conferida.
+#080 Rotulagem: 3 NN/g não verificados; O'Reilly 403; caso gov.br removido.
+#093 Navegação mobile vs desktop: Wroblewski e Material '3 a 5 destinos' de memória.
+#071 MVP e variações: Zappos fotos e Dropbox lista de espera sem conferir (ressalva no texto).
+#105 Layouts comuns: ano 2006 do F-pattern e menção Nubank/iFood/ML de memória.
+#098 Mensagens de erro: 3 NN/g não verificados.
+#103 Wireframes em papel: anedota Hawkins como relato popular.
+#074 Design studio: Sprint 'crítica em silêncio' não conferido.
+#107 Baixa/média/alta fidelidade: 1 NN/g não verificado; Rosenfeld 403.
+#117 Plugins e colaboração: Toy Story 2 de memória.
+#116 Prototipação no Figma: bloco de madeira de Hawkins como relato.
+#126 Tipografia: história de Connare/Comic Sans/Bob não conferida.
+#136 Responsivo vs adaptativo: fala de Bruce Lee (Longstreet 1971) de memória.
+#133 Padrões recorrentes: 1 NN/g não verificado; origem 'toast' como folclore.
+#134 Visualização de dados: corrigir frase 'rótulos girados e mais fáceis de ler'; Minard 1869 e rosa de Nightingale de memória.
+#139 Níveis A/AA/AAA: cena de The Last of Us II sem link.
+#143 WCAG 2.2 e POUR: Xbox Adaptive Controller (2018, embalagem) de memória.
+#145 Legislação brasileira: decretos 5.296/2004 e 6.949/2009 não conferidos no texto.
+#149 Leitores de tela: James Teh e 'ambos cegos' (NVDA) de memória.
+#152 Movimento reduzido: trecho Apple HIG parafraseado de memória.
+#150 Alvos de toque: barra de menus Mac 1984/Tognazzini sem fonte.
+#223 Design exercise: 3 NN/g não verificados (slug which-ux-research-methods conferir); Apollo 13 de memória.
