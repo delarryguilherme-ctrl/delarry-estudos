@@ -5104,6 +5104,12 @@ function setupSearch() {
     all[clamp(i + (e.key === 'ArrowDown' ? 1 : -1), 0, all.length - 1)]?.focus();
   });
   addEventListener('keydown', e => {
+    // Ctrl+Shift+H: marca-texto (e.code porque com Shift a tecla vira "H")
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && !e.altKey && e.code === 'KeyH' && nb()?.editing) {
+      e.preventDefault();
+      toggleHilite();
+      return;
+    }
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
       e.preventDefault();
       if (matchMedia('(max-width: 899px)').matches) { libEl.classList.add('open'); scrim.classList.add('open'); }
