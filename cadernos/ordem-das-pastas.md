@@ -1,0 +1,329 @@
+# Ordem das pastas e cadernos
+
+- **User Experience Design**
+  - **Fundamentos e mercado**
+    - **O que é User Experience?**
+      - Origem da disciplina
+      - Características de boa UX
+      - UX no mundo e valor para o negócio
+      - UX vs UI vs Product Design vs CX vs Service Design
+      - Mitos comuns
+    - **Mercado e carreira**
+      - Cargos e diferenças
+      - Dia a dia real
+      - Maturidade das empresas em UX
+      - Freelancer, agência, consultoria, startup ou produto
+      - Salários, CLT e PJ, senioridade
+      - Habilidades técnicas e comportamentais
+      - Ferramentas e softwares
+      - Lista de leitura
+    - **Psicologia e cognição**
+      - Modelos mentais
+      - Carga cognitiva
+      - Atenção e percepção visual
+      - Reconhecimento vs recordação
+      - Princípios da Gestalt
+      - Vieses cognitivos
+    - **Usabilidade, princípios e heurísticas**
+      - Visão geral do módulo
+      - O que é usabilidade
+      - As 10 heurísticas de Nielsen
+      - Princípios de Norman
+      - Leis de UX
+      - Avaliação heurística na prática
+    - **Design centrado no usuário e design inclusivo**
+      - Visão geral do módulo
+      - User-centered design
+      - Design inclusivo e voltado à equidade
+      - Tecnologias assistivas
+      - Viés do designer
+      - Múltiplas plataformas e contextos
+  - **Processos e início de projeto**
+    - **Processos de design**
+      - Double Diamond
+      - Design Thinking e suas críticas
+      - Lean UX
+      - Jobs to be Done
+      - Discovery vs delivery e dual-track
+      - Qual processo usar
+    - **Metodologias de produto e rotina de time**
+      - Ciclo de vida de produto
+      - Agile, Scrum e Kanban
+      - Design sprint
+      - Retrospectivas
+    - **Começando um projeto**
+      - Visão geral do módulo
+      - Primeiro projeto do zero
+      - Produto existente
+      - Você precisa de UX Research
+      - Business Model Canvas e Value Proposition Canvas
+      - Primeira reunião ou kickoff
+      - Depois da reunião
+  - **UX Research**
+    - **Planejamento de pesquisa**
+      - Visão geral do módulo
+      - Plano de pesquisa
+      - Metas do usuário vs metas do negócio
+      - Tipos de pesquisa
+      - Recrutamento e amostra
+      - Ética, consentimento e LGPD
+    - **Desk research e análise competitiva**
+      - Visão geral do módulo
+      - Desk research
+      - Competidores diretos e indiretos
+      - Benchmarking
+      - Análise competitiva na prática
+    - **Métodos qualitativos**
+      - Visão geral do módulo
+      - Entrevistas em profundidade
+      - Field study e contextual inquiry
+      - Diary studies
+      - Focus group
+      - Card sorting
+    - **Métodos quantitativos**
+      - Visão geral do módulo
+      - Surveys
+      - Product analytics
+      - Heatmaps e gravação de sessões
+      - Questionários padronizados
+      - AB testing e significância
+    - **Operação de pesquisa**
+      - Visão geral do módulo
+      - Ferramentas de pesquisa
+      - Ferramentas na prática
+      - Como anotar durante sessões
+      - Repositório e ResearchOps
+  - **Síntese e definição do problema**
+    - **Síntese**
+      - O que é um insight
+      - Affinity mapping
+      - Empathy map
+      - Personas e proto-personas
+      - User stories
+      - Quantificar achados qualitativos
+    - **Jornadas e contexto**
+      - Customer journey map
+      - Service blueprint
+      - Storyboards
+    - **Definição do problema**
+      - Problem statement
+      - How Might We
+      - Hipóteses testáveis
+      - Proposta de valor e goal statement
+    - **Apresentando resultados de pesquisa**
+      - Visão geral do módulo
+      - Estrutura de um readout
+      - Storytelling com evidências
+      - Recomendações acionáveis
+      - Adaptar para cada público
+  - **Estratégia, priorização e ideação**
+    - **Produto e negócio para designers**
+      - Visão geral do módulo
+      - Modelos de negócio
+      - Métricas de produto
+      - OKRs
+      - Unit economics
+    - **Priorização e MVP**
+      - Visão geral do módulo
+      - Frameworks de priorização
+      - Escopo e trade-offs
+      - MVP e variações
+    - **Ideação**
+      - Visão geral do módulo
+      - Crazy 8s
+      - Design studio
+      - Divergência e convergência
+      - Critérios de escolha
+  - **Arquitetura de informação e interação**
+    - **Arquitetura de informação**
+      - Visão geral do módulo
+      - Organização e taxonomia
+      - Sistemas de navegação
+      - Rotulagem
+      - Busca e filtros
+      - Sitemap
+      - Card sorting e tree testing aplicados
+    - **Fluxos**
+      - Visão geral do módulo
+      - User flows e task flows
+      - Wireflows
+      - Estados de tela
+      - Edge cases
+    - **Design de interação**
+      - Visão geral do módulo
+      - Feedback e microinterações
+      - Padrões de formulário
+      - Motion com propósito
+      - Navegação mobile vs desktop
+      - Gestos e input
+    - **UX Writing**
+      - Visão geral do módulo
+      - Voz e tom
+      - Microcopy
+      - Mensagens de erro
+      - Nomenclatura e consistência
+      - Content-first design
+  - **Wireframes, prototipação e ferramentas**
+    - **Wireframes**
+      - Visão geral do módulo
+      - Para que serve
+      - Wireframes em papel
+      - Wireframes digitais
+      - Layouts comuns de páginas web
+    - **Prototipação**
+      - Visão geral do módulo
+      - Baixa, média e alta fidelidade
+      - Protótipo em papel
+      - Baixa fidelidade no Figma
+      - Mockups e alta fidelidade
+      - Interações, transições e gestos
+      - Protótipo em código ou Framer
+    - **Figma**
+      - Visão geral do módulo
+      - Básico
+      - Avançado
+      - Prototipação no Figma
+      - Plugins e colaboração
+  - **Interface (UI)**
+    - **Direção visual**
+      - Visão geral do módulo
+      - Moodboard
+      - Conceito visual e style tiles
+      - Da pesquisa à direção visual
+    - **Fundamentos visuais**
+      - Visão geral do módulo
+      - Hierarquia visual
+      - Grids e layout
+      - Espaçamento e sistema de 8pt
+      - Tipografia
+      - Cor
+      - Iconografia e imagens
+    - **Componentes e padrões**
+      - Visão geral do módulo
+      - Design patterns
+      - Atomic design
+      - Anatomia e estados de componentes
+      - Padrões recorrentes
+      - Visualização de dados básica
+    - **Plataformas e responsividade**
+      - Visão geral do módulo
+      - Responsivo vs adaptativo vs fluido
+      - Breakpoints e mobile-first
+      - Material Design e HIG
+      - App nativo vs web
+      - Densidade de informação
+  - **Acessibilidade**
+    - **Fundamentos de acessibilidade**
+      - Visão geral do módulo
+      - Deficiência permanente, temporária e situacional
+      - WCAG 2.2 e POUR
+      - Níveis A, AA e AAA
+      - Legislação brasileira
+    - **Acessibilidade na prática**
+      - Visão geral do módulo
+      - Contraste
+      - Teclado e ordem de foco
+      - Leitores de tela e HTML semântico
+      - Alvos de toque
+      - Formulários acessíveis
+      - Movimento reduzido
+    - **Auditoria e handoff acessível**
+      - Visão geral do módulo
+      - Ferramentas automáticas
+      - Testes com NVDA e VoiceOver
+      - Anotações para dev
+      - Testes com pessoas com deficiência
+  - **Testes e validação**
+    - **Testes de usabilidade**
+      - Visão geral do módulo
+      - Ferramentas de teste
+      - Ferramentas na prática
+      - Roteiro e tarefas
+      - Teste moderado
+      - Teste não moderado
+      - Métricas e severidade
+    - **Testes rápidos e complementares**
+      - Visão geral do módulo
+      - First click test
+      - 5-second test
+      - Teste de preferência
+      - Tree testing
+    - **Crítica, iteração e documentação**
+      - Visão geral do módulo
+      - Critique session
+      - Dar e receber feedback
+      - Iterar com base em evidência
+      - Documentar testes e decisões
+    - **Pós-lançamento**
+      - Visão geral do módulo
+      - Instrumentação de eventos
+      - Leitura de métricas após a entrega
+      - Ciclos de iteração
+      - Canais de feedback contínuo
+  - **Design systems e entrega para desenvolvimento**
+    - **Do styleguide ao design system**
+      - Visão geral do módulo
+      - Styleguide
+      - Por que ter um design system
+      - Design tokens
+      - Biblioteca e documentação
+      - Governança, contribuição e versionamento
+    - **Handoff**
+      - Visão geral do módulo
+      - O que os desenvolvedores precisam
+      - Designer precisa saber código
+      - Ferramentas de entrega
+      - QA de design
+  - **Colaboração, comunicação e ética**
+    - **Stakeholders**
+      - Visão geral do módulo
+      - Mapeamento de stakeholders
+      - Alinhamento de expectativas
+      - Facilitação de workshops
+    - **Apresentação e defesa de decisões**
+      - Visão geral do módulo
+      - Apresentar para stakeholders
+      - Comportamento profissional
+      - Negociação de trade-offs
+      - Registro de decisões
+    - **Ética e responsabilidade**
+      - Visão geral do módulo
+      - Dark patterns
+      - Privacy by design
+      - Design para impacto social
+  - **Inteligência artificial e UX**
+    - **IA no processo de design**
+      - Onde a IA ajuda
+      - Personas e pesquisa sintética
+      - Validar o que a IA produz
+      - Privacidade de dados
+    - **Design de produtos com IA**
+      - Visão geral do módulo
+      - Modelo mental de sistemas probabilísticos
+      - Confiança e explicabilidade
+      - Erro e incerteza
+      - Controle e human-in-the-loop
+  - **Portfólio, carreira e projetos práticos**
+    - **Portfólio**
+      - Estrutura de estudo de caso
+      - Copy do portfólio
+      - Plataforma e apresentação visual
+    - **Presença profissional e busca de vaga**
+      - LinkedIn, CV e recrutadores
+      - Networking
+      - Plano de busca e organização
+      - IA na busca de vaga
+    - **Entrevistas**
+      - Visão geral do módulo
+      - Etapas comuns
+      - Perguntas comportamentais (STAR)
+      - Design exercise, whiteboard e take-home
+      - Apresentação de portfólio
+      - Negociação de proposta
+    - **Projetos práticos end-to-end**
+      - Visão geral do módulo
+      - Projeto 1 app mobile
+      - Projeto 2 site responsivo
+      - Projeto 3 impacto social
+      - Revisão final do portfólio
+
