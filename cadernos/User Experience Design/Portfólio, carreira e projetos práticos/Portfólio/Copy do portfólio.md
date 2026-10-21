@@ -18,7 +18,7 @@ Isso muda a pergunta de quem escreve. Em vez de "o que eu quero contar?", a perg
 
 Texto escaneável tem alguns traços previsíveis: títulos que dizem algo (e não apenas "Contexto" ou "Processo"), parágrafos de poucas linhas, listas quando o conteúdo é de fato uma lista e destaque em poucas palavras-chave. O NN/g resume a receita para escrever na web em três palavras: conciso, escaneável e objetivo. O que se corta não é conteúdo importante, e sim a volta que o texto dá antes de chegar ao ponto.
 
-Um teste prático é ler só os títulos do estudo de caso, em sequência. Se eles contam a história do projeto (problema, descoberta, decisão, resultado), a estrutura funciona. Se virarem uma lista genérica de etapas de processo, o leitor que escaneia não leva nada. A estrutura do estudo de caso em si é tema do caderno vizinho; aqui o foco é o que cada trecho diz.
+Um teste prático é ler só os títulos do estudo de caso, em sequência. Se eles contam a história do projeto (problema, descoberta, decisão, resultado), a estrutura funciona. Se virarem uma lista genérica de etapas de processo, o leitor que escaneia não leva nada. A estrutura do estudo de caso em si é tema do caderno "Estrutura de estudo de caso"; aqui o foco é o que cada trecho diz.
 
 ## Cada parágrafo justifica uma decisão
 
@@ -26,11 +26,9 @@ Um portfólio não é um diário do projeto. O que diferencia um designer em for
 
 Compare "Fiz entrevistas com usuários" com "Entrevistei oito pessoas que usam transporte público todo dia para entender por que abandonavam o app na hora de pagar; a maioria não confiava no total exibido antes da confirmação, então redesenhei o resumo do pedido". A segunda versão traz a decisão, o motivo e a consequência. (O número oito aqui é só ilustrativo do formato; no seu portfólio, use o número real.) Se um parágrafo não sustenta nenhuma decisão, ele provavelmente pode ser cortado.
 
-## Números, quando houver
+## Números com contexto
 
-Números dão concretude e ajudam o leitor que escaneia, porque se destacam na página. Mas só funcionam se forem verdadeiros e tiverem contexto: "reduzi o tempo de cadastro de 4 para 2 minutos em um teste com cinco pessoas" é mais honesto, e mais útil, do que "melhorei muito o cadastro". Diga como mediu, em quantas pessoas, e o que era o ponto de comparação.
-
-Em projetos de estudo, onde não há métrica de negócio, não invente. Use o que você realmente tem: resultados de testes de usabilidade, tempo para completar uma tarefa, quantidade de problemas encontrados e corrigidos, ou até o que você aprendeu e mudaria. Dizer com clareza o que não pôde medir também passa maturidade.
+Números se destacam na página e ajudam quem escaneia, mas só se forem verdadeiros e vierem com contexto: o que foi medido, como e comparado com o quê. Em projetos de estudo, sem métrica de negócio, não invente. O caderno "Impacto e resultados" detalha o que usar com e sem números; aqui, o cuidado é de escrita: coloque o número perto da decisão que ele sustenta, e não solto num bloco de "resultados" desconectado do resto.
 
 ## Primeira pessoa e papel claro
 
@@ -44,15 +42,27 @@ Linguagem simples costuma funcionar melhor que linguagem sofisticada. Evite jarg
 
 As diretrizes de linguagem simples do governo americano e o guia de escrita do GOV.UK reúnem práticas boas para isso: frases diretas, voz ativa, palavras do dia a dia e uma ideia por frase. Elas foram feitas para serviços públicos, mas valem para qualquer texto que precisa ser entendido na primeira passada.
 
-## Revisar com outra pessoa
+## A frase da página inicial
 
-Quem escreve conhece o projeto bem demais para enxergar o que está faltando. Peça a alguém de fora da área, e a alguém de design, que leia o estudo de caso e depois diga, com as próprias palavras, qual era o problema, o que você fez e qual foi o resultado. Onde a resposta divergir do que você queria dizer, o texto precisa de ajuste.
+A primeira coisa que alguém lê no portfólio é a frase que te apresenta, logo no topo da página inicial. Ela tem uma função só: dizer em poucos segundos quem você é e que tipo de trabalho faz, de um jeito coerente com o currículo e o LinkedIn. "Olá! Sou apaixonado por criar experiências incríveis" ocupa o espaço sem dizer nada. "Product Designer júnior. Desenho fluxos de produtos digitais com foco em acessibilidade, vindo de cinco anos em atendimento ao cliente" diz o cargo, o foco e o diferencial.
 
-Também vale ler o texto em voz alta e cortar o que faz você tropeçar. Depois de cada revisão, releia só os títulos e a primeira frase de cada parágrafo: se a história se sustenta, o texto está escaneável.
+Uma fórmula simples para começar: cargo + o que você faz + para quem ou em que área + o que te diferencia. Depois corte tudo o que puder sem perder sentido. A frase não precisa ser criativa; precisa ser específica.
+
+## A seção "Sobre"
+
+A página "Sobre" é onde quem avalia tenta entender a pessoa por trás dos projetos, e muitas vezes é aberta logo depois do primeiro caso. Ela não é uma autobiografia. O foco é a trajetória profissional e o jeito de trabalhar: de onde você vem, o que te trouxe para o design, que tipo de problema te interessa e o que você leva da carreira anterior. Para quem está em transição, essa é a chance de transformar a outra área em vantagem: alguém que veio do atendimento conhece o cliente irritado de perto; alguém que veio do direito lê regras e contratos sem medo.
+
+Detalhes pessoais podem aparecer em uma ou duas frases, se ajudarem a lembrar de você, mas não devem ocupar o espaço da trajetória. Inclua uma foto, o contato visível (e-mail e LinkedIn) e, se tiver, o link para o currículo em PDF. Escreva em primeira pessoa e no mesmo tom dos casos: se os casos são diretos e o "Sobre" é cheio de frases de efeito, o leitor sente a troca de voz.
+
+## Tom de voz e revisão
+
+Tom de voz é o jeito como o texto soa: mais formal ou mais próximo, mais sério ou mais leve. Não existe tom certo, mas existe tom consistente. Escolha como você quer soar (por exemplo, "direto, claro e próximo, sem gírias") e confira se todos os casos e o "Sobre" seguem isso. Guias de estilo de empresas, como o da Mailchimp, são bons exemplos de como descrever uma voz em poucas regras.
+
+Para revisar, leia o texto em voz alta e corte o que faz você tropeçar. Depois peça a alguém de fora que leia um caso e resuma, com as próprias palavras, qual era o problema, o que você fez e o resultado. Onde a resposta divergir do que você queria dizer, o texto precisa de ajuste. O ciclo completo de revisão está no caderno "Erros comuns e revisão final".
 
 ## Exercício
 
-Pegue um estudo de caso seu (ou um rascunho) e faça três passes. No primeiro, leia só os títulos e escreva, em uma frase, a história que eles contam; se não der, reescreva os títulos. No segundo, preencha a tabela abaixo para cada parágrafo e corte ou reescreva os que não sustentam nenhuma decisão. No terceiro, mande o texto para uma pessoa e peça que ela resuma o projeto em três frases, sem consultar você.
+Pegue um estudo de caso seu (ou um rascunho) e faça três passes. Antes, escreva a frase da página inicial com a fórmula cargo + o que faz + área + diferencial. No primeiro, leia só os títulos e escreva, em uma frase, a história que eles contam; se não der, reescreva os títulos. No segundo, preencha a tabela abaixo para cada parágrafo e corte ou reescreva os que não sustentam nenhuma decisão. No terceiro, mande o texto para uma pessoa e peça que ela resuma o projeto em três frases, sem consultar você.
 
 | Parágrafo | Decisão que ele justifica | Número ou evidência | Quem fez (eu ou o time) |
 |---|---|---|---|
@@ -67,5 +77,6 @@ Reserve entre 30 e 60 minutos e compare a versão final com a original: o texto 
 - NN/g — [F-Shaped Pattern of Reading on the Web](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/) (como o olhar percorre páginas de texto).
 - plainlanguage.gov — [Federal Plain Language Guidelines](https://www.plainlanguage.gov/guidelines/) (diretrizes de linguagem simples).
 - GOV.UK — [Writing for GOV.UK](https://www.gov.uk/guidance/content-design/writing-for-gov-uk) (guia de escrita clara para serviços digitais).
+- UXfolio Blog — [UX Storytelling](https://blog.uxfol.io/ux-storytelling/) (como dar voz e narrativa aos casos).
 - Mailchimp — [Content Style Guide](https://styleguide.mailchimp.com/) (exemplo de guia de voz e tom bem escrito).
 - W3C WAI — [Understanding Success Criterion 3.1.5: Reading Level](https://www.w3.org/WAI/WCAG22/Understanding/reading-level.html) (por que texto simples ajuda mais gente).

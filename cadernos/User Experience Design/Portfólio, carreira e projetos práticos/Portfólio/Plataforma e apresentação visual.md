@@ -14,6 +14,12 @@ Pense em quem vai abrir o seu link: um recrutador com dezenas de candidaturas, u
 
 Isso muda a pergunta de partida. Em vez de "qual plataforma é a mais bonita?", pergunte "o que essa pessoa precisa encontrar em poucos segundos e quantos cliques isso exige?". A resposta normalmente é: quem é você, o que você faz, seus melhores projetos e como falar com você.
 
+## Site é o formato preferido
+
+Antes de escolher a ferramenta, vale saber que formato quem avalia prefere. No relatório *State of UX Portfolios 2026*, do UXfolio, 72% das pessoas que contratam dizem preferir um site de portfólio a qualquer outro formato, à frente de protótipos no Figma, PDFs e apresentações. Uma das respostas citadas mostra o outro lado: um portfólio enviado como pasta do Google Drive tende a ir para o fim da fila.
+
+O motivo é prático. Um site abre com um clique, funciona no celular, pode ser atualizado sem reenviar nada e permite que a pessoa navegue no próprio ritmo. Os outros formatos têm seu lugar, como mostra a seção sobre PDF mais abaixo, mas o site é a base.
+
 ## Plataformas: o que cada uma entrega
 
 Não existe plataforma certa para todo mundo. Cada uma troca controle por velocidade de montagem:
@@ -27,6 +33,25 @@ Não existe plataforma certa para todo mundo. Cada uma troca controle por veloci
 | PDF | Controle de sequência, bom para enviar em candidaturas | Estático, difícil de atualizar, sem protótipos navegáveis |
 
 Para quem está começando, um site em Framer ou Webflow, ou uma página bem organizada no Notion, costuma bastar. O que pesa é a qualidade dos estudos de caso, não a ferramenta. Um template bonito com projetos fracos não convence; um Notion simples com projetos bem contados sim.
+
+## Sem barreiras entre a pessoa e os projetos
+
+Tudo o que fica entre o clique no link e o primeiro projeto custa atenção. As barreiras mais comuns são:
+
+- **Senha no portfólio inteiro.** A pessoa precisa pedir a senha, e muitas não pedem. Se algum caso precisa de proteção por NDA, proteja só ele e deixe os outros abertos (o caderno "Case fictício, sem experiência e sob NDA" trata disso).
+- **Download obrigatório.** Arquivos que precisam ser baixados para serem vistos, como PDFs pesados ou arquivos de design, afastam quem está no celular ou com pressa.
+- **Telas de abertura e animações desnecessárias.** Uma animação de entrada longa ou efeitos que atrasam a rolagem podem impressionar uma vez e irritar na segunda. Animação deve explicar algo, como uma transição ou uma interação do produto, e não só decorar.
+- **Links quebrados.** Protótipos que expiraram, arquivos que viraram privados e páginas que mudaram de endereço passam a impressão de descuido.
+
+Lembre-se da resposta citada no caderno "Como portfólios são avaliados": se a pessoa não encontra os projetos nos primeiros 30 segundos, ela desiste.
+
+## Navegação, contato e depoimentos
+
+A navegação de um portfólio pode ser muito simples: projetos, sobre e contato. Os projetos devem estar visíveis já na página inicial, sem exigir clique num menu. Dentro de cada caso, ofereça um jeito fácil de voltar à lista e de ir para o próximo projeto, para que a pessoa não precise voltar ao topo.
+
+O contato precisa estar sempre à mão: no rodapé de todas as páginas e na seção "Sobre", com e-mail e LinkedIn. Formulários de contato são opcionais; um e-mail visível é mais rápido.
+
+Depoimentos de colegas, gestores, professores ou clientes ajudam a confirmar o que o portfólio diz, porque vêm de outra pessoa. Uma ou duas frases curtas, com nome e relação com você ("orientadora no projeto de curso", "cliente do projeto voluntário"), bastam. Nunca invente nem edite um depoimento a ponto de mudar o sentido; peça autorização para publicar.
 
 ## Velocidade: o portfólio precisa abrir logo
 
@@ -65,6 +90,8 @@ Abra o seu portfólio (ou o rascunho dele) no celular, com dados móveis, e cron
 
 - Nielsen Norman Group — [How Long Do Users Stay on Web Pages?](https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/) (por que os primeiros segundos de uma página decidem tanto).
 - Nielsen Norman Group — [F-Shaped Pattern of Reading on the Web](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/) (como as pessoas varrem uma página).
+- UXfolio — [State of UX Portfolios 2026](https://uxfol.io/state-of-ux-portfolios-2026/report/chapter/1) (fonte dos 72% que preferem site; o capítulo 2 trata do formato).
+- UXfolio Blog — [UX Portfolio Features](https://blog.uxfol.io/ux-portfolio-features/) (o que um site de portfólio precisa ter).
 - Google web.dev — [Web Vitals](https://web.dev/articles/vitals) (métricas de carregamento, interatividade e estabilidade visual).
 - Google web.dev — [Optimize Largest Contentful Paint](https://web.dev/articles/optimize-lcp) (como deixar o conteúdo principal aparecer mais rápido).
 - W3C WAI — [Understanding SC 1.4.3: Contrast (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html) (contraste mínimo de texto).

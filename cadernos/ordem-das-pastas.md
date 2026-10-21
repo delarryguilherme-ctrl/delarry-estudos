@@ -305,9 +305,16 @@
       - Controle e human-in-the-loop
   - **Portfólio, carreira e projetos práticos**
     - **Portfólio**
+      - Como portfólios são avaliados
+      - Estratégia e escolha dos cases
       - Estrutura de estudo de caso
+      - Mostrar decisões e raciocínio
+      - Impacto e resultados
+      - Case fictício, sem experiência e sob NDA
+      - IA no portfólio
       - Copy do portfólio
       - Plataforma e apresentação visual
+      - Erros comuns e revisão final
     - **Presença profissional e busca de vaga**
       - LinkedIn, CV e recrutadores
       - Networking
@@ -325,5 +332,4 @@
       - Projeto 1 app mobile
       - Projeto 2 site responsivo
       - Projeto 3 impacto social
-      - Revisão final do portfólio
 
