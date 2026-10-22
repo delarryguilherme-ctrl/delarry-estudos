@@ -416,6 +416,8 @@
   .flow > * + :is(p, blockquote, aside, ul, ol, h1, h2, h3, h4, table) { margin-top: var(--para, 0px); }
   /* espaço entre itens de lista, também em linhas inteiras */
   .flow li + li { margin-top: var(--item-gap, 0px); }
+  /* a lista também afasta o que vem depois, mesmo texto solto (sem <p>) logo abaixo; com <p> as margens se fundem */
+  .flow > :is(ul, ol) { margin-bottom: var(--para, 0px); }
   .flow aside { font-size: 0.8em; position: relative; top: var(--note-shift); text-indent: 0; padding-left: calc(var(--indent) * 0.5); color: #4a5578; }
   .flow ul, .flow ol { padding-left: var(--list-pad); }
   .sheet .flow li::marker { color: transparent; }
