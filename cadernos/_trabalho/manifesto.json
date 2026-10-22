@@ -4001,5 +4001,215 @@
   ],
   "draft": "Múltiplas plataformas e contextos\nTópico 1 — Fundamentos e mercado › Módulo 05 — Design centrado no usuário e design inclusivoResumo\nO mesmo produto é usado no celular, no desktop, com pressa, com uma mão. O contexto muda a solução.\nAnotações\nVocê sabia?\nO Nintendo Switch mudou o design de jogos: a mesma partida precisa funcionar na TV e na tela pequena do modo portátil.\nExplicando o conceito\nContexto de uso: dispositivo, ambiente, pressa, uma mão, conexão ruim.\nExperiência contínua entre dispositivos (começar no celular e terminar no computador).\nExemplos de produtos que mudam por contexto.\nReferências\nNN/g — artigos sobre “omnichannel” e contexto de uso.\nLuke Wroblewski — Mobile First.\nDúvidas\n\nLeituras e sumário do módulo: Visão geral do módulo",
   "out": "cadernos/User Experience Design/Fundamentos e mercado/Design centrado no usuário e design inclusivo/Múltiplas plataformas e contextos.md"
+ },
+ {
+  "topic": "Portfólio, carreira e projetos práticos",
+  "module": "Portfólio",
+  "name": "Como portfólios são avaliados",
+  "overview": false,
+  "siblings": [
+   "Como portfólios são avaliados",
+   "Estratégia e escolha dos cases",
+   "Estrutura de estudo de caso",
+   "Mostrar decisões e raciocínio",
+   "Impacto e resultados",
+   "Case fictício, sem experiência e sob NDA",
+   "IA no portfólio",
+   "Copy e seção Sobre",
+   "Plataforma, visual e técnica",
+   "Erros comuns e revisão final"
+  ],
+  "draft": "Como portfólios são avaliados\nFoco deste caderno: Scan inicial de poucos minutos, triagem em duas etapas, o que pesa (portfólio acima de CV), consistência portfólio/CV/LinkedIn, indicação e cartas.\n\nMapa mental de referência do Guilherme (use como lista de pontos a cobrir):\nEstudos de caso: 3-4 projetos; o primeiro sendo o melhor; estrutura (o que, como); resultados claros no início; navegação clara; informações de contato; mobile optimised; testemunhos; visual; título interessante; table of contents; nome da empresa mencionado no CV.\nO case em si: explicar as decisões; cada decisão de design ligada à pesquisa e a um resultado de negócio esperado; impacto no negócio; layout escaneável; restrições explicadas; storytelling; aprendizados; visuais; destacar funções (eu fiz X, engenharia fez Y).\nErros do case: não explicar raciocínio; muito longo ou denso; não mostra resultado; parecer exagerado; sem declaração de problema; propriedade incerta; telas sem contexto; documentar todas as etapas como checklist.\nNDA: breve descrição, discutir na entrevista; imagens anonimizadas.\nComo são analisados: scan de 3 minutos; pontos-chave; experiência profissional; currículo; fit cultural; indicação; carta de recomendação; empregos passados; consistência entre CV e LinkedIn; seção Sobre (importante): tom de voz claro, história pessoal; vida, fotos, citações não é profissional.\nErros comuns: links quebrados; senha faltando; download necessário; animações desnecessárias; acessibilidade; qualidade visual baixa; estrutura confusa; uso excessivo de IA.\nUso da IA, sinais ruins: texto fraseado e repetitivo; palavras da moda sem detalhes; sem voz pessoal; cabeçalhos genéricos; estruturas gerais; processo genérico sem artefato; elementos não correspondem ao processo. Boas práticas: divulgue onde usou e verifique o resultado (usei X para Y); mostre o primeiro rascunho e em seguida o que mudou; separe as decisões do resultado; não se denomine especialista em IA.\n\nFontes indicadas pelo Guilherme: uxfol.io State of UX Portfolios 2026 (https://uxfol.io/state-of-ux-portfolios-2026/report/chapter/1 — achados confirmados: 78% dos avaliadores se baseiam no portfólio/cases para julgar fit; 65% gastam menos de 4 minutos no primeiro contato; triagem em duas etapas, cases pré-selecionados podem ter até 30 min; 53% consideram a seção Sobre importante; avaliadores comparam portfólio, CV e LinkedIn; capítulos: 2 portfólio deveria ser um site, 3 como os cases são escolhidos, 4 o que importa é o raciocínio, 5 IA deve ser ferramenta não autora, bônus sinais de alerta) e o blog https://blog.uxfol.io/ (ex.: https://blog.uxfol.io/ux-portfolio-template/, https://blog.uxfol.io/ux-portfolio-examples/).\n\nCadernos antigos deste módulo, que você pode reaproveitar e reescrever (leia os que forem relevantes ao seu tema): D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Estrutura de estudo de caso.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Copy do portfólio.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Plataforma e apresentação visual.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Revisão final do portfólio.md",
+  "out": "cadernos/User Experience Design/Portfólio, carreira e projetos práticos/Portfólio/Como portfólios são avaliados.md",
+  "novo": true
+ },
+ {
+  "topic": "Portfólio, carreira e projetos práticos",
+  "module": "Portfólio",
+  "name": "Estratégia e escolha dos cases",
+  "overview": false,
+  "siblings": [
+   "Como portfólios são avaliados",
+   "Estratégia e escolha dos cases",
+   "Estrutura de estudo de caso",
+   "Mostrar decisões e raciocínio",
+   "Impacto e resultados",
+   "Case fictício, sem experiência e sob NDA",
+   "IA no portfólio",
+   "Copy e seção Sobre",
+   "Plataforma, visual e técnica",
+   "Erros comuns e revisão final"
+  ],
+  "draft": "Estratégia e escolha dos cases\nFoco deste caderno: Quantos cases (3-4), o melhor primeiro, alinhar à vaga e ao nível, variedade, como cortar.\n\nMapa mental de referência do Guilherme (use como lista de pontos a cobrir):\nEstudos de caso: 3-4 projetos; o primeiro sendo o melhor; estrutura (o que, como); resultados claros no início; navegação clara; informações de contato; mobile optimised; testemunhos; visual; título interessante; table of contents; nome da empresa mencionado no CV.\nO case em si: explicar as decisões; cada decisão de design ligada à pesquisa e a um resultado de negócio esperado; impacto no negócio; layout escaneável; restrições explicadas; storytelling; aprendizados; visuais; destacar funções (eu fiz X, engenharia fez Y).\nErros do case: não explicar raciocínio; muito longo ou denso; não mostra resultado; parecer exagerado; sem declaração de problema; propriedade incerta; telas sem contexto; documentar todas as etapas como checklist.\nNDA: breve descrição, discutir na entrevista; imagens anonimizadas.\nComo são analisados: scan de 3 minutos; pontos-chave; experiência profissional; currículo; fit cultural; indicação; carta de recomendação; empregos passados; consistência entre CV e LinkedIn; seção Sobre (importante): tom de voz claro, história pessoal; vida, fotos, citações não é profissional.\nErros comuns: links quebrados; senha faltando; download necessário; animações desnecessárias; acessibilidade; qualidade visual baixa; estrutura confusa; uso excessivo de IA.\nUso da IA, sinais ruins: texto fraseado e repetitivo; palavras da moda sem detalhes; sem voz pessoal; cabeçalhos genéricos; estruturas gerais; processo genérico sem artefato; elementos não correspondem ao processo. Boas práticas: divulgue onde usou e verifique o resultado (usei X para Y); mostre o primeiro rascunho e em seguida o que mudou; separe as decisões do resultado; não se denomine especialista em IA.\n\nFontes indicadas pelo Guilherme: uxfol.io State of UX Portfolios 2026 (https://uxfol.io/state-of-ux-portfolios-2026/report/chapter/1 — achados confirmados: 78% dos avaliadores se baseiam no portfólio/cases para julgar fit; 65% gastam menos de 4 minutos no primeiro contato; triagem em duas etapas, cases pré-selecionados podem ter até 30 min; 53% consideram a seção Sobre importante; avaliadores comparam portfólio, CV e LinkedIn; capítulos: 2 portfólio deveria ser um site, 3 como os cases são escolhidos, 4 o que importa é o raciocínio, 5 IA deve ser ferramenta não autora, bônus sinais de alerta) e o blog https://blog.uxfol.io/ (ex.: https://blog.uxfol.io/ux-portfolio-template/, https://blog.uxfol.io/ux-portfolio-examples/).\n\nCadernos antigos deste módulo, que você pode reaproveitar e reescrever (leia os que forem relevantes ao seu tema): D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Estrutura de estudo de caso.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Copy do portfólio.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Plataforma e apresentação visual.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Revisão final do portfólio.md",
+  "out": "cadernos/User Experience Design/Portfólio, carreira e projetos práticos/Portfólio/Estratégia e escolha dos cases.md",
+  "novo": true
+ },
+ {
+  "topic": "Portfólio, carreira e projetos práticos",
+  "module": "Portfólio",
+  "name": "Estrutura de estudo de caso",
+  "overview": false,
+  "siblings": [
+   "Como portfólios são avaliados",
+   "Estratégia e escolha dos cases",
+   "Estrutura de estudo de caso",
+   "Mostrar decisões e raciocínio",
+   "Impacto e resultados",
+   "Case fictício, sem experiência e sob NDA",
+   "IA no portfólio",
+   "Copy e seção Sobre",
+   "Plataforma, visual e técnica",
+   "Erros comuns e revisão final"
+  ],
+  "draft": "Estrutura de estudo de caso\nFoco deste caderno: O que e como, resultado no início, título interessante, sumário, layout escaneável, storytelling, navegação.\n\nMapa mental de referência do Guilherme (use como lista de pontos a cobrir):\nEstudos de caso: 3-4 projetos; o primeiro sendo o melhor; estrutura (o que, como); resultados claros no início; navegação clara; informações de contato; mobile optimised; testemunhos; visual; título interessante; table of contents; nome da empresa mencionado no CV.\nO case em si: explicar as decisões; cada decisão de design ligada à pesquisa e a um resultado de negócio esperado; impacto no negócio; layout escaneável; restrições explicadas; storytelling; aprendizados; visuais; destacar funções (eu fiz X, engenharia fez Y).\nErros do case: não explicar raciocínio; muito longo ou denso; não mostra resultado; parecer exagerado; sem declaração de problema; propriedade incerta; telas sem contexto; documentar todas as etapas como checklist.\nNDA: breve descrição, discutir na entrevista; imagens anonimizadas.\nComo são analisados: scan de 3 minutos; pontos-chave; experiência profissional; currículo; fit cultural; indicação; carta de recomendação; empregos passados; consistência entre CV e LinkedIn; seção Sobre (importante): tom de voz claro, história pessoal; vida, fotos, citações não é profissional.\nErros comuns: links quebrados; senha faltando; download necessário; animações desnecessárias; acessibilidade; qualidade visual baixa; estrutura confusa; uso excessivo de IA.\nUso da IA, sinais ruins: texto fraseado e repetitivo; palavras da moda sem detalhes; sem voz pessoal; cabeçalhos genéricos; estruturas gerais; processo genérico sem artefato; elementos não correspondem ao processo. Boas práticas: divulgue onde usou e verifique o resultado (usei X para Y); mostre o primeiro rascunho e em seguida o que mudou; separe as decisões do resultado; não se denomine especialista em IA.\n\nFontes indicadas pelo Guilherme: uxfol.io State of UX Portfolios 2026 (https://uxfol.io/state-of-ux-portfolios-2026/report/chapter/1 — achados confirmados: 78% dos avaliadores se baseiam no portfólio/cases para julgar fit; 65% gastam menos de 4 minutos no primeiro contato; triagem em duas etapas, cases pré-selecionados podem ter até 30 min; 53% consideram a seção Sobre importante; avaliadores comparam portfólio, CV e LinkedIn; capítulos: 2 portfólio deveria ser um site, 3 como os cases são escolhidos, 4 o que importa é o raciocínio, 5 IA deve ser ferramenta não autora, bônus sinais de alerta) e o blog https://blog.uxfol.io/ (ex.: https://blog.uxfol.io/ux-portfolio-template/, https://blog.uxfol.io/ux-portfolio-examples/).\n\nCadernos antigos deste módulo, que você pode reaproveitar e reescrever (leia os que forem relevantes ao seu tema): D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Estrutura de estudo de caso.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Copy do portfólio.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Plataforma e apresentação visual.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Revisão final do portfólio.md",
+  "out": "cadernos/User Experience Design/Portfólio, carreira e projetos práticos/Portfólio/Estrutura de estudo de caso.md",
+  "novo": true
+ },
+ {
+  "topic": "Portfólio, carreira e projetos práticos",
+  "module": "Portfólio",
+  "name": "Mostrar decisões e raciocínio",
+  "overview": false,
+  "siblings": [
+   "Como portfólios são avaliados",
+   "Estratégia e escolha dos cases",
+   "Estrutura de estudo de caso",
+   "Mostrar decisões e raciocínio",
+   "Impacto e resultados",
+   "Case fictício, sem experiência e sob NDA",
+   "IA no portfólio",
+   "Copy e seção Sobre",
+   "Plataforma, visual e técnica",
+   "Erros comuns e revisão final"
+  ],
+  "draft": "Mostrar decisões e raciocínio\nFoco deste caderno: Cada decisão ligada à pesquisa e a um resultado esperado; restrições; papel claro (eu fiz X, engenharia fez Y); aprendizados; evitar processo como checklist.\n\nMapa mental de referência do Guilherme (use como lista de pontos a cobrir):\nEstudos de caso: 3-4 projetos; o primeiro sendo o melhor; estrutura (o que, como); resultados claros no início; navegação clara; informações de contato; mobile optimised; testemunhos; visual; título interessante; table of contents; nome da empresa mencionado no CV.\nO case em si: explicar as decisões; cada decisão de design ligada à pesquisa e a um resultado de negócio esperado; impacto no negócio; layout escaneável; restrições explicadas; storytelling; aprendizados; visuais; destacar funções (eu fiz X, engenharia fez Y).\nErros do case: não explicar raciocínio; muito longo ou denso; não mostra resultado; parecer exagerado; sem declaração de problema; propriedade incerta; telas sem contexto; documentar todas as etapas como checklist.\nNDA: breve descrição, discutir na entrevista; imagens anonimizadas.\nComo são analisados: scan de 3 minutos; pontos-chave; experiência profissional; currículo; fit cultural; indicação; carta de recomendação; empregos passados; consistência entre CV e LinkedIn; seção Sobre (importante): tom de voz claro, história pessoal; vida, fotos, citações não é profissional.\nErros comuns: links quebrados; senha faltando; download necessário; animações desnecessárias; acessibilidade; qualidade visual baixa; estrutura confusa; uso excessivo de IA.\nUso da IA, sinais ruins: texto fraseado e repetitivo; palavras da moda sem detalhes; sem voz pessoal; cabeçalhos genéricos; estruturas gerais; processo genérico sem artefato; elementos não correspondem ao processo. Boas práticas: divulgue onde usou e verifique o resultado (usei X para Y); mostre o primeiro rascunho e em seguida o que mudou; separe as decisões do resultado; não se denomine especialista em IA.\n\nFontes indicadas pelo Guilherme: uxfol.io State of UX Portfolios 2026 (https://uxfol.io/state-of-ux-portfolios-2026/report/chapter/1 — achados confirmados: 78% dos avaliadores se baseiam no portfólio/cases para julgar fit; 65% gastam menos de 4 minutos no primeiro contato; triagem em duas etapas, cases pré-selecionados podem ter até 30 min; 53% consideram a seção Sobre importante; avaliadores comparam portfólio, CV e LinkedIn; capítulos: 2 portfólio deveria ser um site, 3 como os cases são escolhidos, 4 o que importa é o raciocínio, 5 IA deve ser ferramenta não autora, bônus sinais de alerta) e o blog https://blog.uxfol.io/ (ex.: https://blog.uxfol.io/ux-portfolio-template/, https://blog.uxfol.io/ux-portfolio-examples/).\n\nCadernos antigos deste módulo, que você pode reaproveitar e reescrever (leia os que forem relevantes ao seu tema): D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Estrutura de estudo de caso.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Copy do portfólio.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Plataforma e apresentação visual.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Revisão final do portfólio.md",
+  "out": "cadernos/User Experience Design/Portfólio, carreira e projetos práticos/Portfólio/Mostrar decisões e raciocínio.md",
+  "novo": true
+ },
+ {
+  "topic": "Portfólio, carreira e projetos práticos",
+  "module": "Portfólio",
+  "name": "Impacto e resultados",
+  "overview": false,
+  "siblings": [
+   "Como portfólios são avaliados",
+   "Estratégia e escolha dos cases",
+   "Estrutura de estudo de caso",
+   "Mostrar decisões e raciocínio",
+   "Impacto e resultados",
+   "Case fictício, sem experiência e sob NDA",
+   "IA no portfólio",
+   "Copy e seção Sobre",
+   "Plataforma, visual e técnica",
+   "Erros comuns e revisão final"
+  ],
+  "draft": "Impacto e resultados\nFoco deste caderno: Métricas de negócio e de usuário, o que fazer sem números, não exagerar.\n\nMapa mental de referência do Guilherme (use como lista de pontos a cobrir):\nEstudos de caso: 3-4 projetos; o primeiro sendo o melhor; estrutura (o que, como); resultados claros no início; navegação clara; informações de contato; mobile optimised; testemunhos; visual; título interessante; table of contents; nome da empresa mencionado no CV.\nO case em si: explicar as decisões; cada decisão de design ligada à pesquisa e a um resultado de negócio esperado; impacto no negócio; layout escaneável; restrições explicadas; storytelling; aprendizados; visuais; destacar funções (eu fiz X, engenharia fez Y).\nErros do case: não explicar raciocínio; muito longo ou denso; não mostra resultado; parecer exagerado; sem declaração de problema; propriedade incerta; telas sem contexto; documentar todas as etapas como checklist.\nNDA: breve descrição, discutir na entrevista; imagens anonimizadas.\nComo são analisados: scan de 3 minutos; pontos-chave; experiência profissional; currículo; fit cultural; indicação; carta de recomendação; empregos passados; consistência entre CV e LinkedIn; seção Sobre (importante): tom de voz claro, história pessoal; vida, fotos, citações não é profissional.\nErros comuns: links quebrados; senha faltando; download necessário; animações desnecessárias; acessibilidade; qualidade visual baixa; estrutura confusa; uso excessivo de IA.\nUso da IA, sinais ruins: texto fraseado e repetitivo; palavras da moda sem detalhes; sem voz pessoal; cabeçalhos genéricos; estruturas gerais; processo genérico sem artefato; elementos não correspondem ao processo. Boas práticas: divulgue onde usou e verifique o resultado (usei X para Y); mostre o primeiro rascunho e em seguida o que mudou; separe as decisões do resultado; não se denomine especialista em IA.\n\nFontes indicadas pelo Guilherme: uxfol.io State of UX Portfolios 2026 (https://uxfol.io/state-of-ux-portfolios-2026/report/chapter/1 — achados confirmados: 78% dos avaliadores se baseiam no portfólio/cases para julgar fit; 65% gastam menos de 4 minutos no primeiro contato; triagem em duas etapas, cases pré-selecionados podem ter até 30 min; 53% consideram a seção Sobre importante; avaliadores comparam portfólio, CV e LinkedIn; capítulos: 2 portfólio deveria ser um site, 3 como os cases são escolhidos, 4 o que importa é o raciocínio, 5 IA deve ser ferramenta não autora, bônus sinais de alerta) e o blog https://blog.uxfol.io/ (ex.: https://blog.uxfol.io/ux-portfolio-template/, https://blog.uxfol.io/ux-portfolio-examples/).\n\nCadernos antigos deste módulo, que você pode reaproveitar e reescrever (leia os que forem relevantes ao seu tema): D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Estrutura de estudo de caso.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Copy do portfólio.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Plataforma e apresentação visual.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Revisão final do portfólio.md",
+  "out": "cadernos/User Experience Design/Portfólio, carreira e projetos práticos/Portfólio/Impacto e resultados.md",
+  "novo": true
+ },
+ {
+  "topic": "Portfólio, carreira e projetos práticos",
+  "module": "Portfólio",
+  "name": "Case fictício, sem experiência e sob NDA",
+  "overview": false,
+  "siblings": [
+   "Como portfólios são avaliados",
+   "Estratégia e escolha dos cases",
+   "Estrutura de estudo de caso",
+   "Mostrar decisões e raciocínio",
+   "Impacto e resultados",
+   "Case fictício, sem experiência e sob NDA",
+   "IA no portfólio",
+   "Copy e seção Sobre",
+   "Plataforma, visual e técnica",
+   "Erros comuns e revisão final"
+  ],
+  "draft": "Case fictício, sem experiência e sob NDA\nFoco deste caderno: Projetos pessoais, redesign não solicitado, projeto de curso; honestidade sobre o contexto; NDA: descrição breve, imagens anonimizadas, aprofundar na entrevista.\n\nMapa mental de referência do Guilherme (use como lista de pontos a cobrir):\nEstudos de caso: 3-4 projetos; o primeiro sendo o melhor; estrutura (o que, como); resultados claros no início; navegação clara; informações de contato; mobile optimised; testemunhos; visual; título interessante; table of contents; nome da empresa mencionado no CV.\nO case em si: explicar as decisões; cada decisão de design ligada à pesquisa e a um resultado de negócio esperado; impacto no negócio; layout escaneável; restrições explicadas; storytelling; aprendizados; visuais; destacar funções (eu fiz X, engenharia fez Y).\nErros do case: não explicar raciocínio; muito longo ou denso; não mostra resultado; parecer exagerado; sem declaração de problema; propriedade incerta; telas sem contexto; documentar todas as etapas como checklist.\nNDA: breve descrição, discutir na entrevista; imagens anonimizadas.\nComo são analisados: scan de 3 minutos; pontos-chave; experiência profissional; currículo; fit cultural; indicação; carta de recomendação; empregos passados; consistência entre CV e LinkedIn; seção Sobre (importante): tom de voz claro, história pessoal; vida, fotos, citações não é profissional.\nErros comuns: links quebrados; senha faltando; download necessário; animações desnecessárias; acessibilidade; qualidade visual baixa; estrutura confusa; uso excessivo de IA.\nUso da IA, sinais ruins: texto fraseado e repetitivo; palavras da moda sem detalhes; sem voz pessoal; cabeçalhos genéricos; estruturas gerais; processo genérico sem artefato; elementos não correspondem ao processo. Boas práticas: divulgue onde usou e verifique o resultado (usei X para Y); mostre o primeiro rascunho e em seguida o que mudou; separe as decisões do resultado; não se denomine especialista em IA.\n\nFontes indicadas pelo Guilherme: uxfol.io State of UX Portfolios 2026 (https://uxfol.io/state-of-ux-portfolios-2026/report/chapter/1 — achados confirmados: 78% dos avaliadores se baseiam no portfólio/cases para julgar fit; 65% gastam menos de 4 minutos no primeiro contato; triagem em duas etapas, cases pré-selecionados podem ter até 30 min; 53% consideram a seção Sobre importante; avaliadores comparam portfólio, CV e LinkedIn; capítulos: 2 portfólio deveria ser um site, 3 como os cases são escolhidos, 4 o que importa é o raciocínio, 5 IA deve ser ferramenta não autora, bônus sinais de alerta) e o blog https://blog.uxfol.io/ (ex.: https://blog.uxfol.io/ux-portfolio-template/, https://blog.uxfol.io/ux-portfolio-examples/).\n\nCadernos antigos deste módulo, que você pode reaproveitar e reescrever (leia os que forem relevantes ao seu tema): D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Estrutura de estudo de caso.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Copy do portfólio.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Plataforma e apresentação visual.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Revisão final do portfólio.md",
+  "out": "cadernos/User Experience Design/Portfólio, carreira e projetos práticos/Portfólio/Case fictício, sem experiência e sob NDA.md",
+  "novo": true
+ },
+ {
+  "topic": "Portfólio, carreira e projetos práticos",
+  "module": "Portfólio",
+  "name": "IA no portfólio",
+  "overview": false,
+  "siblings": [
+   "Como portfólios são avaliados",
+   "Estratégia e escolha dos cases",
+   "Estrutura de estudo de caso",
+   "Mostrar decisões e raciocínio",
+   "Impacto e resultados",
+   "Case fictício, sem experiência e sob NDA",
+   "IA no portfólio",
+   "Copy e seção Sobre",
+   "Plataforma, visual e técnica",
+   "Erros comuns e revisão final"
+  ],
+  "draft": "IA no portfólio\nFoco deste caderno: Sinais de texto/processo gerado por IA que avaliadores reconhecem; boas práticas: dizer onde usou e o que verificou, mostrar rascunho e mudança, separar decisão e resultado, não se vender como especialista em IA.\n\nMapa mental de referência do Guilherme (use como lista de pontos a cobrir):\nEstudos de caso: 3-4 projetos; o primeiro sendo o melhor; estrutura (o que, como); resultados claros no início; navegação clara; informações de contato; mobile optimised; testemunhos; visual; título interessante; table of contents; nome da empresa mencionado no CV.\nO case em si: explicar as decisões; cada decisão de design ligada à pesquisa e a um resultado de negócio esperado; impacto no negócio; layout escaneável; restrições explicadas; storytelling; aprendizados; visuais; destacar funções (eu fiz X, engenharia fez Y).\nErros do case: não explicar raciocínio; muito longo ou denso; não mostra resultado; parecer exagerado; sem declaração de problema; propriedade incerta; telas sem contexto; documentar todas as etapas como checklist.\nNDA: breve descrição, discutir na entrevista; imagens anonimizadas.\nComo são analisados: scan de 3 minutos; pontos-chave; experiência profissional; currículo; fit cultural; indicação; carta de recomendação; empregos passados; consistência entre CV e LinkedIn; seção Sobre (importante): tom de voz claro, história pessoal; vida, fotos, citações não é profissional.\nErros comuns: links quebrados; senha faltando; download necessário; animações desnecessárias; acessibilidade; qualidade visual baixa; estrutura confusa; uso excessivo de IA.\nUso da IA, sinais ruins: texto fraseado e repetitivo; palavras da moda sem detalhes; sem voz pessoal; cabeçalhos genéricos; estruturas gerais; processo genérico sem artefato; elementos não correspondem ao processo. Boas práticas: divulgue onde usou e verifique o resultado (usei X para Y); mostre o primeiro rascunho e em seguida o que mudou; separe as decisões do resultado; não se denomine especialista em IA.\n\nFontes indicadas pelo Guilherme: uxfol.io State of UX Portfolios 2026 (https://uxfol.io/state-of-ux-portfolios-2026/report/chapter/1 — achados confirmados: 78% dos avaliadores se baseiam no portfólio/cases para julgar fit; 65% gastam menos de 4 minutos no primeiro contato; triagem em duas etapas, cases pré-selecionados podem ter até 30 min; 53% consideram a seção Sobre importante; avaliadores comparam portfólio, CV e LinkedIn; capítulos: 2 portfólio deveria ser um site, 3 como os cases são escolhidos, 4 o que importa é o raciocínio, 5 IA deve ser ferramenta não autora, bônus sinais de alerta) e o blog https://blog.uxfol.io/ (ex.: https://blog.uxfol.io/ux-portfolio-template/, https://blog.uxfol.io/ux-portfolio-examples/).\n\nCadernos antigos deste módulo, que você pode reaproveitar e reescrever (leia os que forem relevantes ao seu tema): D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Estrutura de estudo de caso.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Copy do portfólio.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Plataforma e apresentação visual.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Revisão final do portfólio.md",
+  "out": "cadernos/User Experience Design/Portfólio, carreira e projetos práticos/Portfólio/IA no portfólio.md",
+  "novo": true
+ },
+ {
+  "topic": "Portfólio, carreira e projetos práticos",
+  "module": "Portfólio",
+  "name": "Copy e seção Sobre",
+  "overview": false,
+  "siblings": [
+   "Como portfólios são avaliados",
+   "Estratégia e escolha dos cases",
+   "Estrutura de estudo de caso",
+   "Mostrar decisões e raciocínio",
+   "Impacto e resultados",
+   "Case fictício, sem experiência e sob NDA",
+   "IA no portfólio",
+   "Copy e seção Sobre",
+   "Plataforma, visual e técnica",
+   "Erros comuns e revisão final"
+  ],
+  "draft": "Copy e seção Sobre\nFoco deste caderno: Tom de voz, títulos, microtextos do portfólio; seção Sobre com trajetória e voz, sem excesso de vida pessoal.\n\nMapa mental de referência do Guilherme (use como lista de pontos a cobrir):\nEstudos de caso: 3-4 projetos; o primeiro sendo o melhor; estrutura (o que, como); resultados claros no início; navegação clara; informações de contato; mobile optimised; testemunhos; visual; título interessante; table of contents; nome da empresa mencionado no CV.\nO case em si: explicar as decisões; cada decisão de design ligada à pesquisa e a um resultado de negócio esperado; impacto no negócio; layout escaneável; restrições explicadas; storytelling; aprendizados; visuais; destacar funções (eu fiz X, engenharia fez Y).\nErros do case: não explicar raciocínio; muito longo ou denso; não mostra resultado; parecer exagerado; sem declaração de problema; propriedade incerta; telas sem contexto; documentar todas as etapas como checklist.\nNDA: breve descrição, discutir na entrevista; imagens anonimizadas.\nComo são analisados: scan de 3 minutos; pontos-chave; experiência profissional; currículo; fit cultural; indicação; carta de recomendação; empregos passados; consistência entre CV e LinkedIn; seção Sobre (importante): tom de voz claro, história pessoal; vida, fotos, citações não é profissional.\nErros comuns: links quebrados; senha faltando; download necessário; animações desnecessárias; acessibilidade; qualidade visual baixa; estrutura confusa; uso excessivo de IA.\nUso da IA, sinais ruins: texto fraseado e repetitivo; palavras da moda sem detalhes; sem voz pessoal; cabeçalhos genéricos; estruturas gerais; processo genérico sem artefato; elementos não correspondem ao processo. Boas práticas: divulgue onde usou e verifique o resultado (usei X para Y); mostre o primeiro rascunho e em seguida o que mudou; separe as decisões do resultado; não se denomine especialista em IA.\n\nFontes indicadas pelo Guilherme: uxfol.io State of UX Portfolios 2026 (https://uxfol.io/state-of-ux-portfolios-2026/report/chapter/1 — achados confirmados: 78% dos avaliadores se baseiam no portfólio/cases para julgar fit; 65% gastam menos de 4 minutos no primeiro contato; triagem em duas etapas, cases pré-selecionados podem ter até 30 min; 53% consideram a seção Sobre importante; avaliadores comparam portfólio, CV e LinkedIn; capítulos: 2 portfólio deveria ser um site, 3 como os cases são escolhidos, 4 o que importa é o raciocínio, 5 IA deve ser ferramenta não autora, bônus sinais de alerta) e o blog https://blog.uxfol.io/ (ex.: https://blog.uxfol.io/ux-portfolio-template/, https://blog.uxfol.io/ux-portfolio-examples/).\n\nCadernos antigos deste módulo, que você pode reaproveitar e reescrever (leia os que forem relevantes ao seu tema): D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Estrutura de estudo de caso.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Copy do portfólio.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Plataforma e apresentação visual.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Revisão final do portfólio.md",
+  "out": "cadernos/User Experience Design/Portfólio, carreira e projetos práticos/Portfólio/Copy e seção Sobre.md",
+  "novo": true
+ },
+ {
+  "topic": "Portfólio, carreira e projetos práticos",
+  "module": "Portfólio",
+  "name": "Plataforma, visual e técnica",
+  "overview": false,
+  "siblings": [
+   "Como portfólios são avaliados",
+   "Estratégia e escolha dos cases",
+   "Estrutura de estudo de caso",
+   "Mostrar decisões e raciocínio",
+   "Impacto e resultados",
+   "Case fictício, sem experiência e sob NDA",
+   "IA no portfólio",
+   "Copy e seção Sobre",
+   "Plataforma, visual e técnica",
+   "Erros comuns e revisão final"
+  ],
+  "draft": "Plataforma, visual e técnica\nFoco deste caderno: Site em vez de PDF, ferramentas, mobile, navegação, contato, depoimentos, acessibilidade, sem senha nem download, sem animações desnecessárias, qualidade visual.\n\nMapa mental de referência do Guilherme (use como lista de pontos a cobrir):\nEstudos de caso: 3-4 projetos; o primeiro sendo o melhor; estrutura (o que, como); resultados claros no início; navegação clara; informações de contato; mobile optimised; testemunhos; visual; título interessante; table of contents; nome da empresa mencionado no CV.\nO case em si: explicar as decisões; cada decisão de design ligada à pesquisa e a um resultado de negócio esperado; impacto no negócio; layout escaneável; restrições explicadas; storytelling; aprendizados; visuais; destacar funções (eu fiz X, engenharia fez Y).\nErros do case: não explicar raciocínio; muito longo ou denso; não mostra resultado; parecer exagerado; sem declaração de problema; propriedade incerta; telas sem contexto; documentar todas as etapas como checklist.\nNDA: breve descrição, discutir na entrevista; imagens anonimizadas.\nComo são analisados: scan de 3 minutos; pontos-chave; experiência profissional; currículo; fit cultural; indicação; carta de recomendação; empregos passados; consistência entre CV e LinkedIn; seção Sobre (importante): tom de voz claro, história pessoal; vida, fotos, citações não é profissional.\nErros comuns: links quebrados; senha faltando; download necessário; animações desnecessárias; acessibilidade; qualidade visual baixa; estrutura confusa; uso excessivo de IA.\nUso da IA, sinais ruins: texto fraseado e repetitivo; palavras da moda sem detalhes; sem voz pessoal; cabeçalhos genéricos; estruturas gerais; processo genérico sem artefato; elementos não correspondem ao processo. Boas práticas: divulgue onde usou e verifique o resultado (usei X para Y); mostre o primeiro rascunho e em seguida o que mudou; separe as decisões do resultado; não se denomine especialista em IA.\n\nFontes indicadas pelo Guilherme: uxfol.io State of UX Portfolios 2026 (https://uxfol.io/state-of-ux-portfolios-2026/report/chapter/1 — achados confirmados: 78% dos avaliadores se baseiam no portfólio/cases para julgar fit; 65% gastam menos de 4 minutos no primeiro contato; triagem em duas etapas, cases pré-selecionados podem ter até 30 min; 53% consideram a seção Sobre importante; avaliadores comparam portfólio, CV e LinkedIn; capítulos: 2 portfólio deveria ser um site, 3 como os cases são escolhidos, 4 o que importa é o raciocínio, 5 IA deve ser ferramenta não autora, bônus sinais de alerta) e o blog https://blog.uxfol.io/ (ex.: https://blog.uxfol.io/ux-portfolio-template/, https://blog.uxfol.io/ux-portfolio-examples/).\n\nCadernos antigos deste módulo, que você pode reaproveitar e reescrever (leia os que forem relevantes ao seu tema): D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Estrutura de estudo de caso.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Copy do portfólio.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Plataforma e apresentação visual.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Revisão final do portfólio.md",
+  "out": "cadernos/User Experience Design/Portfólio, carreira e projetos práticos/Portfólio/Plataforma, visual e técnica.md",
+  "novo": true
+ },
+ {
+  "topic": "Portfólio, carreira e projetos práticos",
+  "module": "Portfólio",
+  "name": "Erros comuns e revisão final",
+  "overview": false,
+  "siblings": [
+   "Como portfólios são avaliados",
+   "Estratégia e escolha dos cases",
+   "Estrutura de estudo de caso",
+   "Mostrar decisões e raciocínio",
+   "Impacto e resultados",
+   "Case fictício, sem experiência e sob NDA",
+   "IA no portfólio",
+   "Copy e seção Sobre",
+   "Plataforma, visual e técnica",
+   "Erros comuns e revisão final"
+  ],
+  "draft": "Erros comuns e revisão final\nFoco deste caderno: Checklist de erros (links quebrados, telas sem contexto, longo demais, sem problema declarado, propriedade incerta) e ciclo de revisão com feedback de pares e mentores antes de enviar.\n\nMapa mental de referência do Guilherme (use como lista de pontos a cobrir):\nEstudos de caso: 3-4 projetos; o primeiro sendo o melhor; estrutura (o que, como); resultados claros no início; navegação clara; informações de contato; mobile optimised; testemunhos; visual; título interessante; table of contents; nome da empresa mencionado no CV.\nO case em si: explicar as decisões; cada decisão de design ligada à pesquisa e a um resultado de negócio esperado; impacto no negócio; layout escaneável; restrições explicadas; storytelling; aprendizados; visuais; destacar funções (eu fiz X, engenharia fez Y).\nErros do case: não explicar raciocínio; muito longo ou denso; não mostra resultado; parecer exagerado; sem declaração de problema; propriedade incerta; telas sem contexto; documentar todas as etapas como checklist.\nNDA: breve descrição, discutir na entrevista; imagens anonimizadas.\nComo são analisados: scan de 3 minutos; pontos-chave; experiência profissional; currículo; fit cultural; indicação; carta de recomendação; empregos passados; consistência entre CV e LinkedIn; seção Sobre (importante): tom de voz claro, história pessoal; vida, fotos, citações não é profissional.\nErros comuns: links quebrados; senha faltando; download necessário; animações desnecessárias; acessibilidade; qualidade visual baixa; estrutura confusa; uso excessivo de IA.\nUso da IA, sinais ruins: texto fraseado e repetitivo; palavras da moda sem detalhes; sem voz pessoal; cabeçalhos genéricos; estruturas gerais; processo genérico sem artefato; elementos não correspondem ao processo. Boas práticas: divulgue onde usou e verifique o resultado (usei X para Y); mostre o primeiro rascunho e em seguida o que mudou; separe as decisões do resultado; não se denomine especialista em IA.\n\nFontes indicadas pelo Guilherme: uxfol.io State of UX Portfolios 2026 (https://uxfol.io/state-of-ux-portfolios-2026/report/chapter/1 — achados confirmados: 78% dos avaliadores se baseiam no portfólio/cases para julgar fit; 65% gastam menos de 4 minutos no primeiro contato; triagem em duas etapas, cases pré-selecionados podem ter até 30 min; 53% consideram a seção Sobre importante; avaliadores comparam portfólio, CV e LinkedIn; capítulos: 2 portfólio deveria ser um site, 3 como os cases são escolhidos, 4 o que importa é o raciocínio, 5 IA deve ser ferramenta não autora, bônus sinais de alerta) e o blog https://blog.uxfol.io/ (ex.: https://blog.uxfol.io/ux-portfolio-template/, https://blog.uxfol.io/ux-portfolio-examples/).\n\nCadernos antigos deste módulo, que você pode reaproveitar e reescrever (leia os que forem relevantes ao seu tema): D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Estrutura de estudo de caso.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Copy do portfólio.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Plataforma e apresentação visual.md ; D:/Projetos/Folha Caderno/cadernos/_trabalho/antigos/Revisão final do portfólio.md",
+  "out": "cadernos/User Experience Design/Portfólio, carreira e projetos práticos/Portfólio/Erros comuns e revisão final.md",
+  "novo": true
  }
 ]
