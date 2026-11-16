@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;700&family=Nunito:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,700;1,400&family=Kalam:wght@400;700&family=Caveat:wght@400;700&family=Patrick+Hand&family=Indie+Flower&family=Shadows+Into+Light&family=Varela+Round&family=M+PLUS+Rounded+1c:wght@400;700&family=Quicksand:wght@400;700&family=Comfortaa:wght@400;700&family=Fredoka:wght@400;700&family=Baloo+2:wght@400;700&display=swap">
 <style>
+  /* Allo (Josh Puckett, SIL OFL 1.1): arquivo local, variável de 100 a 900 */
+  @font-face { font-family: "Allo"; src: url("fonts/Allo.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
   :root {
     --side: 272px;
     --bg: #fff; --surface: #fff; --surface-2: #fafaf8; --side-bg: #f8f8f6;
@@ -1070,7 +1072,7 @@ const EMPTY_PAGE = '<p><br></p>';
 const MM = { w: 210, h: 297, margin: 28, x0: 31, x1: 201, line0: 32, step: 7.5, lines: 35 };
 const FONT_GROUPS = [
   { label: 'Manuscritas', kind: 'hand', fonts: ['Kalam', 'Caveat', 'Patrick Hand', 'Indie Flower', 'Shadows Into Light'] },
-  { label: 'Sem serifa', kind: 'sans', fonts: ['Inter', 'IBM Plex Sans'] },
+  { label: 'Sem serifa', kind: 'sans', fonts: ['Inter', 'IBM Plex Sans', 'Allo'] },
   { label: 'Arredondadas', kind: 'round', fonts: ['Nunito', 'Varela Round', 'M PLUS Rounded 1c', 'Quicksand', 'Comfortaa', 'Fredoka', 'Baloo 2'] },
   { label: 'Com serifa', kind: 'serif', fonts: ['Lora', 'Merriweather', 'EB Garamond', 'Source Serif 4'] },
 ];
