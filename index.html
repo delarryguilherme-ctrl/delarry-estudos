@@ -441,6 +441,44 @@
   .flow nav.crumbs .sep-c { padding: 0 0.45em; }
   .flow blockquote { margin: 0; padding-left: calc(var(--indent) + 6px); text-indent: 0; }
 
+  /* ---------- teste: pergunta com a resposta escondida ---------- */
+  .flow .teste { margin: 0; text-indent: 0; }
+  .flow > * + .teste { margin-top: var(--para, 0px); }
+  .flow .teste-q { font-weight: 600; }
+  /* no livro (e na folha de medir) só existe a pergunta */
+  .sheet .teste-a, #measure .teste-a { display: none; }
+  /* no texto: um cartão discreto; lendo, a resposta só aparece depois do clique */
+  .doc > .teste { margin-block: 14px; padding: 14px 16px; border-radius: 12px; background: var(--surface-2); border: 1px solid var(--line); }
+  .doc .teste-a { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); color: var(--text-2); }
+  body.viewing .doc .teste:not([data-open]) .teste-a { display: none; }
+  /* rótulos: não fazem parte do texto salvo */
+  .doc .teste-q::before, .doc .teste-a::before {
+    display: block; margin-bottom: 2px; color: var(--muted); user-select: none;
+    font: 600 11px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; letter-spacing: .06em; text-transform: uppercase;
+  }
+  .doc .teste-q::before { content: "Teste"; }
+  .doc .teste-a::before { content: "Resposta"; }
+  body:not(.viewing) .doc .teste-q::before { content: "Pergunta"; }
+  .teste-ui, .teste-scores {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 6px; white-space: normal; user-select: none;
+    font: 13px/1.3 system-ui, -apple-system, "Segoe UI", sans-serif; letter-spacing: 0;
+  }
+  .teste-ui { margin-top: 12px; }
+  .teste-scores { outline: none; }
+  .teste-ask { margin-right: 4px; color: var(--muted); }
+  .teste-btn {
+    all: unset; box-sizing: border-box; cursor: pointer; display: inline-flex; align-items: center; height: 32px; padding: 0 14px;
+    border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--text); font-weight: 500;
+    transition: background-color .12s ease-out, border-color .12s ease-out, color .12s ease-out;
+  }
+  .teste-btn:hover { background: var(--hover); }
+  .teste-btn:active { background: var(--hover-2); }
+  .teste-btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  .teste-show { border-color: transparent; background: var(--active); color: var(--active-text); }
+  .teste-show:hover { background: var(--active); box-shadow: inset 0 0 0 1px var(--active-text); }
+  .teste-btn[aria-pressed="true"] { border-color: var(--ink); background: var(--ink); color: var(--on-ink); }
+  @media (prefers-reduced-motion: reduce) { .teste-btn { transition: none; } }
+
   /* exemplo interativo / código: papel colado na folha com fita adesiva */
   .flow figure.embed { display: block; position: relative; margin-left: auto; margin-right: auto; text-indent: 0; }
   .paste {
@@ -2338,6 +2376,9 @@ function serialize(root, keepCaret = false) {
   for (const b of c.querySelectorAll('nav.crumbs')) { b.replaceChildren(); b.removeAttribute('contenteditable'); }   // o caminho é montado na hora
   for (const a of c.querySelectorAll('a[title]')) a.removeAttribute('title');
   for (const td of c.querySelectorAll('td.cur')) { td.classList.remove('cur'); if (!td.classList.length) td.removeAttribute('class'); }
+  // teste: os botões e o estado de "resposta aberta" são só da tela
+  for (const u of c.querySelectorAll('.teste-ui')) u.remove();
+  for (const t of c.querySelectorAll('.teste')) { t.removeAttribute('data-open'); t.removeAttribute('data-score'); }
   if (!keepCaret) for (const m of c.querySelectorAll('[data-caret]')) m.remove();
   return c.innerHTML;
 }
@@ -2373,9 +2414,10 @@ function loadDoc({ keepScroll = false } = {}) {
   docEl.dataset.nb = n.id;
   const stray = hasStrayStyles(docEl);
   if (stray) cleanInlineStyles(docEl);            // conserta cadernos que já pegaram o texto gigante
+  const testes = normalizeTestes(docEl);          // teste sem identificador (ou com o formato quebrado) é consertado ao abrir
   layoutDoc();
   hydrateFigures(docEl);
-  if (stray) commitDoc(true);
+  if (stray || testes) commitDoc(true);
   activate(DV);
   updatePager();
   if (!keepScroll) scrollTo(0, 0);
@@ -2592,6 +2634,7 @@ const isEmptyBlock = el => !!el && el.tagName === 'P' && !el.textContent.trim() 
 // monta as páginas do livro a partir do texto, medindo numa folha invisível
 function paginate(html) {
   measure.innerHTML = html;
+  for (const a of measure.querySelectorAll('.teste-a')) a.remove();   // no livro o teste mostra só a pergunta, nunca a resposta
   const pages = [];
   for (let guard = 0; guard < 5000; guard++) {
     // linhas em branco no alto da folha são só espaço perdido
@@ -2677,6 +2720,11 @@ function onEdited(v = viewOf(editor) || DV, e = null) {
   if (!v.isDoc) { request({ ink: true, media: true }); return; }
   const ed = v.editor;
   normalizeChecklists(ed);
+  if (testesBroken(ed)) {
+    const mk = getSelection().isCollapsed ? dropCaretMarker(ed) : null;
+    normalizeTestes(ed);
+    restoreCaret(mk);
+  }
   if (hasStrayStyles(ed)) {
     // desembrulhar spans tiraria o cursor do lugar: marca, limpa e devolve
     const mk = getSelection().isCollapsed ? dropCaretMarker(ed) : null;
@@ -3136,6 +3184,237 @@ function toggleCheck(li) {
 }
 
 /* ------------------------------------------------------------------ *
+ *  Teste: pergunta com a resposta escondida                           *
+ *  <div class="teste" data-teste data-id="…">                         *
+ *    <div class="teste-q">pergunta</div><div class="teste-a">resposta</div>
+ *  </div>                                                             *
+ *  O data-id identifica a pergunta (é por ele que a revisão sabe o    *
+ *  que já foi respondido). Os botões e a resposta aberta são só da    *
+ *  tela: nascem na leitura, somem ao editar e nunca são salvos.       *
+ * ------------------------------------------------------------------ */
+const TESTE_LABEL = { acertei: 'Acertei', parcial: 'Parcial', errei: 'Errei' };
+const TESTE_INNER = 'p, div, h1, h2, h3, h4, h5, h6, ul, ol, li, blockquote, aside, table, hr, figure, nav';
+/* Gancho da revisão: o modo revisão (fila "Revisar hoje") vai se ligar aqui para registrar a resposta
+   de cada pergunta na sessão em andamento. Fora de uma revisão a escolha vale só na tela: nada é salvo. */
+let onTesteScore = (blockId, score) => {};
+
+function makeTeste(q = '', a = '', id = uid()) {
+  const part = (cls, html) => { const d = h('div', { class: cls }); d.innerHTML = html || '<br>'; return d; };
+  return h('div', { class: 'teste', 'data-teste': true, 'data-id': id }, part('teste-q', q), part('teste-a', a));
+}
+const testeParts = t => [t.querySelector(':scope > .teste-q'), t.querySelector(':scope > .teste-a')];
+// bloco Teste onde está o cursor (só no texto)
+function testeAt() {
+  const sel = getSelection();
+  const n = sel.rangeCount ? sel.anchorNode : null;
+  const el = n?.nodeType === 3 ? n.parentElement : n;
+  const t = el?.closest?.('.teste');
+  return t && docEl.contains(t) ? t : null;
+}
+// o formato esperado: bloco direto da folha, com pergunta e resposta (só texto) e um identificador só dele
+function testesBroken(root) {
+  if (!root.querySelector('.teste, .teste-q, .teste-a')) return false;
+  for (const part of root.querySelectorAll('.teste-q, .teste-a')) if (!part.parentElement.matches('.teste')) return true;
+  const ids = new Set();
+  for (const t of root.querySelectorAll('.teste')) {
+    const kids = [...t.childNodes].filter(n => !n.classList?.contains('teste-ui'));
+    const [q, a] = kids;
+    if (t.parentElement !== root || kids.length !== 2 || !q.matches?.('.teste-q') || !a.matches?.('.teste-a')) return true;
+    if (!t.hasAttribute('data-teste') || !t.dataset.id || ids.has(t.dataset.id)) return true;
+    ids.add(t.dataset.id);
+    if (!q.firstChild || !a.firstChild || q.querySelector(TESTE_INNER) || a.querySelector(TESTE_INNER)) return true;
+  }
+  return false;
+}
+/* Conserta os testes da folha: identificador que falta ou se repete, pergunta ou resposta que sumiu,
+   pedaços soltos e blocos que o navegador criou dentro (ao colar ou juntar linhas). Devolve true se mexeu. */
+function normalizeTestes(root) {
+  if (!testesBroken(root)) return false;
+  // pergunta ou resposta fora de um teste volta a ser texto comum
+  for (const part of [...root.querySelectorAll('.teste-q, .teste-a')]) {
+    if (part.parentElement.matches('.teste')) continue;
+    const p = h('p');
+    p.append(...part.childNodes);
+    if (!p.firstChild) p.append(h('br'));
+    part.replaceWith(p);
+  }
+  const addLine = (into, nodes) => {
+    if (into.childNodes.length === 1 && into.firstChild.nodeName === 'BR') into.firstChild.remove();
+    else if (into.firstChild) into.append(h('br'));
+    into.append(...nodes);
+  };
+  const ids = new Set();
+  for (const t of [...root.querySelectorAll('.teste')]) {
+    if (!t.isConnected) continue;
+    if (t.parentElement !== root) {                     // teste dentro de outro bloco: sai para logo depois dele
+      let top = t;
+      while (top.parentElement && top.parentElement !== root) top = top.parentElement;
+      if (top.parentElement === root) top.after(t);
+    }
+    const ui = t.querySelector(':scope > .teste-ui');
+    let [q, a] = testeParts(t);
+    q ||= h('div', { class: 'teste-q' });
+    a ||= h('div', { class: 'teste-a' });
+    // o que estiver solto no bloco entra na parte que vem antes dele
+    let into = q;
+    for (const n of [...t.childNodes]) {
+      if (n === q || n === a) { into = n; continue; }
+      if (n === ui) continue;
+      if (n.nodeType === 3 && !n.data.trim()) { n.remove(); continue; }
+      const block = n.nodeType === 1 && n.matches(TESTE_INNER);
+      addLine(into, block ? [...n.childNodes] : [n]);
+      if (block) n.remove();
+    }
+    if (t.firstChild !== q || q.nextSibling !== a) t.prepend(q, a);
+    // pergunta e resposta guardam só texto: blocos de dentro viram quebras de linha
+    for (const part of [q, a]) {
+      for (let b; (b = part.querySelector(TESTE_INNER));) {
+        if (/^(HR|FIGURE|NAV|TABLE)$/.test(b.tagName)) { t.after(b); continue; }   // componente não cabe: vai para depois do teste
+        if (b.previousSibling && b.previousSibling.nodeName !== 'BR') b.before(h('br'));
+        if (b.nextSibling && !(b.nextSibling.nodeType === 1 && b.nextSibling.matches(`br, ${TESTE_INNER}`))) b.after(h('br'));
+        b.replaceWith(...b.childNodes);
+      }
+      if (!part.firstChild) part.append(h('br'));
+    }
+    if (!t.hasAttribute('data-teste')) t.setAttribute('data-teste', '');
+    if (!t.dataset.id) t.dataset.id = uid();
+    // repetido (bloco duplicado, ou as duas versões de um conflito entre aparelhos): sufixo previsível,
+    // para dois aparelhos chegarem ao mesmo identificador sem criar outro conflito
+    for (let base = t.dataset.id, k = 2; ids.has(t.dataset.id); k++) t.dataset.id = `${base}-${k}`;
+    ids.add(t.dataset.id);
+  }
+  return true;
+}
+
+/* Leitura: "Mostrar resposta" e, depois de aberta, Acertei / Parcial / Errei. Editando, nada disso existe. */
+function fillTesteUI(t, ui) {
+  if (!t.hasAttribute('data-open')) {
+    ui.replaceChildren(h('button', { type: 'button', class: 'teste-btn teste-show', 'data-teste-act': 'show', 'aria-expanded': 'false' }, 'Mostrar resposta'));
+    return;
+  }
+  ui.replaceChildren(h('div', { class: 'teste-scores', role: 'group', 'aria-label': 'Como foi a sua resposta?', tabindex: '-1' },
+    h('span', { class: 'teste-ask', 'aria-hidden': 'true' }, 'Como foi?'),
+    ...STUDY_SCORES.map(s => h('button', { type: 'button', class: 'teste-btn', 'data-teste-act': s, 'aria-pressed': String(t.dataset.score === s) }, TESTE_LABEL[s]))));
+}
+function syncTestes() {
+  const reading = !nb()?.editing;
+  for (const t of docEl.querySelectorAll('.teste')) {
+    const ui = t.querySelector(':scope > .teste-ui');
+    if (!reading) { ui?.remove(); t.removeAttribute('data-open'); t.removeAttribute('data-score'); continue; }
+    if (ui) continue;
+    const box = h('div', { class: 'teste-ui', contenteditable: 'false' });
+    fillTesteUI(t, box);
+    t.append(box);
+  }
+}
+function revealTeste(t, focus = false) {
+  if (t.hasAttribute('data-open')) return;
+  t.setAttribute('data-open', '');
+  const ui = t.querySelector(':scope > .teste-ui');
+  if (!ui) return;
+  fillTesteUI(t, ui);
+  if (focus) ui.firstElementChild.focus({ preventScroll: true });   // o foco fica no grupo; Tab leva aos três botões
+}
+function testeClick(e) {
+  const b = e.target.closest?.('[data-teste-act]');
+  const t = b?.closest('.teste');
+  if (!t || nb()?.editing) return;
+  e.preventDefault();
+  const act = b.dataset.testeAct;
+  if (act === 'show') { revealTeste(t, true); return; }
+  t.dataset.score = act;
+  for (const x of t.querySelectorAll('[data-teste-act]')) x.setAttribute('aria-pressed', String(x === b));
+  onTesteScore(t.dataset.id, act);
+}
+
+// cursor no começo (ou no fim) de uma parte do teste ou de um bloco de texto
+function caretAtEdge(el, atEnd) {
+  const sel = getSelection();
+  if (!sel.rangeCount || !sel.isCollapsed || !el.contains(sel.anchorNode)) return false;
+  const r = document.createRange();
+  r.selectNodeContents(el);
+  if (atEnd) r.setStart(sel.anchorNode, sel.anchorOffset); else r.setEnd(sel.anchorNode, sel.anchorOffset);
+  if (r.toString()) return false;
+  return r.cloneContents().querySelectorAll('br').length <= (atEnd ? 1 : 0);   // um <br> no fim é só o que segura a linha
+}
+function caretIn(el, atEnd = false) {
+  docEl.focus({ preventScroll: true });
+  const r = document.createRange();
+  r.selectNodeContents(el);
+  if (atEnd && el.lastChild?.nodeName === 'BR') r.setEndBefore(el.lastChild);
+  r.collapse(!atEnd);
+  getSelection().removeAllRanges(); getSelection().addRange(r);
+}
+// Enter: da pergunta vai para a resposta; no fim da resposta, sai para uma linha de texto logo abaixo
+function testeEnter(t, shift = false) {
+  const [q, a] = testeParts(t);
+  if (!q || !a) return;
+  const sel = getSelection();
+  if (shift) { document.execCommand('insertLineBreak'); return; }
+  if (q.contains(sel.anchorNode)) { caretIn(a); return; }
+  if (!caretAtEdge(a, true)) { document.execCommand('insertLineBreak'); return; }
+  let p = t.nextElementSibling;
+  if (!isEmptyBlock(p)) { p = h('p', {}, h('br')); t.after(p); }
+  caretIn(p);
+  onEdited(DV);
+}
+/* Teclas dentro do teste (e encostado nele): o bloco nunca fica pela metade.
+   Backspace no começo da pergunta só apaga o teste se ele estiver vazio; no começo da resposta, volta para a pergunta. */
+function testeKeys(e) {
+  if (e.defaultPrevented || e.isComposing || SL.open || !nb()?.editing) return;
+  const sel = getSelection();
+  if (!sel.rangeCount || !docEl.contains(sel.anchorNode)) return;
+  const t = testeAt();
+  if (!t) {
+    // encostado num teste: Backspace/Delete não juntam o texto de fora com a pergunta ou a resposta
+    if (!sel.isCollapsed || (e.key !== 'Backspace' && e.key !== 'Delete')) return;
+    const b = blockOf(sel.anchorNode);
+    if (!b || !TEXT_BLOCKS.test(b.tagName)) return;
+    const back = e.key === 'Backspace';
+    const near = back ? b.previousElementSibling : b.nextElementSibling;
+    if (!near?.matches('.teste') || !caretAtEdge(b, !back)) return;
+    const [q, a] = testeParts(near);
+    if (!q || !a) return;
+    e.preventDefault();
+    const empty = !b.textContent.trim() && !b.querySelector('.media, .embed, .audio');
+    if (empty) b.remove();
+    if (back) caretIn(a, true); else caretIn(q);
+    if (empty) onEdited(DV);
+    return;
+  }
+  const [q, a] = testeParts(t);
+  if (!q || !a) return;                                // bloco quebrado: o conserto vem na próxima edição
+  const inQ = q.contains(sel.anchorNode), inA = a.contains(sel.anchorNode);
+  if (e.key === 'Enter') { e.preventDefault(); testeEnter(t, e.shiftKey); return; }
+  if (e.key === 'Tab' && !e.ctrlKey && !e.metaKey && !e.altKey) {
+    if (inQ && !e.shiftKey) { e.preventDefault(); caretIn(a); }
+    else if (inA && e.shiftKey) { e.preventDefault(); caretIn(q, true); }
+    return;
+  }
+  if (!sel.isCollapsed) return;
+  if (e.key === 'Backspace') {
+    if (inQ && caretAtEdge(q, false)) {
+      e.preventDefault();
+      if (t.textContent.trim()) return;
+      const p = h('p', {}, h('br'));                   // teste vazio: vira uma linha de texto
+      t.replaceWith(p);
+      caretIn(p);
+      onEdited(DV);
+    } else if (inA && caretAtEdge(a, false)) { e.preventDefault(); caretIn(q, true); }
+  } else if (e.key === 'Delete') {
+    if (inQ && caretAtEdge(q, true)) { e.preventDefault(); caretIn(a); }
+    else if (inA && caretAtEdge(a, true)) e.preventDefault();
+  }
+}
+// identificador de um teste importado: sai da pergunta, para continuar o mesmo quando o arquivo é reimportado
+function testeMdId(question, out) {
+  const base = 't' + (strHash(fold(question.replace(/\s+/g, ' ').trim())) >>> 0).toString(36);
+  let id = base;
+  for (let k = 2; out.querySelector(`.teste[data-id="${id}"]`); k++) id = `${base}-${k}`;
+  return id;
+}
+
+/* ------------------------------------------------------------------ *
  *  Tipo do bloco (texto, título, subtítulo, nota, citação)           *
  * ------------------------------------------------------------------ */
 const TEXT_BLOCKS = /^(P|H1|H2|H3|H4|ASIDE|BLOCKQUOTE)$/;
@@ -3498,6 +3777,14 @@ function setupEditor() {
     const ed = v.editor;
     ed.addEventListener('input', e => { mdShortcut(e); onEdited(v, e); });
     ed.addEventListener('keydown', e => tableKeys(e));
+    ed.addEventListener('keydown', e => testeKeys(e));
+    // teclado sem "keydown" de Enter (celular): a quebra de parágrafo dentro do teste segue a mesma regra
+    ed.addEventListener('beforeinput', e => {
+      if (e.inputType !== 'insertParagraph' || !nb()?.editing) return;
+      const t = testeAt();
+      if (t) { e.preventDefault(); testeEnter(t); }
+    });
+    ed.addEventListener('click', e => testeClick(e));
     ed.addEventListener('paste', e => {
     e.preventDefault();
     const files = [...e.clipboardData.files].filter(f => /^(image|video|audio)\//.test(f.type));
@@ -3586,12 +3873,14 @@ function setupEditor() {
     if (cmd === 'media') { $('file').click(); return; }
     if (cmd === 'hilite') { toggleHilite(); return; }
     if (cmd === 'link') { openLinkPop(b); return; }
-    if (cmd === 'checklist') { if (!editor.contains(getSelection().anchorNode)) editor.focus(); if (cellAt()) return; makeChecklist(); syncToolbar(); onEdited(); return; }
+    if (cmd === 'checklist') { if (!editor.contains(getSelection().anchorNode)) editor.focus(); if (cellAt() || testeAt()) return; makeChecklist(); syncToolbar(); onEdited(); return; }
     if (cmd === 'insert') { if (!editor.contains(getSelection().anchorNode)) editor.focus(); openSlash(null, b); return; }
     if (!editor.contains(getSelection().anchorNode)) editor.focus();
     const blockTag = { paragraph: 'p', heading: 'h1', h2: 'h2', h3: 'h3', h4: 'h4', note: 'aside' }[cmd];
     // célula de tabela: só negrito, itálico, riscado, link e cor
     if (cellAt() && (blockTag || /List|justify/.test(cmd))) { toast('Dentro da tabela, só negrito, itálico, riscado e link.'); return; }
+    // pergunta e resposta do teste também guardam só texto
+    if (testeAt() && (blockTag || /List|justify/.test(cmd))) { toast('Dentro do teste, só negrito, itálico, riscado e link.'); return; }
     if (blockTag) {
       setBlock(currentBlockTag() === blockTag ? 'p' : blockTag);   // clicar de novo volta a ser texto
     } else {
@@ -3629,6 +3918,7 @@ function applyMode() {
   if (!ed && typeof closeSlash === 'function') closeSlash();
   if (!ed && typeof clearBlockSel === 'function') clearBlockSel();
   if (!ed && typeof hideTblPop === 'function') hideTblPop();
+  syncTestes();                                  // lendo: botões do teste; editando: pergunta e resposta à vista
 }
 function updatePager() {
   const n = nb();
@@ -4565,6 +4855,7 @@ async function importImage(src, alt, ctx) {
 }
 const LIST_RE = /^(\s*)([-*+]|\d+[.)])\s+(.*)$/;
 const FENCE_RE = /^\s*(`{3,}|~{3,})\s*([\w+#.-]*)/;
+const TESTE_RE = /^\s*>\s*\[!teste\]\s*(.*)$/i;
 const TABLE_SEP = /^\s*\|?\s*:?-+:?\s*(\|\s*:?-+:?\s*)*\|?\s*$/;
 async function mdToHtml(text, ctx) {
   text = text.replace(/^﻿/, '').replace(/\r\n?/g, '\n').replace(/^---\n[\s\S]*?\n---[ \t]*(\n|$)/, '');
@@ -4610,10 +4901,22 @@ async function mdToHtml(text, ctx) {
       out.append(t);
       continue;
     }
+    if ((m = line.match(TESTE_RE))) {                    // teste: a pergunta vem depois de [!teste]; as linhas seguintes são a resposta
+      flush();
+      const answer = [];
+      for (i++; i < lines.length && /^\s*>/.test(lines[i]) && !TESTE_RE.test(lines[i]); i++) {
+        const t = lines[i].replace(/^\s*>\s?/, '');
+        if (!t.trim()) { i++; break; }                    // ">" vazio fecha o teste, como fecha uma citação
+        answer.push(t);
+      }
+      i--;
+      out.append(makeTeste(mdInline(m[1].trim()), joinInline(answer), testeMdId(m[1], out)));
+      continue;
+    }
     if (/^\s*>/.test(line)) {                            // citação
       flush();
       const groups = [[]];
-      for (; i < lines.length && /^\s*>/.test(lines[i]); i++) {
+      for (; i < lines.length && /^\s*>/.test(lines[i]) && !TESTE_RE.test(lines[i]); i++) {
         const t = lines[i].replace(/^\s*>\s?/, '');
         if (!t.trim()) { if (groups[groups.length - 1].length) groups.push([]); } else groups[groups.length - 1].push(t);
       }
@@ -4911,6 +5214,7 @@ const BLOCKS = [
   { id: 'check', label: 'Checklist', hint: 'Tarefas com caixinha para marcar', icon: 'check', keys: 'checklist tarefas todo marcar caixa lista de tarefas' },
   { id: 'ol', label: 'Lista numerada', hint: '1, 2, 3…', icon: 'olist', keys: 'lista numerada ordenada' },
   { id: 'quote', label: 'Citação', hint: 'Trecho destacado com barra', icon: 'quote', keys: 'citacao quote' },
+  { id: 'teste', label: 'Teste', hint: 'Pergunta com a resposta escondida', icon: null, glyph: '?', keys: 'teste pergunta resposta questao quiz revisao lembrar' },
   { id: 'table', label: 'Tabela', hint: 'Linhas e colunas; Tab passa para a próxima célula', icon: 'table', keys: 'tabela table grade colunas linhas' },
   { id: 'hr', label: 'Divisor', hint: 'Um traço à mão separando partes', icon: 'hr', keys: 'divisor separador linha' },
   { id: 'crumbs', label: 'Breadcrumb', hint: 'Caminho: pasta › caderno › página', icon: 'crumbs', keys: 'breadcrumb caminho trilha navegacao migalhas' },
@@ -4994,6 +5298,8 @@ function chooseSlash(id) {
   runBlock(id);
 }
 function runBlock(id) {
+  // dentro de um teste, pergunta e resposta guardam só texto (os outros blocos entram depois dele)
+  if (/^(p|h[1-4]|note|ul|ol|check|quote)$/.test(id) && testeAt()) { toast('Dentro do teste, só negrito, itálico, riscado e link.'); return; }
   switch (id) {
     case 'p': setBlock('p'); break;
     case 'h1': setBlock('h1'); break;
@@ -5005,6 +5311,7 @@ function runBlock(id) {
     case 'ol': document.execCommand('insertOrderedList'); unwrapLists(); break;
     case 'check': makeChecklist(); break;
     case 'quote': setBlock('blockquote'); break;
+    case 'teste': caretIn(insertBlockEl(makeTeste()).firstElementChild); break;   // nasce vazio, com o cursor na pergunta
     case 'hr': insertBlockEl(document.createElement('hr')); break;
     case 'table': { const t = insertBlockEl(makeTable(3, 3)); placeInCell(t.rows[0].cells[0]); break; }
     case 'crumbs': fillCrumbs(insertBlockEl(h('nav', { class: 'crumbs' }))); break;
@@ -5154,6 +5461,8 @@ function revealMatch(q, nth = 0) {
     let i = fold(n.data).indexOf(fq);
     while (i >= 0 && seen < nth) { seen++; i = fold(n.data).indexOf(fq, i + fq.length); }
     if (i < 0) continue;
+    const t = n.parentElement.closest('.teste-a')?.parentElement;   // achado dentro de uma resposta escondida: abre para mostrar
+    if (t?.matches('.teste') && !nb()?.editing) revealTeste(t);
     const r = document.createRange();
     r.setStart(n, i); r.setEnd(n, i + q.length);
     ed.focus({ preventScroll: true });
@@ -5259,7 +5568,7 @@ function speakPage(gen) {
 function speechUnits(html) {
   const d = document.createElement('div');
   d.innerHTML = html;
-  for (const x of d.querySelectorAll('s, strike, del, figure, hr')) x.remove();
+  for (const x of d.querySelectorAll('s, strike, del, figure, hr, .teste-a, .teste-ui')) x.remove();   // a resposta do teste não é lida em voz alta
   const out = [];
   const push = (t, kind) => { t = t.replace(/\s+/g, ' ').trim(); if (t) out.push({ t, kind }); };
   for (const b of d.children) {

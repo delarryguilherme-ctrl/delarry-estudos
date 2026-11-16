@@ -26,6 +26,17 @@ faça a ponte explícita com o conceito.>
 <Um parágrafo ou dois, em texto corrido, com uma atividade prática que ele consiga fazer
 sozinho em 30–60 min. Se fizer sentido, inclua uma tabela Markdown para ele preencher.>
 
+## Teste
+
+> [!teste] <pergunta 1>
+> <resposta curta, 1 a 2 frases>
+
+> [!teste] <pergunta 2>
+> <resposta>
+
+> [!teste] <pergunta 3>
+> <resposta>
+
 ## Referências
 
 - Autor/Fonte — [Título da fonte](https://link-verificado) (observação curta, opcional).
@@ -35,6 +46,14 @@ sozinho em 30–60 min. Se fizer sentido, inclua uma tabela Markdown para ele pr
 - NÃO inclua: "Resumo", "Anotações", "Dúvidas", citação de "Tópico/Módulo", nem link para "Visão geral do módulo".
 - Títulos de seção em `##`. Só use `###` se uma seção realmente precisar de subdivisão.
 - Pode usar **negrito** para termos-chave (com moderação), listas só quando forem de fato listas (etapas, critérios), e tabelas quando ajudarem a comparar.
+
+## Teste (as 3 perguntas no fim do caderno)
+
+No app, cada bloco `> [!teste]` vira uma pergunta com a resposta escondida: a primeira linha, depois de `[!teste]`, é a pergunta; as linhas seguintes do mesmo bloco são a resposta. Deixe uma linha em branco entre um bloco e o seguinte.
+
+- **Exatamente 3 perguntas**, que exigem **explicar ou aplicar** ("Por que…", "O que muda se…", "Em qual situação…"). Nada de definição decorada nem de verdadeiro ou falso.
+- **Pelo menos uma pergunta deve contrastar com um caderno vizinho** (a lista já vem no pedido).
+- **A resposta precisa estar no próprio caderno.** Nada de fato novo na resposta.
 
 ## Estilo de escrita
 
