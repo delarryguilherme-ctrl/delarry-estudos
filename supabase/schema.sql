@@ -50,6 +50,28 @@ create policy "cadernos do dono" on public.notebooks for all to authenticated
   using (user_id = auth.uid()) with check (user_id = auth.uid());
 
 -- ------------------------------------------------------------------
+-- Estado de estudo: uma linha por caderno (status, revisões, lembranças…)
+-- Fica fora de notebooks para não disputar o conflito de edição do texto.
+-- Entre aparelhos vale a linha com o "updated" maior, sem mesclar.
+-- O estado de um caderno excluído fica guardado (o app só não o mostra).
+-- ------------------------------------------------------------------
+create table if not exists public.study_state (
+  user_id      uuid   not null references auth.users (id) on delete cascade,
+  notebook_id  text   not null,
+  data         jsonb  not null default '{}',       -- o estado inteiro, como o app guarda
+  updated      bigint not null default 0,          -- horário da última mudança (ms, relógio do aparelho)
+  primary key (user_id, notebook_id)
+);
+
+create index if not exists study_state_user_updated on public.study_state (user_id, updated);
+
+alter table public.study_state enable row level security;
+
+drop policy if exists "estudo do dono" on public.study_state;
+create policy "estudo do dono" on public.study_state for all to authenticated
+  using (user_id = auth.uid()) with check (user_id = auth.uid());
+
+-- ------------------------------------------------------------------
 -- Mídia (fotos, GIFs, vídeos, áudios): bucket privado, uma pasta por pessoa
 -- Limite de 20 MB por arquivo e só tipos de mídia
 -- ------------------------------------------------------------------
@@ -88,7 +110,7 @@ create policy "mídia: apagar a própria" on storage.objects for delete to authe
   using (bucket_id = 'media' and (storage.foldername(name))[1] = auth.uid()::text);
 
 -- ------------------------------------------------------------------
--- Excluir a própria conta (apaga pastas e cadernos em cascata).
+-- Excluir a própria conta (apaga pastas, cadernos e estado de estudo em cascata).
 -- O app apaga os arquivos de mídia antes de chamar esta função.
 -- ------------------------------------------------------------------
 create or replace function public.delete_my_account()

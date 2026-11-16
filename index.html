@@ -2249,6 +2249,74 @@ const nb = () => lib.notebooks.find(n => n.id === lib.current);
 const folder = id => lib.folders.find(f => f.id === id);
 const saveSoon = () => { clearTimeout(saveT); saveT = setTimeout(() => Store.putLib(lib).catch(console.error), 400); Sync.schedule(); };
 
+/* ------------------------------------------------------------------ *
+ *  Estado de estudo (kv 'study': { [id do caderno]: estado })         *
+ *  Fica fora do html do caderno: revisar não disputa o conflito de    *
+ *  edição de texto entre aparelhos.                                   *
+ *  Migração: o formato da biblioteca e dos cadernos não muda. Quem    *
+ *  nunca teve a chave 'study' começa com {} e cada caderno vale como  *
+ *  'novo'; ao carregar, o que vier fora do formato volta ao padrão.   *
+ * ------------------------------------------------------------------ */
+const INTERVALOS = [1, 7, 30, 90];   // dias até a próxima revisão, por etapa
+const STUDY_STATUS = ['novo', 'lido', 'exercicio', 'estudado'];
+const STUDY_SCORES = ['acertei', 'parcial', 'errei'];
+let study = {}, studyT = 0;
+const numOr = (v, alt) => (typeof v === 'number' && Number.isFinite(v) ? v : alt);
+function normStudy(s) {
+  if (!s || typeof s !== 'object') s = {};
+  const list = v => (Array.isArray(v) ? v : []).filter(x => x && typeof x === 'object' && numOr(x.at, null) !== null);
+  return {
+    status: STUDY_STATUS.includes(s.status) ? s.status : 'novo',
+    studiedAt: numOr(s.studiedAt, null),                 // quando virou 'estudado'
+    stage: clamp(Math.trunc(numOr(s.stage, 0)), 0, INTERVALOS.length - 1),
+    nextReview: numOr(s.nextReview, null),               // início do dia da próxima revisão
+    reviews: list(s.reviews).filter(r => STUDY_SCORES.includes(r.score)).map(r => ({ at: r.at, score: r.score })),
+    recalls: list(s.recalls).filter(r => typeof r.text === 'string').map(r => ({ at: r.at, text: r.text })),
+    resume: s.resume && typeof s.resume === 'object' && typeof s.resume.text === 'string' ? { text: s.resume.text, at: numOr(s.resume.at, 0) } : null,
+    track: s.track === true,
+    updated: Math.max(0, numOr(s.updated, 0)),
+  };
+}
+function normStudyMap(map) {
+  const out = {};
+  if (!map || typeof map !== 'object' || Array.isArray(map)) return out;
+  for (const [id, s] of Object.entries(map)) if (id !== '__proto__' && s && typeof s === 'object') out[id] = normStudy(s);
+  return out;
+}
+const sameStudy = (a, b) => JSON.stringify({ ...a, updated: 0 }) === JSON.stringify({ ...b, updated: 0 });
+// o estado de um caderno, com os padrões preenchidos; só ler não grava nada
+const studyOf = id => normStudy(study[id]);
+const putStudy = () => { clearTimeout(studyT); studyT = 0; return Store.putKV('study', study).catch(console.error); };
+const saveStudySoon = () => { clearTimeout(studyT); studyT = setTimeout(putStudy, 400); Sync.schedule(); };
+// aplica uma mudança no estado de um caderno, carimba o horário e salva
+function setStudy(id, patch) {
+  study[id] = { ...normStudy({ ...studyOf(id), ...patch }), updated: Date.now() };
+  saveStudySoon();
+  return study[id];
+}
+async function loadStudy() { study = normStudyMap(await Store.getKV('study').catch(() => null)); }
+// troca o mapa inteiro (restaurar backup e desfazer). O que mudou ganha o horário de agora, para valer
+// também na conta; estado que existia e sumiu volta ao padrão se o caderno existe, senão fica como estava.
+function replaceStudy(map) {
+  const next = normStudyMap(map), now = Date.now();
+  for (const [id, s] of Object.entries(next)) {
+    if (study[id] && sameStudy(s, study[id])) next[id] = study[id]; else s.updated = now;
+  }
+  for (const [id, s] of Object.entries(study)) {
+    if (next[id]) continue;
+    next[id] = lib.notebooks.some(n => n.id === id) ? { ...normStudy(null), updated: now } : s;
+  }
+  study = next;
+  saveStudySoon();
+}
+// conta excluída: o aparelho volta a ficar limpo
+function resetStudy() { clearTimeout(studyT); studyT = 0; study = {}; }
+// caderno excluído: o estado fica guardado, mas as filas só enxergam os cadernos que ainda existem
+const studyEntries = () => lib.notebooks.filter(n => study[n.id]).map(n => ({ nb: n, st: studyOf(n.id) }));
+// datas no horário local: início do dia de hoje e de hoje + n dias
+const hoje = () => new Date().setHours(0, 0, 0, 0);
+const hojeMais = n => { const d = new Date(hoje()); d.setDate(d.getDate() + n); return d.getTime(); };
+
 function defaultLibrary() {
   const f = { id: uid(), name: 'Pessoal', parentId: null, open: true };
   const n = { id: uid(), name: 'Primeiros passos', folderId: f.id, html: DEFAULT_HTML, editing: false, updated: Date.now() };
@@ -3894,7 +3962,7 @@ function toast(msg, undo = null) {
   clearTimeout(toastT);
   toastT = setTimeout(close, undo ? 8000 : 4000);
 }
-function withUndo(msg, mutate) {
+function withUndo(msg, mutate, onUndo = null) {
   commitPage();
   ttsStop();
   const snap = structuredClone({ lib });
@@ -3903,6 +3971,7 @@ function withUndo(msg, mutate) {
   toast(msg, () => {
     closeBook();
     lib = snap.lib;
+    onUndo?.();   // o que a ação mudou fora da biblioteca (ex.: o estado de estudo de um backup)
     ensureCurrent();
     renderLib();
     loadDoc({ keepScroll: true });
@@ -4715,7 +4784,7 @@ async function downloadBackup() {
   for (const n of lib.notebooks) for (const m of (n.html || '').matchAll(/data-media="([^"]+)"/g)) ids.add(m[1]);
   if (ids.size) toast(`Preparando backup com ${plural(ids.size, 'arquivo de mídia', 'arquivos de mídia')}…`);
   // montado em pedaços: arquivos grandes não viram uma string única gigante
-  const parts = [`{"app":"delarry-estudos","version":2,"exportedAt":${JSON.stringify(new Date().toISOString())},"lib":${JSON.stringify(libOut)},"media":{`];
+  const parts = [`{"app":"delarry-estudos","version":2,"exportedAt":${JSON.stringify(new Date().toISOString())},"lib":${JSON.stringify(libOut)},"study":${JSON.stringify(study)},"media":{`];
   let saved = 0, missing = 0;
   for (const id of ids) {
     const blob = memBlobs.get(id) || await Store.getMedia(id).catch(() => null);
@@ -4761,13 +4830,17 @@ async function restoreBackup(text) {
   }
   closeBook();
   closeFolderView();
+  // estado de estudo: backup antigo não tem essa parte, e aí o estado atual fica como está
+  const hasStudy = !!data.study && typeof data.study === 'object' && !Array.isArray(data.study);
+  const prevStudy = hasStudy ? structuredClone(study) : null;
   withUndo(`Backup restaurado: ${plural(next.notebooks.length, 'caderno', 'cadernos')}` +
            (restored ? ` e ${plural(restored, 'arquivo de mídia', 'arquivos de mídia')}` : ''), () => {
     lib = next;
+    if (hasStudy) replaceStudy(data.study);
     ensureCurrent();
     renderLib();
     loadDoc();
-  });
+  }, () => { if (hasStudy) replaceStudy(prevStudy); });
 }
 function setupImport() {
   const btn = $('importBtn'), menu = $('impMenu');
@@ -5669,8 +5742,40 @@ const Sync = (() => {
       if (touchedCurrent.v && !BOOK.open) loadDoc({ keepScroll: true });
     }
     if (conflicts) toast(`${plural(conflicts, 'caderno foi editado', 'cadernos foram editados')} em dois aparelhos: as duas versões ficaram no texto, marcadas.`);
+    await syncStudy();
     await uploadMedia();
     setState('ok');
+  }
+
+  /* Estado de estudo: uma linha por caderno na tabela study_state. Sem mescla: vale o lado com o
+     "updated" maior. O estado de caderno excluído fica (nada é apagado aqui).
+     Nunca derruba a sincronização dos cadernos: banco sem a tabela (schema.sql antigo) só gera um aviso. */
+  let studyOff = false;
+  async function syncStudy() {
+    if (studyOff) return;
+    try {
+      const uidNow = user.id;
+      const { data, error } = await sb.from('study_state').select('notebook_id,data,updated').eq('user_id', uidNow);
+      if (error) throw error;
+      const remote = new Map(data.map(r => [r.notebook_id, r]));
+      const rows = [];
+      let changedLocal = false;
+      for (const id of new Set([...Object.keys(study), ...remote.keys()])) {
+        const L = study[id], R = remote.get(id);
+        const ru = R ? Number(R.updated) || 0 : -1;
+        if (L && L.updated > ru) rows.push({ user_id: uidNow, notebook_id: id, data: L, updated: L.updated });
+        else if (R && (!L || ru > L.updated)) { study[id] = { ...normStudy(R.data), updated: ru }; changedLocal = true; }
+      }
+      if (changedLocal) await putStudy();
+      for (let i = 0; i < rows.length; i += 200) {
+        const { error: e2 } = await sb.from('study_state').upsert(rows.slice(i, i + 200), { onConflict: 'user_id,notebook_id' });
+        if (e2) throw e2;
+      }
+    } catch (err) {
+      // tabela ainda não criada: para de tentar até a página ser recarregada
+      if (err?.code === 'PGRST205' || err?.code === '42P01' || /does not exist|could not find the table/i.test(err?.message || '')) studyOff = true;
+      console.warn('estado de estudo não sincronizado', studyOff ? '(rode o supabase/schema.sql de novo para criar a tabela study_state)' : '', err);
+    }
   }
 
   // sobe as mídias usadas nos cadernos que ainda não estão na conta
@@ -5792,6 +5897,7 @@ const Sync = (() => {
   async function wipeDevice() {
     closeBook();
     closeFolderView();
+    resetStudy();   // antes de limpar o banco: uma gravação pendente não pode recriar a chave 'study'
     await Store.wipe().catch(console.error);
     memBlobs.clear();
     for (const u of mediaUrls.values()) URL.revokeObjectURL(u);
@@ -5944,6 +6050,7 @@ async function start() {
   lib = await Store.getLib().catch(() => null);
   if (lib?.version !== 2) lib = defaultLibrary();
   ensureCurrent();
+  await loadStudy();
 
   setupEditor();
   setupPager();
@@ -5980,7 +6087,7 @@ async function start() {
     });
   });
   document.fonts.addEventListener?.('loadingdone', () => { metricsCache.clear(); layoutDoc(); request({ layout: true }); });
-  addEventListener('pagehide', () => { commitDoc(); Store.putLib(lib).catch(() => {}); });
+  addEventListener('pagehide', () => { commitDoc(); Store.putLib(lib).catch(() => {}); if (studyT) putStudy(); });
 
   // o abajur acompanha o cursor (ligado no painel); ao sair da janela, volta para a posição configurada
   addEventListener('pointermove', e => {
