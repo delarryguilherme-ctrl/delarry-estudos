@@ -271,6 +271,53 @@
   .nb-status .st-falta:empty { display: none; }
   @media (max-width: 420px) { .nb-status .seg button { padding-inline: 8px; } }
   @media (prefers-reduced-motion: reduce) { .nb-status .seg button { transition: none; } }
+  /* Fechar e lembrar: botões ao lado do status, tela de escrita, comparação e histórico (tudo fora do html salvo) */
+  .nb-acts { margin-left: auto; display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; }
+  .nb-link, .nb-recall { all: unset; cursor: pointer; white-space: nowrap; border-radius: 8px; padding: 5px 10px; font-size: 12.5px; transition: background-color .12s ease-out, color .12s ease-out; }
+  .nb-link { color: var(--text-2); }
+  .nb-recall { color: var(--text); background: var(--seg); font-weight: 500; }
+  .nb-link:hover, .nb-recall:hover { background: var(--hover-2); color: var(--text); }
+  .nb-link:focus-visible, .nb-recall:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+  .nb-link[hidden] { display: none; }
+  @media (prefers-reduced-motion: reduce) { .nb-link, .nb-recall { transition: none; } }
+  .recall { width: 100%; box-sizing: border-box; outline: none; color: var(--text); font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .recall[hidden], .rc-write[hidden], .rc-compare[hidden], .rc-hist[hidden], .rc-orig[hidden] { display: none; }
+  .rc-kicker { margin: 0 0 4px; font-size: 12px; font-weight: 600; letter-spacing: .02em; color: var(--muted); }
+  .rc-title { margin: 0 0 18px; font-size: 22px; line-height: 1.25; font-weight: 650; letter-spacing: -.01em; overflow-wrap: anywhere; }
+  .recall textarea {
+    display: block; width: 100%; min-height: 46vh; box-sizing: border-box; resize: vertical; margin: 0; padding: 16px 18px;
+    font: inherit; font-size: 16px; line-height: 1.6; color: var(--text); background: var(--surface-2);
+    border: 1px solid var(--line); border-radius: 12px; outline: none;
+  }
+  .recall textarea:focus-visible { border-color: var(--ink); box-shadow: 0 0 0 1px var(--ink); }
+  .recall textarea::placeholder { color: var(--muted); }
+  .rc-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 8px; margin-top: 12px; }
+  .rc-actions .btn { border: 1px solid var(--line); box-sizing: border-box; }
+  .rc-actions .btn.primary { border-color: transparent; }
+  .rc-actions .btn:disabled { background: var(--seg); color: var(--disabled); cursor: default; }
+  .rc-hint { flex: 1 1 200px; margin: 0; font-size: 12.5px; color: var(--muted); }
+  .rc-compare > .rc-hint { margin-top: 10px; }
+  .rc-label { margin: 0 0 8px; font: 600 12px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; letter-spacing: .02em; color: var(--muted); }
+  .rc-mine, .rc-text { white-space: pre-wrap; overflow-wrap: anywhere; }
+  .rc-mine { padding: 16px 18px; font-size: 15px; line-height: 1.6; background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; }
+  .rc-hist { box-sizing: border-box; max-width: 100%; margin-top: 14px; font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--text); }
+  .nb-hist { margin: -8px 0 24px; padding: 14px 16px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; max-height: 60vh; overflow: auto; }
+  .rc-item + .rc-item { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .rc-item time { display: block; margin-bottom: 4px; font-size: 12px; color: var(--muted); }
+  .rc-text { margin: 0; }
+  .rc-empty { margin: 0; font-size: 12.5px; color: var(--muted); }
+  /* durante o Fechar e lembrar não se edita nem se monta o livro: da barra sobra só o botão da biblioteca (celular) */
+  body.recalling .toolbar > :not(#libBtn) { display: none !important; }
+  @media (min-width: 900px) { body.recalling .toolbar { display: none !important; } }
+  body.recalling .nb-status, body.recalling .nb-hist { display: none !important; }
+  /* escrevendo: o texto do caderno e a pesquisa somem de verdade (fora da tela, da leitura de tela e do Ctrl+F) */
+  body.recall-write #doc, body.recall-write .lib-search, body.recall-write #results { display: none !important; }
+  /* comparação: lado a lado em tela larga (a classe "two" vem do layoutDoc), empilhado em tela estreita */
+  .rc-orig { width: 100%; margin-top: 32px; }
+  .doc-view.two { display: grid; grid-template-columns: minmax(0, 460px) auto; grid-template-rows: auto 1fr; column-gap: 40px; justify-content: center; align-items: start; }
+  .doc-view.two .recall { grid-column: 1; grid-row: 1 / span 2; position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow: auto; }
+  .doc-view.two .rc-orig { grid-column: 2; grid-row: 1; margin-top: 0; }
+  .doc-view.two .doc { grid-column: 2; grid-row: 2; }
   .doc { position: relative; color: var(--text); caret-color: var(--ink); white-space: pre-wrap; overflow-wrap: break-word; }
   .doc aside { color: var(--text-2); }
   .doc li::marker { color: var(--text-2); }
@@ -977,7 +1024,36 @@
           <button type="button" data-status="estudado" aria-pressed="false" aria-describedby="nbFalta">Estudado</button>
         </div>
         <span class="st-falta" id="nbFalta"></span>
+        <span class="nb-acts">
+          <button class="nb-link" type="button" id="nbHistBtn" aria-expanded="false" aria-controls="nbHist" hidden>Lembranças anteriores</button>
+          <button class="nb-recall" type="button" id="recallBtn" title="Esconde o texto e abre um campo em branco para você escrever o que lembra">Fechar e lembrar</button>
+        </span>
       </div>
+      <section class="rc-hist nb-hist" id="nbHist" aria-label="Lembranças anteriores" hidden></section>
+      <!-- Fechar e lembrar: fica fora do #doc, nada daqui entra no html salvo do caderno -->
+      <section class="recall" id="recall" aria-labelledby="rcTitle" tabindex="-1" hidden>
+        <p class="rc-kicker">Fechar e lembrar</p>
+        <h2 class="rc-title" id="rcTitle"></h2>
+        <div class="rc-write" id="rcWrite">
+          <textarea id="rcText" rows="12" placeholder="Escreva o que você lembra, sem olhar" aria-label="Escreva o que você lembra, sem olhar" spellcheck="true" autocapitalize="sentences"></textarea>
+          <div class="rc-actions">
+            <span class="rc-hint">O texto do caderno fica escondido até você concluir.</span>
+            <button class="btn" type="button" id="rcCancel">Cancelar</button>
+            <button class="btn primary" type="button" id="rcDone" disabled>Concluir</button>
+          </div>
+        </div>
+        <div class="rc-compare" id="rcCompare" hidden>
+          <h3 class="rc-label">O que você escreveu</h3>
+          <div class="rc-mine" id="rcMine"></div>
+          <p class="rc-hint">Compare com o texto do caderno. A comparação é sua: nada é corrigido nem pontuado.</p>
+          <div class="rc-actions">
+            <button class="btn" type="button" id="rcHistBtn" aria-expanded="false" aria-controls="rcHist">Lembranças anteriores</button>
+            <button class="btn primary" type="button" id="rcBack">Voltar ao caderno</button>
+          </div>
+          <div class="rc-hist" id="rcHist" hidden></div>
+        </div>
+      </section>
+      <h3 class="rc-label rc-orig" id="rcOrig" hidden>Texto do caderno</h3>
       <div class="flow ed doc" id="doc" contenteditable="true" role="textbox" aria-multiline="true"
            aria-label="Texto do caderno" spellcheck="true" autocapitalize="sentences"></div>
     </section>
@@ -1843,11 +1919,15 @@ function styleFlow(el, pxmmCss, scale, onRules) {
 /* Texto contínuo: a mesma coluna da folha (mesmas letras por linha), sem papel e sem paginação. */
 function layoutDoc() {
   const colW = (MM.x1 - MM.x0) * G.pxmm;
-  const avail = Math.max(220, mainEl.clientWidth - 32);
+  // comparação do Fechar e lembrar: em tela larga o texto do caderno divide a largura com o que foi escrito
+  const two = RECALL.phase === 'compare' && mainEl.clientWidth >= 900;
+  $('docView').classList.toggle('two', two);
+  const avail = Math.max(220, two ? (mainEl.clientWidth - 72) * 0.58 : mainEl.clientWidth - 32);
   const k = Math.min(1, avail / colW);
   styleFlow(docEl, G.pxmm * k, k, false);
   docEl.style.width = colW * k + 'px';
-  $('nbStatus').style.width = docEl.style.width;   // o seletor de status acompanha a coluna do texto
+  $('nbStatus').style.width = $('nbHist').style.width = docEl.style.width;   // o seletor de status acompanha a coluna do texto
+  $('recall').style.maxWidth = $('rcOrig').style.maxWidth = two ? '' : docEl.style.width;   // empilhado: tudo na mesma coluna
   sizeFigures(docEl);
   for (const f of docEl.querySelectorAll('.embed')) fitEmbed(f);
 }
@@ -2313,6 +2393,8 @@ async function mediaUrl(id) {
 
 let lib, saveT;
 const nb = () => lib.notebooks.find(n => n.id === lib.current);
+// o caderno aberto está no modo editar? No "Fechar e lembrar" vale como leitura, sem mexer no modo salvo do caderno
+const editando = () => !!nb()?.editing && !RECALL.phase;
 const folder = id => lib.folders.find(f => f.id === id);
 const saveSoon = () => { clearTimeout(saveT); saveT = setTimeout(() => Store.putLib(lib).catch(console.error), 400); Sync.schedule(); };
 
@@ -2444,11 +2526,151 @@ function renderStatus() {
   }
   const txt = falta.length ? `Para marcar Estudado, falta: ${falta.join(' · ')}` : '';
   if ($('nbFalta').textContent !== txt) $('nbFalta').textContent = txt;
+  renderRecallHist();
 }
 function setupStatus() {
   $('nbStatus').addEventListener('click', e => {
     const b = e.target.closest('[data-status]');
     if (b && nb()) setStatus(nb().id, b.dataset.status);
+  });
+}
+
+/* "Fechar e lembrar": esconde o texto do caderno e abre um campo em branco. Ao concluir, o que foi escrito
+   aparece ao lado do texto e entra em recalls. Não há correção, nota nem destaque: a comparação é de quem estuda.
+   Fases: 'write' (texto escondido de verdade) → 'compare' (só leitura) → volta ao caderno.
+   A revisão (fila) começa por aqui: startRecall({ onDone, onCancel }). */
+const RECALL = { phase: null, id: null, saved: null, onDone: null, onCancel: null, scroll: 0, histId: null,
+                 drafts: new Map() };   // rascunhos de quem cancelou com texto: ficam na memória até fechar o app
+const fmtRecall = at => new Date(at).toLocaleString('pt-BR', { dateStyle: 'medium', timeStyle: 'short' });
+// lista simples das lembranças de um caderno, da mais nova para a mais antiga (sem editar)
+function recallList(id, skipAt = null) {
+  const items = studyOf(id).recalls.filter(r => r.at !== skipAt).sort((a, b) => b.at - a.at);
+  if (!items.length) return [h('p', { class: 'rc-empty' }, skipAt === null ? 'Nenhuma lembrança ainda.' : 'Esta é a primeira lembrança deste caderno.')];
+  return items.map(r => h('article', { class: 'rc-item' },
+    h('time', { datetime: new Date(r.at).toISOString() }, fmtRecall(r.at)), h('p', { class: 'rc-text' }, r.text)));
+}
+// topo do caderno: o botão "Lembranças anteriores" só existe quando há o que mostrar; a lista abre logo abaixo
+function renderRecallHist() {
+  const n = nb(), btn = $('nbHistBtn'), box = $('nbHist');
+  if (!n || !btn) return;
+  const total = studyOf(n.id).recalls.length;
+  if (RECALL.histId !== n.id || !total) RECALL.histId = null;   // trocou de caderno (ou não sobrou nada): fecha
+  const open = RECALL.histId === n.id;
+  btn.hidden = !total;
+  btn.textContent = `Lembranças anteriores (${total})`;
+  btn.setAttribute('aria-expanded', String(open));
+  box.hidden = !open;
+  box.replaceChildren(...(open ? recallList(n.id) : []));
+  // na comparação, a lista de baixo mostra as outras lembranças (a de agora já está na tela)
+  if (RECALL.phase === 'compare' && !$('rcHist').hidden) $('rcHist').replaceChildren(...recallList(RECALL.id, RECALL.saved?.at));
+}
+// devolve true se entrou no modo. onDone({ at, text }) quando a pessoa termina de comparar; onCancel() se desistir.
+function startRecall({ onDone = null, onCancel = null } = {}) {
+  const n = nb();
+  if (!n || RECALL.phase || BOOK.open || FV.id) return false;
+  commitDoc();                                    // editando: grava o texto antes de esconder
+  clearBlockSel(); closeSlash(); hideTblPop();
+  if (!$('linkPop').hidden) closeLinkPop(false);
+  ttsStop();                                      // nada do caderno pode ser lido em voz alta nem tocar
+  pauseVideos(docEl);
+  getSelection().removeAllRanges();
+  if ($('search').value) { $('search').value = ''; runSearch(); }   // resultado de pesquisa mostraria trechos do texto
+  // escrita e comparação são só leitura (editando() fica falso enquanto durar); o modo salvo do caderno não muda
+  Object.assign(RECALL, { phase: 'write', id: n.id, saved: null, onDone, onCancel, scroll: scrollY, histId: null });
+  document.body.classList.add('recalling', 'recall-write');
+  docEl.inert = true;
+  applyMode();
+  $('rcTitle').textContent = n.name;
+  $('rcWrite').hidden = false;
+  $('rcCompare').hidden = $('rcOrig').hidden = true;
+  $('rcText').value = RECALL.drafts.get(n.id) || '';
+  $('rcDone').disabled = !$('rcText').value.trim();
+  $('recall').hidden = false;
+  layoutDoc();
+  scrollTo(0, 0);
+  $('rcText').focus({ preventScroll: true });
+  return true;
+}
+// Concluir: salva em recalls e mostra o que foi escrito ao lado do texto do caderno
+function finishRecallWrite() {
+  if (RECALL.phase !== 'write') return;
+  const text = $('rcText').value.trim();
+  if (!text) return;
+  const id = RECALL.id;
+  RECALL.saved = { at: Date.now(), text };
+  setStudy(id, { recalls: [...studyOf(id).recalls, RECALL.saved] });
+  RECALL.drafts.delete(id);
+  RECALL.phase = 'compare';
+  $('rcText').value = '';
+  $('rcMine').textContent = text;
+  $('rcWrite').hidden = true;
+  $('rcCompare').hidden = $('rcOrig').hidden = false;
+  $('rcHist').hidden = true;
+  $('rcHistBtn').setAttribute('aria-expanded', 'false');
+  document.body.classList.remove('recall-write');
+  docEl.inert = false;
+  layoutDoc();
+  renderStatus();                                 // com a primeira lembrança, o 'estudado' pode ter ficado disponível
+  scrollTo(0, 0);
+  $('recall').focus({ preventScroll: true });
+}
+// sai do modo (por qualquer caminho) e devolve o caderno como estava
+function endRecall() {
+  if (!RECALL.phase) return;
+  Object.assign(RECALL, { phase: null, id: null, onDone: null, onCancel: null });
+  document.body.classList.remove('recalling', 'recall-write');
+  docEl.inert = false;
+  $('recall').hidden = $('rcOrig').hidden = true;
+  $('rcText').value = '';
+  $('rcMine').textContent = '';
+  $('rcHist').replaceChildren();
+}
+// Cancelar: não salva nada. Se havia texto, ele fica de rascunho e volta na próxima vez neste caderno.
+function cancelRecall() {
+  if (RECALL.phase !== 'write') return;
+  const { id, onCancel, scroll } = RECALL, text = $('rcText').value;
+  const same = nb()?.id === id;
+  if (text.trim()) {
+    RECALL.drafts.set(id, text);
+    toast('Nada foi salvo. O que você escreveu volta quando abrir “Fechar e lembrar” neste caderno.');
+  } else RECALL.drafts.delete(id);
+  endRecall();
+  if (same) { applyMode(); layoutDoc(); scrollTo(0, scroll); $('recallBtn').focus({ preventScroll: true }); }
+  onCancel?.();
+}
+// "Voltar ao caderno", depois de comparar
+function closeRecall() {
+  if (RECALL.phase !== 'compare') return;
+  const { id, onDone, saved, scroll } = RECALL;
+  const same = nb()?.id === id;
+  endRecall();
+  if (same) { applyMode(); layoutDoc(); scrollTo(0, scroll); $('recallBtn').focus({ preventScroll: true }); }
+  onDone?.(saved);
+}
+// o caderno aberto mudou (clique na biblioteca, exclusão, restauração): o modo simplesmente termina
+function leaveRecallIfMoved() {
+  if (!RECALL.phase || nb()?.id === RECALL.id) return;
+  if (RECALL.phase === 'write') cancelRecall(); else closeRecall();
+}
+function setupRecall() {
+  $('recallBtn').addEventListener('click', () => startRecall());
+  $('rcText').addEventListener('input', () => { $('rcDone').disabled = !$('rcText').value.trim(); });
+  // Esc só sai com o campo vazio: com texto, sair é pelo botão Cancelar (que guarda o rascunho)
+  $('rcText').addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !$('rcText').value.trim()) { e.preventDefault(); e.stopPropagation(); cancelRecall(); }
+  });
+  $('rcDone').addEventListener('click', finishRecallWrite);
+  $('rcCancel').addEventListener('click', cancelRecall);
+  $('rcBack').addEventListener('click', closeRecall);
+  $('rcHistBtn').addEventListener('click', () => {
+    const open = $('rcHist').hidden;
+    $('rcHist').hidden = !open;
+    $('rcHistBtn').setAttribute('aria-expanded', String(open));
+    $('rcHist').replaceChildren(...(open ? recallList(RECALL.id, RECALL.saved?.at) : []));
+  });
+  $('nbHistBtn').addEventListener('click', () => {
+    RECALL.histId = RECALL.histId === nb()?.id ? null : nb()?.id ?? null;
+    renderRecallHist();
   });
 }
 
@@ -2505,6 +2727,7 @@ function pauseVideos(root = null) {
 function loadDoc({ keepScroll = false } = {}) {
   const n = nb();
   if (!n) return;
+  leaveRecallIfMoved();                           // outro caderno entrou: o "Fechar e lembrar" do anterior termina
   clearBlockSel();
   pauseVideos(docEl);
   docEl.innerHTML = n.html || EMPTY_PAGE;
@@ -2752,7 +2975,7 @@ function paginate(html) {
  * ------------------------------------------------------------------ */
 function openBook() {
   const n = nb();
-  if (!n || BOOK.open || FV.id) return;
+  if (!n || BOOK.open || FV.id || RECALL.phase) return;   // no "Fechar e lembrar" o livro mostraria o texto
   commitDoc();
   clearBlockSel(); closeSlash(); hideTblPop();
   if (!$('linkPop').hidden) closeLinkPop(false);
@@ -3137,7 +3360,7 @@ async function insertMediaUrl(url, block = null) {
 }
 
 function openLinkPop(anchorEl = null) {
-  if (!nb()?.editing) return;
+  if (!editando()) return;
   closeSlash();
   LP.mode = 'link';
   $('lpTitle').textContent = 'Link';
@@ -3396,7 +3619,7 @@ function fillTesteUI(t, ui) {
     ...STUDY_SCORES.map(s => h('button', { type: 'button', class: 'teste-btn', 'data-teste-act': s, 'aria-pressed': String(t.dataset.score === s) }, TESTE_LABEL[s]))));
 }
 function syncTestes() {
-  const reading = !nb()?.editing;
+  const reading = !editando();
   for (const t of docEl.querySelectorAll('.teste')) {
     const ui = t.querySelector(':scope > .teste-ui');
     if (!reading) { ui?.remove(); t.removeAttribute('data-open'); t.removeAttribute('data-score'); continue; }
@@ -3417,7 +3640,7 @@ function revealTeste(t, focus = false) {
 function testeClick(e) {
   const b = e.target.closest?.('[data-teste-act]');
   const t = b?.closest('.teste');
-  if (!t || nb()?.editing) return;
+  if (!t || editando()) return;
   e.preventDefault();
   const act = b.dataset.testeAct;
   if (act === 'show') { revealTeste(t, true); return; }
@@ -3460,7 +3683,7 @@ function testeEnter(t, shift = false) {
 /* Teclas dentro do teste (e encostado nele): o bloco nunca fica pela metade.
    Backspace no começo da pergunta só apaga o teste se ele estiver vazio; no começo da resposta, volta para a pergunta. */
 function testeKeys(e) {
-  if (e.defaultPrevented || e.isComposing || SL.open || !nb()?.editing) return;
+  if (e.defaultPrevented || e.isComposing || SL.open || !editando()) return;
   const sel = getSelection();
   if (!sel.rangeCount || !docEl.contains(sel.anchorNode)) return;
   const t = testeAt();
@@ -3645,7 +3868,7 @@ function isHilited() {
   return false;
 }
 function toggleHilite() {
-  if (!nb()?.editing) return;
+  if (!editando()) return;
   if (!editor.contains(getSelection().anchorNode)) editor.focus();
   const on = isHilited();
   document.execCommand('styleWithCSS', false, true);
@@ -3819,7 +4042,7 @@ const MD_SHORTCUTS = [
   [/^\[ ?\][  ]/, () => makeChecklist(), false],
 ];
 function mdShortcut(e) {
-  if (e.inputType !== 'insertText' || !/[  ]/.test(e.data || '') || !nb()?.editing) return;
+  if (e.inputType !== 'insertText' || !/[  ]/.test(e.data || '') || !editando()) return;
   const sel = getSelection();
   if (!sel.rangeCount || !sel.isCollapsed) return;
   const block = blockOf(sel.anchorNode);
@@ -3879,7 +4102,7 @@ function setupEditor() {
     ed.addEventListener('keydown', e => testeKeys(e));
     // teclado sem "keydown" de Enter (celular): a quebra de parágrafo dentro do teste segue a mesma regra
     ed.addEventListener('beforeinput', e => {
-      if (e.inputType !== 'insertParagraph' || !nb()?.editing) return;
+      if (e.inputType !== 'insertParagraph' || !editando()) return;
       const t = testeAt();
       if (t) { e.preventDefault(); testeEnter(t); }
     });
@@ -3904,7 +4127,7 @@ function setupEditor() {
       if (![...e.dataTransfer.types].includes('Files')) return;
       e.preventDefault();
       const files = [...e.dataTransfer.files].filter(f => /^(image|video|audio)\//.test(f.type));
-      if (!files.length || !nb().editing) return;
+      if (!files.length || !editando()) return;
       activate(v);
       const at = document.caretRangeFromPoint?.(e.clientX, e.clientY) ?? null;
       insertMedia(files, at && ed.contains(at.startContainer) ? at : null);
@@ -3919,14 +4142,14 @@ function setupEditor() {
     ed.addEventListener('click', e => { const li = boxOf(e); if (li) toggleCheck(li); });
     // componentes (breadcrumb, divisor, fotos, exemplos) são selecionados como bloco
     ed.addEventListener('mousedown', e => {
-      if (!nb()?.editing || e.target.closest('[data-act], .media-ui, .au-ctl')) return;
+      if (!editando() || e.target.closest('[data-act], .media-ui, .au-ctl')) return;
       const blk = e.target.closest(SELECTABLE);
       if (blk && ed.contains(blk)) { e.preventDefault(); selectBlock(blk); }
     });
     ed.addEventListener('click', e => {
       const c = e.target.closest('[data-crumb]');
       if (!c) return;
-      if (nb()?.editing && !(e.ctrlKey || e.metaKey)) return;    // editando, o clique seleciona o bloco (Ctrl+clique navega)
+      if (editando() && !(e.ctrlKey || e.metaKey)) return;    // editando, o clique seleciona o bloco (Ctrl+clique navega)
       if (c.dataset.crumb === 'folder') openFolder(c.dataset.id);
       else { openNotebook(c.dataset.id); scrollTo(0, 0); }
     });
@@ -4006,7 +4229,7 @@ function setupEditor() {
  *  Paginação                                                          *
  * ------------------------------------------------------------------ */
 function applyMode() {
-  const ed = !!nb()?.editing;
+  const ed = editando();
   document.body.classList.toggle('viewing', !ed);
   docEl.contentEditable = ed ? 'true' : 'false';
   docEl.setAttribute('role', ed ? 'textbox' : 'article');
@@ -4038,7 +4261,7 @@ function updatePager() {
 function setupPager() {
   document.querySelector('.mode-seg').addEventListener('click', e => {
     const b = e.target.closest('button');
-    if (!b) return;
+    if (!b || RECALL.phase) return;                // "Fechar e lembrar" é só leitura do começo ao fim
     nb().editing = b.dataset.mode === 'edit';
     applyMode();
     saveSoon();
@@ -4775,7 +4998,7 @@ function emptyRowLike(tr) {
 }
 // Tab: próxima célula (na última, cria uma linha); Enter: célula de baixo ou sai da tabela
 function tableKeys(e) {
-  if (e.defaultPrevented || SL.open || !nb()?.editing) return;
+  if (e.defaultPrevented || SL.open || !editando()) return;
   const td = cellAt();
   if (!td) return;
   const table = td.closest('table');
@@ -4812,7 +5035,7 @@ function hideTblPop() {
 }
 function showTblPop() {
   const td = cellAt();
-  if (!td || !nb()?.editing || BOOK.open) { if (!$('tblPop').contains(document.activeElement)) hideTblPop(); return; }
+  if (!td || !editando() || BOOK.open) { if (!$('tblPop').contains(document.activeElement)) hideTblPop(); return; }
   if (TP.td !== td) { TP.td?.classList.remove('cur'); td.classList.add('cur'); TP.td = td; }
   const pop = $('tblPop'), table = td.closest('table');
   pop.hidden = false;
@@ -5565,7 +5788,7 @@ function revealMatch(q, nth = 0) {
     while (i >= 0 && seen < nth) { seen++; i = fold(n.data).indexOf(fq, i + fq.length); }
     if (i < 0) continue;
     const t = n.parentElement.closest('.teste-a')?.parentElement;   // achado dentro de uma resposta escondida: abre para mostrar
-    if (t?.matches('.teste') && !nb()?.editing) revealTeste(t);
+    if (t?.matches('.teste') && !editando()) revealTeste(t);
     const r = document.createRange();
     r.setStart(n, i); r.setEnd(n, i + q.length);
     ed.focus({ preventScroll: true });
@@ -5594,13 +5817,14 @@ function setupSearch() {
   });
   addEventListener('keydown', e => {
     // Ctrl+Shift+H: marca-texto (e.code porque com Shift a tecla vira "H")
-    if ((e.ctrlKey || e.metaKey) && e.shiftKey && !e.altKey && e.code === 'KeyH' && nb()?.editing) {
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && !e.altKey && e.code === 'KeyH' && editando()) {
       e.preventDefault();
       toggleHilite();
       return;
     }
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
       e.preventDefault();
+      if (RECALL.phase === 'write') return;        // escrevendo de memória: a pesquisa mostraria trechos do texto
       if (matchMedia('(max-width: 899px)').matches) { libEl.classList.add('open'); scrim.classList.add('open'); }
       input.focus(); input.select();
     }
@@ -5639,6 +5863,7 @@ function ttsUI() {
 }
 function ttsStart() {
   if (!synth) { toast('Este navegador não tem leitura em voz alta.'); return; }
+  if (RECALL.phase === 'write') return;            // escrevendo de memória: o texto não pode ser lido em voz alta
   synth.cancel();
   commitDoc();
   Object.assign(TTS, { on: true, paused: false, doc: !BOOK.open, page: BOOK.open ? curPage : 0, gen: TTS.gen + 1, queue: [] });
@@ -6467,6 +6692,7 @@ async function start() {
   setupEditor();
   setupPager();
   setupStatus();
+  setupRecall();
   setupLibrary();
   setupView();
   setupSearch();
