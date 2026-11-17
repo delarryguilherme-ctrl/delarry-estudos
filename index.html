@@ -164,6 +164,10 @@
   .bullet { width: 14px; height: 14px; flex: none; display: grid; place-items: center; }
   .bullet::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: currentColor; opacity: .5; }
   .row.current .bullet::before { opacity: 1; background: var(--ink); width: 6px; height: 6px; }
+  /* status de estudo no lugar do marcador: anel (lido), meio cheio (fiz o exercício), cheio com visto (estudado); "novo" segue sendo o ponto */
+  svg.st-ico { width: 14px; height: 14px; color: var(--icon); stroke-width: 1.5; }
+  svg.st-ico.estudado, .row.current svg.st-ico { color: var(--ink); }
+  svg.st-ico .st-on { stroke: var(--on-ink); }
   .row.folder.top .row-main { font-weight: 600; font-size: 13px; }
   .row.folder.top .ico { color: var(--text-2); }
   .row.folder.top + .row.notebook, .row.folder.top + .row.folder { margin-top: 1px; }
@@ -255,7 +259,18 @@
   @media (prefers-reduced-motion: reduce) { .toast { animation: none; } }
 
   /* ---------- texto (visualização padrão) ---------- */
-  .doc-view { width: 100%; display: flex; justify-content: center; padding: 0 16px 40vh; box-sizing: border-box; }
+  .doc-view { width: 100%; display: flex; flex-direction: column; align-items: center; padding: 0 16px 40vh; box-sizing: border-box; }
+  /* status do caderno: seletor discreto acima do texto, na mesma coluna (é da tela, não entra no html salvo) */
+  .nb-status {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; max-width: 100%; box-sizing: border-box; margin-bottom: 20px;
+    font: 12.5px/1.35 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--muted); user-select: none;
+  }
+  .nb-status .seg { flex: none; max-width: 100%; }
+  .nb-status .seg button { white-space: nowrap; transition: background-color .12s ease-out, color .12s ease-out; }
+  .nb-status .seg button[aria-disabled="true"] { color: var(--disabled); cursor: default; }
+  .nb-status .st-falta:empty { display: none; }
+  @media (max-width: 420px) { .nb-status .seg button { padding-inline: 8px; } }
+  @media (prefers-reduced-motion: reduce) { .nb-status .seg button { transition: none; } }
   .doc { position: relative; color: var(--text); caret-color: var(--ink); white-space: pre-wrap; overflow-wrap: break-word; }
   .doc aside { color: var(--text-2); }
   .doc li::marker { color: var(--text-2); }
@@ -954,6 +969,15 @@
     </div>
 
     <section class="doc-view" id="docView">
+      <div class="nb-status" id="nbStatus">
+        <div class="seg" role="group" aria-label="Status do caderno">
+          <button type="button" data-status="novo" aria-pressed="true">Novo</button>
+          <button type="button" data-status="lido" aria-pressed="false">Lido</button>
+          <button type="button" data-status="exercicio" aria-pressed="false">Fiz o exercício</button>
+          <button type="button" data-status="estudado" aria-pressed="false" aria-describedby="nbFalta">Estudado</button>
+        </div>
+        <span class="st-falta" id="nbFalta"></span>
+      </div>
       <div class="flow ed doc" id="doc" contenteditable="true" role="textbox" aria-multiline="true"
            aria-label="Texto do caderno" spellcheck="true" autocapitalize="sentences"></div>
     </section>
@@ -1207,6 +1231,10 @@ const ICON = {
   demo: '<rect x="2" y="2.5" width="12" height="11" rx="1.5"/><path d="M2 5.5h12"/><path d="M6.5 8.5 5 10l1.5 1.5M9.5 8.5 11 10l-1.5 1.5"/>',
   table: '<rect x="2" y="3" width="12" height="10" rx="1.5"/><path d="M2 6.5h12M2 9.8h12M6.5 3v10"/>',
   audio: '<path d="M2.5 9.5v-3M5 11.5v-7M7.5 13V3M10 11v-6M12.5 9.5v-3"/>',
+  // status de estudo do caderno, na biblioteca
+  stLido: '<circle cx="8" cy="8" r="4.75"/>',
+  stExercicio: '<circle cx="8" cy="8" r="4.75"/><path d="M8 3.25a4.75 4.75 0 0 0 0 9.5z" fill="currentColor" stroke="none"/>',
+  stEstudado: '<circle cx="8" cy="8" r="5.5" fill="currentColor" stroke="none"/><path class="st-on" d="M5.5 8.2l1.7 1.7 3.3-3.7"/>',
 };
 const svg = (name, cls = 'i') => {
   const t = document.createElement('template');
@@ -1819,6 +1847,7 @@ function layoutDoc() {
   const k = Math.min(1, avail / colW);
   styleFlow(docEl, G.pxmm * k, k, false);
   docEl.style.width = colW * k + 'px';
+  $('nbStatus').style.width = docEl.style.width;   // o seletor de status acompanha a coluna do texto
   sizeFigures(docEl);
   for (const f of docEl.querySelectorAll('.embed')) fitEmbed(f);
 }
@@ -2312,6 +2341,8 @@ function normStudy(s) {
     recalls: list(s.recalls).filter(r => typeof r.text === 'string').map(r => ({ at: r.at, text: r.text })),
     resume: s.resume && typeof s.resume === 'object' && typeof s.resume.text === 'string' ? { text: s.resume.text, at: numOr(s.resume.at, 0) } : null,
     track: s.track === true,
+    // identificadores dos blocos Teste já respondidos ao menos uma vez (só o id; a nota não é guardada)
+    answered: [...new Set((Array.isArray(s.answered) ? s.answered : []).filter(x => x && typeof x === 'string'))],
     updated: Math.max(0, numOr(s.updated, 0)),
   };
 }
@@ -2355,6 +2386,72 @@ const studyEntries = () => lib.notebooks.filter(n => study[n.id]).map(n => ({ nb
 const hoje = () => new Date().setHours(0, 0, 0, 0);
 const hojeMais = n => { const d = new Date(hoje()); d.setDate(d.getDate() + n); return d.getTime(); };
 
+/* Status do caderno: novo → lido → exercicio → estudado. Tudo é marcado à mão, nada muda sozinho.
+   'estudado' só fica disponível depois de um "Fechar e lembrar" e, se o caderno tiver blocos Teste,
+   de responder todos ao menos uma vez. */
+const STATUS_LABEL = { novo: 'Novo', lido: 'Lido', exercicio: 'Fiz o exercício', estudado: 'Estudado' };
+const STATUS_ICON = { lido: 'stLido', exercicio: 'stExercicio', estudado: 'stEstudado' };
+// identificadores dos blocos Teste que o caderno tem agora (o aberto vale pelo que está na tela)
+function testeIdsOf(id) {
+  let root = docEl;
+  if (docEl.dataset.nb !== id) {
+    const t = document.createElement('template');
+    t.innerHTML = lib.notebooks.find(n => n.id === id)?.html || '';
+    root = t.content;
+  }
+  return [...root.querySelectorAll('.teste[data-id]')].map(t => t.dataset.id);
+}
+// o que ainda falta para o caderno poder virar 'estudado' (lista vazia: pode)
+function faltaEstudado(id) {
+  const st = studyOf(id), falta = [];
+  if (!st.recalls.length) falta.push('Fechar e lembrar');
+  const n = testeIdsOf(id).filter(t => !st.answered.includes(t)).length;
+  if (n) falta.push(`responder ${plural(n, 'teste', 'testes')}`);
+  return falta;
+}
+// muda o status à mão; devolve false se a regra do 'estudado' não foi cumprida
+function setStatus(id, status) {
+  if (!STUDY_STATUS.includes(status) || !lib.notebooks.some(n => n.id === id)) return false;
+  const st = studyOf(id);
+  if (st.status === status) return true;
+  const patch = { status };
+  if (status === 'estudado') {
+    if (faltaEstudado(id).length) return false;
+    Object.assign(patch, { studiedAt: Date.now(), stage: 0, nextReview: hojeMais(1) });
+  } else if (st.status === 'estudado') patch.nextReview = null;   // saiu de 'estudado': sai da fila (revisões e lembranças ficam)
+  setStudy(id, patch);
+  renderLib();
+  renderStatus();
+  return true;
+}
+// respondeu um Teste (Acertei, Parcial ou Errei): guarda só que a pergunta já foi respondida
+function markAnswered(id, blockId) {
+  if (!id || !blockId) return;
+  const st = studyOf(id);
+  if (st.answered.includes(blockId)) return;
+  setStudy(id, { answered: [...st.answered, blockId] });
+  renderStatus();
+}
+// seletor no topo do caderno: mostra o status do caderno aberto e o que falta para o 'estudado'
+function renderStatus() {
+  const box = $('nbStatus'), n = nb();
+  if (!box || !n) return;
+  const st = studyOf(n.id).status;
+  const falta = st === 'estudado' ? [] : faltaEstudado(n.id);
+  for (const b of box.querySelectorAll('[data-status]')) {
+    b.setAttribute('aria-pressed', String(b.dataset.status === st));
+    if (b.dataset.status === 'estudado') b.setAttribute('aria-disabled', String(falta.length > 0));
+  }
+  const txt = falta.length ? `Para marcar Estudado, falta: ${falta.join(' · ')}` : '';
+  if ($('nbFalta').textContent !== txt) $('nbFalta').textContent = txt;
+}
+function setupStatus() {
+  $('nbStatus').addEventListener('click', e => {
+    const b = e.target.closest('[data-status]');
+    if (b && nb()) setStatus(nb().id, b.dataset.status);
+  });
+}
+
 function defaultLibrary() {
   const f = { id: uid(), name: 'Pessoal', parentId: null, open: true };
   const n = { id: uid(), name: 'Primeiros passos', folderId: f.id, html: DEFAULT_HTML, editing: false, updated: Date.now() };
@@ -2396,6 +2493,7 @@ function commitDoc(auto = false) {
   n.updated = Date.now();
   if (!auto && n.source) n.source.dirty = true;
   saveSoon();
+  renderStatus();   // um Teste que entrou ou saiu muda o que falta para o 'estudado'
 }
 function commitView(v) { if (v?.isDoc) commitDoc(); }
 function commitPage() { commitDoc(); }
@@ -3195,8 +3293,9 @@ function toggleCheck(li) {
 const TESTE_LABEL = { acertei: 'Acertei', parcial: 'Parcial', errei: 'Errei' };
 const TESTE_INNER = 'p, div, h1, h2, h3, h4, h5, h6, ul, ol, li, blockquote, aside, table, hr, figure, nav';
 /* Gancho da revisão: o modo revisão (fila "Revisar hoje") vai se ligar aqui para registrar a resposta
-   de cada pergunta na sessão em andamento. Fora de uma revisão a escolha vale só na tela: nada é salvo. */
-let onTesteScore = (blockId, score) => {};
+   de cada pergunta na sessão em andamento. Fora de uma revisão a nota vale só na tela: o que fica guardado
+   é apenas que a pergunta já foi respondida uma vez (conta para o caderno poder virar 'estudado'). */
+let onTesteScore = (blockId, score) => markAnswered(docEl.dataset.nb, blockId);
 
 function makeTeste(q = '', a = '', id = uid()) {
   const part = (cls, html) => { const d = h('div', { class: cls }); d.innerHTML = html || '<br>'; return d; };
@@ -3919,6 +4018,7 @@ function applyMode() {
   if (!ed && typeof clearBlockSel === 'function') clearBlockSel();
   if (!ed && typeof hideTblPop === 'function') hideTblPop();
   syncTestes();                                  // lendo: botões do teste; editando: pergunta e resposta à vista
+  renderStatus();                                // o seletor de status acompanha o caderno aberto
 }
 function updatePager() {
   const n = nb();
@@ -4042,11 +4142,14 @@ function folderRow(f, depth) {
     h('button', { class: 'act', title: 'Excluir pasta', 'aria-label': `Excluir ${f.name}`, onclick: () => deleteFolder(f) }, svg('trash')));
 }
 function notebookRow(n, depth) {
+  // status de estudo: ícone no lugar do marcador e o nome do status no rótulo ('novo' fica só com o ponto)
+  const st = studyOf(n.id).status, stLabel = st === 'novo' ? '' : STATUS_LABEL[st];
   return h('div', { class: 'row notebook' + (n.id === lib.current ? ' current' : ''), role: 'treeitem',
-                    style: `--d:${depth}`, draggable: 'true', 'data-type': 'notebook', 'data-id': n.id },
-    h('button', { class: 'row-main', title: n.name, 'aria-current': n.id === lib.current ? 'true' : null,
+                    style: `--d:${depth}`, draggable: 'true', 'data-type': 'notebook', 'data-id': n.id, 'data-status': st },
+    h('button', { class: 'row-main', title: stLabel ? `${n.name} · ${stLabel}` : n.name, 'aria-label': stLabel ? `${n.name}, ${stLabel}` : null,
+      'aria-current': n.id === lib.current ? 'true' : null,
       onclick: () => openNotebook(n.id), ondblclick: () => startRename('notebook', n.id) },
-      h('span', { class: 'bullet', 'aria-hidden': 'true' }), h('span', { class: 'name' }, n.name)),
+      stLabel ? svg(STATUS_ICON[st], 'i st-ico ' + st) : h('span', { class: 'bullet', 'aria-hidden': 'true' }), h('span', { class: 'name' }, n.name)),
     h('button', { class: 'act', title: 'Renomear', 'aria-label': `Renomear ${n.name}`, onclick: () => startRename('notebook', n.id) }, svg('pencil')),
     h('button', { class: 'act', title: 'Excluir caderno', 'aria-label': `Excluir ${n.name}`, onclick: () => deleteNotebook(n) }, svg('trash')));
 }
@@ -6075,7 +6178,7 @@ const Sync = (() => {
         if (L && L.updated > ru) rows.push({ user_id: uidNow, notebook_id: id, data: L, updated: L.updated });
         else if (R && (!L || ru > L.updated)) { study[id] = { ...normStudy(R.data), updated: ru }; changedLocal = true; }
       }
-      if (changedLocal) await putStudy();
+      if (changedLocal) { await putStudy(); renderLib(); renderStatus(); }   // o ícone na biblioteca e o seletor mostram o que veio da conta
       for (let i = 0; i < rows.length; i += 200) {
         const { error: e2 } = await sb.from('study_state').upsert(rows.slice(i, i + 200), { onConflict: 'user_id,notebook_id' });
         if (e2) throw e2;
@@ -6363,6 +6466,7 @@ async function start() {
 
   setupEditor();
   setupPager();
+  setupStatus();
   setupLibrary();
   setupView();
   setupSearch();
