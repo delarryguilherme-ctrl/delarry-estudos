@@ -318,6 +318,37 @@
   .doc-view.two .recall { grid-column: 1; grid-row: 1 / span 2; position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow: auto; }
   .doc-view.two .rc-orig { grid-column: 2; grid-row: 1; margin-top: 0; }
   .doc-view.two .doc { grid-column: 2; grid-row: 2; }
+  /* revisão sem blocos Teste: a autoavaliação fica logo abaixo da comparação */
+  .rc-rate { margin-top: 14px; }
+  .rc-rate[hidden] { display: none; }
+  /* ---------- revisão: uma pergunta por vez, com o texto do caderno escondido de verdade ---------- */
+  body.reviewing .toolbar > :not(#libBtn) { display: none !important; }
+  @media (min-width: 900px) { body.reviewing .toolbar { display: none !important; } }
+  body.reviewing .nb-status, body.reviewing .nb-hist, body.reviewing #doc, body.reviewing #rcOrig,
+  body.reviewing .lib-search, body.reviewing #results { display: none !important; }
+  .review[hidden] { display: none; }
+  .rv-prog { margin: -10px 0 14px; font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .rv-card { padding: 16px 18px; border-radius: 12px; background: var(--surface-2); border: 1px solid var(--line); }
+  .rv-label { margin: 0 0 4px; font: 600 11px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .rv-q, .rv-a { margin: 0; font-size: 16px; line-height: 1.55; overflow-wrap: anywhere; }
+  .rv-q { font-weight: 600; }
+  .rv-a { color: var(--text-2); }
+  .rv-ans { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .rv-sum { margin: 0 0 6px; font-size: 15px; line-height: 1.55; }
+  .rv-sum strong { font-weight: 600; }
+  /* fila "Revisar hoje" na biblioteca: discreta, acima das pastas */
+  .rv-queue { flex: none; display: flex; flex-direction: column; gap: 2px; max-height: 38vh; overflow-y: auto; overscroll-behavior: contain; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+  .rv-queue[hidden], .results:not([hidden]) + .rv-queue { display: none; }
+  .rv-queue-head { margin: 0; padding: 2px 10px 4px; font: 600 12px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; letter-spacing: .02em; color: var(--muted); }
+  .rv-item {
+    all: unset; box-sizing: border-box; width: 100%; cursor: pointer; display: flex; align-items: center; gap: 8px; min-height: 32px; padding: 0 10px;
+    border-radius: 7px; color: var(--text); font-size: 13px;
+  }
+  .rv-item:hover { background: var(--hover); }
+  .rv-item:focus-visible { outline: 2px solid var(--ink); outline-offset: -2px; }
+  .rv-item.current { background: var(--active); color: var(--active-text); }
+  .rv-item .name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .rv-go { flex: none; font-size: 12px; color: var(--ink); font-weight: 500; }
   .doc { position: relative; color: var(--text); caret-color: var(--ink); white-space: pre-wrap; overflow-wrap: break-word; }
   .doc aside { color: var(--text-2); }
   .doc li::marker { color: var(--text-2); }
@@ -952,6 +983,11 @@
       <kbd>Ctrl K</kbd>
     </div>
     <div class="results" id="results" hidden aria-live="polite"></div>
+    <!-- fila "Revisar hoje": só aparece quando há caderno para revisar -->
+    <section class="rv-queue" id="rvQueue" aria-labelledby="rvQueueHead" hidden>
+      <h2 class="rv-queue-head" id="rvQueueHead"></h2>
+      <div class="rv-queue-list" id="rvQueueList"></div>
+    </section>
     <div class="tree" id="tree" role="tree" aria-label="Pastas e cadernos"></div>
   </aside>
   <div class="scrim" id="scrim"></div>
@@ -1032,7 +1068,7 @@
       <section class="rc-hist nb-hist" id="nbHist" aria-label="Lembranças anteriores" hidden></section>
       <!-- Fechar e lembrar: fica fora do #doc, nada daqui entra no html salvo do caderno -->
       <section class="recall" id="recall" aria-labelledby="rcTitle" tabindex="-1" hidden>
-        <p class="rc-kicker">Fechar e lembrar</p>
+        <p class="rc-kicker" id="rcKicker">Fechar e lembrar</p>
         <h2 class="rc-title" id="rcTitle"></h2>
         <div class="rc-write" id="rcWrite">
           <textarea id="rcText" rows="12" placeholder="Escreva o que você lembra, sem olhar" aria-label="Escreva o que você lembra, sem olhar" spellcheck="true" autocapitalize="sentences"></textarea>
@@ -1046,6 +1082,13 @@
           <h3 class="rc-label">O que você escreveu</h3>
           <div class="rc-mine" id="rcMine"></div>
           <p class="rc-hint">Compare com o texto do caderno. A comparação é sua: nada é corrigido nem pontuado.</p>
+          <!-- só na revisão sem blocos Teste: quem estuda avalia a própria lembrança -->
+          <div class="rc-rate teste-scores" id="rcRate" role="group" aria-label="Como foi a sua lembrança?" hidden>
+            <span class="teste-ask" aria-hidden="true">Como foi?</span>
+            <button class="teste-btn" type="button" data-rate="acertei">Acertei</button>
+            <button class="teste-btn" type="button" data-rate="parcial">Parcial</button>
+            <button class="teste-btn" type="button" data-rate="errei">Errei</button>
+          </div>
           <div class="rc-actions">
             <button class="btn" type="button" id="rcHistBtn" aria-expanded="false" aria-controls="rcHist">Lembranças anteriores</button>
             <button class="btn primary" type="button" id="rcBack">Voltar ao caderno</button>
@@ -1053,6 +1096,8 @@
           <div class="rc-hist" id="rcHist" hidden></div>
         </div>
       </section>
+      <!-- Revisão (fila "Revisar hoje"): uma pergunta por vez, fora do #doc; nada daqui entra no html salvo -->
+      <section class="recall review" id="review" aria-labelledby="rvTitle" tabindex="-1" hidden></section>
       <h3 class="rc-label rc-orig" id="rcOrig" hidden>Texto do caderno</h3>
       <div class="flow ed doc" id="doc" contenteditable="true" role="textbox" aria-multiline="true"
            aria-label="Texto do caderno" spellcheck="true" autocapitalize="sentences"></div>
@@ -1928,6 +1973,7 @@ function layoutDoc() {
   docEl.style.width = colW * k + 'px';
   $('nbStatus').style.width = $('nbHist').style.width = docEl.style.width;   // o seletor de status acompanha a coluna do texto
   $('recall').style.maxWidth = $('rcOrig').style.maxWidth = two ? '' : docEl.style.width;   // empilhado: tudo na mesma coluna
+  $('review').style.maxWidth = docEl.style.width;
   sizeFigures(docEl);
   for (const f of docEl.querySelectorAll('.embed')) fitEmbed(f);
 }
@@ -2393,8 +2439,8 @@ async function mediaUrl(id) {
 
 let lib, saveT;
 const nb = () => lib.notebooks.find(n => n.id === lib.current);
-// o caderno aberto está no modo editar? No "Fechar e lembrar" vale como leitura, sem mexer no modo salvo do caderno
-const editando = () => !!nb()?.editing && !RECALL.phase;
+// o caderno aberto está no modo editar? No "Fechar e lembrar" e na revisão vale como leitura, sem mexer no modo salvo do caderno
+const editando = () => !!nb()?.editing && !RECALL.phase && !REVIEW.id;
 const folder = id => lib.folders.find(f => f.id === id);
 const saveSoon = () => { clearTimeout(saveT); saveT = setTimeout(() => Store.putLib(lib).catch(console.error), 400); Sync.schedule(); };
 
@@ -2624,6 +2670,10 @@ function endRecall() {
   $('rcText').value = '';
   $('rcMine').textContent = '';
   $('rcHist').replaceChildren();
+  // o que a revisão muda no painel volta ao padrão do "Fechar e lembrar"
+  $('rcRate').hidden = true;
+  $('rcKicker').textContent = 'Fechar e lembrar';
+  $('rcBack').textContent = 'Voltar ao caderno';
 }
 // Cancelar: não salva nada. Se havia texto, ele fica de rascunho e volta na próxima vez neste caderno.
 function cancelRecall() {
@@ -2672,6 +2722,218 @@ function setupRecall() {
     RECALL.histId = RECALL.histId === nb()?.id ? null : nb()?.id ?? null;
     renderRecallHist();
   });
+  // revisão sem blocos Teste: a nota da sessão é a autoavaliação de quem comparou
+  $('rcRate').addEventListener('click', e => {
+    const b = e.target.closest('[data-rate]');
+    if (!b || RECALL.phase !== 'compare' || REVIEW.phase !== 'recall') return;
+    REVIEW.scores.set('', b.dataset.rate);
+    closeRecall();
+  });
+}
+
+/* ------------------------------------------------------------------ *
+ *  Fila "Revisar hoje" e modo revisão                                 *
+ *  Entram na fila os cadernos 'estudado' com nextReview até hoje, os  *
+ *  mais atrasados primeiro. Pular dias não pune: o caderno fica na    *
+ *  fila até ser revisado, e o próximo intervalo conta do dia em que   *
+ *  a revisão foi feita. Sair no meio não grava nada.                  *
+ * ------------------------------------------------------------------ */
+// o pior resultado vale para a sessão (errei < parcial < acertei)
+const piorNota = notas => notas.reduce((p, s) => (STUDY_SCORES.indexOf(s) > STUDY_SCORES.indexOf(p) ? s : p), 'acertei');
+/* Fim da revisão (função pura): etapa e próxima revisão a partir da etapa atual, da nota e do dia da revisão.
+   acertei → sobe uma etapa (até a última) e conta o intervalo da etapa nova; parcial → mantém; errei → volta para amanhã. */
+function aplicaRevisao(stage, score, dia) {
+  const mais = n => { const d = new Date(dia); d.setDate(d.getDate() + n); return d.getTime(); };
+  if (score === 'errei') return { stage: 0, nextReview: mais(1) };
+  const s = score === 'acertei' ? Math.min(stage + 1, INTERVALOS.length - 1) : stage;
+  return { stage: s, nextReview: mais(INTERVALOS[s]) };
+}
+// cadernos que ainda existem, 'estudado', com a revisão marcada para hoje ou antes
+const filaRevisao = () => {
+  const dia = hoje();
+  return studyEntries().filter(e => e.st.status === 'estudado' && e.st.nextReview !== null && e.st.nextReview <= dia)
+    .sort((a, b) => a.st.nextReview - b.st.nextReview || byName(a.nb, b.nb));
+};
+let filaDia = 0;   // o dia em que a fila foi montada: ao virar o dia com o app aberto, ela é montada de novo
+function renderFila() {
+  filaDia = hoje();
+  const fila = filaRevisao(), box = $('rvQueue');
+  box.hidden = !fila.length;
+  if (!fila.length) { $('rvQueueList').replaceChildren(); return; }
+  $('rvQueueHead').textContent = `Revisar hoje (${fila.length})`;
+  $('rvQueueList').replaceChildren(...fila.map(({ nb: n }) => h('button', {
+    type: 'button', class: 'rv-item' + (REVIEW.id === n.id ? ' current' : ''), title: `Revisar ${n.name}`, 'aria-label': `Revisar ${n.name}`,
+    onclick: () => startReview(n.id) }, h('span', { class: 'name' }, n.name), h('span', { class: 'rv-go', 'aria-hidden': 'true' }, 'Revisar'))));
+}
+// checagem barata ao voltar para o app: só remonta a fila se o dia mudou
+function filaDiaVirou() { if (hoje() !== filaDia) renderFila(); }
+
+const REVIEW = { id: null, phase: null,   // phase: 'ask' (uma pergunta por vez) | 'recall' (sem Teste) | 'done' (resumo)
+                 items: [], i: 0, open: false, scores: new Map(), scroll: 0, result: null };
+const fmtDia = ts => new Date(ts).toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' });
+// esconde o texto do caderno e o que poderia mostrá-lo (pesquisa, voz, edição), como no "Fechar e lembrar"
+function hideDocForReview() {
+  commitDoc();
+  clearBlockSel(); closeSlash(); hideTblPop();
+  if (!$('linkPop').hidden) closeLinkPop(false);
+  ttsStop();
+  pauseVideos(docEl);
+  getSelection().removeAllRanges();
+  if ($('search').value) { $('search').value = ''; runSearch(); }
+  document.body.classList.add('reviewing');
+  docEl.inert = true;
+  applyMode();
+  layoutDoc();
+  scrollTo(0, 0);
+}
+function startReview(id) {
+  if (!lib.notebooks.some(n => n.id === id)) return;
+  if (REVIEW.id === id && REVIEW.phase !== 'done') { closeDrawer(); $('review').focus?.({ preventScroll: true }); return; }
+  if (REVIEW.id) endReview();                     // outra revisão em andamento: termina sem gravar nada
+  if (RECALL.phase) { if (RECALL.phase === 'write') cancelRecall(); else closeRecall(); }
+  closeBook();
+  openNotebook(id);                               // troca de caderno (e fecha a gaveta no celular)
+  if (nb()?.id !== id) return;
+  const scroll = scrollY;
+  commitDoc();
+  // as perguntas, na ordem do texto; o conteúdo é copiado para o painel (o #doc fica escondido)
+  const items = [...docEl.querySelectorAll('.teste[data-id]')].map(t => {
+    const [q, a] = testeParts(t);
+    return { id: t.dataset.id, q: q ? [...q.cloneNode(true).childNodes] : [], a: a ? [...a.cloneNode(true).childNodes] : [] };
+  });
+  Object.assign(REVIEW, { id, items, i: 0, open: false, scores: new Map(), scroll, result: null });
+  if (!items.length) {
+    // sem blocos Teste: a revisão é um "Fechar e lembrar" (a lembrança entra em recalls como sempre)
+    REVIEW.phase = 'recall';
+    const ok = startRecall({
+      onDone: () => { const s = REVIEW.scores.get(''); if (s && REVIEW.phase === 'recall') finishReview(s); else endReview(); },
+      onCancel: () => endReview(),
+    });
+    if (!ok) { endReview(); return; }
+    $('rcKicker').textContent = 'Revisão · Fechar e lembrar';
+    $('rcRate').hidden = false;
+    $('rcBack').textContent = 'Sair da revisão';
+    renderFila();
+    return;
+  }
+  REVIEW.phase = 'ask';
+  hideDocForReview();
+  renderReview();
+  $('review').hidden = false;
+  renderFila();
+  $('review').querySelector('[data-rv="show"]')?.focus({ preventScroll: true });
+}
+function renderReview() {
+  const box = $('review'), n = lib.notebooks.find(x => x.id === REVIEW.id);
+  if (!n || !REVIEW.phase || REVIEW.phase === 'recall') return;
+  const head = [h('p', { class: 'rc-kicker' }, 'Revisão'), h('h2', { class: 'rc-title', id: 'rvTitle' }, n.name)];
+  if (REVIEW.phase === 'done') {
+    const { score, next } = REVIEW.result;
+    const prox = filaRevisao().find(e => e.nb.id !== REVIEW.id);
+    // sem próxima revisão (o caderno deixou de ser 'estudado' no meio): mostra só o resultado
+    const quando = next === null ? '' : next === hojeMais(1) ? ` Próxima revisão: amanhã, ${fmtDia(next)}.` : ` Próxima revisão: ${fmtDia(next)}.`;
+    box.replaceChildren(...head,
+      h('p', { class: 'rv-sum', role: 'status' }, 'Resultado: ', h('strong', {}, TESTE_LABEL[score]), `.${quando}`),
+      REVIEW.items.length > 1 ? h('p', { class: 'rc-hint' }, 'Vale o pior resultado da sessão.') : '',
+      h('div', { class: 'rc-actions' },
+        h('button', { class: 'btn' + (prox ? '' : ' primary'), type: 'button', 'data-rv': 'back' }, 'Voltar ao caderno'),
+        prox ? h('button', { class: 'btn primary', type: 'button', 'data-rv': 'next', 'data-id': prox.nb.id }, `Revisar o próximo: ${prox.nb.name}`) : ''));
+    return;
+  }
+  const it = REVIEW.items[REVIEW.i];
+  const card = h('div', { class: 'rv-card' }, h('p', { class: 'rv-label' }, 'Pergunta'), h('p', { class: 'rv-q' }, ...it.q.map(x => x.cloneNode(true))));
+  if (REVIEW.open) card.append(h('div', { class: 'rv-ans' }, h('p', { class: 'rv-label' }, 'Resposta'), h('p', { class: 'rv-a' }, ...it.a.map(x => x.cloneNode(true)))));
+  card.append(h('div', { class: 'teste-ui' }, REVIEW.open
+    ? h('div', { class: 'teste-scores', role: 'group', 'aria-label': 'Como foi a sua resposta?' },
+        h('span', { class: 'teste-ask', 'aria-hidden': 'true' }, 'Como foi?'),
+        ...STUDY_SCORES.map(s => h('button', { type: 'button', class: 'teste-btn', 'data-rv': 'score', 'data-score': s }, TESTE_LABEL[s])))
+    : h('button', { type: 'button', class: 'teste-btn teste-show', 'data-rv': 'show', 'aria-expanded': 'false' }, 'Mostrar resposta')));
+  box.replaceChildren(...head,
+    h('p', { class: 'rv-prog', 'aria-live': 'polite' }, `${REVIEW.i + 1} de ${REVIEW.items.length}`),
+    card,
+    h('div', { class: 'rc-actions' },
+      h('span', { class: 'rc-hint' }, 'O texto do caderno fica escondido até o fim da revisão. Sair no meio não grava nada.'),
+      h('button', { class: 'btn', type: 'button', 'data-rv': 'exit' }, 'Sair da revisão')));
+}
+function reviewClick(e) {
+  const b = e.target.closest('[data-rv]');
+  if (!b || !REVIEW.id) return;
+  const act = b.dataset.rv;
+  if (act === 'exit' || act === 'back') { exitReview(); return; }
+  if (act === 'next') { startReview(b.dataset.id); return; }
+  if (REVIEW.phase !== 'ask') return;
+  if (act === 'show') {
+    REVIEW.open = true;
+    renderReview();
+    $('review').querySelector('.teste-scores .teste-btn')?.focus({ preventScroll: true });
+    return;
+  }
+  if (act === 'score' && REVIEW.open) {
+    onTesteScore(REVIEW.items[REVIEW.i].id, b.dataset.score);   // o mesmo caminho da leitura (marca respondido) + a sessão
+    if (REVIEW.i + 1 >= REVIEW.items.length) { finishReview(piorNota([...REVIEW.scores.values()])); return; }
+    REVIEW.i++;
+    REVIEW.open = false;
+    renderReview();
+    $('review').querySelector('[data-rv="show"]')?.focus({ preventScroll: true });
+  }
+}
+// fim da revisão: grava a sessão em reviews e marca a próxima revisão; depois mostra o resumo
+function finishReview(score) {
+  const id = REVIEW.id;
+  if (!id || !STUDY_SCORES.includes(score)) { endReview(); return; }
+  const st = studyOf(id), now = Date.now();
+  const patch = { reviews: [...st.reviews, { at: now, score }] };
+  const respondidos = [...REVIEW.scores.keys()].filter(Boolean);   // ids dos Testes respondidos nesta sessão
+  if (respondidos.some(t => !st.answered.includes(t))) patch.answered = [...new Set([...st.answered, ...respondidos])];
+  if (st.status === 'estudado') Object.assign(patch, aplicaRevisao(st.stage, score, hoje()));
+  setStudy(id, patch);
+  REVIEW.result = { score, next: studyOf(id).nextReview };
+  REVIEW.phase = 'done';
+  if (nb()?.id !== id) { endReview(); renderLib(); return; }
+  if (!document.body.classList.contains('reviewing')) hideDocForReview();   // vindo do "Fechar e lembrar"
+  renderLib();
+  renderReview();
+  $('review').hidden = false;
+  scrollTo(0, 0);
+  $('review').focus({ preventScroll: true });
+}
+// termina a revisão sem gravar nada (ou depois do resumo) e devolve o caderno como estava
+function endReview() {
+  if (!REVIEW.id) return;
+  const { id, scroll, phase } = REVIEW;
+  Object.assign(REVIEW, { id: null, phase: null, items: [], i: 0, open: false, scores: new Map(), result: null });
+  if (phase === 'recall' && RECALL.phase) { if (RECALL.phase === 'write') cancelRecall(); else closeRecall(); }
+  const wasHidden = document.body.classList.contains('reviewing');
+  document.body.classList.remove('reviewing');
+  docEl.inert = false;
+  $('review').hidden = true;
+  $('review').replaceChildren();
+  renderFila();
+  if (wasHidden && nb()?.id === id) { applyMode(); layoutDoc(); scrollTo(0, phase === 'done' ? 0 : scroll); }
+}
+function exitReview() {
+  const focusBack = REVIEW.phase === 'done' || nb()?.id === REVIEW.id;
+  endReview();
+  if (focusBack) $('nbStatus').querySelector('button')?.focus({ preventScroll: true });
+}
+// o caderno aberto mudou (biblioteca, exclusão, restauração): a revisão termina sem gravar nada
+function leaveReviewIfMoved() {
+  if (REVIEW.id && nb()?.id !== REVIEW.id) endReview();
+}
+function setupReview() {
+  $('review').addEventListener('click', reviewClick);
+  addEventListener('keydown', e => {
+    if (e.key !== 'Escape' || e.defaultPrevented || !REVIEW.id || BOOK.open) return;
+    if (e.target.closest?.('input, textarea, select, [contenteditable="true"]')) return;   // Esc de um campo (renomear, pesquisar) é do campo
+    if (REVIEW.phase === 'recall') {
+      if (RECALL.phase !== 'compare') return;      // escrevendo: o Esc do campo de texto já cuida (só sai com ele vazio)
+      e.preventDefault(); closeRecall(); return;   // sem nota: sai sem gravar a revisão
+    }
+    e.preventDefault();
+    exitReview();
+  });
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') filaDiaVirou(); });
+  addEventListener('focus', filaDiaVirou);
 }
 
 function defaultLibrary() {
@@ -2728,6 +2990,7 @@ function loadDoc({ keepScroll = false } = {}) {
   const n = nb();
   if (!n) return;
   leaveRecallIfMoved();                           // outro caderno entrou: o "Fechar e lembrar" do anterior termina
+  leaveReviewIfMoved();                           // e a revisão do anterior também (sem gravar nada)
   clearBlockSel();
   pauseVideos(docEl);
   docEl.innerHTML = n.html || EMPTY_PAGE;
@@ -2975,7 +3238,7 @@ function paginate(html) {
  * ------------------------------------------------------------------ */
 function openBook() {
   const n = nb();
-  if (!n || BOOK.open || FV.id || RECALL.phase) return;   // no "Fechar e lembrar" o livro mostraria o texto
+  if (!n || BOOK.open || FV.id || RECALL.phase || REVIEW.id) return;   // no "Fechar e lembrar" e na revisão o livro mostraria o texto
   commitDoc();
   clearBlockSel(); closeSlash(); hideTblPop();
   if (!$('linkPop').hidden) closeLinkPop(false);
@@ -3515,10 +3778,16 @@ function toggleCheck(li) {
  * ------------------------------------------------------------------ */
 const TESTE_LABEL = { acertei: 'Acertei', parcial: 'Parcial', errei: 'Errei' };
 const TESTE_INNER = 'p, div, h1, h2, h3, h4, h5, h6, ul, ol, li, blockquote, aside, table, hr, figure, nav';
-/* Gancho da revisão: o modo revisão (fila "Revisar hoje") vai se ligar aqui para registrar a resposta
-   de cada pergunta na sessão em andamento. Fora de uma revisão a nota vale só na tela: o que fica guardado
-   é apenas que a pergunta já foi respondida uma vez (conta para o caderno poder virar 'estudado'). */
-let onTesteScore = (blockId, score) => markAnswered(docEl.dataset.nb, blockId);
+/* Caminho único da resposta de um Teste (leitura e revisão): guarda que a pergunta já foi respondida uma vez
+   (conta para o caderno poder virar 'estudado'). A nota só vale dentro de uma revisão em andamento, na sessão;
+   fora dela fica só na tela. Na revisão nada é gravado antes do fim: sair no meio não muda nada. */
+function onTesteScore(blockId, score) {
+  if (REVIEW.phase === 'ask' && REVIEW.id === docEl.dataset.nb) {
+    if (STUDY_SCORES.includes(score)) REVIEW.scores.set(blockId, score);   // vai para answered no fim da revisão
+    return;
+  }
+  markAnswered(docEl.dataset.nb, blockId);
+}
 
 function makeTeste(q = '', a = '', id = uid()) {
   const part = (cls, html) => { const d = h('div', { class: cls }); d.innerHTML = html || '<br>'; return d; };
@@ -4261,7 +4530,7 @@ function updatePager() {
 function setupPager() {
   document.querySelector('.mode-seg').addEventListener('click', e => {
     const b = e.target.closest('button');
-    if (!b || RECALL.phase) return;                // "Fechar e lembrar" é só leitura do começo ao fim
+    if (!b || RECALL.phase || REVIEW.id) return;   // "Fechar e lembrar" e revisão são só leitura do começo ao fim
     nb().editing = b.dataset.mode === 'edit';
     applyMode();
     saveSoon();
@@ -4338,6 +4607,7 @@ const nextOrder = (type, parentId) => {
 
 function renderLib() {
   tree.replaceChildren(...renderLevel(null, 0));
+  renderFila();                                  // a fila "Revisar hoje" acompanha o estado de estudo e a biblioteca
   if (FV.id) renderFolderView();
 }
 function renderLevel(parentId, depth) {
@@ -5824,7 +6094,7 @@ function setupSearch() {
     }
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
       e.preventDefault();
-      if (RECALL.phase === 'write') return;        // escrevendo de memória: a pesquisa mostraria trechos do texto
+      if (RECALL.phase === 'write' || REVIEW.id) return;   // escrevendo de memória ou revisando: a pesquisa mostraria trechos do texto
       if (matchMedia('(max-width: 899px)').matches) { libEl.classList.add('open'); scrim.classList.add('open'); }
       input.focus(); input.select();
     }
@@ -5863,7 +6133,7 @@ function ttsUI() {
 }
 function ttsStart() {
   if (!synth) { toast('Este navegador não tem leitura em voz alta.'); return; }
-  if (RECALL.phase === 'write') return;            // escrevendo de memória: o texto não pode ser lido em voz alta
+  if (RECALL.phase === 'write' || REVIEW.id) return;   // escrevendo de memória ou revisando: o texto não pode ser lido em voz alta
   synth.cancel();
   commitDoc();
   Object.assign(TTS, { on: true, paused: false, doc: !BOOK.open, page: BOOK.open ? curPage : 0, gen: TTS.gen + 1, queue: [] });
@@ -6693,6 +6963,7 @@ async function start() {
   setupPager();
   setupStatus();
   setupRecall();
+  setupReview();
   setupLibrary();
   setupView();
   setupSearch();
